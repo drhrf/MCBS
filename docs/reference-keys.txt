@@ -2,7 +2,7 @@ fig:nice-fig
 tab:nice-tab
 eq:binom
 thm:tri
-about
+sobre-o-projeto
 usage
 render-book
 preview-book
