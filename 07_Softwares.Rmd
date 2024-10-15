@@ -1,0 +1,9 @@
+# Uso de *softwares* estatísticos
+
+## *Softwares* "no-code" e "low-code"
+
+## R para análise estatística
+
+## Python para análise estatística
+
+## Visualização de dados e figuras científicas

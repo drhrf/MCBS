@@ -1,0 +1,24 @@
+# Desenhos de pesquisa
+
+## Estudos observacionais
+
+### Estudos transversais
+
+### Estudos de coorte
+
+### Estudos de caso-controle
+
+## Ensaios clínicos
+
+### Ensaios randomizados controlados
+
+### Estudos duplo-cegos
+
+## Estudos experimentais
+
+### Desenho experimental
+    
+### Controle e aleatorização
+
+
+

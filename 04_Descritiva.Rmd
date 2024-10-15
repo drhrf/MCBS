@@ -1,0 +1,27 @@
+# Bioestatística descritiva
+
+## Medidas de tendência central
+
+### Média
+
+### Mediana
+
+### Moda
+
+## Medidas de dispersão
+        
+### Variância
+        
+### Desvio padrão
+        
+### Amplitude
+
+## Distribuições de frequência
+
+## Representações gráficas
+        
+### Histogramas
+        
+### Boxplots
+
+### Gráficos de dispersão

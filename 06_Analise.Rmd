@@ -1,0 +1,20 @@
+# Análise de dados
+
+## Correlação e regressão
+  
+### Correlação de Pearson e Spearman
+  
+### Regressão linear simples e múltipla
+  
+## Análise de variância (ANOVA)
+  
+### ANOVA de uma via
+  
+### ANOVA fatorial
+  
+## Análise multivariada
+  
+### Componentes principais
+  
+### Clusterização
+

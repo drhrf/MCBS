@@ -1,0 +1,9 @@
+# Tópicos avançados em bioestatística
+
+## Modelos lineares generalizados
+
+## Análise de sobrevivência
+
+## Bioinformática e *big data*
+
+## Metanálise

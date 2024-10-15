@@ -1,0 +1,19 @@
+# Bioestatística inferencial
+
+## Conceitos de probabilidade
+  
+## Distribuições de probabilidade
+  
+### Distribuição normal
+  
+### Distribuição t de student
+  
+### Distribuição qui-quadrado
+  
+## Estimação e intervalos de confiança
+
+## Testes de hipóteses
+  
+### Testes paramétricos
+  
+### Testes não-paramétricos
