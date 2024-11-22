@@ -84,3 +84,5 @@ bibliografia-recomendada
 glossário-de-termos
 tabelas-estatísticas
 links-e-ferramentas-online
+aprendendo-a-programar
+a-importância-de-lidar-com-a-frustração
