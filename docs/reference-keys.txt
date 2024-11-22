@@ -86,3 +86,13 @@ tabelas-estatísticas
 links-e-ferramentas-online
 aprendendo-a-programar
 a-importância-de-lidar-com-a-frustração
+visão-geral-do-r-e-suas-aplicações
+instalando-o-r-e-o-rstudio
+instalação-do-r-no-windows
+instalação-do-rstudio-no-windows
+instalação-do-r-no-mac
+instalação-do-rstudio-no-mac
+sintaxe-básica-e-operações-no-r
+sintaxe-básica
+operações-básicas
+manipulação-de-dados
