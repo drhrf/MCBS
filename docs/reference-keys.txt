@@ -111,3 +111,13 @@ testes-de-hipóteses-1
 intervalos-de-confiança
 regressão-e-correlação
 análise-de-séries-temporais
+fundamentos-da-visualização-de-dados-em-r
+gráficos-base-do-r
+personalização-de-gráficos
+o-pacote-ggplot2
+visualização-de-dados-multivariados
+extensões-do-ggplot2
+visualização-de-dados-geoespaciais
+animações-com-gganimate
+dashboards-interativos-com-shiny
+tabelas-e-quadros-em-r
