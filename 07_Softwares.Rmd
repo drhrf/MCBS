@@ -136,13 +136,13 @@ A sintaxe do R é bastante simples e direta. A linguagem faz distinção entre m
 
 Agora, tente interagir com os exemplos abaixo:
 
-1.  Criação de vetores: v \<- c(1, 2, 3, 4, 5)
+1.  **Criação de vetores**: v \<- c(1, 2, 3, 4, 5)
 
-2.  Criação de matrizes: m \<- matrix(1:9, nrow = 3, ncol = 3)
+2.  **Criação de matrizes**: m \<- matrix(1:9, nrow = 3, ncol = 3)
 
-3.  Criação de listas: l \<- list(nome = "João", idade = 30, altura = 1.75)
+3.  **Criação de listas**: l \<- list(nome = "João", idade = 30, altura = 1.75)
 
-4.  Criação de data frames: df \<- data.frame(nome = c("João", "Maria"), idade = c(30, 25))
+4.  **Criação de data frames**: df \<- data.frame(nome = c("João", "Maria"), idade = c(30, 25))
 
 **Exemplo**: produzindo um *data frame* (quadro de dados)
 
@@ -154,15 +154,15 @@ O R pode ser usado como uma calculadora simples, realizando operações aritmét
 
 Aqui estão alguns exemplos de operações básicas no R:
 
-1.  Adição: "3 + 2" resulta em 5
+1.  **Adição**: "3 + 2" resulta em 5
 
-2.  Subtração: "5 - 2" resulta em 3
+2.  **Subtração**: "5 - 2" resulta em 3
 
-3.  Multiplicação: "3 \* 2" resulta em 6
+3.  **Multiplicação**: "3 \* 2" resulta em 6
 
-4.  Divisão: "6 / 2" resulta em 3
+4.  **Divisão**: "6 / 2" resulta em 3
 
-5.  Potenciação: "2 \^ 3" resulta em 8
+5.  **Potenciação**: "2 \^ 3" resulta em 8
 
 Além disso, o R suporta operações com vetores e matrizes. Por exemplo, se você tem dois vetores de mesmo comprimento, pode somá-los diretamente: "c(1, 2, 3) + c(4, 5, 6)" resulta em "c(5, 7, 9)".
 
