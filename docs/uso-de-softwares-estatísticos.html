@@ -66,6 +66,29 @@ set in the _output.yml file.</p>" />
   
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 </style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -275,11 +298,11 @@ set in the _output.yml file.</p>" />
 </div>
 <div id="visão-geral-do-r-e-suas-aplicações" class="section level3 hasAnchor" number="8.2.2">
 <h3><span class="header-section-number">8.2.2</span> Visão geral do R e suas aplicações<a href="uso-de-softwares-estatísticos.html#visão-geral-do-r-e-suas-aplicações" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>R é uma linguagem de programação e um ambiente de software para análise estatística e gráfica. A história do R remonta à década de 1970 com o desenvolvimento da linguagem S no Bell Labs por John Chambers e outros. A linguagem S foi projetada para ser uma linguagem de programação que fosse tanto eficiente quanto fácil de usar, com foco em análise de dados e gráficos estatísticos.</p>
-<p>Na década de 1990, Ross Ihaka e Robert Gentleman, da Universidade de Auckland, na Nova Zelândia, iniciaram o desenvolvimento do R como um projeto de pesquisa. Eles foram influenciados pela linguagem S e pelo Scheme, uma linguagem de programação com semântica de escopo léxico. O R foi concebido como um dialeto da linguagem S, com a intenção de melhorar e ampliar a análise estatística e as capacidades gráficas.</p>
+<p>R é uma linguagem de programação e um ambiente de software para análise estatística e gráfica. A história do R remonta à década de 1970 com o desenvolvimento da linguagem S no Bell Labs por John Chambers e outros <span class="citation">(<a href="#ref-chambers1980">Chambers 1980</a>)</span>. A linguagem S foi projetada para ser uma linguagem de programação que fosse tanto eficiente quanto fácil de usar, com foco em análise de dados e gráficos estatísticos.</p>
+<p>Na década de 1990, Ross Ihaka e Robert Gentleman, da Universidade de Auckland, na Nova Zelândia, iniciaram o desenvolvimento do R como um projeto de pesquisa. Eles foram influenciados pela linguagem S e pelo Scheme, uma linguagem de programação com semântica de escopo léxico. O R foi concebido como um dialeto da linguagem S, com a intenção de melhorar e ampliar a análise estatística e as capacidades gráficas <span class="citation">(<a href="#ref-ihaka1996">Ihaka and Gentleman 1996</a>)</span>.</p>
 <p>R é uma linguagem de programação interpretada, o que significa que o código é executado diretamente, sem a necessidade de compilação prévia. Isso facilita a depuração e o desenvolvimento iterativo. Além disso, R é uma linguagem dinamicamente tipada, permitindo que os tipos de dados sejam alterados em tempo de execução.</p>
-<p>Uma das principais características do R é a sua extensibilidade. A comunidade de usuários e desenvolvedores contribuiu com uma vasta coleção de pacotes que estendem a funcionalidade básica do R, disponíveis através do <em>Comprehensive R Archive Network (CRAN)</em>. Esses pacotes cobrem uma ampla gama de técnicas estatísticas, modelos gráficos, métodos de <em>machine learning</em>, e muito mais.</p>
-<p>R também é conhecido por sua capacidade de produzir gráficos de alta qualidade, que são essenciais para a análise exploratória de dados e a apresentação de resultados estatísticos. A linguagem oferece diversas funções e pacotes para a criação de gráficos, incluindo o popular <em>ggplot2</em>, que permite a construção de gráficos complexos de maneira intuitiva.</p>
+<p>Uma das principais características do R é a sua extensibilidade. A comunidade de usuários e desenvolvedores contribuiu com uma vasta coleção de pacotes que estendem a funcionalidade básica do R, disponíveis através do <em>Comprehensive R Archive Network (CRAN)</em> <span class="citation">(<a href="#ref-hornik2012">Hornik 2012</a>)</span>. Esses pacotes cobrem uma ampla gama de técnicas estatísticas, modelos gráficos, métodos de <em>machine learning</em>, e muito mais.</p>
+<p>R também é conhecido por sua capacidade de produzir gráficos de alta qualidade, que são essenciais para a análise exploratória de dados e a apresentação de resultados estatísticos. A linguagem oferece diversas funções e pacotes para a criação de gráficos, incluindo o popular <em>ggplot2</em>, que permite a construção de gráficos complexos de maneira intuitiva <span class="citation">(<a href="#ref-wickham2011">Wickham 2011</a>)</span>.</p>
 <p>Outra característica importante do R é a sua comunidade ativa e colaborativa. Os usuários de R frequentemente compartilham seu código e experiências, ajudando uns aos outros a resolver problemas e a melhorar suas habilidades de programação. Isso é facilitado por fóruns de discussão, listas de e-mail e conferências.</p>
 <p>As principais aplicações da linguagem R no mundo do trabalho abrangem uma vasta gama de setores, especialmente aqueles que dependem intensamente da análise de dados, estatística e modelagem preditiva. Profissões como cientistas de dados, analistas de mercado, pesquisadores em saúde e biologia, e especialistas em <em>machine learning</em> são apenas alguns exemplos de carreiras que se beneficiam diretamente do uso de R. Esta linguagem é particularmente valorizada por sua capacidade de manipular grandes conjuntos de dados, realizar análises estatísticas complexas, criar visualizações de dados avançadas e desenvolver modelos de <em>machine learning</em>.</p>
 <p>No futuro, espera-se que a demanda por profissionais com habilidades em R continue a crescer, à medida que mais setores reconhecem a importância da tomada de decisões baseada em dados. Profissões emergentes, como especialistas em big data, analistas de cibersegurança que utilizam técnicas de aprendizado de máquina para identificar ameaças, e profissionais envolvidos na criação e gestão de ambientes virtuais no metaverso, também poderão se beneficiar do uso de R.</p>
@@ -449,7 +472,7 @@ set in the _output.yml file.</p>" />
 <p>Documentar e compartilhar seu código são práticas essenciais para qualquer programador, especialmente para iniciantes em programação que estão aprendendo a linguagem R. Essas práticas não apenas facilitam a colaboração e a revisão por outros, mas também ajudam o próprio autor a entender e manter seu código ao longo do tempo.</p>
 <div id="documentação-de-código" class="section level4 hasAnchor" number="8.2.7.1">
 <h4><span class="header-section-number">8.2.7.1</span> Documentação de código<a href="uso-de-softwares-estatísticos.html#documentação-de-código" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>A documentação é a primeira linha de comunicação entre o programador e quem vai ler o código depois, seja o próprio autor em um momento futuro ou outros programadores. Em R, a documentação pode ser feita diretamente no código, usando comentários, e de forma mais estruturada, usando pacotes como o `roxygen2`, que permite criar uma documentação que pode ser convertida em um manual de ajuda para o pacote.</p>
+<p>A documentação é a primeira linha de comunicação entre o programador e quem vai ler o código depois, seja o próprio autor em um momento futuro ou outros programadores. Em R, a documentação pode ser feita diretamente no código, usando comentários, e de forma mais estruturada, usando pacotes como o `roxygen2` <span class="citation">(<a href="#ref-wickham2024">Wickham et al. 2024</a>)</span>, que permite criar uma documentação que pode ser convertida em um manual de ajuda para o pacote.</p>
 <p><img src="images/clipboard-3987177554.png" /></p>
 </div>
 <div id="compartilhamento-de-código" class="section level4 hasAnchor" number="8.2.7.2">
@@ -458,7 +481,7 @@ set in the _output.yml file.</p>" />
 </div>
 <div id="r-markdown" class="section level4 hasAnchor" number="8.2.7.3">
 <h4><span class="header-section-number">8.2.7.3</span> R Markdown<a href="uso-de-softwares-estatísticos.html#r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Uma ferramenta poderosa para documentar e compartilhar análises em R é o R Markdown. Com ele, é possível combinar texto narrativo com código R que pode ser executado para gerar resultados, que são automaticamente incluídos no documento. Isso é particularmente útil para relatórios, onde a análise e os resultados precisam ser apresentados de forma clara e reproduzível.</p>
+<p>Uma ferramenta poderosa para documentar e compartilhar análises em R é o R Markdown <span class="citation">(<a href="#ref-baumer2015">Baumer and Udwin 2015</a>)</span>. Com ele, é possível combinar texto narrativo com código R que pode ser executado para gerar resultados, que são automaticamente incluídos no documento. Isso é particularmente útil para relatórios, onde a análise e os resultados precisam ser apresentados de forma clara e reproduzível.</p>
 <p><img src="images/clipboard-1117062658.png" /></p>
 </div>
 </div>
@@ -611,21 +634,21 @@ set in the _output.yml file.</p>" />
 </div>
 <div id="visualização-de-dados-geoespaciais" class="section level4 hasAnchor" number="8.2.11.6">
 <h4><span class="header-section-number">8.2.11.6</span> Visualização de dados geoespaciais<a href="uso-de-softwares-estatísticos.html#visualização-de-dados-geoespaciais" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>A visualização de dados geoespaciais é outra técnica avançada que pode ser realizada em R, utilizando pacotes como `ggplot2` em conjunto com `sf` para criar mapas detalhados. Esses mapas podem representar desde a distribuição geográfica de eventos até análises espaciais complexas, como clusters ou padrões de movimento.</p>
+<p>A visualização de dados geoespaciais é outra técnica avançada que pode ser realizada em R, utilizando pacotes como `ggplot2` em conjunto com `sf` <span class="citation">(<a href="#ref-pebesma2024">Pebesma et al. 2024</a>)</span> para criar mapas detalhados. Esses mapas podem representar desde a distribuição geográfica de eventos até análises espaciais complexas, como clusters ou padrões de movimento.</p>
 <p><strong>Exemplo</strong>: criando um mapa a partir de dados geoespaciais com o pacote “sf”</p>
 <p><img src="images/clipboard-3449562011.png" /></p>
 <p>*O código do exemplo acima utiliza as bibliotecas `ggplot2`, `sf` e `rnaturalearth` para criar um mapa do Brasil. A função `ne_countries` do pacote `rnaturalearth` é usada para obter os dados geográficos do Brasil, especificando que queremos os dados em uma escala grande e que o formato de retorno seja um objeto `sf`, que é um padrão para trabalhar com dados espaciais no R. O objeto `geo_vetor_brasil` contém esses dados e é passado para a função `ggplot`, que inicia a construção do gráfico. A função `geom_sf` é utilizada para adicionar os dados espaciais ao gráfico, com a cor das linhas definida como verde e o preenchimento como amarelo, representando as fronteiras e o interior do país, respectivamente. O tema `theme_minimal` é aplicado para um visual limpo e a função `labs` adiciona um título ao gráfico. O resultado é um mapa do Brasil com fronteiras destacadas em verde e interior em amarelo.</p>
 </div>
 <div id="animações-com-gganimate" class="section level4 hasAnchor" number="8.2.11.7">
 <h4><span class="header-section-number">8.2.11.7</span> Animações com gganimate<a href="uso-de-softwares-estatísticos.html#animações-com-gganimate" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>O pacote `gganimate` estende as capacidades do `ggplot2`, permitindo criar animações a partir de gráficos. Isso pode ser particularmente útil para visualizar mudanças nos dados ao longo do tempo, como tendências econômicas, padrões climáticos ou o progresso de uma epidemia.</p>
+<p>O pacote `gganimate` <span class="citation">(<a href="#ref-pedersen2024">Pedersen et al. 2024</a>)</span> estende as capacidades do `ggplot2`, permitindo criar animações a partir de gráficos. Isso pode ser particularmente útil para visualizar mudanças nos dados ao longo do tempo, como tendências econômicas, padrões climáticos ou o progresso de uma epidemia.</p>
 <p><strong>Exemplo</strong>: criando um gráfico animado com o pacote “gganimate”</p>
 <p><img src="images/clipboard-342580043.png" /></p>
-<p>*No exemplo acima, foram utilizadas as bibliotecas `gapminder` e `gganimate` para criar uma animação que mostra a relação entre o PIB per capita (GDP per capita), a expectativa de vida (life expectancy) e o tamanho da população (pop) de diferentes países ao longo do tempo. A função `ggplot` inicia a construção do gráfico com os dados do `gapminder`, e a função `aes` define as variáveis para os eixos x e y, o tamanho dos pontos e a cor de acordo com o país. `geom_point` adiciona pontos ao gráfico com uma transparência de 0.7 e sem legenda. `scale_colour_manual` permite a personalização das cores dos pontos por país, enquanto `scale_size` ajusta o intervalo de tamanho dos pontos. `scale_x_log10` transforma o eixo x em uma escala logarítmica para melhor visualização dos dados. `facet_wrap` divide o gráfico por continente. As funções específicas do `gganimate`, como `transition_time` e `ease_aes`, são usadas para criar a animação ao longo do tempo, definida pela variável `year`, e para suavizar a transição entre os frames. O título do gráfico é atualizado dinamicamente para mostrar o ano correspondente a cada frame da animação. Veja a animação <a href="https://gganimate.com/reference/figures/README-unnamed-chunk-4-1.gif">clicando aqui</a>.</p>
+<p>*No exemplo acima, foram utilizadas as bibliotecas `gapminder`<span class="citation">(<a href="#ref-bryan2023">Bryan 2023</a>)</span> e `gganimate` para criar uma animação que mostra a relação entre o PIB per capita (GDP per capita), a expectativa de vida (life expectancy) e o tamanho da população (pop) de diferentes países ao longo do tempo. A função `ggplot` inicia a construção do gráfico com os dados do `gapminder`, e a função `aes` define as variáveis para os eixos x e y, o tamanho dos pontos e a cor de acordo com o país. `geom_point` adiciona pontos ao gráfico com uma transparência de 0.7 e sem legenda. `scale_colour_manual` permite a personalização das cores dos pontos por país, enquanto `scale_size` ajusta o intervalo de tamanho dos pontos. `scale_x_log10` transforma o eixo x em uma escala logarítmica para melhor visualização dos dados. `facet_wrap` divide o gráfico por continente. As funções específicas do `gganimate`, como `transition_time` e `ease_aes`, são usadas para criar a animação ao longo do tempo, definida pela variável `year`, e para suavizar a transição entre os frames. O título do gráfico é atualizado dinamicamente para mostrar o ano correspondente a cada frame da animação. Veja a animação <a href="https://gganimate.com/reference/figures/README-unnamed-chunk-4-1.gif">clicando aqui</a>.</p>
 </div>
 <div id="dashboards-interativos-com-shiny" class="section level4 hasAnchor" number="8.2.11.8">
 <h4><span class="header-section-number">8.2.11.8</span> Dashboards interativos com Shiny<a href="uso-de-softwares-estatísticos.html#dashboards-interativos-com-shiny" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>O pacote `shiny` permite criar aplicativos web interativos diretamente em R. Esses dashboards podem incluir uma variedade de elementos de entrada e saída, permitindo aos usuários interagir com os dados e visualizações em tempo real. Shiny é uma ferramenta poderosa para a construção de ferramentas analíticas interativas e personalizadas.</p>
+<p>O pacote `shiny` <span class="citation">(<a href="#ref-chang2024">Chang et al. 2024</a>)</span> permite criar aplicativos web interativos diretamente em R. Esses dashboards podem incluir uma variedade de elementos de entrada e saída, permitindo aos usuários interagir com os dados e visualizações em tempo real. Shiny é uma ferramenta poderosa para a construção de ferramentas analíticas interativas e personalizadas.</p>
 <p><strong>Exemplo</strong>: aplicação shiny para metanálises criada em RStudio</p>
 <p><img src="images/clipboard-3316300773.png" /></p>
 <p>*A produção de aplicações e <em>dashboards shiny</em> é um processo mais complexo do que os exemplos vistos anteriormente. Sua utilização, porém, permite a criação de ferramentas especializadas para pesquisa, trabalho e negócios. Depois de criadas, essas aplicações podem poupar muitas horas de trabalho de um analista ou até mesmo permitir que pessoas sem o conhecimento de programação possam realizar as análises necessárias.</p>
@@ -634,7 +657,7 @@ set in the _output.yml file.</p>" />
 <h4><span class="header-section-number">8.2.11.9</span> Tabelas e quadros em R<a href="uso-de-softwares-estatísticos.html#tabelas-e-quadros-em-r" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Para criar tabelas no R, podemos usar a função `table()` para tabular dados e a função `View()` para visualizar data frames em formato de tabela. Uma forma de visualizar seus dados sem a utilização da função “View( )” é clicar no ícone de uma tabela ou uma lupa:</p>
 <p><img src="images/clipboard-4018646742.png" /></p>
-<p>que aparecem na aba “Environment” da janela superior direita. Além disso, o pacote `knitr` oferece a função `kable()`, que cria tabelas formatadas para relatórios e documentos.</p>
+<p>que aparecem na aba “Environment” da janela superior direita. Além disso, o pacote `knitr` <span class="citation">(<a href="#ref-xieaut2024">Xie [aut et al. 2024</a>)</span> oferece a função `kable()`, que cria tabelas formatadas para relatórios e documentos.</p>
 <p><strong>Exemplo</strong>: criando uma tabela com a função “kable( )”</p>
 <p><img src="images/clipboard-2208731083.png" /></p>
 <p>*Utilizando dados modificados do exemplo anterior, uma tabela kable foi criada. Primeiro, o pacote “knitr” foi importado para o ambiente. Em seguida, criou-se um objeto “table” com a função “kable( )” que recebeu o data frame “dados”. Finalmente, fornecendo o objeto “table” à função “kable_classic( )” (não é necessário utilizar “kableExtra::” antes da função), foi possível criar uma tabela.</p>
@@ -647,6 +670,42 @@ set in the _output.yml file.</p>" />
 <div id="visualização-de-dados-e-figuras-científicas" class="section level2 hasAnchor" number="8.4">
 <h2><span class="header-section-number">8.4</span> Visualização de dados e figuras científicas<a href="uso-de-softwares-estatísticos.html#visualização-de-dados-e-figuras-científicas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
+</div>
+</div>
+<h3>Referências<a href="referências.html#referências" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-baumer2015" class="csl-entry">
+Baumer, Benjamin, and Dana Udwin. 2015. <span>“R Markdown.”</span> <em>WIREs Computational Statistics</em> 7 (3): 167–77. <a href="https://doi.org/10.1002/wics.1348">https://doi.org/10.1002/wics.1348</a>.
+</div>
+<div id="ref-bryan2023" class="csl-entry">
+Bryan, Jennifer. 2023. <em>Gapminder: Data from Gapminder</em>. <a href="https://cran.r-project.org/web/packages/gapminder/index.html">https://cran.r-project.org/web/packages/gapminder/index.html</a>.
+</div>
+<div id="ref-chambers1980" class="csl-entry">
+Chambers, John M. 1980. <span>“Statistical Computing: History and Trends.”</span> <em>The American Statistician</em> 34 (4): 238–43. <a href="https://doi.org/10.1080/00031305.1980.10483038">https://doi.org/10.1080/00031305.1980.10483038</a>.
+</div>
+<div id="ref-chang2024" class="csl-entry">
+Chang, Winston, Joe Cheng, J. J. Allaire, Carson Sievert, Barret Schloerke, Yihui Xie, Jeff Allen, et al. 2024. <em>Shiny: Web Application Framework for r</em>. <a href="https://cran.r-project.org/web/packages/shiny/index.html">https://cran.r-project.org/web/packages/shiny/index.html</a>.
+</div>
+<div id="ref-hornik2012" class="csl-entry">
+Hornik, Kurt. 2012. <span>“The Comprehensive R Archive Network.”</span> <em>WIREs Computational Statistics</em> 4 (4): 394–98. <a href="https://doi.org/10.1002/wics.1212">https://doi.org/10.1002/wics.1212</a>.
+</div>
+<div id="ref-ihaka1996" class="csl-entry">
+Ihaka, Ross, and Robert Gentleman. 1996. <span>“R: A Language for Data Analysis and Graphics.”</span> <em>Journal of Computational and Graphical Statistics</em> 5 (3): 299–314. <a href="https://doi.org/10.1080/10618600.1996.10474713">https://doi.org/10.1080/10618600.1996.10474713</a>.
+</div>
+<div id="ref-pebesma2024" class="csl-entry">
+Pebesma, Edzer, Roger Bivand, Etienne Racine, Michael Sumner, Ian Cook, Tim Keitt, Robin Lovelace, et al. 2024. <em>Sf: Simple Features for r</em>. <a href="https://cran.r-project.org/web/packages/sf/index.html">https://cran.r-project.org/web/packages/sf/index.html</a>.
+</div>
+<div id="ref-pedersen2024" class="csl-entry">
+Pedersen, Thomas Lin, David Robinson, Posit, and PBC. 2024. <em>Gganimate: A Grammar of Animated Graphics</em>. <a href="https://cran.r-project.org/web/packages/gganimate/index.html">https://cran.r-project.org/web/packages/gganimate/index.html</a>.
+</div>
+<div id="ref-wickham2011" class="csl-entry">
+Wickham, Hadley. 2011. <span>“Ggplot2.”</span> <em>WIREs Computational Statistics</em> 3 (2): 180–85. <a href="https://doi.org/10.1002/wics.147">https://doi.org/10.1002/wics.147</a>.
+</div>
+<div id="ref-wickham2024" class="csl-entry">
+Wickham, Hadley, Peter Danenberg, Gábor Csárdi, Manuel Eugster, Posit Software, and PBC. 2024. <em>Roxygen2: In-Line Documentation for r</em>. <a href="https://cran.r-project.org/web/packages/roxygen2/index.html">https://cran.r-project.org/web/packages/roxygen2/index.html</a>.
+</div>
+<div id="ref-xieaut2024" class="csl-entry">
+Xie [aut, Yihui, cre, Abhraneel Sarma, Adam Vogt, Alastair Andrew, Alex Zvoleff, Amar Al-Zubaidi, et al. 2024. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in r</em>. <a href="https://cran.r-project.org/web/packages/knitr/index.html">https://cran.r-project.org/web/packages/knitr/index.html</a>.
 </div>
 </div>
             </section>

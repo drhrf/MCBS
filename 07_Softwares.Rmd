@@ -28,15 +28,15 @@ Aprender a programar em R é uma jornada valiosa que abre portas para o mundo da
 
 ### Visão geral do R e suas aplicações
 
-R é uma linguagem de programação e um ambiente de software para análise estatística e gráfica. A história do R remonta à década de 1970 com o desenvolvimento da linguagem S no Bell Labs por John Chambers e outros. A linguagem S foi projetada para ser uma linguagem de programação que fosse tanto eficiente quanto fácil de usar, com foco em análise de dados e gráficos estatísticos.
+R é uma linguagem de programação e um ambiente de software para análise estatística e gráfica. A história do R remonta à década de 1970 com o desenvolvimento da linguagem S no Bell Labs por John Chambers e outros [@chambers1980]. A linguagem S foi projetada para ser uma linguagem de programação que fosse tanto eficiente quanto fácil de usar, com foco em análise de dados e gráficos estatísticos.
 
-Na década de 1990, Ross Ihaka e Robert Gentleman, da Universidade de Auckland, na Nova Zelândia, iniciaram o desenvolvimento do R como um projeto de pesquisa. Eles foram influenciados pela linguagem S e pelo Scheme, uma linguagem de programação com semântica de escopo léxico. O R foi concebido como um dialeto da linguagem S, com a intenção de melhorar e ampliar a análise estatística e as capacidades gráficas.
+Na década de 1990, Ross Ihaka e Robert Gentleman, da Universidade de Auckland, na Nova Zelândia, iniciaram o desenvolvimento do R como um projeto de pesquisa. Eles foram influenciados pela linguagem S e pelo Scheme, uma linguagem de programação com semântica de escopo léxico. O R foi concebido como um dialeto da linguagem S, com a intenção de melhorar e ampliar a análise estatística e as capacidades gráficas [@ihaka1996].
 
 R é uma linguagem de programação interpretada, o que significa que o código é executado diretamente, sem a necessidade de compilação prévia. Isso facilita a depuração e o desenvolvimento iterativo. Além disso, R é uma linguagem dinamicamente tipada, permitindo que os tipos de dados sejam alterados em tempo de execução.
 
-Uma das principais características do R é a sua extensibilidade. A comunidade de usuários e desenvolvedores contribuiu com uma vasta coleção de pacotes que estendem a funcionalidade básica do R, disponíveis através do *Comprehensive R Archive Network (CRAN)*. Esses pacotes cobrem uma ampla gama de técnicas estatísticas, modelos gráficos, métodos de *machine learning*, e muito mais.
+Uma das principais características do R é a sua extensibilidade. A comunidade de usuários e desenvolvedores contribuiu com uma vasta coleção de pacotes que estendem a funcionalidade básica do R, disponíveis através do *Comprehensive R Archive Network (CRAN)* [@hornik2012]. Esses pacotes cobrem uma ampla gama de técnicas estatísticas, modelos gráficos, métodos de *machine learning*, e muito mais.
 
-R também é conhecido por sua capacidade de produzir gráficos de alta qualidade, que são essenciais para a análise exploratória de dados e a apresentação de resultados estatísticos. A linguagem oferece diversas funções e pacotes para a criação de gráficos, incluindo o popular *ggplot2*, que permite a construção de gráficos complexos de maneira intuitiva.
+R também é conhecido por sua capacidade de produzir gráficos de alta qualidade, que são essenciais para a análise exploratória de dados e a apresentação de resultados estatísticos. A linguagem oferece diversas funções e pacotes para a criação de gráficos, incluindo o popular *ggplot2*, que permite a construção de gráficos complexos de maneira intuitiva [@wickham2011].
 
 Outra característica importante do R é a sua comunidade ativa e colaborativa. Os usuários de R frequentemente compartilham seu código e experiências, ajudando uns aos outros a resolver problemas e a melhorar suas habilidades de programação. Isso é facilitado por fóruns de discussão, listas de e-mail e conferências.
 
@@ -258,7 +258,7 @@ Documentar e compartilhar seu código são práticas essenciais para qualquer pr
 
 #### Documentação de código
 
-A documentação é a primeira linha de comunicação entre o programador e quem vai ler o código depois, seja o próprio autor em um momento futuro ou outros programadores. Em R, a documentação pode ser feita diretamente no código, usando comentários, e de forma mais estruturada, usando pacotes como o \`roxygen2\`, que permite criar uma documentação que pode ser convertida em um manual de ajuda para o pacote.
+A documentação é a primeira linha de comunicação entre o programador e quem vai ler o código depois, seja o próprio autor em um momento futuro ou outros programadores. Em R, a documentação pode ser feita diretamente no código, usando comentários, e de forma mais estruturada, usando pacotes como o \`roxygen2\` [@wickham2024], que permite criar uma documentação que pode ser convertida em um manual de ajuda para o pacote.
 
 ![](images/clipboard-3987177554.png)
 
@@ -268,7 +268,7 @@ O compartilhamento de código em R pode ser feito de várias maneiras. Uma das m
 
 #### R Markdown
 
-Uma ferramenta poderosa para documentar e compartilhar análises em R é o R Markdown. Com ele, é possível combinar texto narrativo com código R que pode ser executado para gerar resultados, que são automaticamente incluídos no documento. Isso é particularmente útil para relatórios, onde a análise e os resultados precisam ser apresentados de forma clara e reproduzível.
+Uma ferramenta poderosa para documentar e compartilhar análises em R é o R Markdown [@baumer2015]. Com ele, é possível combinar texto narrativo com código R que pode ser executado para gerar resultados, que são automaticamente incluídos no documento. Isso é particularmente útil para relatórios, onde a análise e os resultados precisam ser apresentados de forma clara e reproduzível.
 
 ![](images/clipboard-1117062658.png)
 
@@ -474,7 +474,7 @@ A visualização de dados em R é uma área rica e flexível, com muitas opçõe
 
 #### Visualização de dados geoespaciais
 
-A visualização de dados geoespaciais é outra técnica avançada que pode ser realizada em R, utilizando pacotes como \`ggplot2\` em conjunto com \`sf\` para criar mapas detalhados. Esses mapas podem representar desde a distribuição geográfica de eventos até análises espaciais complexas, como clusters ou padrões de movimento.
+A visualização de dados geoespaciais é outra técnica avançada que pode ser realizada em R, utilizando pacotes como \`ggplot2\` em conjunto com \`sf\` [@pebesma2024] para criar mapas detalhados. Esses mapas podem representar desde a distribuição geográfica de eventos até análises espaciais complexas, como clusters ou padrões de movimento.
 
 **Exemplo**: criando um mapa a partir de dados geoespaciais com o pacote “sf”
 
@@ -484,17 +484,17 @@ A visualização de dados geoespaciais é outra técnica avançada que pode ser 
 
 #### Animações com gganimate
 
-O pacote \`gganimate\` estende as capacidades do \`ggplot2\`, permitindo criar animações a partir de gráficos. Isso pode ser particularmente útil para visualizar mudanças nos dados ao longo do tempo, como tendências econômicas, padrões climáticos ou o progresso de uma epidemia.
+O pacote \`gganimate\` [@pedersen2024] estende as capacidades do \`ggplot2\`, permitindo criar animações a partir de gráficos. Isso pode ser particularmente útil para visualizar mudanças nos dados ao longo do tempo, como tendências econômicas, padrões climáticos ou o progresso de uma epidemia.
 
 **Exemplo**: criando um gráfico animado com o pacote “gganimate”
 
 ![](images/clipboard-342580043.png)
 
-\*No exemplo acima, foram utilizadas as bibliotecas \`gapminder\` e \`gganimate\` para criar uma animação que mostra a relação entre o PIB per capita (GDP per capita), a expectativa de vida (life expectancy) e o tamanho da população (pop) de diferentes países ao longo do tempo. A função \`ggplot\` inicia a construção do gráfico com os dados do \`gapminder\`, e a função \`aes\` define as variáveis para os eixos x e y, o tamanho dos pontos e a cor de acordo com o país. \`geom_point\` adiciona pontos ao gráfico com uma transparência de 0.7 e sem legenda. \`scale_colour_manual\` permite a personalização das cores dos pontos por país, enquanto \`scale_size\` ajusta o intervalo de tamanho dos pontos. \`scale_x_log10\` transforma o eixo x em uma escala logarítmica para melhor visualização dos dados. \`facet_wrap\` divide o gráfico por continente. As funções específicas do \`gganimate\`, como \`transition_time\` e \`ease_aes\`, são usadas para criar a animação ao longo do tempo, definida pela variável \`year\`, e para suavizar a transição entre os frames. O título do gráfico é atualizado dinamicamente para mostrar o ano correspondente a cada frame da animação. Veja a animação [clicando aqui](https://gganimate.com/reference/figures/README-unnamed-chunk-4-1.gif).
+\*No exemplo acima, foram utilizadas as bibliotecas \`gapminder\`[@bryan2023] e \`gganimate\` para criar uma animação que mostra a relação entre o PIB per capita (GDP per capita), a expectativa de vida (life expectancy) e o tamanho da população (pop) de diferentes países ao longo do tempo. A função \`ggplot\` inicia a construção do gráfico com os dados do \`gapminder\`, e a função \`aes\` define as variáveis para os eixos x e y, o tamanho dos pontos e a cor de acordo com o país. \`geom_point\` adiciona pontos ao gráfico com uma transparência de 0.7 e sem legenda. \`scale_colour_manual\` permite a personalização das cores dos pontos por país, enquanto \`scale_size\` ajusta o intervalo de tamanho dos pontos. \`scale_x_log10\` transforma o eixo x em uma escala logarítmica para melhor visualização dos dados. \`facet_wrap\` divide o gráfico por continente. As funções específicas do \`gganimate\`, como \`transition_time\` e \`ease_aes\`, são usadas para criar a animação ao longo do tempo, definida pela variável \`year\`, e para suavizar a transição entre os frames. O título do gráfico é atualizado dinamicamente para mostrar o ano correspondente a cada frame da animação. Veja a animação [clicando aqui](https://gganimate.com/reference/figures/README-unnamed-chunk-4-1.gif).
 
 #### Dashboards interativos com Shiny
 
-O pacote \`shiny\` permite criar aplicativos web interativos diretamente em R. Esses dashboards podem incluir uma variedade de elementos de entrada e saída, permitindo aos usuários interagir com os dados e visualizações em tempo real. Shiny é uma ferramenta poderosa para a construção de ferramentas analíticas interativas e personalizadas.
+O pacote \`shiny\` [@chang2024] permite criar aplicativos web interativos diretamente em R. Esses dashboards podem incluir uma variedade de elementos de entrada e saída, permitindo aos usuários interagir com os dados e visualizações em tempo real. Shiny é uma ferramenta poderosa para a construção de ferramentas analíticas interativas e personalizadas.
 
 **Exemplo**: aplicação shiny para metanálises criada em RStudio
 
@@ -508,7 +508,7 @@ Para criar tabelas no R, podemos usar a função \`table()\` para tabular dados 
 
 ![](images/clipboard-4018646742.png)
 
-que aparecem na aba “Environment” da janela superior direita. Além disso, o pacote \`knitr\` oferece a função \`kable()\`, que cria tabelas formatadas para relatórios e documentos.
+que aparecem na aba “Environment” da janela superior direita. Além disso, o pacote \`knitr\` [@xieaut2024] oferece a função \`kable()\`, que cria tabelas formatadas para relatórios e documentos.
 
 **Exemplo**: criando uma tabela com a função “kable( )”
 

@@ -24,6 +24,947 @@
             "type": "book"
         },
         {
+            "DOI": "10.1080/00031305.1980.10483038",
+            "URL": "https://www.tandfonline.com/doi/abs/10.1080/00031305.1980.10483038",
+            "author": [
+                {
+                    "family": "Chambers",
+                    "given": "John M."
+                }
+            ],
+            "container-title": "The American Statistician",
+            "id": "chambers1980",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1980,
+                        11,
+                        1
+                    ]
+                ]
+            },
+            "note": "Publisher: ASA Website _eprint: https://www.tandfonline.com/doi/pdf/10.1080/00031305.1980.10483038",
+            "page": "238-243",
+            "title": "Statistical computing: History and trends",
+            "title-short": "Statistical computing",
+            "type": "article-journal",
+            "volume": "34"
+        },
+        {
+            "DOI": "10.1080/10618600.1996.10474713",
+            "URL": "https://www.tandfonline.com/doi/abs/10.1080/10618600.1996.10474713",
+            "author": [
+                {
+                    "family": "Ihaka",
+                    "given": "Ross"
+                },
+                {
+                    "family": "Gentleman",
+                    "given": "Robert"
+                }
+            ],
+            "container-title": "Journal of Computational and Graphical Statistics",
+            "id": "ihaka1996",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1996,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "note": "Publisher: ASA Website _eprint: https://www.tandfonline.com/doi/pdf/10.1080/10618600.1996.10474713",
+            "page": "299-314",
+            "title": "R: A language for data analysis and graphics",
+            "title-short": "R",
+            "type": "article-journal",
+            "volume": "5"
+        },
+        {
+            "DOI": "10.1002/wics.147",
+            "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/wics.147",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                }
+            ],
+            "container-title": "WIREs Computational Statistics",
+            "id": "wickham2011",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/wics.147",
+            "page": "180-185",
+            "title": "ggplot2",
+            "type": "article-journal",
+            "volume": "3"
+        },
+        {
+            "DOI": "10.1002/wics.1212",
+            "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/wics.1212",
+            "author": [
+                {
+                    "family": "Hornik",
+                    "given": "Kurt"
+                }
+            ],
+            "container-title": "WIREs Computational Statistics",
+            "id": "hornik2012",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/wics.1212",
+            "page": "394-398",
+            "title": "The Comprehensive R Archive Network",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "URL": "https://cran.r-project.org/web/packages/roxygen2/index.html",
+            "author": [
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Danenberg",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Csárdi",
+                    "given": "Gábor"
+                },
+                {
+                    "family": "Eugster",
+                    "given": "Manuel"
+                },
+                {
+                    "family": "Software",
+                    "given": "Posit"
+                },
+                {
+                    "family": "PBC"
+                }
+            ],
+            "id": "wickham2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        6,
+                        28
+                    ]
+                ]
+            },
+            "title": "roxygen2: In-line documentation for r",
+            "title-short": "roxygen2",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1002/wics.1348",
+            "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1002/wics.1348",
+            "author": [
+                {
+                    "family": "Baumer",
+                    "given": "Benjamin"
+                },
+                {
+                    "family": "Udwin",
+                    "given": "Dana"
+                }
+            ],
+            "container-title": "WIREs Computational Statistics",
+            "id": "baumer2015",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/wics.1348",
+            "page": "167-177",
+            "title": "R Markdown",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "URL": "https://cran.r-project.org/web/packages/sf/index.html",
+            "author": [
+                {
+                    "family": "Pebesma",
+                    "given": "Edzer"
+                },
+                {
+                    "family": "Bivand",
+                    "given": "Roger"
+                },
+                {
+                    "family": "Racine",
+                    "given": "Etienne"
+                },
+                {
+                    "family": "Sumner",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Cook",
+                    "given": "Ian"
+                },
+                {
+                    "family": "Keitt",
+                    "given": "Tim"
+                },
+                {
+                    "family": "Lovelace",
+                    "given": "Robin"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Ooms",
+                    "given": "Jeroen"
+                },
+                {
+                    "family": "Müller",
+                    "given": "Kirill"
+                },
+                {
+                    "family": "Pedersen",
+                    "given": "Thomas Lin"
+                },
+                {
+                    "family": "Baston",
+                    "given": "Dan"
+                },
+                {
+                    "family": "Dunnington",
+                    "given": "Dewey"
+                }
+            ],
+            "id": "pebesma2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        11,
+                        5
+                    ]
+                ]
+            },
+            "title": "Sf: Simple features for r",
+            "title-short": "Sf",
+            "type": "book"
+        },
+        {
+            "URL": "https://cran.r-project.org/web/packages/gganimate/index.html",
+            "author": [
+                {
+                    "family": "Pedersen",
+                    "given": "Thomas Lin"
+                },
+                {
+                    "family": "Robinson",
+                    "given": "David"
+                },
+                {
+                    "family": "Posit"
+                },
+                {
+                    "family": "PBC"
+                }
+            ],
+            "id": "pedersen2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        2,
+                        27
+                    ]
+                ]
+            },
+            "title": "Gganimate: A grammar of animated graphics",
+            "title-short": "Gganimate",
+            "type": "book"
+        },
+        {
+            "URL": "https://cran.r-project.org/web/packages/gapminder/index.html",
+            "author": [
+                {
+                    "family": "Bryan",
+                    "given": "Jennifer"
+                }
+            ],
+            "id": "bryan2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        3,
+                        10
+                    ]
+                ]
+            },
+            "title": "Gapminder: Data from gapminder",
+            "title-short": "Gapminder",
+            "type": "book"
+        },
+        {
+            "URL": "https://cran.r-project.org/web/packages/shiny/index.html",
+            "author": [
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Allaire",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Sievert",
+                    "given": "Carson"
+                },
+                {
+                    "family": "Schloerke",
+                    "given": "Barret"
+                },
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "Allen",
+                    "given": "Jeff"
+                },
+                {
+                    "family": "McPherson",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Dipert",
+                    "given": "Alan"
+                },
+                {
+                    "family": "Borges",
+                    "given": "Barbara"
+                },
+                {
+                    "family": "Software",
+                    "given": "Posit"
+                },
+                {
+                    "family": "PBC"
+                },
+                {
+                    "family": "library)",
+                    "given": "jQuery Foundation (jQuery library and jQuery UI"
+                },
+                {
+                    "family": "inst/www/shared/jquery-AUTHORS.txt)",
+                    "given": "jQuery contributors (jQuery library; authors listed in"
+                },
+                {
+                    "family": "inst/www/shared/jqueryui/AUTHORS.txt)",
+                    "given": "jQuery UI contributors (jQuery UI library; authors listed in"
+                },
+                {
+                    "family": "library)",
+                    "given": "Mark Otto (Bootstrap"
+                },
+                {
+                    "family": "library)",
+                    "given": "Jacob Thornton (Bootstrap"
+                },
+                {
+                    "family": "library)",
+                    "given": "Bootstrap contributors (Bootstrap"
+                },
+                {
+                    "family": "Twitter"
+                },
+                {
+                    "family": "library)",
+                    "given": "Inc (Bootstrap"
+                },
+                {
+                    "dropping-particle": "accessibility",
+                    "family": "plugin)",
+                    "given": "Prem Nawaz Khan (Bootstrap"
+                },
+                {
+                    "dropping-particle": "accessibility",
+                    "family": "plugin)",
+                    "given": "Victor Tsaran (Bootstrap"
+                },
+                {
+                    "dropping-particle": "accessibility",
+                    "family": "plugin)",
+                    "given": "Dennis Lembree (Bootstrap"
+                },
+                {
+                    "dropping-particle": "accessibility",
+                    "family": "plugin)",
+                    "given": "Srinivasu Chakravarthula (Bootstrap"
+                },
+                {
+                    "dropping-particle": "accessibility",
+                    "family": "plugin)",
+                    "given": "Cathy O’Connor (Bootstrap"
+                },
+                {
+                    "family": "PayPal"
+                },
+                {
+                    "dropping-particle": "accessibility",
+                    "family": "plugin)",
+                    "given": "Inc (Bootstrap"
+                },
+                {
+                    "family": "library)",
+                    "given": "Stefan Petre (Bootstrap-datepicker"
+                },
+                {
+                    "family": "library)",
+                    "given": "Andrew Rowls (Bootstrap-datepicker"
+                },
+                {
+                    "dropping-particle": "js",
+                    "family": "library)",
+                    "given": "Brian Reavis (selectize"
+                },
+                {
+                    "family": "library)",
+                    "given": "Salmen Bejaoui (selectize-plugin-a11y"
+                },
+                {
+                    "family": "library)",
+                    "given": "Denis Ineshin (ion rangeSlider"
+                },
+                {
+                    "dropping-particle": "strftime",
+                    "family": "library)",
+                    "given": "Sami Samhuri (Javascript"
+                },
+                {
+                    "family": "library)",
+                    "given": "SpryMedia Limited (DataTables"
+                },
+                {
+                    "dropping-particle": "js",
+                    "family": "library)",
+                    "given": "John Fraser (showdown"
+                },
+                {
+                    "dropping-particle": "js",
+                    "family": "library)",
+                    "given": "John Gruber (showdown"
+                },
+                {
+                    "dropping-particle": "js",
+                    "family": "library)",
+                    "given": "Ivan Sagalaev (highlight"
+                },
+                {
+                    "dropping-particle": "implementation from",
+                    "family": "R)",
+                    "given": "R. Core Team (tar"
+                }
+            ],
+            "id": "chang2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        8,
+                        1
+                    ]
+                ]
+            },
+            "title": "Shiny: Web application framework for r",
+            "title-short": "Shiny",
+            "type": "book"
+        },
+        {
+            "URL": "https://cran.r-project.org/web/packages/knitr/index.html",
+            "author": [
+                {
+                    "family": "Xie [aut",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "cre"
+                },
+                {
+                    "family": "Sarma",
+                    "given": "Abhraneel"
+                },
+                {
+                    "family": "Vogt",
+                    "given": "Adam"
+                },
+                {
+                    "family": "Andrew",
+                    "given": "Alastair"
+                },
+                {
+                    "family": "Zvoleff",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Al-Zubaidi",
+                    "given": "Amar"
+                },
+                {
+                    "family": "http://www.andre-simon.de)",
+                    "given": "Andre Simon (the CSS files under inst/themes/ were derived from the Highlight package"
+                },
+                {
+                    "family": "Atkins",
+                    "given": "Aron"
+                },
+                {
+                    "family": "Wolen",
+                    "given": "Aaron"
+                },
+                {
+                    "family": "Manton",
+                    "given": "Ashley"
+                },
+                {
+                    "family": "Yasumoto",
+                    "given": "Atsushi"
+                },
+                {
+                    "family": "Baumer",
+                    "given": "Ben"
+                },
+                {
+                    "family": "Diggs",
+                    "given": "Brian"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Brian"
+                },
+                {
+                    "family": "Yapparov",
+                    "given": "Bulat"
+                },
+                {
+                    "family": "Pereira",
+                    "given": "Cassio"
+                },
+                {
+                    "family": "Dervieux",
+                    "given": "Christophe"
+                },
+                {
+                    "family": "Hall",
+                    "given": "David"
+                },
+                {
+                    "family": "Hugh-Jones",
+                    "given": "David"
+                },
+                {
+                    "family": "Robinson",
+                    "given": "David"
+                },
+                {
+                    "family": "Hemken",
+                    "given": "Doug"
+                },
+                {
+                    "family": "Murdoch",
+                    "given": "Duncan"
+                },
+                {
+                    "family": "Campitelli",
+                    "given": "Elio"
+                },
+                {
+                    "family": "Hughes",
+                    "given": "Ellis"
+                },
+                {
+                    "family": "Riederer",
+                    "given": "Emily"
+                },
+                {
+                    "family": "Hirschmann",
+                    "given": "Fabian"
+                },
+                {
+                    "family": "Simeon",
+                    "given": "Fitch"
+                },
+                {
+                    "family": "Fang",
+                    "given": "Forest"
+                },
+                {
+                    "dropping-particle": "package at",
+                    "family": "inst/misc/Sweavel.sty)",
+                    "given": "Frank E. Harrell Jr (the Sweavel"
+                },
+                {
+                    "family": "Aden-Buie",
+                    "given": "Garrick"
+                },
+                {
+                    "family": "Detrez",
+                    "given": "Gregoire"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Zhu",
+                    "given": "Hao"
+                },
+                {
+                    "family": "Jeon",
+                    "given": "Heewon"
+                },
+                {
+                    "family": "Bengtsson",
+                    "given": "Henrik"
+                },
+                {
+                    "family": "Yutani",
+                    "given": "Hiroaki"
+                },
+                {
+                    "family": "Lyttle",
+                    "given": "Ian"
+                },
+                {
+                    "family": "Daniel",
+                    "given": "Hodges"
+                },
+                {
+                    "family": "Bien",
+                    "given": "Jacob"
+                },
+                {
+                    "family": "Burkhead",
+                    "given": "Jake"
+                },
+                {
+                    "family": "Manton",
+                    "given": "James"
+                },
+                {
+                    "family": "Lander",
+                    "given": "Jared"
+                },
+                {
+                    "family": "Punyon",
+                    "given": "Jason"
+                },
+                {
+                    "family": "Luraschi",
+                    "given": "Javier"
+                },
+                {
+                    "family": "Arnold",
+                    "given": "Jeff"
+                },
+                {
+                    "family": "Bryan",
+                    "given": "Jenny"
+                },
+                {
+                    "dropping-particle": "file at",
+                    "family": "inst/misc/docco-classic.css)",
+                    "given": "Jeremy Ashkenas (the CSS"
+                },
+                {
+                    "family": "Stephens",
+                    "given": "Jeremy"
+                },
+                {
+                    "family": "Hester",
+                    "given": "Jim"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Ranke",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Honaker",
+                    "given": "John"
+                },
+                {
+                    "family": "Muschelli",
+                    "given": "John"
+                },
+                {
+                    "family": "Keane",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Allaire",
+                    "given": "J. J."
+                },
+                {
+                    "family": "Toloe",
+                    "given": "Johan"
+                },
+                {
+                    "family": "Sidi",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Larmarange",
+                    "given": "Joseph"
+                },
+                {
+                    "family": "Barnier",
+                    "given": "Julien"
+                },
+                {
+                    "family": "Zhong",
+                    "given": "Kaiyin"
+                },
+                {
+                    "family": "Slowikowski",
+                    "given": "Kamil"
+                },
+                {
+                    "family": "Forner",
+                    "given": "Karl"
+                },
+                {
+                    "family": "Smith",
+                    "given": "Kevin K."
+                },
+                {
+                    "family": "Mueller",
+                    "given": "Kirill"
+                },
+                {
+                    "family": "Takahashi",
+                    "given": "Kohske"
+                },
+                {
+                    "family": "Walthert",
+                    "given": "Lorenz"
+                },
+                {
+                    "family": "Gallindo",
+                    "given": "Lucas"
+                },
+                {
+                    "family": "Hofert",
+                    "given": "Marius"
+                },
+                {
+                    "family": "Modrák",
+                    "given": "Martin"
+                },
+                {
+                    "family": "Chirico",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Friendly",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Bojanowski",
+                    "given": "Michal"
+                },
+                {
+                    "family": "Kuhlmann",
+                    "given": "Michel"
+                },
+                {
+                    "family": "Patrick",
+                    "given": "Miller"
+                },
+                {
+                    "family": "Caballero",
+                    "given": "Nacho"
+                },
+                {
+                    "family": "Salkowski",
+                    "given": "Nick"
+                },
+                {
+                    "family": "Hansen",
+                    "given": "Niels Richard"
+                },
+                {
+                    "family": "Ross",
+                    "given": "Noam"
+                },
+                {
+                    "family": "Mahdi",
+                    "given": "Obada"
+                },
+                {
+                    "family": "Krivitsky",
+                    "given": "Pavel N."
+                },
+                {
+                    "family": "Faria",
+                    "given": "Pedro"
+                },
+                {
+                    "family": "Li",
+                    "given": "Qiang"
+                },
+                {
+                    "family": "Vaidyanathan",
+                    "given": "Ramnath"
+                },
+                {
+                    "family": "Cotton",
+                    "given": "Richard"
+                },
+                {
+                    "family": "Krzyzanowski",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Copetti",
+                    "given": "Rodrigo"
+                },
+                {
+                    "family": "Francois",
+                    "given": "Romain"
+                },
+                {
+                    "family": "Williamson",
+                    "given": "Ruaridh"
+                },
+                {
+                    "family": "Mati",
+                    "given": "Sagiru"
+                },
+                {
+                    "family": "Kostyshak",
+                    "given": "Scott"
+                },
+                {
+                    "family": "Meyer",
+                    "given": "Sebastian"
+                },
+                {
+                    "family": "Brouwer",
+                    "given": "Sietse"
+                },
+                {
+                    "dropping-particle": "de",
+                    "family": "Bernard",
+                    "given": "Simon"
+                },
+                {
+                    "family": "Rousseau",
+                    "given": "Sylvain"
+                },
+                {
+                    "family": "Wei",
+                    "given": "Taiyun"
+                },
+                {
+                    "family": "Assus",
+                    "given": "Thibaut"
+                },
+                {
+                    "family": "Lamadon",
+                    "given": "Thibaut"
+                },
+                {
+                    "family": "Leeper",
+                    "given": "Thomas"
+                },
+                {
+                    "family": "Mastny",
+                    "given": "Tim"
+                },
+                {
+                    "family": "Torsney-Weir",
+                    "given": "Tom"
+                },
+                {
+                    "family": "Davis",
+                    "given": "Trevor"
+                },
+                {
+                    "family": "Veitas",
+                    "given": "Viktoras"
+                },
+                {
+                    "family": "Zhu",
+                    "given": "Weicheng"
+                },
+                {
+                    "family": "Wu",
+                    "given": "Wush"
+                },
+                {
+                    "family": "Foster",
+                    "given": "Zachary"
+                },
+                {
+                    "family": "Kamvar",
+                    "given": "Zhian N."
+                },
+                {
+                    "family": "Software",
+                    "given": "Posit"
+                },
+                {
+                    "family": "PBC"
+                }
+            ],
+            "id": "xieaut2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        11,
+                        8
+                    ]
+                ]
+            },
+            "title": "Knitr: A general-purpose package for dynamic report generation in r",
+            "title-short": "Knitr",
+            "type": "book"
+        },
+        {
             "URL": "https://www.R-project.org/",
             "author": [
                 {
