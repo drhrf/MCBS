@@ -8,4 +8,5 @@ bookdown::gitbook:
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
     edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
     download: ["pdf", "epub"]
-
+  includes: 
+    in_header: _custom_header.html
