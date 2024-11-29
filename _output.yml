@@ -7,10 +7,11 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
     edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
-    download: ["pdf", "epub"]
+    download: ["pdf"]
   includes: 
     in_header: _custom_header.html
 bookdown::pdf_book:
   latex_engine: xelatex
   keep_tex: yes
-bookdown::epub_book: default
+  output_file: "MCBSbook.pdf"
+  output_dir: "_main_files"

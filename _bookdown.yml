@@ -1,5 +1,6 @@
 delete_merged_file: true
-output_dir: "MCBS"
+#output_dir: "_main_files"
+book_filename: "MCBSbook"
 language:
   ui:
     chapter_name: "Capítulo "
