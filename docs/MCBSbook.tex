@@ -96,6 +96,18 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{titlesec}
+
+% Redefine "Chapter" to the desired term
+\titleformat{\chapter}[display]
+  {\normalfont\LARGE\bfseries}
+  {\chaptername~\thechapter}{0.5em}{}
+  
+% Change the word "Chapter" to something else
+\renewcommand{\chaptername}{Capítulo} % Substitua por qualquer palavra
+
+% Redefine "Contents" to "Conteúdos"
+\renewcommand{\contentsname}{Conteúdos}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -239,7 +251,7 @@ O projeto ``Metodologia científica e Bioestatística'' é colaborativo e de ace
 
 \section{R para análise estatística}\label{r-para-anuxe1lise-estatuxedstica}
 
-Dr.~Hércules Freitas\(^1\)
+Dr.~Hércules Freitas, Ph.D.\(^1\)
 
 \(^1\)Universidade Federal do Rio de Janeiro (UFRJ), Centro de Ciências da Saúde, Instituto de Bioquímica Leopoldo de Meis, Laboratório de Erros Inatos do Metabolismo, Rio de Janeiro/RJ, Brasil.
 
