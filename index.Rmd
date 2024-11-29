@@ -1,6 +1,6 @@
 --- 
 title: "Metodologia científica e Bioestatística"
-author: "Editor: Dr. Hércules Rezende Freitas"
+author: "Editor: Hércules Rezende Freitas, Ph.D."
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
