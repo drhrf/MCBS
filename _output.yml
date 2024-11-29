@@ -3,8 +3,8 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/_main_files/MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
-        <li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/_main_files/MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
+        <li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
+        <li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
         <li><a href="./">SUMÁRIO</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
