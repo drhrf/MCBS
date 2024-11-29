@@ -10,3 +10,7 @@ bookdown::gitbook:
     download: ["pdf", "epub"]
   includes: 
     in_header: _custom_header.html
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+bookdown::epub_book: default
