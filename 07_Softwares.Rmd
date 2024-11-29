@@ -4,7 +4,7 @@
 
 ## R para análise estatística
 
-Dr. Hércules Freitas$^1$
+Dr. Hércules Freitas, Ph.D.$^1$
 
 $^1$Universidade Federal do Rio de Janeiro (UFRJ), Centro de Ciências da Saúde, Instituto de Bioquímica Leopoldo de Meis, Laboratório de Erros Inatos do Metabolismo, Rio de Janeiro/RJ, Brasil.
 
