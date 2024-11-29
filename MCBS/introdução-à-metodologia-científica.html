@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Introdução à metodologia científica | Metodologia científica e Bioestatística</title>
+  <meta name="description" content="Capítulo 2 Introdução à metodologia científica | Metodologia científica e Bioestatística." />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Introdução à metodologia científica | Metodologia científica e Bioestatística" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
+  <meta property="og:description" content="Capítulo 2 Introdução à metodologia científica | Metodologia científica e Bioestatística." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Introdução à metodologia científica | Metodologia científica e Bioestatística" />
+  
+  <meta name="twitter:description" content="Capítulo 2 Introdução à metodologia científica | Metodologia científica e Bioestatística." />
+  <meta name="twitter:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
+
+<meta name="author" content="Editor: Dr. Hércules Rezende Freitas" />
+
+
+<meta name="date" content="2024-11-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="formulação-de-problemas-e-hipóteses.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MMCZ72V5H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MMCZ72V5H');
+</script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Metodologia científica e Bioestatística</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre o projeto</a></li>
+<li class="chapter" data-level="2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html"><i class="fa fa-check"></i><b>2</b> Introdução à metodologia científica</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#conceitos-básicos-de-ciência"><i class="fa fa-check"></i><b>2.1</b> Conceitos básicos de ciência</a></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-método-científico"><i class="fa fa-check"></i><b>2.2</b> O método científico</a></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-científicos"><i class="fa fa-check"></i><b>2.3</b> Paradigmas científicos</a></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#ética-na-pesquisa-científica"><i class="fa fa-check"></i><b>2.4</b> Ética na pesquisa científica</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html"><i class="fa fa-check"></i><b>3</b> Formulação de problemas e hipóteses</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#identificação-de-problemas-de-pesquisa"><i class="fa fa-check"></i><b>3.1</b> Identificação de problemas de pesquisa</a></li>
+<li class="chapter" data-level="3.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#revisão-da-literatura"><i class="fa fa-check"></i><b>3.2</b> Revisão da literatura</a></li>
+<li class="chapter" data-level="3.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#definição-de-objetivos"><i class="fa fa-check"></i><b>3.3</b> Definição de objetivos</a></li>
+<li class="chapter" data-level="3.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#formulação-de-hipóteses"><i class="fa fa-check"></i><b>3.4</b> Formulação de hipóteses</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html"><i class="fa fa-check"></i><b>4</b> Desenhos de pesquisa</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-observacionais"><i class="fa fa-check"></i><b>4.1</b> Estudos observacionais</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-transversais"><i class="fa fa-check"></i><b>4.1.1</b> Estudos transversais</a></li>
+<li class="chapter" data-level="4.1.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-coorte"><i class="fa fa-check"></i><b>4.1.2</b> Estudos de coorte</a></li>
+<li class="chapter" data-level="4.1.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-caso-controle"><i class="fa fa-check"></i><b>4.1.3</b> Estudos de caso-controle</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-clínicos"><i class="fa fa-check"></i><b>4.2</b> Ensaios clínicos</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-randomizados-controlados"><i class="fa fa-check"></i><b>4.2.1</b> Ensaios randomizados controlados</a></li>
+<li class="chapter" data-level="4.2.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-duplo-cegos"><i class="fa fa-check"></i><b>4.2.2</b> Estudos duplo-cegos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-experimentais"><i class="fa fa-check"></i><b>4.3</b> Estudos experimentais</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#desenho-experimental"><i class="fa fa-check"></i><b>4.3.1</b> Desenho experimental</a></li>
+<li class="chapter" data-level="4.3.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#controle-e-aleatorização"><i class="fa fa-check"></i><b>4.3.2</b> Controle e aleatorização</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html"><i class="fa fa-check"></i><b>5</b> Bioestatística descritiva</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-tendência-central"><i class="fa fa-check"></i><b>5.1</b> Medidas de tendência central</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#média"><i class="fa fa-check"></i><b>5.1.1</b> Média</a></li>
+<li class="chapter" data-level="5.1.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#mediana"><i class="fa fa-check"></i><b>5.1.2</b> Mediana</a></li>
+<li class="chapter" data-level="5.1.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#moda"><i class="fa fa-check"></i><b>5.1.3</b> Moda</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-dispersão"><i class="fa fa-check"></i><b>5.2</b> Medidas de dispersão</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#variância"><i class="fa fa-check"></i><b>5.2.1</b> Variância</a></li>
+<li class="chapter" data-level="5.2.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desvio-padrão"><i class="fa fa-check"></i><b>5.2.2</b> Desvio padrão</a></li>
+<li class="chapter" data-level="5.2.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#amplitude"><i class="fa fa-check"></i><b>5.2.3</b> Amplitude</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#distribuições-de-frequência"><i class="fa fa-check"></i><b>5.3</b> Distribuições de frequência</a></li>
+<li class="chapter" data-level="5.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#representações-gráficas"><i class="fa fa-check"></i><b>5.4</b> Representações gráficas</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#histogramas"><i class="fa fa-check"></i><b>5.4.1</b> Histogramas</a></li>
+<li class="chapter" data-level="5.4.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#boxplots"><i class="fa fa-check"></i><b>5.4.2</b> Boxplots</a></li>
+<li class="chapter" data-level="5.4.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#gráficos-de-dispersão"><i class="fa fa-check"></i><b>5.4.3</b> Gráficos de dispersão</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html"><i class="fa fa-check"></i><b>6</b> Bioestatística inferencial</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#conceitos-de-probabilidade"><i class="fa fa-check"></i><b>6.1</b> Conceitos de probabilidade</a></li>
+<li class="chapter" data-level="6.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>6.2</b> Distribuições de probabilidade</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-normal"><i class="fa fa-check"></i><b>6.2.1</b> Distribuição normal</a></li>
+<li class="chapter" data-level="6.2.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-t-de-student"><i class="fa fa-check"></i><b>6.2.2</b> Distribuição t de student</a></li>
+<li class="chapter" data-level="6.2.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-qui-quadrado"><i class="fa fa-check"></i><b>6.2.3</b> Distribuição qui-quadrado</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estimação-e-intervalos-de-confiança"><i class="fa fa-check"></i><b>6.3</b> Estimação e intervalos de confiança</a></li>
+<li class="chapter" data-level="6.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-de-hipóteses"><i class="fa fa-check"></i><b>6.4</b> Testes de hipóteses</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-paramétricos"><i class="fa fa-check"></i><b>6.4.1</b> Testes paramétricos</a></li>
+<li class="chapter" data-level="6.4.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-não-paramétricos"><i class="fa fa-check"></i><b>6.4.2</b> Testes não-paramétricos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Análise de dados</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-e-regressão"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-de-pearson-e-spearman"><i class="fa fa-check"></i><b>7.1.1</b> Correlação de Pearson e Spearman</a></li>
+<li class="chapter" data-level="7.1.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#regressão-linear-simples-e-múltipla"><i class="fa fa-check"></i><b>7.1.2</b> Regressão linear simples e múltipla</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-de-variância-anova"><i class="fa fa-check"></i><b>7.2</b> Análise de variância (ANOVA)</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-de-uma-via"><i class="fa fa-check"></i><b>7.2.1</b> ANOVA de uma via</a></li>
+<li class="chapter" data-level="7.2.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-fatorial"><i class="fa fa-check"></i><b>7.2.2</b> ANOVA fatorial</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-multivariada"><i class="fa fa-check"></i><b>7.3</b> Análise multivariada</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#componentes-principais"><i class="fa fa-check"></i><b>7.3.1</b> Componentes principais</a></li>
+<li class="chapter" data-level="7.3.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#clusterização"><i class="fa fa-check"></i><b>7.3.2</b> Clusterização</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html"><i class="fa fa-check"></i><b>8</b> Uso de <em>softwares</em> estatísticos</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#softwares-no-code-e-low-code"><i class="fa fa-check"></i><b>8.1</b> <em>Softwares</em> “no-code” e “low-code”</a></li>
+<li class="chapter" data-level="8.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-para-análise-estatística"><i class="fa fa-check"></i><b>8.2</b> R para análise estatística</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#aprendendo-a-programar"><i class="fa fa-check"></i><b>8.2.1</b> Aprendendo a programar</a></li>
+<li class="chapter" data-level="8.2.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visão-geral-do-r-e-suas-aplicações"><i class="fa fa-check"></i><b>8.2.2</b> Visão geral do R e suas aplicações</a></li>
+<li class="chapter" data-level="8.2.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-r-e-o-rstudio"><i class="fa fa-check"></i><b>8.2.3</b> <strong>Instalando o R e o RStudio</strong> </a></li>
+<li class="chapter" data-level="8.2.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-básica-e-operações-no-r"><i class="fa fa-check"></i><b>8.2.4</b> Sintaxe básica e operações no R</a></li>
+<li class="chapter" data-level="8.2.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-código-eficiente-e-legível"><i class="fa fa-check"></i><b>8.2.5</b> Escrevendo código eficiente e legível</a></li>
+<li class="chapter" data-level="8.2.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#depuração-e-tratamento-de-erros-em-r"><i class="fa fa-check"></i><b>8.2.6</b> Depuração e tratamento de erros em R</a></li>
+<li class="chapter" data-level="8.2.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#documentando-e-compartilhando-seu-código"><i class="fa fa-check"></i><b>8.2.7</b> Documentando e compartilhando seu código</a></li>
+<li class="chapter" data-level="8.2.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#introdução-à-análise-estatística-com-r"><i class="fa fa-check"></i><b>8.2.8</b> Introdução à análise estatística com R</a></li>
+<li class="chapter" data-level="8.2.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#usando-r-para-estatísticas-descritivas"><i class="fa fa-check"></i><b>8.2.9</b> Usando R para estatísticas descritivas</a></li>
+<li class="chapter" data-level="8.2.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estatísticas-inferenciais-com-r"><i class="fa fa-check"></i><b>8.2.10</b> Estatísticas inferenciais com R</a></li>
+<li class="chapter" data-level="8.2.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#fundamentos-da-visualização-de-dados-em-r"><i class="fa fa-check"></i><b>8.2.11</b> Fundamentos da visualização de dados em R</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#python-para-análise-estatística"><i class="fa fa-check"></i><b>8.3</b> Python para análise estatística</a></li>
+<li class="chapter" data-level="8.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualização-de-dados-e-figuras-científicas"><i class="fa fa-check"></i><b>8.4</b> Visualização de dados e figuras científicas</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="comunicação-científica.html"><a href="comunicação-científica.html"><i class="fa fa-check"></i><b>9</b> Comunicação científica</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#redação-de-artigos-científicos"><i class="fa fa-check"></i><b>9.1</b> Redação de artigos científicos</a></li>
+<li class="chapter" data-level="9.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estrutura-de-relatórios-de-pesquisa"><i class="fa fa-check"></i><b>9.2</b> Estrutura de relatórios de pesquisa</a></li>
+<li class="chapter" data-level="9.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresentações-orais-e-posters"><i class="fa fa-check"></i><b>9.3</b> Apresentações orais e posters</a></li>
+<li class="chapter" data-level="9.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#publicação-e-revisão-por-pares"><i class="fa fa-check"></i><b>9.4</b> Publicação e revisão por pares</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html"><i class="fa fa-check"></i><b>10</b> Ética e boas práticas em pesquisa</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#consentimento-informado-e-conformidade-ética"><i class="fa fa-check"></i><b>10.1</b> Consentimento informado e conformidade ética</a></li>
+<li class="chapter" data-level="10.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#plágio-e-integridade-acadêmica"><i class="fa fa-check"></i><b>10.2</b> Plágio e integridade acadêmica</a></li>
+<li class="chapter" data-level="10.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#regulamentações-e-normas-em-pesquisa"><i class="fa fa-check"></i><b>10.3</b> Regulamentações e normas em pesquisa</a></li>
+<li class="chapter" data-level="10.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#responsabilidade-social-do-cientista"><i class="fa fa-check"></i><b>10.4</b> Responsabilidade social do cientista</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html"><i class="fa fa-check"></i><b>11</b> Aplicações práticas e estudos de caso</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-saúde-pública"><i class="fa fa-check"></i><b>11.1</b> Epidemiologia e saúde pública</a></li>
+<li class="chapter" data-level="11.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#genética-e-biologia-molecular"><i class="fa fa-check"></i><b>11.2</b> Genética e biologia molecular</a></li>
+<li class="chapter" data-level="11.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conservação"><i class="fa fa-check"></i><b>11.3</b> Ecologia e conservação</a></li>
+<li class="chapter" data-level="11.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-clínicos"><i class="fa fa-check"></i><b>11.4</b> Farmacologia e ensaios clínicos</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html"><i class="fa fa-check"></i><b>12</b> Tópicos avançados em bioestatística</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-lineares-generalizados"><i class="fa fa-check"></i><b>12.1</b> Modelos lineares generalizados</a></li>
+<li class="chapter" data-level="12.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#análise-de-sobrevivência"><i class="fa fa-check"></i><b>12.2</b> Análise de sobrevivência</a></li>
+<li class="chapter" data-level="12.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#bioinformática-e-big-data"><i class="fa fa-check"></i><b>12.3</b> Bioinformática e <em>big data</em></a></li>
+<li class="chapter" data-level="12.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#metanálise"><i class="fa fa-check"></i><b>12.4</b> Metanálise</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html"><i class="fa fa-check"></i><b>13</b> Recursos adicionais</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bibliografia-recomendada"><i class="fa fa-check"></i><b>13.1</b> Bibliografia recomendada</a></li>
+<li class="chapter" data-level="13.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#glossário-de-termos"><i class="fa fa-check"></i><b>13.2</b> Glossário de termos</a></li>
+<li class="chapter" data-level="13.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#tabelas-estatísticas"><i class="fa fa-check"></i><b>13.3</b> Tabelas estatísticas</a></li>
+<li class="chapter" data-level="13.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#links-e-ferramentas-online"><i class="fa fa-check"></i><b>13.4</b> Links e ferramentas online</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Metodologia científica e Bioestatística</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introdução-à-metodologia-científica" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Capítulo 2</span> Introdução à metodologia científica<a href="introdução-à-metodologia-científica.html#introdução-à-metodologia-científica" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="conceitos-básicos-de-ciência" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Conceitos básicos de ciência<a href="introdução-à-metodologia-científica.html#conceitos-básicos-de-ciência" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="o-método-científico" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> O método científico<a href="introdução-à-metodologia-científica.html#o-método-científico" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="paradigmas-científicos" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Paradigmas científicos<a href="introdução-à-metodologia-científica.html#paradigmas-científicos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="ética-na-pesquisa-científica" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Ética na pesquisa científica<a href="introdução-à-metodologia-científica.html#ética-na-pesquisa-científica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="formulação-de-problemas-e-hipóteses.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01_Intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -11,6 +11,6 @@ bookdown::gitbook:
   includes: 
     in_header: _custom_header.html
 bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
+  latex_engine: xelatex
+  keep_tex: yes
 bookdown::epub_book: default
