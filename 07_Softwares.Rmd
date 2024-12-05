@@ -1,3 +1,7 @@
+---
+---
+---
+
 # Uso de *softwares* estatísticos
 
 ## *Softwares* "no-code" e "low-code"
@@ -232,13 +236,13 @@ Escrever código que funcione corretamente é apenas uma parte do desenvolviment
 
 #### Depuração interativa
 
-A depuração interativa permite que você inspecione o estado do seu programa R enquanto ele está sendo executado. O RStudio oferece ferramentas integradas para isso, como o inspetor de erros e a função \`traceback( ) \`, que lista a sequência de chamadas que levaram ao erro. Além disso, o RStudio possui ferramentas como "Rerun with Debug" e \`options(error = browser())\`, que abrem uma sessão interativa onde o erro ocorreu.
+A depuração interativa permite que você inspecione o estado do seu programa R enquanto ele está sendo executado. O RStudio oferece ferramentas integradas para isso, como o inspetor de erros e a função "traceback( )", que lista a sequência de chamadas que levaram ao erro. Além disso, o RStudio possui ferramentas como "Rerun" with "Debug" e "options(error = browser())", que abrem uma sessão interativa onde o erro ocorreu.
 
 ![](images/clipboard-3416304030.png)
 
 #### Tratamento de erros com tryCatch
 
-A função \`tryCatch()\` é a principal ferramenta para lidar com erros e avisos em R. Ela permite que você especifique funções manipuladoras que controlam o que acontece quando uma condição é sinalizada.
+A função "tryCatch()" é a principal ferramenta para lidar com erros e avisos em R. Ela permite que você especifique funções manipuladoras que controlam o que acontece quando uma condição é sinalizada.
 
 ![](images/clipboard-3819030973.png)
 
@@ -250,7 +254,7 @@ Registrar erros é uma prática padrão no desenvolvimento de software. Em R, vo
 
 #### Debugging com print
 
-Se as ferramentas de depuração não ajudarem, uma boa alternativa é o "print debugging", onde você insere vários comandos \`print()\` para localizar precisamente o problema e ver os valores das variáveis importantes. É um método lento e primitivo, mas sempre funciona.
+Se as ferramentas de depuração não ajudarem, uma boa alternativa é o "print debugging", onde você insere vários comandos "print()" para localizar precisamente o problema e ver os valores das variáveis importantes. É um método lento e primitivo, mas sempre funciona.
 
 ![](images/clipboard-2905347804.png)
 
@@ -262,13 +266,13 @@ Documentar e compartilhar seu código são práticas essenciais para qualquer pr
 
 #### Documentação de código
 
-A documentação é a primeira linha de comunicação entre o programador e quem vai ler o código depois, seja o próprio autor em um momento futuro ou outros programadores. Em R, a documentação pode ser feita diretamente no código, usando comentários, e de forma mais estruturada, usando pacotes como o \`roxygen2\` [@wickham2024], que permite criar uma documentação que pode ser convertida em um manual de ajuda para o pacote.
+A documentação é a primeira linha de comunicação entre o programador e quem vai ler o código depois, seja o próprio autor em um momento futuro ou outros programadores. Em R, a documentação pode ser feita diretamente no código, usando comentários, e de forma mais estruturada, usando pacotes como o "roxygen2" [@wickham2024], que permite criar uma documentação que pode ser convertida em um manual de ajuda para o pacote.
 
 ![](images/clipboard-3987177554.png)
 
 #### Compartilhamento de código
 
-O compartilhamento de código em R pode ser feito de várias maneiras. Uma das mais comuns é através de scripts, que são arquivos de texto com extensão \`.R\`. Esses scripts podem ser compartilhados por e-mail, repositórios de código como GitHub ou plataformas como [RPubs](https://rpubs.com), onde é possível publicar análises e códigos para que outros possam ver e usar.
+O compartilhamento de código em R pode ser feito de várias maneiras. Uma das mais comuns é através de scripts, que são arquivos de texto com extensão ".R". Esses scripts podem ser compartilhados por e-mail, repositórios de código como GitHub ou plataformas como [RPubs](https://rpubs.com), onde é possível publicar análises e códigos para que outros possam ver e usar.
 
 #### R Markdown
 
@@ -284,11 +288,11 @@ R é uma linguagem de programação e um ambiente de software para análise esta
 
 #### Estatística Descritiva
 
-A estatística descritiva é a primeira etapa na análise de dados. Ela envolve resumir e organizar os dados de maneira que possam ser facilmente compreendidos. As funções básicas do R para estatística descritiva incluem \`mean()\` para calcular a média, \`median()\` para a mediana, \`sd()\` para o desvio padrão, \`var()\` para a variância, \`min()\` e \`max()\` para os valores mínimo e máximo, respectivamente, e \`summary()\` para obter um resumo estatístico dos dados. As funções mencionadas acima já foram exemplificadas no módulo 2. Tente aplicar essas funções em um novo exemplo (ex.: vet1 \<- c(1,4,8,3,4,6,7,8,2,6,8,9,2,1,)).
+A estatística descritiva é a primeira etapa na análise de dados. Ela envolve resumir e organizar os dados de maneira que possam ser facilmente compreendidos. As funções básicas do R para estatística descritiva incluem "mean()" para calcular a média, "median()" para a mediana, "sd()" para o desvio padrão, "var()" para a variância, "min()" e "max()" para os valores mínimo e máximo, respectivamente, e "summary()" para obter um resumo estatístico dos dados. As funções mencionadas acima já foram exemplificadas no módulo 2. Tente aplicar essas funções em um novo exemplo (ex.: vet1 \<- c(1,4,8,3,4,6,7,8,2,6,8,9,2,1,)).
 
 #### Visualização de dados
 
-A visualização de dados é uma parte importante da análise estatística. R fornece várias ferramentas para criar gráficos e visualizações de dados. As funções básicas incluem \`plot()\` para criar gráficos de dispersão, \`hist()\` para histogramas, \`boxplot()\` para boxplots e \`barplot()\` para gráficos de barras. Além disso, o pacote \`ggplot2\` oferece uma poderosa e flexível estrutura para criar gráficos complexos. O pacote \`ggplot2\` será explorado em mais detalhes no próximo módulo.
+A visualização de dados é uma parte importante da análise estatística. R fornece várias ferramentas para criar gráficos e visualizações de dados. As funções básicas incluem "plot()" para criar gráficos de dispersão, "hist()" para histogramas, "boxplot()" para boxplots e "barplot()" para gráficos de barras. Além disso, o pacote "ggplot2" oferece uma poderosa e flexível estrutura para criar gráficos complexos. O pacote "ggplot2" será explorado em mais detalhes no próximo módulo.
 
 **Exemplo**: usando a função “plot( )”
 
@@ -310,7 +314,7 @@ A visualização de dados é uma parte importante da análise estatística. R fo
 
 #### Estatística inferencial
 
-A estatística inferencial é o processo de usar os dados de uma amostra para inferir propriedades da população. Isso envolve a realização de testes de hipóteses para determinar se um resultado observado é devido ao acaso ou a algum fator subjacente. As funções básicas do R para estatística inferencial incluem \`t.test()\` para o teste t, \`chisq.test()\` para o teste do qui-quadrado, \`cor.test()\` para o teste de correlação, e \`lm()\` para a regressão linear.
+A estatística inferencial é o processo de usar os dados de uma amostra para inferir propriedades da população. Isso envolve a realização de testes de hipóteses para determinar se um resultado observado é devido ao acaso ou a algum fator subjacente. As funções básicas do R para estatística inferencial incluem "t.test()" para o teste t, "chisq.test()" para o teste do qui-quadrado, "cor.test()" para o teste de correlação, e "lm()" para a regressão linear.
 
 **Exemplo**: realizando um teste de hipóteses com dois vetores numéricos
 
@@ -320,7 +324,7 @@ A estatística inferencial é o processo de usar os dados de uma amostra para in
 
 #### Modelagem estatística
 
-A modelagem estatística é o processo de desenvolver um modelo matemático que descreve uma relação entre variáveis. R fornece várias funções para modelagem estatística, incluindo \`lm()\` para regressão linear, \`glm()\` para regressão linear generalizada, \`anova()\` para análise de variância, e \`arima()\` para modelagem de séries temporais.
+A modelagem estatística é o processo de desenvolver um modelo matemático que descreve uma relação entre variáveis. R fornece várias funções para modelagem estatística, incluindo "lm()" para regressão linear, "glm()" para regressão linear generalizada, "anova()" para análise de variância, e "arima()" para modelagem de séries temporais.
 
 **Exemplo**: avaliando a correlação entre dois vetores numéricos com a função “lm( )”
 
@@ -338,9 +342,9 @@ A linguagem de programação R é uma ferramenta poderosa para a realização de
 
 As medidas de tendência central são estatísticas que indicam onde os dados estão centrados. As principais medidas de tendência central são a média, a mediana e a moda.
 
-1.  **Média**: a média de um conjunto de dados é calculada somando todos os valores e dividindo pelo número de valores. No R, a média é calculada usando a função \`mean()\`. Por exemplo, \`mean(c(1, 2, 3, 4, 5))\` calcula a média do vetor de números de 1 a 5.
+1.  **Média**: a média de um conjunto de dados é calculada somando todos os valores e dividindo pelo número de valores. No R, a média é calculada usando a função "mean()". Por exemplo, "mean(c(1, 2, 3, 4, 5))" calcula a média do vetor de números de 1 a 5.
 
-2.  **Mediana**: a mediana é o valor que divide os dados ao meio quando estão ordenados. No R, a mediana é calculada usando a função \`median()\`. Por exemplo, \`median(c(1, 2, 3, 4, 5))\` calcula a mediana do vetor de números de 1 a 5.
+2.  **Mediana**: a mediana é o valor que divide os dados ao meio quando estão ordenados. No R, a mediana é calculada usando a função "median()". Por exemplo, "median(c(1, 2, 3, 4, 5))" calcula a mediana do vetor de números de 1 a 5.
 
 3.  **Moda**: a moda é o valor mais frequente em um conjunto de dados. R não tem uma função embutida para calcular a moda, mas pode ser calculada usando funções de outros pacotes ou escrevendo sua própria função.
 
@@ -348,15 +352,15 @@ As medidas de tendência central são estatísticas que indicam onde os dados es
 
 As medidas de dispersão são estatísticas que indicam o quanto os dados estão espalhados. As principais medidas de dispersão são a variância, o desvio padrão e a amplitude.
 
-1.  **Variância**: a variância é uma medida da dispersão que indica o quanto os valores se desviam da média. No R, a variância é calculada usando a função \`var()\`. Por exemplo, \`var(c(1, 2, 3, 4, 5))\` calcula a variância do vetor de números de 1 a 5.
+1.  **Variância**: a variância é uma medida da dispersão que indica o quanto os valores se desviam da média. No R, a variância é calculada usando a função "var()". Por exemplo, "var(c(1, 2, 3, 4, 5))" calcula a variância do vetor de números de 1 a 5.
 
-2.  **Desvio padrão**: o desvio padrão é a raiz quadrada da variância e fornece uma medida de dispersão que está na mesma unidade que os dados. No R, o desvio padrão é calculado usando a função \`sd()\`. Por exemplo, \`sd(c(1, 2, 3, 4, 5))\` calcula o desvio padrão do vetor de números de 1 a 5.
+2.  **Desvio padrão**: o desvio padrão é a raiz quadrada da variância e fornece uma medida de dispersão que está na mesma unidade que os dados. No R, o desvio padrão é calculado usando a função "sd()". Por exemplo, "sd(c(1, 2, 3, 4, 5))" calcula o desvio padrão do vetor de números de 1 a 5.
 
-3.  **Amplitude**: a amplitude é a diferença entre o maior e o menor valor em um conjunto de dados. No R, a amplitude pode ser calculada subtraindo o resultado da função \`min()\` do resultado da função \`max()\`. Por exemplo, \`max(c(1, 2, 3, 4, 5)) - min(c(1, 2, 3, 4, 5))\` calcula a amplitude do vetor de números de 1 a 5.
+3.  **Amplitude**: a amplitude é a diferença entre o maior e o menor valor em um conjunto de dados. No R, a amplitude pode ser calculada subtraindo o resultado da função "min()" do resultado da função "max()". Por exemplo, "max(c(1, 2, 3, 4, 5)) - min(c(1, 2, 3, 4, 5))" calcula a amplitude do vetor de números de 1 a 5.
 
 #### Resumo dos dados
 
-A função \`summary()\` no R fornece um resumo estatístico dos dados, incluindo a média, a mediana, o mínimo, o máximo, o primeiro quartil e o terceiro quartil. Por exemplo, \`summary(c(1, 2, 3, 4, 5))\` fornece um resumo do vetor de números de 1 a 5.
+A função "summary()" no R fornece um resumo estatístico dos dados, incluindo a média, a mediana, o mínimo, o máximo, o primeiro quartil e o terceiro quartil. Por exemplo, "summary(c(1, 2, 3, 4, 5))" fornece um resumo do vetor de números de 1 a 5.
 
 R é uma ferramenta poderosa para estatísticas descritivas, oferecendo uma ampla gama de funções para calcular medidas de tendência central, medidas de dispersão e resumos de dados. Aprender a usar R para estatísticas descritivas pode abrir novas oportunidades para a exploração e compreensão de dados.
 
@@ -370,21 +374,21 @@ Antes de realizar a inferência estatística, é importante entender alguns conc
 
 #### Testes de hipóteses
 
-Um dos pilares da inferência estatística é o teste de hipóteses. O objetivo é testar uma afirmação (hipótese) sobre um parâmetro populacional. No R, funções como \`t.test()\`, \`chisq.test()\` e \`anova()\` são usadas para realizar diferentes tipos de testes de hipóteses.
+Um dos pilares da inferência estatística é o teste de hipóteses. O objetivo é testar uma afirmação (hipótese) sobre um parâmetro populacional. No R, funções como "t.test()", "chisq.test()" e "anova()" são usadas para realizar diferentes tipos de testes de hipóteses.
 
-Por exemplo, o \`t.test()\` é usado para comparar as médias de duas amostras e determinar se elas são significativamente diferentes. O teste do qui-quadrado (\`chisq.test()\`) é frequentemente usado para testar a independência entre duas variáveis categóricas. A análise de variância (ANOVA), realizada através da função \`anova()\`, é usada para comparar as médias de três ou mais grupos.
+Por exemplo, o "t.test()" é usado para comparar as médias de duas amostras e determinar se elas são significativamente diferentes. O teste do qui-quadrado ("chisq.test()") é frequentemente usado para testar a independência entre duas variáveis categóricas. A análise de variância (ANOVA), realizada através da função "anova()", é usada para comparar as médias de três ou mais grupos.
 
 #### Intervalos de confiança
 
-Outra ferramenta importante na inferência estatística é o intervalo de confiança, que fornece um intervalo estimado dentro do qual é provável que o parâmetro populacional esteja. No R, o \`t.test()\` e outras funções de teste fornecem intervalos de confiança como parte de seus resultados.
+Outra ferramenta importante na inferência estatística é o intervalo de confiança, que fornece um intervalo estimado dentro do qual é provável que o parâmetro populacional esteja. No R, o "t.test()" e outras funções de teste fornecem intervalos de confiança como parte de seus resultados.
 
 #### Regressão e correlação
 
-A análise de regressão é usada para entender a relação entre variáveis. No R, a função \`lm()\` é usada para realizar regressão linear, que modela a relação entre uma variável dependente e uma ou mais variáveis independentes. A correlação, que mede a força e a direção da relação linear entre duas variáveis, pode ser calculada com a função \`cor()\`.
+A análise de regressão é usada para entender a relação entre variáveis. No R, a função "lm()" é usada para realizar regressão linear, que modela a relação entre uma variável dependente e uma ou mais variáveis independentes. A correlação, que mede a força e a direção da relação linear entre duas variáveis, pode ser calculada com a função "cor()".
 
 #### Análise de séries temporais
 
-A análise de séries temporais é um tipo de inferência estatística que lida com dados coletados ao longo do tempo. No R, funções como \`ts()\` para criar objetos de séries temporais e \`arima()\` para modelagem de séries temporais são usadas para analisar como os dados mudam ao longo do tempo.
+A análise de séries temporais é um tipo de inferência estatística que lida com dados coletados ao longo do tempo. No R, funções como "ts()" para criar objetos de séries temporais e "arima()" para modelagem de séries temporais são usadas para analisar como os dados mudam ao longo do tempo.
 
 **Exemplo**: utilizando a função “arima( )” para prever uma série temporal
 
@@ -400,17 +404,17 @@ A visualização é uma etapa crucial na análise de dados, pois permite aos ana
 
 #### Gráficos base do R
 
-O R possui um sistema de gráficos base que permite a criação de uma ampla variedade de gráficos, incluindo gráficos de linhas, barras, histogramas, boxplots, e scatter plots. Esses gráficos são gerados usando funções simples, como \`plot()\`, \`hist()\`, \`barplot()\`, e \`boxplot()\`. Por exemplo, a função \`plot()\` pode ser usada para criar gráficos de dispersão ou linhas, dependendo dos argumentos fornecidos. A função \`hist()\` é usada para criar histogramas, que são úteis para visualizar a distribuição de uma única variável numérica. Veja, abaixo, uma lista de gráficos comuns em *Base R*:
+O R possui um sistema de gráficos base que permite a criação de uma ampla variedade de gráficos, incluindo gráficos de linhas, barras, histogramas, boxplots, e scatter plots. Esses gráficos são gerados usando funções simples, como "plot()", "hist()", "barplot()", e "boxplot()". Por exemplo, a função "plot()" pode ser usada para criar gráficos de dispersão ou linhas, dependendo dos argumentos fornecidos. A função "hist()" é usada para criar histogramas, que são úteis para visualizar a distribuição de uma única variável numérica. Veja, abaixo, uma lista de gráficos comuns em *Base R*:
 
-1.  **Gráficos de dispersão (scatter plots)**: utilizados para visualizar a relação entre duas variáveis numéricas. A função \`plot()\` é a mais comum para criar esses gráficos.
+1.  **Gráficos de dispersão (scatter plots)**: utilizados para visualizar a relação entre duas variáveis numéricas. A função "plot()" é a mais comum para criar esses gráficos.
 
-2.  **Histogramas**: usados para representar a distribuição de uma única variável numérica. A função \`hist()\` é utilizada para gerar histogramas.
+2.  **Histogramas**: usados para representar a distribuição de uma única variável numérica. A função "hist()" é utilizada para gerar histogramas.
 
-3.  **Gráficos de linhas**: úteis para visualizar dados ao longo do tempo ou sequências ordenadas. A função \`plot()\` também pode ser usada para criar gráficos de linhas, alterando o tipo de ponto para uma linha.
+3.  **Gráficos de linhas**: úteis para visualizar dados ao longo do tempo ou sequências ordenadas. A função "plot()" também pode ser usada para criar gráficos de linhas, alterando o tipo de ponto para uma linha.
 
-4.  **Gráficos de barras**: permitem comparar quantidades entre diferentes grupos. As funções \`barplot()\` ou \`hist()\` podem ser usadas para criar gráficos de barras.
+4.  **Gráficos de barras**: permitem comparar quantidades entre diferentes grupos. As funções "barplot()" ou "hist()" podem ser usadas para criar gráficos de barras.
 
-5.  **Boxplots**: fornecem uma representação visual da distribuição de uma variável numérica, destacando a mediana, os quartis e os valores discrepantes. A função \`boxplot()\` é usada para criar boxplots.
+5.  **Boxplots**: fornecem uma representação visual da distribuição de uma variável numérica, destacando a mediana, os quartis e os valores discrepantes. A função "boxplot()" é usada para criar boxplots.
 
 Vamos praticar um exemplo da função “barplot( )”.
 
@@ -422,7 +426,7 @@ Vamos praticar um exemplo da função “barplot( )”.
 
 #### Personalização de gráficos
 
-Os gráficos base do R são altamente personalizáveis. Você pode modificar títulos, rótulos dos eixos, cores, tipos de linhas e pontos, e muito mais, usando argumentos adicionais nas funções de plotagem. Por exemplo, você pode usar o argumento \`main\` para adicionar um título ao gráfico, \`xlab\` e \`ylab\` para rótulos dos eixos X e Y, respectivamente, e \`col\` para alterar a cor dos pontos ou linhas.
+Os gráficos base do R são altamente personalizáveis. Você pode modificar títulos, rótulos dos eixos, cores, tipos de linhas e pontos, e muito mais, usando argumentos adicionais nas funções de plotagem. Por exemplo, você pode usar o argumento "main" para adicionar um título ao gráfico, "xlab" e "ylab" para rótulos dos eixos X e Y, respectivamente, e "col" para alterar a cor dos pontos ou linhas.
 
 Também é possível sobrepor elementos gráficos em R base. Por exemplo, você pode gerar uma linha que conecta todos os pontos em um gráfico de dispersão (“plot( )” + “lines( )”), ou até mesmo adicionar uma legenda para diferentes barras (“barplot( )” + “legend( )”).
 
@@ -434,7 +438,7 @@ Também é possível sobrepor elementos gráficos em R base. Por exemplo, você 
 
 #### O pacote ggplot2
 
-Além do sistema de gráficos base, o R oferece o pacote \`ggplot2\` (lembre-se que pacotes devem ser instalados no primeiro uso e importados sempre que utilizados em uma nova sessão), que é baseado nos princípios da "Gramática dos Gráficos". O \`ggplot2\` permite a construção de gráficos complexos de maneira incremental, adicionando camadas de elementos gráficos. Um gráfico no \`ggplot2\` começa com a função \`ggplot()\`, à qual são adicionadas camadas usando o operador \`+\`. Por exemplo, você pode começar definindo os dados e as estéticas (\`aes\`) e, em seguida, adicionar uma camada para o tipo de gráfico (como \`geom_point()\` para um scatter plot ou \`geom_histogram()\` para um histograma).
+Além do sistema de gráficos base, o R oferece o pacote "ggplot2" (lembre-se que pacotes devem ser instalados no primeiro uso e importados sempre que utilizados em uma nova sessão), que é baseado nos princípios da "Gramática dos Gráficos". O "ggplot2" permite a construção de gráficos complexos de maneira incremental, adicionando camadas de elementos gráficos. Um gráfico no "ggplot2" começa com a função "ggplot()", à qual são adicionadas camadas usando o operador "+". Por exemplo, você pode começar definindo os dados e as estéticas ("aes") e, em seguida, adicionar uma camada para o tipo de gráfico (como "geom_point()" para um scatter plot ou "geom_histogram()" para um histograma).
 
 **Exemplo**: criando um gráfico básico com a função “ggplot( )”
 
@@ -442,9 +446,9 @@ Além do sistema de gráficos base, o R oferece o pacote \`ggplot2\` (lembre-se 
 
 \*Primeiro, os pacotes desejados foram importados para o ambiente R. No caso do exemplo acima, “ggplot2” é o pacote necessário para gerar gráficos, enquanto “ggpubr” será utilizado para manipular a apresentação do gráfico no próximo exemplo. Antes de criar o gráfico, um data frame (“df”) foi gerado a partir dos vetores “Hora” e “Temperatura”. Depois, um objeto ggplot é criado utilizando a função “ggplot(data = df, aes(x = Hora, y = Temperatura))”; para adicionar os pontos ao gráfico, porém, é necessário adicionar um “+” ao lado da função e, em seguida, informar a função para o tipo de gráfico. No caso do exemplo, a função “geom_point( )” cria um gráfico de dispersão simples.
 
-Múltiplos gráficos \`ggplot\` podem ser organizados em uma mesma figura. Uma forma de fazê-lo é com o pacote \`ggpubr\`. A função \`ggarrange()\` no R é uma ferramenta flexível do pacote \`ggpubr\` que permite organizar múltiplos gráficos \`ggplot\` em uma única página, com a capacidade de especificar o número de colunas e linhas, bem como criar uma legenda comum para vários gráficos.
+Múltiplos gráficos "ggplot" podem ser organizados em uma mesma figura. Uma forma de fazê-lo é com o pacote "ggpubr". A função "ggarrange()" no R é uma ferramenta flexível do pacote "ggpubr" que permite organizar múltiplos gráficos "ggplot" em uma única página, com a capacidade de especificar o número de colunas e linhas, bem como criar uma legenda comum para vários gráficos.
 
-Por exemplo, se você tiver três gráficos diferentes armazenados nas variáveis \`bxp\`, \`dp\` e \`dens\`, você pode organizá-los em uma grade de 2 colunas e 2 linhas usando \`ggarrange(bxp, dp, dens, ncol = 2, nrow = 2)\`. Além disso, se você deseja usar uma legenda comum para múltiplos gráficos que compartilham as mesmas estéticas, como cor ou forma, você pode fazer isso com \`ggarrange(bxp, dp, common.legend = TRUE)\`, onde \`bxp\` e \`dp\` são dois gráficos que você deseja combinar. Isso é particularmente útil quando você tem várias visualizações dos mesmos dados e quer evitar a repetição de legendas, tornando o resultado mais limpo e fácil de ler.
+Por exemplo, se você tiver três gráficos diferentes armazenados nas variáveis "bxp", "dp" e "dens", você pode organizá-los em uma grade de 2 colunas e 2 linhas usando "ggarrange(bxp, dp, dens, ncol = 2, nrow = 2)". Além disso, se você deseja usar uma legenda comum para múltiplos gráficos que compartilham as mesmas estéticas, como cor ou forma, você pode fazer isso com "ggarrange(bxp, dp, common.legend = TRUE)", onde "bxp" e "dp" são dois gráficos que você deseja combinar. Isso é particularmente útil quando você tem várias visualizações dos mesmos dados e quer evitar a repetição de legendas, tornando o resultado mais limpo e fácil de ler.
 
 **Exemplo**: organizando mais de um gráfico por tela com “ggarrange( )”
 
@@ -454,19 +458,19 @@ Por exemplo, se você tiver três gráficos diferentes armazenados nas variávei
 
 #### Visualização de dados multivariados
 
-Tanto o sistema de gráficos base quanto o \`ggplot2\` oferecem opções para visualizar dados multivariados. Por exemplo, você pode usar cores, formas ou tamanhos de pontos para representar variáveis adicionais em um scatter plot. No \`ggplot2\`, isso é feito especificando estéticas adicionais dentro da função \`aes()\`.
+Tanto o sistema de gráficos base quanto o "ggplot2" oferecem opções para visualizar dados multivariados. Por exemplo, você pode usar cores, formas ou tamanhos de pontos para representar variáveis adicionais em um scatter plot. No "ggplot2", isso é feito especificando estéticas adicionais dentro da função "aes()".
 
-A facetação é uma técnica poderosa no \`ggplot2\` que permite dividir os dados em subconjuntos e plotar cada subconjunto em seu próprio painel dentro do gráfico. Isso é útil para comparar subgrupos de dados. A facetação pode ser realizada usando as funções \`facet_wrap()\` ou \`facet_grid()\`.
+A facetação é uma técnica poderosa no "ggplot2" que permite dividir os dados em subconjuntos e plotar cada subconjunto em seu próprio painel dentro do gráfico. Isso é útil para comparar subgrupos de dados. A facetação pode ser realizada usando as funções "facet_wrap()" ou "facet_grid()".
 
 **Exemplo**: utilizando “facet_grid( )” para facetar um gráfico em seus segmentos
 
 ![](images/clipboard-928999128.png)
 
-\*O código do exemplo acima cria um conjunto de dados e um gráfico correspondente. Primeiramente, são criadas quatro variáveis: \`produto\`, que repete os nomes "Produto A" e "Produto B" doze vezes cada; \`regiao\`, que repete os nomes "Norte", "Sul" e "Leste" quatro vezes cada; \`trimestre\`, que repete os trimestres "T1", "T2", "T3" e "T4" seis vezes; e \`vendas\`, que contém uma série de valores representando as vendas. Essas variáveis são combinadas em um \`data.frame\` chamado \`dados\`. Em seguida, utiliza-se o ggplot2 para criar um gráfico de linhas com pontos, onde o eixo x representa os trimestres, o eixo y as vendas, as linhas e pontos são agrupados e coloridos de acordo com o produto, e o gráfico é dividido em painéis por região utilizando a função “facet_grid( )”. Além disso, são definidas cores manuais para os produtos, adicionados títulos aos eixos e ao gráfico, e aplicado um tema minimalista.
+\*O código do exemplo acima cria um conjunto de dados e um gráfico correspondente. Primeiramente, são criadas quatro variáveis: "produto", que repete os nomes "Produto A" e "Produto B" doze vezes cada; "regiao", que repete os nomes "Norte", "Sul" e "Leste" quatro vezes cada; "trimestre", que repete os trimestres "T1", "T2", "T3" e "T4" seis vezes; e "vendas", que contém uma série de valores representando as vendas. Essas variáveis são combinadas em um "data.frame" chamado "dados". Em seguida, utiliza-se o ggplot2 para criar um gráfico de linhas com pontos, onde o eixo x representa os trimestres, o eixo y as vendas, as linhas e pontos são agrupados e coloridos de acordo com o produto, e o gráfico é dividido em painéis por região utilizando a função “facet_grid( )”. Além disso, são definidas cores manuais para os produtos, adicionados títulos aos eixos e ao gráfico, e aplicado um tema minimalista.
 
 #### Extensões do ggplot2
 
-Existem vários pacotes que estendem as capacidades do \`ggplot2\`, adicionando novos tipos de gráficos ou funcionalidades. Por exemplo, o pacote \`ggplotly\` permite converter gráficos \`ggplot2\` em gráficos interativos, e o \`gganimate\` permite criar animações a partir de gráficos \`ggplot2\`.
+Existem vários pacotes que estendem as capacidades do "ggplot2", adicionando novos tipos de gráficos ou funcionalidades. Por exemplo, o pacote "ggplotly" permite converter gráficos "ggplot2" em gráficos interativos, e o "gganimate" permite criar animações a partir de gráficos "ggplot2".
 
 **Exemplo**: criando um gráfico interativo a partir de um ggplot com “ggplotly( )”
 
@@ -474,31 +478,31 @@ Existem vários pacotes que estendem as capacidades do \`ggplot2\`, adicionando 
 
 \*Baseado no código do exemplo anterior, foi possível elaborar um gráfico interativo em três simples passos: 1. Importar o pacote “plotly” utilizando “library(plotly)”; 2. Atribuir o ggplot previamente criado a uma variável “a” (basta inserir “a \<- “ logo antes do início do código para o gráfico; 3. Fornecer o objeto “a” à função “ggplotly( )”. O gráfico gerado, apesar de similar ao anterior, se torna interativo e permite funções como zoom, salvar como figura, etiqueta dinâmica de dados e outras.
 
-A visualização de dados em R é uma área rica e flexível, com muitas opções disponíveis para o analista. Seja usando o sistema de gráficos base para gráficos simples e rápidos ou explorando a profundidade e flexibilidade do \`ggplot2\` para gráficos mais complexos e polidos, o R oferece ferramentas poderosas para transformar dados brutos em insights visuais compreensíveis.
+A visualização de dados em R é uma área rica e flexível, com muitas opções disponíveis para o analista. Seja usando o sistema de gráficos base para gráficos simples e rápidos ou explorando a profundidade e flexibilidade do "ggplot2" para gráficos mais complexos e polidos, o R oferece ferramentas poderosas para transformar dados brutos em insights visuais compreensíveis.
 
 #### Visualização de dados geoespaciais
 
-A visualização de dados geoespaciais é outra técnica avançada que pode ser realizada em R, utilizando pacotes como \`ggplot2\` em conjunto com \`sf\` [@pebesma2024] para criar mapas detalhados. Esses mapas podem representar desde a distribuição geográfica de eventos até análises espaciais complexas, como clusters ou padrões de movimento.
+A visualização de dados geoespaciais é outra técnica avançada que pode ser realizada em R, utilizando pacotes como "ggplot2" em conjunto com "sf" [@pebesma2024] para criar mapas detalhados. Esses mapas podem representar desde a distribuição geográfica de eventos até análises espaciais complexas, como clusters ou padrões de movimento.
 
 **Exemplo**: criando um mapa a partir de dados geoespaciais com o pacote “sf”
 
 ![](images/clipboard-3449562011.png)
 
-\*O código do exemplo acima utiliza as bibliotecas \`ggplot2\`, \`sf\` e \`rnaturalearth\` para criar um mapa do Brasil. A função \`ne_countries\` do pacote \`rnaturalearth\` é usada para obter os dados geográficos do Brasil, especificando que queremos os dados em uma escala grande e que o formato de retorno seja um objeto \`sf\`, que é um padrão para trabalhar com dados espaciais no R. O objeto \`geo_vetor_brasil\` contém esses dados e é passado para a função \`ggplot\`, que inicia a construção do gráfico. A função \`geom_sf\` é utilizada para adicionar os dados espaciais ao gráfico, com a cor das linhas definida como verde e o preenchimento como amarelo, representando as fronteiras e o interior do país, respectivamente. O tema \`theme_minimal\` é aplicado para um visual limpo e a função \`labs\` adiciona um título ao gráfico. O resultado é um mapa do Brasil com fronteiras destacadas em verde e interior em amarelo.
+\*O código do exemplo acima utiliza as bibliotecas "ggplot2", "sf" e "rnaturalearth" para criar um mapa do Brasil. A função "ne_countries" do pacote "rnaturalearth" é usada para obter os dados geográficos do Brasil, especificando que queremos os dados em uma escala grande e que o formato de retorno seja um objeto "sf", que é um padrão para trabalhar com dados espaciais no R. O objeto "geo_vetor_brasil" contém esses dados e é passado para a função "ggplot", que inicia a construção do gráfico. A função "geom_sf" é utilizada para adicionar os dados espaciais ao gráfico, com a cor das linhas definida como verde e o preenchimento como amarelo, representando as fronteiras e o interior do país, respectivamente. O tema "theme_minimal" é aplicado para um visual limpo e a função "labs" adiciona um título ao gráfico. O resultado é um mapa do Brasil com fronteiras destacadas em verde e interior em amarelo.
 
 #### Animações com gganimate
 
-O pacote \`gganimate\` [@pedersen2024] estende as capacidades do \`ggplot2\`, permitindo criar animações a partir de gráficos. Isso pode ser particularmente útil para visualizar mudanças nos dados ao longo do tempo, como tendências econômicas, padrões climáticos ou o progresso de uma epidemia.
+O pacote "gganimate" [@pedersen2024] estende as capacidades do "ggplot2", permitindo criar animações a partir de gráficos. Isso pode ser particularmente útil para visualizar mudanças nos dados ao longo do tempo, como tendências econômicas, padrões climáticos ou o progresso de uma epidemia.
 
 **Exemplo**: criando um gráfico animado com o pacote “gganimate”
 
 ![](images/clipboard-342580043.png)
 
-\*No exemplo acima, foram utilizadas as bibliotecas \`gapminder\`[@bryan2023] e \`gganimate\` para criar uma animação que mostra a relação entre o PIB per capita (GDP per capita), a expectativa de vida (life expectancy) e o tamanho da população (pop) de diferentes países ao longo do tempo. A função \`ggplot\` inicia a construção do gráfico com os dados do \`gapminder\`, e a função \`aes\` define as variáveis para os eixos x e y, o tamanho dos pontos e a cor de acordo com o país. \`geom_point\` adiciona pontos ao gráfico com uma transparência de 0.7 e sem legenda. \`scale_colour_manual\` permite a personalização das cores dos pontos por país, enquanto \`scale_size\` ajusta o intervalo de tamanho dos pontos. \`scale_x_log10\` transforma o eixo x em uma escala logarítmica para melhor visualização dos dados. \`facet_wrap\` divide o gráfico por continente. As funções específicas do \`gganimate\`, como \`transition_time\` e \`ease_aes\`, são usadas para criar a animação ao longo do tempo, definida pela variável \`year\`, e para suavizar a transição entre os frames. O título do gráfico é atualizado dinamicamente para mostrar o ano correspondente a cada frame da animação. Veja a animação [clicando aqui](https://gganimate.com/reference/figures/README-unnamed-chunk-4-1.gif).
+\*No exemplo acima, foram utilizadas as bibliotecas "gapminder"[@bryan2023] e "gganimate" para criar uma animação que mostra a relação entre o PIB per capita (GDP per capita), a expectativa de vida (life expectancy) e o tamanho da população (pop) de diferentes países ao longo do tempo. A função "ggplot" inicia a construção do gráfico com os dados do "gapminder", e a função "aes" define as variáveis para os eixos x e y, o tamanho dos pontos e a cor de acordo com o país. "geom_point" adiciona pontos ao gráfico com uma transparência de 0.7 e sem legenda. "scale_colour_manual" permite a personalização das cores dos pontos por país, enquanto "scale_size" ajusta o intervalo de tamanho dos pontos. "scale_x_log10" transforma o eixo x em uma escala logarítmica para melhor visualização dos dados. "facet_wrap" divide o gráfico por continente. As funções específicas do "gganimate", como "transition_time" e "ease_aes", são usadas para criar a animação ao longo do tempo, definida pela variável "year", e para suavizar a transição entre os frames. O título do gráfico é atualizado dinamicamente para mostrar o ano correspondente a cada frame da animação. Veja a animação [clicando aqui](https://gganimate.com/reference/figures/README-unnamed-chunk-4-1.gif).
 
 #### Dashboards interativos com Shiny
 
-O pacote \`shiny\` [@chang2024] permite criar aplicativos web interativos diretamente em R. Esses dashboards podem incluir uma variedade de elementos de entrada e saída, permitindo aos usuários interagir com os dados e visualizações em tempo real. Shiny é uma ferramenta poderosa para a construção de ferramentas analíticas interativas e personalizadas.
+O pacote "shiny" [@chang2024] permite criar aplicativos web interativos diretamente em R. Esses dashboards podem incluir uma variedade de elementos de entrada e saída, permitindo aos usuários interagir com os dados e visualizações em tempo real. Shiny é uma ferramenta poderosa para a construção de ferramentas analíticas interativas e personalizadas.
 
 **Exemplo**: aplicação shiny para metanálises criada em RStudio
 
@@ -508,11 +512,11 @@ O pacote \`shiny\` [@chang2024] permite criar aplicativos web interativos direta
 
 #### Tabelas e quadros em R
 
-Para criar tabelas no R, podemos usar a função \`table()\` para tabular dados e a função \`View()\` para visualizar data frames em formato de tabela. Uma forma de visualizar seus dados sem a utilização da função “View( )” é clicar no ícone de uma tabela ou uma lupa:
+Para criar tabelas no R, podemos usar a função "table()" para tabular dados e a função "view()" para visualizar data frames em formato de tabela. Uma forma de visualizar seus dados sem a utilização da função “view( )” é clicar no ícone de uma tabela ou uma lupa:
 
 ![](images/clipboard-4018646742.png)
 
-que aparecem na aba “Environment” da janela superior direita. Além disso, o pacote \`knitr\` [@xieaut2024] oferece a função \`kable()\`, que cria tabelas formatadas para relatórios e documentos.
+que aparecem na aba “Environment” da janela superior direita. Além disso, o pacote "knitr" [@xieaut2024] oferece a função "kable()", que cria tabelas formatadas para relatórios e documentos.
 
 **Exemplo**: criando uma tabela com a função “kable( )”
 
