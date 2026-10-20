@@ -1,0 +1,23 @@
+% Códigos e saídas: fonte um pouco menor e quebra automática das linhas
+% que excederem a largura do texto (pacote fvextra).
+% Se o fvextra não estiver instalado, o livro ainda compila, mas sem a
+% quebra automática (linhas longas podem ultrapassar a margem).
+\IfFileExists{fvextra.sty}{%
+  \usepackage{fvextra}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small,breaklines,breakanywhere,breaknonspaceingroup}
+  \RecustomVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\small,breaklines,breakanywhere}
+}{%
+  \PackageWarningNoLine{MCBS}{fvextra.sty nao encontrado: codigos sem quebra automatica de linha}
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},fontsize=\small}
+  \RecustomVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\small}
+}
+% Permite mais espaçamento entre palavras antes de deixar uma linha
+% ultrapassar a margem (útil em parágrafos com trechos de código).
+\setlength{\emergencystretch}{3em}
+% Títulos de nível 4 e 5 (\paragraph e \subparagraph) em linha própria;
+% no padrão da classe book, eles ficam na mesma linha do texto seguinte e,
+% quando seguidos de código, aparecem com espaços esticados.
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1ex plus .2ex}
+\titleformat{\subparagraph}[hang]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1ex plus .2ex}

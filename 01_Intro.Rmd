@@ -1,10 +1,176 @@
-# Introdução à metodologia científica 
+# Introdução à metodologia científica
+
+Hércules Rezende Freitas, Ph.D.$^1$
+
+$^1$Universidade do Estado do Rio de Janeiro (UERJ), Faculdade de Ciências Médicas, Departamento de Ciências Médicas Integradas, Laboratório de Informática em Saúde (LabInfoS), Cabo Frio/RJ, Brasil.
+
+Este livro trata de como produzir conhecimento confiável em ciências da saúde e da vida. Os capítulos de bioestatística ensinam a descrever dados, quantificar incerteza e modelar relações entre variáveis; os capítulos de metodologia ensinam a formular perguntas, escolher desenhos de estudo, conduzir a pesquisa com integridade e comunicar os resultados. Antes de qualquer técnica, porém, é preciso responder a uma pergunta anterior: o que distingue o conhecimento científico de outras formas de conhecer, e por que ele merece a confiança que lhe atribuímos?
+
+Este capítulo apresenta os conceitos básicos de ciência, as formas de raciocínio que compõem o chamado método científico, as principais ideias sobre como a ciência muda ao longo do tempo e os fundamentos éticos que delimitam o que se pode fazer em nome dela.
 
 ## Conceitos básicos de ciência
 
+### Formas de conhecimento
+
+Há muitas maneiras de saber algo sobre o mundo. O **conhecimento do senso comum** vem da experiência cotidiana e da tradição: sabemos que o fogo queima e que o frio "causa" resfriado. É útil e frequentemente correto, mas não é sistemático, raramente é posto à prova e mistura observações com crenças não examinadas (o resfriado é causado por vírus, e a associação com o frio é bem mais indireta do que o senso comum supõe). O **conhecimento religioso** se apoia na revelação e na fé, e suas afirmações centrais não se submetem à verificação empírica. O **conhecimento filosófico** usa a razão para examinar questões que nem sempre podem ser decididas pela observação, como o que é uma boa vida ou o que conta como evidência.
+
+O **conhecimento científico** se distingue por um conjunto de características:
+
+- é **empírico**: suas afirmações sobre o mundo devem, em algum momento, ser confrontadas com observações;
+- é **sistemático**: organiza-se em teorias coerentes, e não em afirmações soltas;
+- é **metódico**: segue procedimentos explícitos, que outros podem examinar e repetir;
+- é **público**: seus métodos e resultados são expostos à crítica de outros pesquisadores;
+- é **falível** e **provisório**: qualquer afirmação científica pode ser revista diante de novas evidências.
+
+Essa última característica é frequentemente mal compreendida. Que o conhecimento científico seja provisório não significa que seja frágil ou arbitrário: significa que ele contém os mecanismos para corrigir os próprios erros. A teoria de que a úlcera péptica era causada por estresse e excesso de ácido foi substituída, na década de 1980, pela demonstração de que a maioria das úlceras está associada à infecção por *Helicobacter pylori* [@marshall1984], o que mudou o tratamento de milhões de pessoas. Essa revisão é um exemplo do funcionamento normal da ciência, e não de seu fracasso.
+
+### O vocabulário da ciência
+
+Alguns termos são usados com sentidos técnicos que diferem do uso cotidiano.
+
+- **Fato** (ou dado): uma observação registrada, como "a pressão arterial deste paciente foi de 150 mmHg nesta medida". Mesmo os fatos dependem de instrumentos e de conceitos: medir a pressão pressupõe uma teoria sobre o funcionamento do esfigmomanômetro.
+- **Conceito**: uma abstração que agrupa fenômenos, como "hipertensão", "ansiedade" ou "qualidade de vida".
+- **Variável**: uma característica que pode assumir valores diferentes entre unidades ou ao longo do tempo. Um conceito precisa ser **operacionalizado** para virar variável: "hipertensão" pode ser operacionalizada como "pressão sistólica ≥ 140 mmHg ou diastólica ≥ 90 mmHg em duas medidas, ou uso de anti-hipertensivo". A operacionalização é uma escolha, e diferentes escolhas podem produzir resultados diferentes. Os tipos de variáveis são tratados no capítulo *Bioestatística descritiva*.
+- **Hipótese**: uma proposição testável sobre a relação entre variáveis, formulada antes da coleta de dados (capítulo *Formulação de problemas e hipóteses*).
+- **Lei**: uma regularidade bem estabelecida, frequentemente expressa em forma matemática, como a lei de Fick para a difusão. Leis descrevem como os fenômenos se comportam.
+- **Teoria**: um sistema articulado de conceitos, leis e mecanismos que **explica** um conjunto amplo de fenômenos e permite derivar novas hipóteses. A teoria da evolução por seleção natural e a teoria microbiana das doenças são exemplos. No uso cotidiano, "é só uma teoria" sugere um palpite; na ciência, uma teoria é o nível mais alto de conhecimento organizado, e não um estágio anterior à "prova".
+- **Modelo**: uma representação simplificada de um sistema, usada para compreendê-lo ou prever seu comportamento. Os modelos estatísticos dos capítulos seguintes (a regressão linear, por exemplo) são modelos nesse sentido: todos são simplificações, e a pergunta relevante não é se são verdadeiros, mas se são úteis para o propósito.
+
+### Pesquisa básica, aplicada e translacional
+
+A **pesquisa básica** busca compreender fenômenos sem um objetivo prático imediato: como uma proteína se dobra, como os neurônios codificam a memória. A **pesquisa aplicada** busca resolver problemas práticos: qual o melhor tratamento para a hipertensão resistente, como reduzir infecções hospitalares. A distinção é útil, mas não rígida: grande parte das aplicações médicas mais importantes nasceu de pesquisas básicas sem finalidade prática evidente (a reação em cadeia da polimerase depende de uma enzima descoberta em bactérias de fontes termais). A **pesquisa translacional** trata explicitamente da passagem entre os dois mundos, da bancada ao leito e do leito à população.
+
+### Ciência e pseudociência
+
+Como distinguir ciência de pseudociência, isto é, de afirmações que se apresentam como científicas sem sê-lo? Esse é o **problema da demarcação**. Não há critério único e definitivo, mas alguns sinais de alerta são confiáveis:
+
+- afirmações formuladas de modo que nenhuma observação possível poderia contradizê-las;
+- recurso sistemático a explicações *ad hoc* para acomodar resultados desfavoráveis;
+- ausência de publicação em veículos com revisão por pares, ou recusa em expor métodos e dados;
+- apelo à autoridade, à tradição ou ao número de adeptos, em vez de evidência;
+- ausência de progresso: as mesmas afirmações se repetem por décadas sem refinamento.
+
 ## O método científico
+
+Fala-se em "o método científico" como se houvesse um procedimento único, aplicado da mesma forma por físicos, epidemiologistas e ecólogos. Na prática, cada área desenvolveu métodos próprios. O que elas compartilham é um conjunto de formas de raciocínio e de atitudes diante da evidência.
+
+### Indução
+
+A **indução** parte de observações particulares para chegar a generalizações: observamos que muitos pacientes tratados com um medicamento melhoraram e concluímos que o medicamento é eficaz. Francis Bacon, no século XVII, propôs a indução como base da ciência, em oposição ao raciocínio puramente dedutivo herdado da escolástica.
+
+A indução tem um problema lógico, formulado por David Hume no século XVIII: nenhum número de observações particulares garante a verdade de uma generalização. Ter observado mil cisnes brancos não prova que todos os cisnes sejam brancos, como os europeus descobriram ao chegar à Austrália. Toda generalização indutiva vai além dos dados, e por isso é sempre **provável**, nunca certa. A estatística inferencial pode ser vista como a disciplina que quantifica essa incerteza.
+
+### Dedução
+
+A **dedução** parte de premissas gerais para chegar a conclusões particulares: se todos os mamíferos têm coração e o morcego é um mamífero, o morcego tem coração. Se as premissas forem verdadeiras e o raciocínio válido, a conclusão é **necessariamente** verdadeira. A dedução não acrescenta informação nova às premissas, mas torna explícitas suas consequências, e é isso que permite testar teorias: deduzimos o que deveríamos observar se a teoria estiver correta e comparamos com o que observamos.
+
+### O método hipotético-dedutivo
+
+O **método hipotético-dedutivo** combina as duas formas de raciocínio e descreve bem a lógica da pesquisa empírica:
+
+1. diante de um problema, formula-se uma **hipótese** que poderia explicá-lo;
+2. **deduzem-se** consequências observáveis da hipótese (se a hipótese for verdadeira, então deveríamos observar tal coisa);
+3. realizam-se observações ou experimentos para verificar se as consequências ocorrem;
+4. se as consequências **não** ocorrem, a hipótese é refutada (ou, pelo menos, posta em dúvida); se ocorrem, a hipótese é **corroborada**, mas não provada.
+
+O caso clássico, analisado pelo filósofo Carl Hempel [-@hempel1966], é o de Ignaz Semmelweis, médico do Hospital Geral de Viena na década de 1840. Na Primeira Clínica de obstetrícia, atendida por médicos e estudantes, a mortalidade materna por febre puerperal era muito maior que na Segunda Clínica, atendida por parteiras. Semmelweis examinou e descartou várias hipóteses: "influências epidêmicas" não explicavam a diferença entre clínicas vizinhas na mesma cidade; a superlotação era maior na Segunda Clínica; mudanças na posição do parto não alteraram a mortalidade. Quando um colega morreu de uma doença semelhante após se ferir durante uma autópsia, Semmelweis formulou a hipótese de que "matéria cadavérica" levada pelas mãos dos médicos, que vinham da sala de autópsias, causava a doença. A consequência dedutível era clara: se os médicos lavassem as mãos com uma solução de cal clorada antes de examinar as parturientes, a mortalidade deveria cair. Ela caiu drasticamente.
+
+O exemplo também ilustra as limitações do método. A hipótese de Semmelweis estava parcialmente errada (não era "matéria cadavérica", mas bactérias, que só seriam identificadas décadas depois), e mesmo assim permitiu uma intervenção eficaz. E foi rejeitada por muitos contemporâneos, em parte porque contrariava as teorias aceitas na época, um tema que retomaremos ao falar de paradigmas.
+
+### Falseabilidade
+
+O filósofo Karl Popper [-@popper1959] argumentou que a assimetria entre confirmação e refutação é o coração da ciência. Nenhum número de observações favoráveis prova uma teoria universal, mas uma única observação contrária, bem estabelecida, pode refutá-la. Para Popper, o que torna uma teoria científica é ser **falseável**: ela precisa proibir certos resultados, de modo que, se esses resultados forem observados, a teoria será considerada falsa. Teorias que acomodam qualquer resultado possível não dizem nada sobre o mundo.
+
+A falseabilidade influenciou profundamente a prática científica e está na lógica dos testes de hipóteses (capítulo *Bioestatística inferencial*), em que se tenta rejeitar uma hipótese nula. Mas ela tem limites. Na prática, um resultado contrário raramente refuta uma teoria de forma isolada, porque toda previsão depende de hipóteses auxiliares (que os instrumentos funcionaram, que a amostra é representativa, que não houve erro de medida); diante de um resultado inesperado, é legítimo perguntar qual dessas hipóteses falhou. Há também outro limite: as previsões em ciências da saúde são probabilísticas: a teoria não prevê que todo fumante terá câncer, mas que fumantes terão mais câncer, e um único fumante longevo não refuta nada.
+
+### Abdução e a geração de hipóteses
+
+De onde vêm as hipóteses? O método hipotético-dedutivo descreve como testá-las, mas não como inventá-las. O filósofo Charles S. Peirce chamou de **abdução** o raciocínio que, diante de uma observação surpreendente, propõe a explicação que, se verdadeira, tornaria a observação esperada. É a forma de raciocínio do diagnóstico clínico: diante de febre, tosse e uma imagem radiológica característica, o médico infere a hipótese de pneumonia, que depois será testada. A geração de hipóteses envolve conhecimento prévio, imaginação e, frequentemente, acaso; não há algoritmo para ela.
+
+### Reprodutibilidade e autocorreção
+
+A ciência se corrige porque seus resultados são públicos e podem ser repetidos por outros. Convém distinguir três termos, usados de maneira inconsistente na literatura:
+
+- **reprodutibilidade computacional**: obter os mesmos resultados a partir dos mesmos dados e do mesmo código;
+- **replicação**: obter resultados consistentes em um novo estudo, com novos dados, sobre a mesma pergunta;
+- **robustez**: obter conclusões semelhantes com análises alternativas razoáveis dos mesmos dados.
+
+Nas últimas duas décadas, tornou-se claro que esse mecanismo de autocorreção funciona pior do que se supunha. Ioannidis [-@ioannidis2005] argumentou, com um modelo simples, que a maioria dos achados publicados em áreas com estudos pequenos, efeitos modestos, muitas hipóteses testadas e flexibilidade analítica tende a ser falsa. Um esforço coletivo para replicar 100 estudos publicados em periódicos de psicologia obteve resultados estatisticamente significativos em apenas cerca de 36% das replicações, contra 97% dos estudos originais, com efeitos, em média, com metade da magnitude [@osc2015]. Problemas semelhantes foram documentados na pesquisa pré-clínica e em outras áreas.
+
+As causas identificadas incluem estudos com poder estatístico baixo, análises escolhidas depois de ver os dados, publicação seletiva de resultados "positivos" e incentivos que premiam a quantidade e a novidade em detrimento da confiabilidade. As respostas incluem o registro prévio de estudos e análises, o compartilhamento de dados e código, estudos de replicação e a valorização de resultados nulos. Esses temas atravessam todo o livro, em particular os capítulos *Bioestatística inferencial*, *Comunicação científica* e *Ética e boas práticas em pesquisa*.
 
 ## Paradigmas científicos
 
+### Kuhn e as revoluções científicas
+
+O físico e historiador Thomas Kuhn [-@kuhn1962] propôs uma descrição da mudança científica muito diferente da imagem de acúmulo gradual de conhecimento. Para Kuhn, a maior parte do tempo a ciência funciona como **ciência normal**, organizada em torno de um **paradigma**: um conjunto de teorias, métodos, problemas considerados legítimos e exemplos de soluções bem-sucedidas, compartilhado por uma comunidade. Na ciência normal, os pesquisadores não questionam o paradigma; resolvem "quebra-cabeças" dentro dele.
+
+Com o tempo, acumulam-se **anomalias**, observações que o paradigma não consegue explicar. Quando as anomalias se tornam numerosas ou importantes demais, instala-se uma **crise**, que pode levar a uma **revolução científica**: a substituição do paradigma por outro, incompatível com o anterior. A passagem da astronomia ptolomaica para a copernicana, da química do flogisto para a de Lavoisier e da física newtoniana para a relativística são os exemplos clássicos. Para Kuhn, paradigmas sucessivos são, em certo grau, **incomensuráveis**: os mesmos termos mudam de significado, os problemas considerados relevantes mudam, e a escolha entre paradigmas não se decide apenas pela lógica e pelos dados, mas envolve também julgamento e persuasão.
+
+Na medicina, a teoria microbiana das doenças, que substituiu a teoria dos miasmas na segunda metade do século XIX, tem muitas características de uma revolução kuhniana, e a resistência às ideias de Semmelweis pode ser lida como a de uma comunidade que trabalhava em um paradigma em que suas observações não faziam sentido.
+
+### Outras perspectivas
+
+A obra de Kuhn provocou intenso debate. Imre Lakatos propôs que a ciência é composta por **programas de pesquisa**, com um núcleo de hipóteses protegido por um "cinturão" de hipóteses auxiliares que são ajustadas diante de anomalias; um programa é **progressivo** quando esses ajustes levam a previsões novas e confirmadas, e **degenerativo** quando apenas acomodam os fatos depois que eles ocorrem. Paul Feyerabend argumentou que nenhuma regra metodológica foi seguida em todos os episódios importantes da história da ciência. Essas posições não precisam ser adotadas integralmente para serem úteis: elas lembram que a ciência é uma atividade humana e coletiva, sujeita a influências sociais, e que suas regras de método são orientações, não algoritmos.
+
+### Paradigmas de pesquisa em saúde
+
+Em um sentido mais amplo, o termo "paradigma" é usado também para designar as orientações filosóficas que fundamentam abordagens de pesquisa diferentes:
+
+- a **abordagem quantitativa**, associada a uma tradição positivista ou pós-positivista, busca medir variáveis, estimar parâmetros e testar hipóteses, com ênfase em generalização e controle de vieses. É a abordagem da maior parte deste livro;
+- a **abordagem qualitativa**, associada a tradições interpretativas, busca compreender significados, experiências e contextos a partir da perspectiva dos participantes, com dados como entrevistas, observação e documentos. Pergunta, por exemplo, como pacientes com uma doença crônica vivenciam o tratamento, ou por que profissionais de saúde não aderem a um protocolo;
+- os **métodos mistos** combinam as duas abordagens de forma planejada, por exemplo usando entrevistas para interpretar os resultados de um inquérito.
+
+Nenhuma é superior em abstrato. A escolha depende da pergunta: estimar a prevalência de uma doença exige métodos quantitativos; compreender as barreiras ao acesso ao tratamento pode exigir métodos qualitativos. Os critérios de rigor também diferem: na pesquisa quantitativa, falamos em validade e precisão; na qualitativa, em credibilidade, transferibilidade e reflexividade. Este livro concentra-se nos métodos quantitativos, mas o leitor deve saber que eles não esgotam a pesquisa em saúde.
+
+### Medicina baseada em evidências
+
+Um exemplo de mudança de paradigma na prática clínica é a **medicina baseada em evidências** (MBE), proposta no início da década de 1990 como uma "nova abordagem para o ensino da prática da medicina" [@ebmwg1992]. Em vez de basear decisões principalmente na intuição, na experiência não sistematizada e na fisiopatologia, a MBE propõe integrar a melhor evidência disponível de pesquisas clínicas com a experiência do clínico e os valores e preferências do paciente [@sackett1996]. A MBE foi criticada por supostamente reduzir a medicina a protocolos, crítica que seus proponentes rejeitam: a evidência informa a decisão, mas não a substitui. Para o leitor deste livro, a MBE tem uma consequência direta: avaliar criticamente um estudo exige conhecer os desenhos, os vieses e os métodos estatísticos tratados nos capítulos seguintes.
+
 ## Ética na pesquisa científica
 
+A ciência não é eticamente neutra. A escolha do que pesquisar, os riscos impostos aos participantes, a honestidade no registro e na comunicação dos resultados e o uso que se faz do conhecimento produzido envolvem decisões morais. A história da pesquisa com seres humanos inclui episódios graves, como os experimentos realizados por médicos nazistas em prisioneiros de campos de concentração, julgados em Nuremberg em 1946 e 1947, e o estudo de Tuskegee, nos Estados Unidos, em que centenas de homens negros com sífilis foram acompanhados sem tratamento de 1932 a 1972, mesmo depois de a penicilina se tornar o tratamento padrão.
+
+Desses episódios nasceram os princípios que hoje regem a pesquisa: o **consentimento livre e esclarecido** dos participantes, a avaliação de **riscos e benefícios**, a proteção dos **vulneráveis** e a **revisão independente** dos projetos por comitês de ética. No Relatório Belmont, de 1979, esses princípios foram sintetizados em três: **respeito às pessoas**, **beneficência** e **justiça**. No Brasil, a pesquisa com seres humanos é regulada pela Lei nº 14.874/2024 e pelas resoluções do Conselho Nacional de Saúde, e a pesquisa com animais, pela Lei nº 11.794/2008.
+
+A ética também se aplica à conduta do pesquisador em relação ao próprio conhecimento: não fabricar nem falsificar dados, não plagiar, relatar os métodos de forma completa, publicar resultados independentemente de sua direção, declarar conflitos de interesse. Esses temas, e a regulamentação brasileira, são tratados em detalhe no capítulo *Ética e boas práticas em pesquisa*.
+
+## Resumo do capítulo
+
+- O conhecimento científico é empírico, sistemático, metódico, público e falível. Sua provisoriedade é o que permite a autocorreção.
+- Teoria, na ciência, é um sistema explicativo amplo e bem fundamentado, e não um palpite. Conceitos precisam ser operacionalizados para virar variáveis mensuráveis.
+- A indução generaliza a partir de observações e nunca é certa; a dedução deriva consequências de premissas. O método hipotético-dedutivo formula hipóteses, deduz consequências observáveis e as confronta com dados.
+- Para Popper, uma teoria científica precisa ser falseável. Na prática, as previsões dependem de hipóteses auxiliares e são frequentemente probabilísticas.
+- A geração de hipóteses (abdução) envolve conhecimento, imaginação e acaso; não há algoritmo para ela.
+- Reprodutibilidade, replicação e robustez são conceitos distintos. Baixo poder, flexibilidade analítica e publicação seletiva contribuem para que muitos achados publicados não se repliquem.
+- Kuhn descreveu a ciência como alternância entre períodos de ciência normal, organizados por paradigmas, e revoluções. Abordagens quantitativas, qualitativas e mistas respondem a perguntas diferentes.
+- A medicina baseada em evidências integra a melhor evidência de pesquisa, a experiência clínica e os valores do paciente.
+- A pesquisa científica está sujeita a princípios éticos (respeito às pessoas, beneficência, justiça) e a normas de integridade.
+
+## Exercícios
+
+1. Classifique cada afirmação como fato, hipótese, lei ou teoria, e justifique: (a) "a glicemia de jejum do paciente foi de 126 mg/dL"; (b) "a suplementação de vitamina D reduz a incidência de fraturas em idosos institucionalizados"; (c) "a velocidade de uma reação catalisada por enzima segue a equação de Michaelis–Menten em determinadas condições"; (d) "as espécies se modificam ao longo das gerações por seleção natural de variações hereditárias".
+
+2. Proponha duas operacionalizações diferentes para o conceito de "obesidade" e discuta como a escolha poderia alterar os resultados de um estudo sobre obesidade e doença cardiovascular.
+
+3. A afirmação "este suplemento fortalece a energia vital do organismo" é falseável? Reescreva-a de modo que possa ser testada empiricamente.
+
+4. Um estudo encontrou associação entre o uso de um medicamento e a redução da mortalidade. Um segundo estudo, maior e mais bem conduzido, não encontrou associação. Explique por que esse resultado não significa que "a ciência não sabe de nada", e cite pelo menos duas razões pelas quais os estudos podem ter discordado.
+
+5. Descreva o episódio de Semmelweis com as etapas do método hipotético-dedutivo. Que hipóteses auxiliares estavam envolvidas no teste da hipótese da "matéria cadavérica"?
+
+6. Dê um exemplo de pergunta de pesquisa em saúde que exija uma abordagem qualitativa e outro que exija uma abordagem quantitativa.
+
+## Respostas dos exercícios
+
+1. (a) Fato: uma observação registrada. (b) Hipótese: uma proposição testável sobre a relação entre variáveis (que, de fato, foi testada em ensaios clínicos). (c) Lei: descreve uma regularidade quantitativa, sem, por si só, explicar o mecanismo. (d) Teoria: um sistema explicativo amplo, que dá conta de um conjunto enorme de fenômenos e permite derivar hipóteses.
+
+2. Por exemplo: IMC ≥ 30 kg/m², ou circunferência da cintura acima de pontos de corte específicos por sexo. O IMC não distingue gordura de massa magra nem considera a distribuição da gordura; a circunferência da cintura capta a adiposidade abdominal, mais associada ao risco cardiovascular. Um estudo pode encontrar associações de magnitudes diferentes conforme a operacionalização, e pessoas classificadas como obesas por um critério podem não sê-lo pelo outro.
+
+3. Não é falseável na forma apresentada: "energia vital" não é definida de maneira mensurável, e nenhuma observação poderia contradizer a afirmação. Uma versão testável seria: "adultos sedentários que tomam o suplemento por 8 semanas relatam menor escore de fadiga, medido pela escala X, do que adultos que tomam placebo".
+
+4. A ciência se corrige exatamente por meio de novos estudos; a discordância é parte do processo, e a evidência acumulada é que orienta a conclusão. Razões possíveis para a discordância: erro aleatório (o primeiro estudo pode ter sido um falso positivo, sobretudo se era pequeno); confusão no primeiro estudo (por exemplo, se observacional, os usuários do medicamento podem ser mais saudáveis por outros motivos); diferenças nas populações, doses ou tempos de acompanhamento; publicação seletiva.
+
+5. Problema: mortalidade por febre puerperal maior na Primeira Clínica. Hipótese: "matéria cadavérica" transmitida pelas mãos dos médicos. Consequência deduzida: a lavagem das mãos com solução clorada deveria reduzir a mortalidade. Teste: introdução da lavagem. Resultado: queda acentuada da mortalidade, que corrobora a hipótese. Hipóteses auxiliares: que a solução clorada de fato eliminava a "matéria cadavérica"; que a lavagem foi efetivamente realizada; que nenhum outro fator mudou ao mesmo tempo na clínica; que o registro dos óbitos era confiável.
+
+6. Qualitativa: "como mulheres com diagnóstico recente de câncer de mama vivenciam a decisão entre mastectomia e cirurgia conservadora?". Quantitativa: "qual a sobrevida em cinco anos de mulheres com câncer de mama em estágio inicial tratadas com cirurgia conservadora e radioterapia, comparada à da mastectomia?".

@@ -1,9 +1,211 @@
 # Formulação de problemas e hipóteses
 
+Hércules Rezende Freitas, Ph.D.$^1$
+
+$^1$Universidade do Estado do Rio de Janeiro (UERJ), Faculdade de Ciências Médicas, Departamento de Ciências Médicas Integradas, Laboratório de Informática em Saúde (LabInfoS), Cabo Frio/RJ, Brasil.
+
+Uma pesquisa começa muito antes da coleta de dados. Começa quando alguém percebe que algo não é conhecido, ou é conhecido de forma insuficiente, e decide investigar. A qualidade dessa etapa inicial condiciona tudo o que vem depois: uma pergunta vaga produz um desenho vago, uma análise sem foco e conclusões que não respondem a nada. Por outro lado, uma pergunta clara já sugere o desenho adequado, as variáveis a medir, o tamanho amostral necessário e a análise estatística.
+
+Este capítulo percorre o caminho que vai de um tema de interesse a um problema de pesquisa, deste a uma revisão da literatura que mostra o que já se sabe, e daí aos objetivos e hipóteses que orientarão o estudo.
+
 ## Identificação de problemas de pesquisa
+
+### Do tema ao problema e à pergunta
+
+É útil distinguir três níveis de especificidade.
+
+- O **tema** é uma área ampla de interesse: "doença de Alzheimer", "obesidade infantil", "infecções hospitalares".
+- O **problema de pesquisa** é uma lacuna ou contradição específica dentro do tema, que justifica a investigação: "não se sabe se os inibidores da colinesterase, usados para tratar sintomas da doença de Alzheimer, alteram a mortalidade dos pacientes no contexto do sistema público brasileiro".
+- A **pergunta de pesquisa** é a formulação precisa, respondível, do que o estudo fará: "em pacientes com doença de Alzheimer que iniciam tratamento pelo SUS, o uso de donepezila, comparado ao de rivastigmina, está associado a diferença na mortalidade em três anos?".
+
+O erro mais comum de pesquisadores iniciantes é tentar responder a um tema, em vez de a uma pergunta. "Estudar a obesidade infantil" não é um projeto; "estimar a prevalência de obesidade em escolares de 6 a 10 anos da rede municipal de um município e sua associação com o tempo diário de tela" é.
+
+### Fontes de problemas
+
+Problemas de pesquisa surgem de várias fontes:
+
+- **a prática profissional**: observações clínicas inesperadas, dúvidas sobre a melhor conduta, variações de resultados entre serviços;
+- **a literatura**: estudos com resultados contraditórios, limitações apontadas pelos próprios autores, recomendações de "pesquisas futuras", revisões sistemáticas que concluem haver evidência insuficiente;
+- **novas tecnologias e dados**: um novo método de medida, uma base de dados recém-disponibilizada, uma técnica analítica que permite responder a perguntas antes inacessíveis;
+- **demandas sociais e de saúde pública**: epidemias, mudanças demográficas, prioridades de agências de fomento e do sistema de saúde;
+- **teorias**: consequências de uma teoria que ainda não foram testadas.
+
+### Critérios para uma boa pergunta: FINER
+
+Hulley e colaboradores [-@hulley2013] propuseram o acrônimo **FINER** para avaliar uma pergunta de pesquisa. Uma boa pergunta deve ser:
+
+- **F**actível: há participantes suficientes, recursos técnicos, tempo, financiamento e competência para respondê-la? Um estudo sobre uma doença rara em um único hospital pode não ter pacientes suficientes; um estudo de coorte que exige 20 anos de acompanhamento pode não ser viável em um mestrado;
+- **I**nteressante: a resposta interessa ao pesquisador e à comunidade científica? O interesse sustenta o esforço ao longo de anos;
+- **N**ova: a resposta acrescenta algo ao que se sabe? Pode confirmar, refutar ou estender achados anteriores; replicar um estudo importante em uma população diferente também é uma contribuição nova;
+- **É**tica: o estudo pode ser realizado sem expor os participantes a riscos inaceitáveis? (capítulo *Ética e boas práticas em pesquisa*);
+- **R**elevante: a resposta tem potencial de influenciar o conhecimento científico, a prática clínica ou as políticas de saúde?
+
+### Estruturando a pergunta
+
+Para perguntas sobre efeitos de intervenções ou exposições, o formato **PICO** (População, Intervenção, Comparador, *Outcome*/desfecho), apresentado no capítulo *Desenhos de pesquisa*, ajuda a garantir que nenhum componente essencial fique implícito. Variações incluem **PECO** (Exposição, em estudos observacionais), **PICOT** (acrescentando o Tempo de acompanhamento) e **PIRD** (População, teste Índice, teste de Referência, Diagnóstico) para estudos de acurácia diagnóstica. Para perguntas descritivas e qualitativas, outros formatos são usados, como **PCC** (População, Conceito, Contexto), comum em revisões de escopo.
+
+Um exemplo de refinamento progressivo:
+
+1. "O exercício faz bem para idosos?" (tema, não pergunta);
+2. "O exercício melhora a cognição de idosos?" (ainda vago: qual exercício? qual cognição? comparado a quê?);
+3. "Em idosos com comprometimento cognitivo leve (P), um programa de treinamento aeróbico de intensidade moderada, três vezes por semana durante seis meses (I), comparado a um programa de alongamento com a mesma frequência (C), melhora a memória episódica, medida pelo teste X (O), ao final da intervenção (T)?".
+
+A última versão já indica o desenho (ensaio randomizado), a população a recrutar, o desfecho principal e permite calcular o tamanho amostral.
 
 ## Revisão da literatura
 
+A revisão da literatura tem duas funções. **Antes** de definir a pergunta, ela mostra o que já se sabe e onde estão as lacunas, evitando que se repita desnecessariamente o que já está estabelecido. **Durante** o projeto, ela fundamenta a justificativa, orienta a escolha de métodos e instrumentos (como outros estudos mediram o mesmo desfecho?) e fornece dados para o cálculo do tamanho amostral (qual a variabilidade esperada? qual o tamanho de efeito plausível?).
+
+### Tipos de revisão
+
+- **Revisão narrativa**: síntese não sistemática, em geral escrita por especialistas, útil para apresentar um tema amplo. Não segue um protocolo explícito de busca e seleção, e por isso está sujeita à seleção dos estudos que confirmam a visão do autor.
+- **Revisão integrativa**: combina estudos de diferentes desenhos (inclusive qualitativos e teóricos) com método explícito de busca; comum na enfermagem.
+- **Revisão de escopo** (*scoping review*): mapeia a extensão e a natureza da literatura sobre um tema amplo, identifica conceitos e lacunas, sem necessariamente avaliar a qualidade dos estudos ou sintetizar resultados.
+- **Revisão sistemática**: responde a uma pergunta específica seguindo um protocolo pré-definido de busca, seleção, extração de dados e avaliação do risco de viés, de modo transparente e reprodutível. Deve ter seu protocolo registrado previamente (por exemplo, na base PROSPERO) e ser relatada segundo a diretriz PRISMA 2020 [@page2021].
+- **Metanálise**: combinação estatística dos resultados de estudos incluídos em uma revisão sistemática, quando são suficientemente homogêneos (capítulo *Tópicos avançados em bioestatística*).
+
+Para fundamentar um projeto de pesquisa, não é necessário realizar uma revisão sistemática completa, mas é muito recomendável adotar seus princípios: busca em várias bases, estratégia explícita e registro do que foi encontrado. Se já existir uma revisão sistemática recente sobre a pergunta, ela é o melhor ponto de partida.
+
+### Onde buscar
+
+As principais bases bibliográficas em ciências da saúde são:
+
+- **MEDLINE**, acessada gratuitamente pelo **PubMed**, mantido pela Biblioteca Nacional de Medicina dos Estados Unidos;
+- **LILACS** (Literatura Latino-Americana e do Caribe em Ciências da Saúde), acessada pela **Biblioteca Virtual em Saúde** (BVS), indispensável para localizar a produção latino-americana, frequentemente ausente das bases internacionais;
+- **SciELO**, biblioteca de periódicos de acesso aberto da América Latina, da Península Ibérica e da África do Sul;
+- **Embase**, com maior cobertura de periódicos europeus e de farmacologia;
+- **Web of Science** e **Scopus**, bases multidisciplinares com informações de citação;
+- **Cochrane Library**, que reúne revisões sistemáticas Cochrane e um registro de ensaios controlados;
+- registros de ensaios clínicos (**ClinicalTrials.gov**, **ReBEC**, plataforma ICTRP da Organização Mundial da Saúde), que permitem identificar estudos em andamento e estudos concluídos e não publicados.
+
+Pesquisadores vinculados a instituições brasileiras têm acesso a muitas dessas bases pelo **Portal de Periódicos da CAPES**.
+
+### Como buscar
+
+Uma busca eficiente combina três elementos.
+
+1. **Vocabulário controlado.** As bases indexam os artigos com descritores padronizados: os **MeSH** (*Medical Subject Headings*), no MEDLINE, e os **DeCS** (Descritores em Ciências da Saúde), trilíngues, na BVS. Buscar pelo descritor recupera artigos que usam sinônimos diferentes para o mesmo conceito ("infarto do miocárdio", "ataque cardíaco").
+2. **Termos livres.** Como artigos recentes podem ainda não estar indexados, e nem todo conceito tem descritor, combinam-se os descritores com palavras do título e do resumo, incluindo sinônimos, grafias alternativas e truncamentos (`hypertens*` recupera *hypertension*, *hypertensive*).
+3. **Operadores booleanos.** `OR` une sinônimos de um mesmo conceito (amplia a busca); `AND` combina conceitos diferentes (restringe a busca); `NOT` exclui termos (deve ser usado com cautela, pois pode excluir artigos relevantes). Parênteses definem a ordem das operações.
+
+Um exemplo de estratégia no PubMed para a pergunta sobre exercício aeróbico e cognição em idosos com comprometimento cognitivo leve:
+
+```
+("Cognitive Dysfunction"[MeSH] OR "mild cognitive impairment"[tiab] OR MCI[tiab])
+AND
+("Exercise"[MeSH] OR "aerobic exercise"[tiab] OR "aerobic training"[tiab] OR "physical activity"[tiab])
+AND
+("Randomized Controlled Trial"[pt] OR randomi*[tiab])
+```
+
+O campo `[tiab]` restringe a busca ao título e ao resumo, e `[pt]` ao tipo de publicação. A estratégia deve ser registrada exatamente como foi executada, com a data da busca, para que possa ser reproduzida e atualizada.
+
+### Organizar e avaliar
+
+Os resultados devem ser exportados para um **gerenciador de referências** (como Zotero, de código aberto, ou Mendeley e EndNote), que remove duplicatas, armazena os textos completos e formata as citações automaticamente. O Zotero se integra ao R Markdown e ao Quarto, que geram as citações deste livro a partir de um arquivo BibTeX.
+
+Ler não é o mesmo que aceitar. Cada estudo relevante deve ser **avaliado criticamente**: qual o desenho? A amostra é representativa? Há risco de viés de seleção, de informação ou de confusão? O tamanho do efeito é clinicamente relevante e estimado com precisão? Os resultados foram relatados de forma completa? Ferramentas estruturadas ajudam nessa avaliação, como o RoB 2 para ensaios randomizados e o ROBINS-I para estudos não randomizados de intervenções. Os capítulos *Desenhos de pesquisa* e *Bioestatística inferencial* fornecem a base para essa leitura crítica.
+
+A revisão escrita, no projeto ou no artigo, não deve ser uma lista de resumos ("Silva et al. encontraram... Souza et al. encontraram..."), mas uma síntese organizada por ideias, que mostre o que está estabelecido, o que é controverso e onde está a lacuna que o estudo pretende preencher. É essa lacuna que justifica o projeto.
+
 ## Definição de objetivos
 
+Os objetivos dizem **o que o estudo fará** para responder à pergunta. São tradicionalmente divididos em:
+
+- **objetivo geral**: uma única frase que expressa o propósito central do estudo, diretamente ligado à pergunta de pesquisa;
+- **objetivos específicos**: as etapas concretas necessárias para alcançar o objetivo geral, cada uma correspondendo a uma análise ou resultado do estudo.
+
+Objetivos bem formulados começam com um **verbo no infinitivo** que indique uma ação verificável. Verbos como "estimar", "comparar", "avaliar a associação entre", "descrever", "identificar" e "desenvolver" indicam claramente o que será feito. Verbos como "conhecer", "compreender", "estudar" ou "analisar" isoladamente são vagos e devem vir acompanhados de complementos que os tornem precisos. Objetivos também não devem ser confundidos com a **justificativa** ("contribuir para a melhoria da saúde dos idosos" é um propósito desejável, mas não algo que o estudo fará e cujo cumprimento possa ser verificado).
+
+Um exemplo:
+
+- **Objetivo geral**: avaliar o efeito de um programa de treinamento aeróbico sobre a memória episódica de idosos com comprometimento cognitivo leve.
+- **Objetivos específicos**:
+  1. comparar a variação no escore de memória episódica entre os grupos de treinamento aeróbico e de alongamento ao final de seis meses (desfecho principal);
+  2. comparar a variação na função executiva e na velocidade de processamento entre os grupos (desfechos secundários);
+  3. descrever a adesão ao programa e a frequência de eventos adversos;
+  4. avaliar se o efeito do treinamento sobre a memória difere segundo a presença do alelo APOE ε4 (análise de subgrupo pré-especificada).
+
+Note a correspondência com o desenho: o objetivo específico 1 define o **desfecho principal**, para o qual o estudo terá seu tamanho amostral calculado. Deve-se definir **um** desfecho principal, ou muito poucos, antes da coleta de dados. Os desfechos secundários são exploratórios ou de apoio, e os resultados para eles devem ser interpretados com mais cautela, pois múltiplas comparações aumentam a chance de resultados positivos por acaso (capítulo *Bioestatística inferencial*).
+
 ## Formulação de hipóteses
+
+### Hipótese de pesquisa e hipótese estatística
+
+A **hipótese de pesquisa** (ou científica) é uma proposição sobre a relação entre variáveis, derivada da teoria ou da literatura, que o estudo testará. Por exemplo: "o treinamento aeróbico melhora a memória episódica de idosos com comprometimento cognitivo leve, por aumentar o fluxo sanguíneo hipocampal".
+
+Nem todo estudo precisa de hipóteses. Estudos **descritivos** (estimar uma prevalência, descrever o perfil de usuários de um serviço) têm objetivos, mas não hipóteses a testar. Estudos **exploratórios**, que buscam gerar hipóteses a partir de dados, também não precisam, desde que sejam apresentados como tais. Estudos **confirmatórios**, que pretendem testar uma relação específica, precisam de hipóteses formuladas antes da coleta e da análise dos dados.
+
+A hipótese de pesquisa é traduzida em **hipóteses estatísticas** sobre parâmetros populacionais, que podem ser testadas com os métodos do capítulo *Bioestatística inferencial*:
+
+- **hipótese nula** ($H_0$): $\mu_{\text{aeróbico}} - \mu_{\text{alongamento}} = 0$, isto é, não há diferença na variação média do escore de memória entre os grupos;
+- **hipótese alternativa** ($H_1$): $\mu_{\text{aeróbico}} - \mu_{\text{alongamento}} \neq 0$.
+
+A tradução nem sempre é imediata, e é nela que muitos estudos se perdem. A hipótese de pesquisa fala em "melhorar a memória"; a hipótese estatística precisa especificar **qual** medida de memória, **em que momento**, **comparada a quê** e **com que parâmetro** (diferença de médias, razão de riscos). Ela também deixa claro que o teste estatístico avalia a associação entre o grupo e o desfecho, não o mecanismo proposto ("por aumentar o fluxo sanguíneo hipocampal"), que exigiria medidas e análises adicionais.
+
+### Características de uma boa hipótese
+
+Uma hipótese útil deve ser:
+
+1. **testável e falseável**: deve ser possível imaginar resultados que a contradigam (capítulo *Introdução à metodologia científica*);
+2. **específica**: deve identificar as variáveis, a população e a direção esperada da relação;
+3. **fundamentada**: deve derivar de teoria, de estudos anteriores ou de observações sistemáticas, e não de um palpite sem justificativa;
+4. **formulada a priori**: antes da coleta e, sobretudo, antes da análise dos dados;
+5. **coerente com o desenho**: uma hipótese causal exige um desenho capaz de sustentar inferências causais.
+
+### Estimação ou teste?
+
+Formular o estudo apenas em termos de "rejeitar ou não a hipótese nula" empobrece a pergunta. Em muitas situações, o que interessa não é **se** há uma diferença, mas **quanto** ela vale e com que precisão é estimada. Por isso, é cada vez mais comum, e recomendável, formular os objetivos em termos de **estimação**: "estimar a diferença média no escore de memória entre os grupos, com intervalo de confiança de 95%". O tamanho amostral, nesse caso, pode ser calculado para obter uma precisão desejada (uma largura máxima do intervalo), e não apenas um poder desejado. Quando um teste é necessário, deve-se especificar também a **diferença mínima clinicamente relevante**, que é a base do cálculo do tamanho amostral.
+
+### HARKing e registro prévio
+
+**HARKing** (*Hypothesizing After the Results are Known*, formular hipóteses depois de conhecer os resultados) é a prática de apresentar como hipótese prévia o que, na verdade, foi sugerido pelos dados [@kerr1998]. Se um pesquisador analisa vinte associações, encontra uma estatisticamente significativa e escreve o artigo como se essa tivesse sido a hipótese desde o início, o valor *p* relatado perde o sentido: a probabilidade de encontrar ao menos um resultado significativo em vinte testes, mesmo sem nenhum efeito real, é alta.
+
+Explorar os dados não é errado; apresentar exploração como confirmação é. A proteção mais eficaz é o **registro prévio** (*preregistration*): a publicação, antes da coleta ou da análise dos dados, das hipóteses, do desfecho principal e do plano de análise, em uma plataforma pública com data registrada [@nosek2018]. Para ensaios clínicos, o registro prévio é exigido pela legislação e pelos principais periódicos (capítulo *Desenhos de pesquisa*). Para outros estudos, há plataformas como o OSF (*Open Science Framework*). O registro não impede análises não planejadas; ele permite que o leitor distinga o que foi planejado do que foi descoberto ao longo do caminho.
+
+## Resumo do capítulo
+
+- Distinga tema, problema e pergunta de pesquisa. Projetos respondem a perguntas, não a temas.
+- Avalie a pergunta pelos critérios FINER (factível, interessante, nova, ética, relevante) e estruture-a com PICO ou formatos equivalentes.
+- A revisão da literatura mostra o que se sabe e onde está a lacuna. Busque em várias bases (incluindo LILACS e SciELO), combine vocabulário controlado (MeSH, DeCS) e termos livres com operadores booleanos, registre a estratégia e avalie criticamente os estudos.
+- Objetivos começam com verbos que indicam ações verificáveis. Defina um desfecho principal antes da coleta.
+- Hipóteses de pesquisa devem ser testáveis, específicas, fundamentadas e formuladas a priori; sua tradução em hipóteses estatísticas exige especificar medida, momento, comparação e parâmetro.
+- Prefira formular objetivos em termos de estimação, com a diferença clinicamente relevante explícita.
+- Não apresente hipóteses sugeridas pelos dados como hipóteses prévias (HARKing). O registro prévio permite distinguir confirmação de exploração.
+
+## Exercícios
+
+1. Transforme o tema "diabetes gestacional" em um problema de pesquisa e em uma pergunta estruturada no formato PICO ou PECO.
+
+2. Avalie a seguinte pergunta pelos critérios FINER: "a vacina X reduz a mortalidade por todas as causas em adultos jovens saudáveis?", considerando que a mortalidade nessa população é de cerca de 1 por 1.000 por ano.
+
+3. Construa uma estratégia de busca para o PubMed para a pergunta: "em adultos com lombalgia crônica, a acupuntura reduz a dor, comparada à acupuntura simulada?".
+
+4. Reescreva os objetivos a seguir de forma verificável: (a) "conhecer a saúde mental dos estudantes de medicina"; (b) "contribuir para a redução das infecções hospitalares".
+
+5. Para a hipótese de pesquisa "o consumo de ultraprocessados está associado a maior risco de depressão em adultos", escreva as hipóteses estatísticas correspondentes, especificando o parâmetro.
+
+6. Um pesquisador coletou dados de 40 variáveis em 300 pacientes e encontrou associação estatisticamente significativa entre o grupo sanguíneo e o tempo de internação por COVID-19. No artigo, apresentou essa associação como a hipótese principal do estudo. Qual o problema e como ele deveria ter relatado o achado?
+
+## Respostas dos exercícios
+
+1. Um problema possível: "não está claro se o rastreamento universal do diabetes gestacional com o teste oral de tolerância à glicose, comparado ao rastreamento baseado em fatores de risco, reduz desfechos perinatais adversos no contexto da atenção primária brasileira". Pergunta (PICO): em gestantes atendidas na atenção primária (P), o rastreamento universal com TOTG de 75 g entre 24 e 28 semanas (I), comparado ao rastreamento baseado em fatores de risco (C), reduz a incidência de macrossomia fetal (O)?
+
+2. Factibilidade é o principal problema: com mortalidade de 1 por 1.000 por ano, detectar uma redução relativa de, digamos, 20% exigiria centenas de milhares de participantes acompanhados por anos. A pergunta pode ser interessante e relevante, e ser ética se a vacina tiver perfil de segurança conhecido, mas provavelmente não é factível como ensaio clínico; desfechos mais frequentes (infecção específica, hospitalização) seriam alternativas.
+
+3. Uma possibilidade:
+
+    ```
+    ("Low Back Pain"[MeSH] OR "low back pain"[tiab] OR "lumbago"[tiab] OR "lumbar pain"[tiab])
+    AND ("Chronic Pain"[MeSH] OR chronic[tiab])
+    AND ("Acupuncture Therapy"[MeSH] OR acupunctur*[tiab])
+    AND (sham[tiab] OR placebo[tiab] OR "Placebos"[MeSH])
+    ```
+
+    A estratégia deveria ser complementada com buscas em outras bases (Embase, LILACS, Cochrane Library) e registrada com a data.
+
+4. (a) "Estimar a prevalência de sintomas depressivos e ansiosos, medidos pelas escalas PHQ-9 e GAD-7, em estudantes de medicina de uma universidade pública, e comparar as prevalências entre os ciclos básico, clínico e internato." (b) "Avaliar se a implementação de um protocolo de higiene das mãos com auditoria e retorno mensal está associada à redução da taxa de infecção de corrente sanguínea associada a cateter, por 1.000 cateteres-dia, em unidades de terapia intensiva." O texto original de (b) expressa um propósito, adequado à justificativa, não um objetivo.
+
+5. Por exemplo, em uma coorte, com o consumo dicotomizado (alto versus baixo) e o desfecho incidência de depressão em cinco anos: $H_0\colon \text{RR} = 1$; $H_1\colon \text{RR} \neq 1$, em que RR é o risco relativo de depressão entre adultos com alto e baixo consumo. Com o consumo como variável contínua (percentual da energia proveniente de ultraprocessados) e um modelo de regressão, $H_0\colon \beta = 0$, em que $\beta$ é o logaritmo da razão de riscos por aumento de 10 pontos percentuais no consumo. Em ambos os casos, o protocolo deveria especificar o ajuste para confundidores.
+
+6. É HARKing: com 40 variáveis testadas, a probabilidade de ao menos uma associação significativa por acaso é alta, e apresentá-la como hipótese principal torna o valor *p* enganoso. O achado deveria ser relatado como exploratório, informando quantas associações foram examinadas, de preferência com ajuste para comparações múltiplas, e com a recomendação de que seja testado em um estudo independente, com hipótese registrada previamente.

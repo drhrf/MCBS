@@ -5,25 +5,24 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 11 Aplicações práticas e estudos de caso | Metodologia científica e Bioestatística</title>
-  <meta name="description" content="Capítulo 11 Aplicações práticas e estudos de caso | Metodologia científica e Bioestatística." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 11 Aplicações práticas e estudos de caso | Metodologia científica e Bioestatística" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
-  <meta property="og:description" content="Capítulo 11 Aplicações práticas e estudos de caso | Metodologia científica e Bioestatística." />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta property="og:image" content="https://drhrf.github.io/MCBS/images/MCBS_capa.png" />
+  <meta property="og:description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="github-repo" content="drhrf/MCBS" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Capítulo 11 Aplicações práticas e estudos de caso | Metodologia científica e Bioestatística" />
   
-  <meta name="twitter:description" content="Capítulo 11 Aplicações práticas e estudos de caso | Metodologia científica e Bioestatística." />
-  <meta name="twitter:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
+  <meta name="twitter:description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="twitter:image" content="https://drhrf.github.io/MCBS/images/MCBS_capa.png" />
 
-<meta name="author" content="Editor: Hércules Rezende Freitas, Ph.D." />
+<meta name="author" content="Hércules Rezende Freitas" />
 
 
-<meta name="date" content="2024-12-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,18 +51,18 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
 <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="libs/plotly-binding-4.12.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+<link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<a href="https://raw.githubusercontent.com/drhrf/MCBS/master/_main_files/MCBSbook.pdf" target="_blank" style="position: absolute; top: 10px; right: 60px;">
+<a href="MCBSbook.pdf" target="_blank" style="position: absolute; top: 10px; right: 60px;">
   <i class="fas fa-file-pdf" style="font-size: 24px; color: #333;"></i>
 </a>
 
@@ -78,6 +77,71 @@
 </script>
 
 
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
   
@@ -88,7 +152,6 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -120,155 +183,415 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
-<li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
+<li><a href="MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
+<li><a href="MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
 <li><a href="./">SUMÁRIO</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre o projeto</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Capa</a></li>
+<li class="chapter" data-level="" data-path="ficha-técnica.html"><a href="ficha-técnica.html"><i class="fa fa-check"></i>Ficha técnica</a></li>
+<li class="chapter" data-level="1" data-path="sobre-o-projeto.html"><a href="sobre-o-projeto.html"><i class="fa fa-check"></i><b>1</b> Sobre o projeto</a></li>
 <li class="chapter" data-level="2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html"><i class="fa fa-check"></i><b>2</b> Introdução à metodologia científica</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#conceitos-básicos-de-ciência"><i class="fa fa-check"></i><b>2.1</b> Conceitos básicos de ciência</a></li>
-<li class="chapter" data-level="2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-método-científico"><i class="fa fa-check"></i><b>2.2</b> O método científico</a></li>
-<li class="chapter" data-level="2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-científicos"><i class="fa fa-check"></i><b>2.3</b> Paradigmas científicos</a></li>
-<li class="chapter" data-level="2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#ética-na-pesquisa-científica"><i class="fa fa-check"></i><b>2.4</b> Ética na pesquisa científica</a></li>
+<li class="chapter" data-level="2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#conceitos-b%C3%A1sicos-de-ci%C3%AAncia"><i class="fa fa-check"></i><b>2.1</b> Conceitos básicos de ciência</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#formas-de-conhecimento"><i class="fa fa-check"></i><b>2.1.1</b> Formas de conhecimento</a></li>
+<li class="chapter" data-level="2.1.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-vocabul%C3%A1rio-da-ci%C3%AAncia"><i class="fa fa-check"></i><b>2.1.2</b> O vocabulário da ciência</a></li>
+<li class="chapter" data-level="2.1.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#pesquisa-b%C3%A1sica-aplicada-e-translacional"><i class="fa fa-check"></i><b>2.1.3</b> Pesquisa básica, aplicada e translacional</a></li>
+<li class="chapter" data-level="2.1.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#ci%C3%AAncia-e-pseudoci%C3%AAncia"><i class="fa fa-check"></i><b>2.1.4</b> Ciência e pseudociência</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-m%C3%A9todo-cient%C3%ADfico"><i class="fa fa-check"></i><b>2.2</b> O método científico</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#indu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.1</b> Indução</a></li>
+<li class="chapter" data-level="2.2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#dedu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.2</b> Dedução</a></li>
+<li class="chapter" data-level="2.2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-m%C3%A9todo-hipot%C3%A9tico-dedutivo"><i class="fa fa-check"></i><b>2.2.3</b> O método hipotético-dedutivo</a></li>
+<li class="chapter" data-level="2.2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#falseabilidade"><i class="fa fa-check"></i><b>2.2.4</b> Falseabilidade</a></li>
+<li class="chapter" data-level="2.2.5" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#abdu%C3%A7%C3%A3o-e-a-gera%C3%A7%C3%A3o-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>2.2.5</b> Abdução e a geração de hipóteses</a></li>
+<li class="chapter" data-level="2.2.6" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#reprodutibilidade-e-autocorre%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.6</b> Reprodutibilidade e autocorreção</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-cient%C3%ADficos"><i class="fa fa-check"></i><b>2.3</b> Paradigmas científicos</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#kuhn-e-as-revolu%C3%A7%C3%B5es-cient%C3%ADficas"><i class="fa fa-check"></i><b>2.3.1</b> Kuhn e as revoluções científicas</a></li>
+<li class="chapter" data-level="2.3.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#outras-perspectivas"><i class="fa fa-check"></i><b>2.3.2</b> Outras perspectivas</a></li>
+<li class="chapter" data-level="2.3.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-de-pesquisa-em-sa%C3%BAde"><i class="fa fa-check"></i><b>2.3.3</b> Paradigmas de pesquisa em saúde</a></li>
+<li class="chapter" data-level="2.3.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#medicina-baseada-em-evid%C3%AAncias"><i class="fa fa-check"></i><b>2.3.4</b> Medicina baseada em evidências</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#%C3%A9tica-na-pesquisa-cient%C3%ADfica"><i class="fa fa-check"></i><b>2.4</b> Ética na pesquisa científica</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#resumo-do-cap%C3%ADtulo"><i class="fa fa-check"></i><b>2.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="2.6" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#exerc%C3%ADcios"><i class="fa fa-check"></i><b>2.6</b> Exercícios</a></li>
+<li class="chapter" data-level="2.7" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#respostas-dos-exerc%C3%ADcios"><i class="fa fa-check"></i><b>2.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html"><i class="fa fa-check"></i><b>3</b> Formulação de problemas e hipóteses</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#identificação-de-problemas-de-pesquisa"><i class="fa fa-check"></i><b>3.1</b> Identificação de problemas de pesquisa</a></li>
-<li class="chapter" data-level="3.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#revisão-da-literatura"><i class="fa fa-check"></i><b>3.2</b> Revisão da literatura</a></li>
-<li class="chapter" data-level="3.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#definição-de-objetivos"><i class="fa fa-check"></i><b>3.3</b> Definição de objetivos</a></li>
-<li class="chapter" data-level="3.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#formulação-de-hipóteses"><i class="fa fa-check"></i><b>3.4</b> Formulação de hipóteses</a></li>
+<li class="chapter" data-level="3.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#identifica%C3%A7%C3%A3o-de-problemas-de-pesquisa"><i class="fa fa-check"></i><b>3.1</b> Identificação de problemas de pesquisa</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#do-tema-ao-problema-e-%C3%A0-pergunta"><i class="fa fa-check"></i><b>3.1.1</b> Do tema ao problema e à pergunta</a></li>
+<li class="chapter" data-level="3.1.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#fontes-de-problemas"><i class="fa fa-check"></i><b>3.1.2</b> Fontes de problemas</a></li>
+<li class="chapter" data-level="3.1.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#crit%C3%A9rios-para-uma-boa-pergunta-finer"><i class="fa fa-check"></i><b>3.1.3</b> Critérios para uma boa pergunta: FINER</a></li>
+<li class="chapter" data-level="3.1.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#estruturando-a-pergunta"><i class="fa fa-check"></i><b>3.1.4</b> Estruturando a pergunta</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#revis%C3%A3o-da-literatura"><i class="fa fa-check"></i><b>3.2</b> Revisão da literatura</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#tipos-de-revis%C3%A3o"><i class="fa fa-check"></i><b>3.2.1</b> Tipos de revisão</a></li>
+<li class="chapter" data-level="3.2.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#onde-buscar"><i class="fa fa-check"></i><b>3.2.2</b> Onde buscar</a></li>
+<li class="chapter" data-level="3.2.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#como-buscar"><i class="fa fa-check"></i><b>3.2.3</b> Como buscar</a></li>
+<li class="chapter" data-level="3.2.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#organizar-e-avaliar"><i class="fa fa-check"></i><b>3.2.4</b> Organizar e avaliar</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#defini%C3%A7%C3%A3o-de-objetivos"><i class="fa fa-check"></i><b>3.3</b> Definição de objetivos</a></li>
+<li class="chapter" data-level="3.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#formula%C3%A7%C3%A3o-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>3.4</b> Formulação de hipóteses</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#hip%C3%B3tese-de-pesquisa-e-hip%C3%B3tese-estat%C3%ADstica"><i class="fa fa-check"></i><b>3.4.1</b> Hipótese de pesquisa e hipótese estatística</a></li>
+<li class="chapter" data-level="3.4.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#caracter%C3%ADsticas-de-uma-boa-hip%C3%B3tese"><i class="fa fa-check"></i><b>3.4.2</b> Características de uma boa hipótese</a></li>
+<li class="chapter" data-level="3.4.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#estima%C3%A7%C3%A3o-ou-teste"><i class="fa fa-check"></i><b>3.4.3</b> Estimação ou teste?</a></li>
+<li class="chapter" data-level="3.4.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#harking-e-registro-pr%C3%A9vio"><i class="fa fa-check"></i><b>3.4.4</b> HARKing e registro prévio</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#resumo-do-cap%C3%ADtulo-1"><i class="fa fa-check"></i><b>3.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="3.6" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>3.6</b> Exercícios</a></li>
+<li class="chapter" data-level="3.7" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#respostas-dos-exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>3.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html"><i class="fa fa-check"></i><b>4</b> Desenhos de pesquisa</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-observacionais"><i class="fa fa-check"></i><b>4.1</b> Estudos observacionais</a>
+<li class="chapter" data-level="4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#da-pergunta-ao-desenho"><i class="fa fa-check"></i><b>4.1</b> Da pergunta ao desenho</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-transversais"><i class="fa fa-check"></i><b>4.1.1</b> Estudos transversais</a></li>
-<li class="chapter" data-level="4.1.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-coorte"><i class="fa fa-check"></i><b>4.1.2</b> Estudos de coorte</a></li>
-<li class="chapter" data-level="4.1.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-caso-controle"><i class="fa fa-check"></i><b>4.1.3</b> Estudos de caso-controle</a></li>
+<li class="chapter" data-level="4.1.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#a-pergunta-de-pesquisa"><i class="fa fa-check"></i><b>4.1.1</b> A pergunta de pesquisa</a></li>
+<li class="chapter" data-level="4.1.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#uma-classifica%C3%A7%C3%A3o-dos-desenhos"><i class="fa fa-check"></i><b>4.1.2</b> Uma classificação dos desenhos</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-clínicos"><i class="fa fa-check"></i><b>4.2</b> Ensaios clínicos</a>
+<li class="chapter" data-level="4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#medidas-de-frequ%C3%AAncia-e-de-associa%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>4.2</b> Medidas de frequência e de associação</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-randomizados-controlados"><i class="fa fa-check"></i><b>4.2.1</b> Ensaios randomizados controlados</a></li>
-<li class="chapter" data-level="4.2.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-duplo-cegos"><i class="fa fa-check"></i><b>4.2.2</b> Estudos duplo-cegos</a></li>
+<li class="chapter" data-level="4.2.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#preval%C3%AAncia-e-incid%C3%AAncia"><i class="fa fa-check"></i><b>4.2.1</b> Prevalência e incidência</a></li>
+<li class="chapter" data-level="4.2.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#medidas-de-associa%C3%A7%C3%A3o-em-tabelas-2-2"><i class="fa fa-check"></i><b>4.2.2</b> Medidas de associação em tabelas 2 × 2</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-experimentais"><i class="fa fa-check"></i><b>4.3</b> Estudos experimentais</a>
+<li class="chapter" data-level="4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#validade-erro-aleat%C3%B3rio-vi%C3%A9s-e-confus%C3%A3o"><i class="fa fa-check"></i><b>4.3</b> Validade: erro aleatório, viés e confusão</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#desenho-experimental"><i class="fa fa-check"></i><b>4.3.1</b> Desenho experimental</a></li>
-<li class="chapter" data-level="4.3.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#controle-e-aleatorização"><i class="fa fa-check"></i><b>4.3.2</b> Controle e aleatorização</a></li>
+<li class="chapter" data-level="4.3.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#erro-aleat%C3%B3rio"><i class="fa fa-check"></i><b>4.3.1</b> Erro aleatório</a></li>
+<li class="chapter" data-level="4.3.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#vi%C3%A9s"><i class="fa fa-check"></i><b>4.3.2</b> Viés</a></li>
+<li class="chapter" data-level="4.3.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#confus%C3%A3o"><i class="fa fa-check"></i><b>4.3.3</b> Confusão</a></li>
+<li class="chapter" data-level="4.3.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#da-associa%C3%A7%C3%A3o-%C3%A0-causalidade"><i class="fa fa-check"></i><b>4.3.4</b> Da associação à causalidade</a></li>
 </ul></li>
+<li class="chapter" data-level="4.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-observacionais"><i class="fa fa-check"></i><b>4.4</b> Estudos observacionais</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-transversais"><i class="fa fa-check"></i><b>4.4.1</b> Estudos transversais</a></li>
+<li class="chapter" data-level="4.4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-coorte"><i class="fa fa-check"></i><b>4.4.2</b> Estudos de coorte</a></li>
+<li class="chapter" data-level="4.4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-caso-controle"><i class="fa fa-check"></i><b>4.4.3</b> Estudos de caso-controle</a></li>
+<li class="chapter" data-level="4.4.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#outros-desenhos-observacionais"><i class="fa fa-check"></i><b>4.4.4</b> Outros desenhos observacionais</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>4.5</b> Ensaios clínicos</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-randomizados-controlados"><i class="fa fa-check"></i><b>4.5.1</b> Ensaios randomizados controlados</a></li>
+<li class="chapter" data-level="4.5.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-duplo-cegos"><i class="fa fa-check"></i><b>4.5.2</b> Estudos duplo-cegos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-experimentais"><i class="fa fa-check"></i><b>4.6</b> Estudos experimentais</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#desenho-experimental"><i class="fa fa-check"></i><b>4.6.1</b> Desenho experimental</a></li>
+<li class="chapter" data-level="4.6.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#controle-e-aleatoriza%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>4.6.2</b> Controle e aleatorização</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#resumo-do-cap%C3%ADtulo-2"><i class="fa fa-check"></i><b>4.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="4.8" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#exerc%C3%ADcios-2"><i class="fa fa-check"></i><b>4.8</b> Exercícios</a></li>
+<li class="chapter" data-level="4.9" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#respostas-dos-exerc%C3%ADcios-2"><i class="fa fa-check"></i><b>4.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html"><i class="fa fa-check"></i><b>5</b> Bioestatística descritiva</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-tendência-central"><i class="fa fa-check"></i><b>5.1</b> Medidas de tendência central</a>
+<li class="chapter" data-level="5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desc-tipos"><i class="fa fa-check"></i><b>5.1</b> Tipos de variáveis e escalas de medida</a></li>
+<li class="chapter" data-level="5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-tend%C3%AAncia-central"><i class="fa fa-check"></i><b>5.2</b> Medidas de tendência central</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#média"><i class="fa fa-check"></i><b>5.1.1</b> Média</a></li>
-<li class="chapter" data-level="5.1.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#mediana"><i class="fa fa-check"></i><b>5.1.2</b> Mediana</a></li>
-<li class="chapter" data-level="5.1.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#moda"><i class="fa fa-check"></i><b>5.1.3</b> Moda</a></li>
+<li class="chapter" data-level="5.2.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#m%C3%A9dia"><i class="fa fa-check"></i><b>5.2.1</b> Média</a></li>
+<li class="chapter" data-level="5.2.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#mediana"><i class="fa fa-check"></i><b>5.2.2</b> Mediana</a></li>
+<li class="chapter" data-level="5.2.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#moda"><i class="fa fa-check"></i><b>5.2.3</b> Moda</a></li>
+<li class="chapter" data-level="5.2.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#comparando-m%C3%A9dia-mediana-e-moda"><i class="fa fa-check"></i><b>5.2.4</b> Comparando média, mediana e moda</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-dispersão"><i class="fa fa-check"></i><b>5.2</b> Medidas de dispersão</a>
+<li class="chapter" data-level="5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-dispers%C3%A3o"><i class="fa fa-check"></i><b>5.3</b> Medidas de dispersão</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#variância"><i class="fa fa-check"></i><b>5.2.1</b> Variância</a></li>
-<li class="chapter" data-level="5.2.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desvio-padrão"><i class="fa fa-check"></i><b>5.2.2</b> Desvio padrão</a></li>
-<li class="chapter" data-level="5.2.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#amplitude"><i class="fa fa-check"></i><b>5.2.3</b> Amplitude</a></li>
+<li class="chapter" data-level="5.3.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#amplitude"><i class="fa fa-check"></i><b>5.3.1</b> Amplitude</a></li>
+<li class="chapter" data-level="5.3.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#vari%C3%A2ncia"><i class="fa fa-check"></i><b>5.3.2</b> Variância</a></li>
+<li class="chapter" data-level="5.3.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desvio-padr%C3%A3o"><i class="fa fa-check"></i><b>5.3.3</b> Desvio padrão</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#distribuições-de-frequência"><i class="fa fa-check"></i><b>5.3</b> Distribuições de frequência</a></li>
-<li class="chapter" data-level="5.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#representações-gráficas"><i class="fa fa-check"></i><b>5.4</b> Representações gráficas</a>
+<li class="chapter" data-level="5.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#distribui%C3%A7%C3%B5es-de-frequ%C3%AAncia"><i class="fa fa-check"></i><b>5.4</b> Distribuições de frequência</a>
 <ul>
-<li class="chapter" data-level="5.4.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#histogramas"><i class="fa fa-check"></i><b>5.4.1</b> Histogramas</a></li>
-<li class="chapter" data-level="5.4.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#boxplots"><i class="fa fa-check"></i><b>5.4.2</b> Boxplots</a></li>
-<li class="chapter" data-level="5.4.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#gráficos-de-dispersão"><i class="fa fa-check"></i><b>5.4.3</b> Gráficos de dispersão</a></li>
+<li class="chapter" data-level="5.4.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#forma-da-distribui%C3%A7%C3%A3o-assimetria-e-curtose"><i class="fa fa-check"></i><b>5.4.1</b> Forma da distribuição: assimetria e curtose</a></li>
 </ul></li>
+<li class="chapter" data-level="5.5" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#representa%C3%A7%C3%B5es-gr%C3%A1ficas"><i class="fa fa-check"></i><b>5.5</b> Representações gráficas</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#histogramas"><i class="fa fa-check"></i><b>5.5.1</b> Histogramas</a></li>
+<li class="chapter" data-level="5.5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#boxplots"><i class="fa fa-check"></i><b>5.5.2</b> Boxplots</a></li>
+<li class="chapter" data-level="5.5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#gr%C3%A1ficos-de-dispers%C3%A3o"><i class="fa fa-check"></i><b>5.5.3</b> Gráficos de dispersão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#como-relatar-estat%C3%ADsticas-descritivas"><i class="fa fa-check"></i><b>5.6</b> Como relatar estatísticas descritivas</a></li>
+<li class="chapter" data-level="5.7" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#resumo-do-cap%C3%ADtulo-3"><i class="fa fa-check"></i><b>5.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="5.8" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#exerc%C3%ADcios-3"><i class="fa fa-check"></i><b>5.8</b> Exercícios</a></li>
+<li class="chapter" data-level="5.9" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#respostas-dos-exerc%C3%ADcios-3"><i class="fa fa-check"></i><b>5.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html"><i class="fa fa-check"></i><b>6</b> Bioestatística inferencial</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#conceitos-de-probabilidade"><i class="fa fa-check"></i><b>6.1</b> Conceitos de probabilidade</a></li>
-<li class="chapter" data-level="6.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>6.2</b> Distribuições de probabilidade</a>
+<li class="chapter" data-level="6.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#popula%C3%A7%C3%A3o-amostra-e-variabilidade-amostral"><i class="fa fa-check"></i><b>6.1</b> População, amostra e variabilidade amostral</a></li>
+<li class="chapter" data-level="6.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#conceitos-de-probabilidade"><i class="fa fa-check"></i><b>6.2</b> Conceitos de probabilidade</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-normal"><i class="fa fa-check"></i><b>6.2.1</b> Distribuição normal</a></li>
-<li class="chapter" data-level="6.2.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-t-de-student"><i class="fa fa-check"></i><b>6.2.2</b> Distribuição t de student</a></li>
-<li class="chapter" data-level="6.2.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-qui-quadrado"><i class="fa fa-check"></i><b>6.2.3</b> Distribuição qui-quadrado</a></li>
+<li class="chapter" data-level="6.2.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#experimentos-aleat%C3%B3rios-eventos-e-interpreta%C3%A7%C3%B5es-da-probabilidade"><i class="fa fa-check"></i><b>6.2.1</b> Experimentos aleatórios, eventos e interpretações da probabilidade</a></li>
+<li class="chapter" data-level="6.2.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#regras-b%C3%A1sicas"><i class="fa fa-check"></i><b>6.2.2</b> Regras básicas</a></li>
+<li class="chapter" data-level="6.2.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#teorema-de-bayes-e-testes-diagn%C3%B3sticos"><i class="fa fa-check"></i><b>6.2.3</b> Teorema de Bayes e testes diagnósticos</a></li>
+<li class="chapter" data-level="6.2.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#vari%C3%A1veis-aleat%C3%B3rias-esperan%C3%A7a-e-vari%C3%A2ncia"><i class="fa fa-check"></i><b>6.2.4</b> Variáveis aleatórias, esperança e variância</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estimação-e-intervalos-de-confiança"><i class="fa fa-check"></i><b>6.3</b> Estimação e intervalos de confiança</a></li>
-<li class="chapter" data-level="6.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-de-hipóteses"><i class="fa fa-check"></i><b>6.4</b> Testes de hipóteses</a>
+<li class="chapter" data-level="6.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%B5es-de-probabilidade"><i class="fa fa-check"></i><b>6.3</b> Distribuições de probabilidade</a>
 <ul>
-<li class="chapter" data-level="6.4.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-paramétricos"><i class="fa fa-check"></i><b>6.4.1</b> Testes paramétricos</a></li>
-<li class="chapter" data-level="6.4.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-não-paramétricos"><i class="fa fa-check"></i><b>6.4.2</b> Testes não-paramétricos</a></li>
+<li class="chapter" data-level="6.3.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-binomial"><i class="fa fa-check"></i><b>6.3.1</b> Distribuição binomial</a></li>
+<li class="chapter" data-level="6.3.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-normal"><i class="fa fa-check"></i><b>6.3.2</b> Distribuição normal</a></li>
+<li class="chapter" data-level="6.3.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#o-teorema-central-do-limite"><i class="fa fa-check"></i><b>6.3.3</b> O teorema central do limite</a></li>
+<li class="chapter" data-level="6.3.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-t-de-student"><i class="fa fa-check"></i><b>6.3.4</b> Distribuição t de Student</a></li>
+<li class="chapter" data-level="6.3.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-qui-quadrado"><i class="fa fa-check"></i><b>6.3.5</b> Distribuição qui-quadrado</a></li>
 </ul></li>
+<li class="chapter" data-level="6.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estima%C3%A7%C3%A3o-e-intervalos-de-confian%C3%A7a"><i class="fa fa-check"></i><b>6.4</b> Estimação e intervalos de confiança</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estima%C3%A7%C3%A3o-pontual"><i class="fa fa-check"></i><b>6.4.1</b> Estimação pontual</a></li>
+<li class="chapter" data-level="6.4.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#intervalo-de-confian%C3%A7a-para-a-m%C3%A9dia"><i class="fa fa-check"></i><b>6.4.2</b> Intervalo de confiança para a média</a></li>
+<li class="chapter" data-level="6.4.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#como-interpretar-e-como-n%C3%A3o-interpretar-um-intervalo-de-confian%C3%A7a"><i class="fa fa-check"></i><b>6.4.3</b> Como interpretar (e como não interpretar) um intervalo de confiança</a></li>
+<li class="chapter" data-level="6.4.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#intervalo-de-confian%C3%A7a-para-uma-propor%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>6.4.4</b> Intervalo de confiança para uma proporção</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>6.5</b> Testes de hipóteses</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#a-l%C3%B3gica-do-teste"><i class="fa fa-check"></i><b>6.5.1</b> A lógica do teste</a></li>
+<li class="chapter" data-level="6.5.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#erros-n%C3%ADvel-de-signific%C3%A2ncia-e-poder"><i class="fa fa-check"></i><b>6.5.2</b> Erros, nível de significância e poder</a></li>
+<li class="chapter" data-level="6.5.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#o-que-o-valor-p-n%C3%A3o-%C3%A9"><i class="fa fa-check"></i><b>6.5.3</b> O que o valor <em>p</em> não é</a></li>
+<li class="chapter" data-level="6.5.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-param%C3%A9tricos"><i class="fa fa-check"></i><b>6.5.4</b> Testes paramétricos</a></li>
+<li class="chapter" data-level="6.5.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-n%C3%A3o-param%C3%A9tricos"><i class="fa fa-check"></i><b>6.5.5</b> Testes não paramétricos</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#resumo-do-cap%C3%ADtulo-4"><i class="fa fa-check"></i><b>6.6</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="6.7" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.7</b> Exercícios</a></li>
+<li class="chapter" data-level="6.8" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#respostas-dos-exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.8</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Análise de dados</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-e-regressão"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
+<li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-e-regress%C3%A3o"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-de-pearson-e-spearman"><i class="fa fa-check"></i><b>7.1.1</b> Correlação de Pearson e Spearman</a></li>
-<li class="chapter" data-level="7.1.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#regressão-linear-simples-e-múltipla"><i class="fa fa-check"></i><b>7.1.2</b> Regressão linear simples e múltipla</a></li>
+<li class="chapter" data-level="7.1.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-de-pearson-e-spearman"><i class="fa fa-check"></i><b>7.1.1</b> Correlação de Pearson e Spearman</a></li>
+<li class="chapter" data-level="7.1.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#regress%C3%A3o-linear-simples-e-m%C3%BAltipla"><i class="fa fa-check"></i><b>7.1.2</b> Regressão linear simples e múltipla</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-de-variância-anova"><i class="fa fa-check"></i><b>7.2</b> Análise de variância (ANOVA)</a>
+<li class="chapter" data-level="7.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#an%C3%A1lise-de-vari%C3%A2ncia-anova"><i class="fa fa-check"></i><b>7.2</b> Análise de variância (ANOVA)</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-de-uma-via"><i class="fa fa-check"></i><b>7.2.1</b> ANOVA de uma via</a></li>
-<li class="chapter" data-level="7.2.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-fatorial"><i class="fa fa-check"></i><b>7.2.2</b> ANOVA fatorial</a></li>
+<li class="chapter" data-level="7.2.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#a-distribui%C3%A7%C3%A3o-f"><i class="fa fa-check"></i><b>7.2.1</b> A distribuição F</a></li>
+<li class="chapter" data-level="7.2.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-de-uma-via"><i class="fa fa-check"></i><b>7.2.2</b> ANOVA de uma via</a></li>
+<li class="chapter" data-level="7.2.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-fatorial"><i class="fa fa-check"></i><b>7.2.3</b> ANOVA fatorial</a></li>
 </ul></li>
-<li class="chapter" data-level="7.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-multivariada"><i class="fa fa-check"></i><b>7.3</b> Análise multivariada</a>
+<li class="chapter" data-level="7.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#an%C3%A1lise-multivariada"><i class="fa fa-check"></i><b>7.3</b> Análise multivariada</a>
 <ul>
 <li class="chapter" data-level="7.3.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#componentes-principais"><i class="fa fa-check"></i><b>7.3.1</b> Componentes principais</a></li>
-<li class="chapter" data-level="7.3.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#clusterização"><i class="fa fa-check"></i><b>7.3.2</b> Clusterização</a></li>
+<li class="chapter" data-level="7.3.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#clusteriza%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>7.3.2</b> Clusterização</a></li>
 </ul></li>
+<li class="chapter" data-level="7.4" data-path="análise-de-dados.html"><a href="análise-de-dados.html#resumo-do-cap%C3%ADtulo-5"><i class="fa fa-check"></i><b>7.4</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="7.5" data-path="análise-de-dados.html"><a href="análise-de-dados.html#exerc%C3%ADcios-5"><i class="fa fa-check"></i><b>7.5</b> Exercícios</a></li>
+<li class="chapter" data-level="7.6" data-path="análise-de-dados.html"><a href="análise-de-dados.html#respostas-dos-exerc%C3%ADcios-5"><i class="fa fa-check"></i><b>7.6</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html"><i class="fa fa-check"></i><b>8</b> Uso de <em>softwares</em> estatísticos</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#softwares-no-code-e-low-code"><i class="fa fa-check"></i><b>8.1</b> <em>Softwares</em> “no-code” e “low-code”</a></li>
-<li class="chapter" data-level="8.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-para-análise-estatística"><i class="fa fa-check"></i><b>8.2</b> R para análise estatística</a>
+<li class="chapter" data-level="8.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#softwares-no-code-e-low-code"><i class="fa fa-check"></i><b>8.1</b> <em>Softwares</em> “no-code” e “low-code”</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#planilhas-eletr%C3%B4nicas"><i class="fa fa-check"></i><b>8.1.1</b> Planilhas eletrônicas</a></li>
+<li class="chapter" data-level="8.1.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#programas-com-interface-gr%C3%A1fica"><i class="fa fa-check"></i><b>8.1.2</b> Programas com interface gráfica</a></li>
+<li class="chapter" data-level="8.1.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vantagens-e-limita%C3%A7%C3%B5es"><i class="fa fa-check"></i><b>8.1.3</b> Vantagens e limitações</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-para-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>8.2</b> R para análise estatística</a>
 <ul>
 <li class="chapter" data-level="8.2.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#aprendendo-a-programar"><i class="fa fa-check"></i><b>8.2.1</b> Aprendendo a programar</a></li>
-<li class="chapter" data-level="8.2.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visão-geral-do-r-e-suas-aplicações"><i class="fa fa-check"></i><b>8.2.2</b> Visão geral do R e suas aplicações</a></li>
-<li class="chapter" data-level="8.2.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-r-e-o-rstudio"><i class="fa fa-check"></i><b>8.2.3</b> <strong>Instalando o R e o RStudio</strong> </a></li>
-<li class="chapter" data-level="8.2.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-básica-e-operações-no-r"><i class="fa fa-check"></i><b>8.2.4</b> Sintaxe básica e operações no R</a></li>
-<li class="chapter" data-level="8.2.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-código-eficiente-e-legível"><i class="fa fa-check"></i><b>8.2.5</b> Escrevendo código eficiente e legível</a></li>
-<li class="chapter" data-level="8.2.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#depuração-e-tratamento-de-erros-em-r"><i class="fa fa-check"></i><b>8.2.6</b> Depuração e tratamento de erros em R</a></li>
-<li class="chapter" data-level="8.2.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#documentando-e-compartilhando-seu-código"><i class="fa fa-check"></i><b>8.2.7</b> Documentando e compartilhando seu código</a></li>
-<li class="chapter" data-level="8.2.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#introdução-à-análise-estatística-com-r"><i class="fa fa-check"></i><b>8.2.8</b> Introdução à análise estatística com R</a></li>
-<li class="chapter" data-level="8.2.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#usando-r-para-estatísticas-descritivas"><i class="fa fa-check"></i><b>8.2.9</b> Usando R para estatísticas descritivas</a></li>
-<li class="chapter" data-level="8.2.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estatísticas-inferenciais-com-r"><i class="fa fa-check"></i><b>8.2.10</b> Estatísticas inferenciais com R</a></li>
-<li class="chapter" data-level="8.2.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#fundamentos-da-visualização-de-dados-em-r"><i class="fa fa-check"></i><b>8.2.11</b> Fundamentos da visualização de dados em R</a></li>
+<li class="chapter" data-level="8.2.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vis%C3%A3o-geral-do-r-e-suas-aplica%C3%A7%C3%B5es"><i class="fa fa-check"></i><b>8.2.2</b> Visão geral do R e suas aplicações</a></li>
+<li class="chapter" data-level="8.2.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-r-e-o-rstudio"><i class="fa fa-check"></i><b>8.2.3</b> Instalando o R e o RStudio</a></li>
+<li class="chapter" data-level="8.2.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-b%C3%A1sica-e-opera%C3%A7%C3%B5es-no-r"><i class="fa fa-check"></i><b>8.2.4</b> Sintaxe básica e operações no R</a></li>
+<li class="chapter" data-level="8.2.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-c%C3%B3digo-eficiente-e-leg%C3%ADvel"><i class="fa fa-check"></i><b>8.2.5</b> Escrevendo código eficiente e legível</a></li>
+<li class="chapter" data-level="8.2.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#depura%C3%A7%C3%A3o-e-tratamento-de-erros-em-r"><i class="fa fa-check"></i><b>8.2.6</b> Depuração e tratamento de erros em R</a></li>
+<li class="chapter" data-level="8.2.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#documentando-e-compartilhando-seu-c%C3%B3digo"><i class="fa fa-check"></i><b>8.2.7</b> Documentando e compartilhando seu código</a></li>
+<li class="chapter" data-level="8.2.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#introdu%C3%A7%C3%A3o-%C3%A0-an%C3%A1lise-estat%C3%ADstica-com-r"><i class="fa fa-check"></i><b>8.2.8</b> Introdução à análise estatística com R</a></li>
+<li class="chapter" data-level="8.2.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#usando-r-para-estat%C3%ADsticas-descritivas"><i class="fa fa-check"></i><b>8.2.9</b> Usando R para estatísticas descritivas</a></li>
+<li class="chapter" data-level="8.2.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADsticas-inferenciais-com-r"><i class="fa fa-check"></i><b>8.2.10</b> Estatísticas inferenciais com R</a></li>
+<li class="chapter" data-level="8.2.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#fundamentos-da-visualiza%C3%A7%C3%A3o-de-dados-em-r"><i class="fa fa-check"></i><b>8.2.11</b> Fundamentos da visualização de dados em R</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#python-para-análise-estatística"><i class="fa fa-check"></i><b>8.3</b> Python para análise estatística</a></li>
-<li class="chapter" data-level="8.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualização-de-dados-e-figuras-científicas"><i class="fa fa-check"></i><b>8.4</b> Visualização de dados e figuras científicas</a></li>
+<li class="chapter" data-level="8.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#python-para-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>8.3</b> Python para análise estatística</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vis%C3%A3o-geral"><i class="fa fa-check"></i><b>8.3.1</b> Visão geral</a></li>
+<li class="chapter" data-level="8.3.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-ou-python"><i class="fa fa-check"></i><b>8.3.2</b> R ou Python?</a></li>
+<li class="chapter" data-level="8.3.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-python-e-o-ambiente-de-trabalho"><i class="fa fa-check"></i><b>8.3.3</b> Instalando o Python e o ambiente de trabalho</a></li>
+<li class="chapter" data-level="8.3.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-b%C3%A1sica-e-opera%C3%A7%C3%B5es-em-python"><i class="fa fa-check"></i><b>8.3.4</b> Sintaxe básica e operações em Python</a></li>
+<li class="chapter" data-level="8.3.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#manipula%C3%A7%C3%A3o-de-dados-com-pandas"><i class="fa fa-check"></i><b>8.3.5</b> Manipulação de dados com pandas</a></li>
+<li class="chapter" data-level="8.3.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-c%C3%B3digo-leg%C3%ADvel-e-reprodut%C3%ADvel"><i class="fa fa-check"></i><b>8.3.6</b> Escrevendo código legível e reprodutível</a></li>
+<li class="chapter" data-level="8.3.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADstica-descritiva-com-python"><i class="fa fa-check"></i><b>8.3.7</b> Estatística descritiva com Python</a></li>
+<li class="chapter" data-level="8.3.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADstica-inferencial-com-python"><i class="fa fa-check"></i><b>8.3.8</b> Estatística inferencial com Python</a></li>
+<li class="chapter" data-level="8.3.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#modelos-avan%C3%A7ados-com-statsmodels"><i class="fa fa-check"></i><b>8.3.9</b> Modelos avançados com statsmodels</a></li>
+<li class="chapter" data-level="8.3.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualiza%C3%A7%C3%A3o-de-dados-com-python"><i class="fa fa-check"></i><b>8.3.10</b> Visualização de dados com Python</a></li>
+<li class="chapter" data-level="8.3.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#aprendizado-de-m%C3%A1quina-com-scikit-learn"><i class="fa fa-check"></i><b>8.3.11</b> Aprendizado de máquina com scikit-learn</a></li>
+<li class="chapter" data-level="8.3.12" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#notebooks-e-relat%C3%B3rios-reprodut%C3%ADveis"><i class="fa fa-check"></i><b>8.3.12</b> Notebooks e relatórios reprodutíveis</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualiza%C3%A7%C3%A3o-de-dados-e-figuras-cient%C3%ADficas"><i class="fa fa-check"></i><b>8.4</b> Visualização de dados e figuras científicas</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#come%C3%A7ar-pela-pergunta"><i class="fa fa-check"></i><b>8.4.1</b> Começar pela pergunta</a></li>
+<li class="chapter" data-level="8.4.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#como-percebemos-os-gr%C3%A1ficos"><i class="fa fa-check"></i><b>8.4.2</b> Como percebemos os gráficos</a></li>
+<li class="chapter" data-level="8.4.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#mostrar-os-dados"><i class="fa fa-check"></i><b>8.4.3</b> Mostrar os dados</a></li>
+<li class="chapter" data-level="8.4.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#cor"><i class="fa fa-check"></i><b>8.4.4</b> Cor</a></li>
+<li class="chapter" data-level="8.4.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#uma-figura-para-publica%C3%A7%C3%A3o-com-ggplot2"><i class="fa fa-check"></i><b>8.4.5</b> Uma figura para publicação com ggplot2</a></li>
+<li class="chapter" data-level="8.4.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#formatos-e-resolu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.4.6</b> Formatos e resolução</a></li>
+<li class="chapter" data-level="8.4.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#lista-de-verifica%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.4.7</b> Lista de verificação</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="comunicação-científica.html"><a href="comunicação-científica.html"><i class="fa fa-check"></i><b>9</b> Comunicação científica</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#redação-de-artigos-científicos"><i class="fa fa-check"></i><b>9.1</b> Redação de artigos científicos</a></li>
-<li class="chapter" data-level="9.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estrutura-de-relatórios-de-pesquisa"><i class="fa fa-check"></i><b>9.2</b> Estrutura de relatórios de pesquisa</a></li>
-<li class="chapter" data-level="9.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresentações-orais-e-posters"><i class="fa fa-check"></i><b>9.3</b> Apresentações orais e posters</a></li>
-<li class="chapter" data-level="9.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#publicação-e-revisão-por-pares"><i class="fa fa-check"></i><b>9.4</b> Publicação e revisão por pares</a></li>
+<li class="chapter" data-level="9.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#reda%C3%A7%C3%A3o-de-artigos-cient%C3%ADficos"><i class="fa fa-check"></i><b>9.1</b> Redação de artigos científicos</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#a-estrutura-imrad"><i class="fa fa-check"></i><b>9.1.1</b> A estrutura IMRaD</a></li>
+<li class="chapter" data-level="9.1.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#t%C3%ADtulo-e-resumo"><i class="fa fa-check"></i><b>9.1.2</b> Título e resumo</a></li>
+<li class="chapter" data-level="9.1.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#introdu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>9.1.3</b> Introdução</a></li>
+<li class="chapter" data-level="9.1.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#m%C3%A9todos"><i class="fa fa-check"></i><b>9.1.4</b> Métodos</a></li>
+<li class="chapter" data-level="9.1.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#resultados"><i class="fa fa-check"></i><b>9.1.5</b> Resultados</a></li>
+<li class="chapter" data-level="9.1.6" data-path="comunicação-científica.html"><a href="comunicação-científica.html#discuss%C3%A3o"><i class="fa fa-check"></i><b>9.1.6</b> Discussão</a></li>
+<li class="chapter" data-level="9.1.7" data-path="comunicação-científica.html"><a href="comunicação-científica.html#autoria"><i class="fa fa-check"></i><b>9.1.7</b> Autoria</a></li>
+<li class="chapter" data-level="9.1.8" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estilo"><i class="fa fa-check"></i><b>9.1.8</b> Estilo</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estrutura-de-relat%C3%B3rios-de-pesquisa"><i class="fa fa-check"></i><b>9.2</b> Estrutura de relatórios de pesquisa</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#disserta%C3%A7%C3%B5es-e-teses"><i class="fa fa-check"></i><b>9.2.1</b> Dissertações e teses</a></li>
+<li class="chapter" data-level="9.2.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#protocolos-e-planos-de-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>9.2.2</b> Protocolos e planos de análise estatística</a></li>
+<li class="chapter" data-level="9.2.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#relat%C3%B3rios-t%C3%A9cnicos-e-relat%C3%B3rios-reprodut%C3%ADveis"><i class="fa fa-check"></i><b>9.2.3</b> Relatórios técnicos e relatórios reprodutíveis</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresenta%C3%A7%C3%B5es-orais-e-p%C3%B4steres"><i class="fa fa-check"></i><b>9.3</b> Apresentações orais e pôsteres</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresenta%C3%A7%C3%B5es-orais"><i class="fa fa-check"></i><b>9.3.1</b> Apresentações orais</a></li>
+<li class="chapter" data-level="9.3.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#p%C3%B4steres"><i class="fa fa-check"></i><b>9.3.2</b> Pôsteres</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#publica%C3%A7%C3%A3o-e-revis%C3%A3o-por-pares"><i class="fa fa-check"></i><b>9.4</b> Publicação e revisão por pares</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#escolhendo-o-peri%C3%B3dico"><i class="fa fa-check"></i><b>9.4.1</b> Escolhendo o periódico</a></li>
+<li class="chapter" data-level="9.4.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#peri%C3%B3dicos-predat%C3%B3rios"><i class="fa fa-check"></i><b>9.4.2</b> Periódicos predatórios</a></li>
+<li class="chapter" data-level="9.4.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#submiss%C3%A3o"><i class="fa fa-check"></i><b>9.4.3</b> Submissão</a></li>
+<li class="chapter" data-level="9.4.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#revis%C3%A3o-por-pares"><i class="fa fa-check"></i><b>9.4.4</b> Revisão por pares</a></li>
+<li class="chapter" data-level="9.4.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#pr%C3%A9-prints-acesso-aberto-e-o-depois-da-publica%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>9.4.5</b> Pré-prints, acesso aberto e o depois da publicação</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#resumo-do-cap%C3%ADtulo-6"><i class="fa fa-check"></i><b>9.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="9.6" data-path="comunicação-científica.html"><a href="comunicação-científica.html#exerc%C3%ADcios-6"><i class="fa fa-check"></i><b>9.6</b> Exercícios</a></li>
+<li class="chapter" data-level="9.7" data-path="comunicação-científica.html"><a href="comunicação-científica.html#respostas-dos-exerc%C3%ADcios-6"><i class="fa fa-check"></i><b>9.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html"><i class="fa fa-check"></i><b>10</b> Ética e boas práticas em pesquisa</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#consentimento-informado-e-conformidade-ética"><i class="fa fa-check"></i><b>10.1</b> Consentimento informado e conformidade ética</a></li>
-<li class="chapter" data-level="10.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#plágio-e-integridade-acadêmica"><i class="fa fa-check"></i><b>10.2</b> Plágio e integridade acadêmica</a></li>
-<li class="chapter" data-level="10.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#regulamentações-e-normas-em-pesquisa"><i class="fa fa-check"></i><b>10.3</b> Regulamentações e normas em pesquisa</a></li>
-<li class="chapter" data-level="10.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#responsabilidade-social-do-cientista"><i class="fa fa-check"></i><b>10.4</b> Responsabilidade social do cientista</a></li>
+<li class="chapter" data-level="10.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#consentimento-informado-e-conformidade-%C3%A9tica"><i class="fa fa-check"></i><b>10.1</b> Consentimento informado e conformidade ética</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#uma-breve-hist%C3%B3ria"><i class="fa fa-check"></i><b>10.1.1</b> Uma breve história</a></li>
+<li class="chapter" data-level="10.1.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-sistema-brasileiro"><i class="fa fa-check"></i><b>10.1.2</b> O sistema brasileiro</a></li>
+<li class="chapter" data-level="10.1.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-que-precisa-passar-pelo-comit%C3%AA-de-%C3%A9tica"><i class="fa fa-check"></i><b>10.1.3</b> O que precisa passar pelo comitê de ética</a></li>
+<li class="chapter" data-level="10.1.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-consentimento-livre-e-esclarecido"><i class="fa fa-check"></i><b>10.1.4</b> O consentimento livre e esclarecido</a></li>
+<li class="chapter" data-level="10.1.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#prote%C3%A7%C3%A3o-de-dados-pessoais"><i class="fa fa-check"></i><b>10.1.5</b> Proteção de dados pessoais</a></li>
+<li class="chapter" data-level="10.1.6" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pesquisa-com-animais"><i class="fa fa-check"></i><b>10.1.6</b> Pesquisa com animais</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pl%C3%A1gio-e-integridade-acad%C3%AAmica"><i class="fa fa-check"></i><b>10.2</b> Plágio e integridade acadêmica</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#m%C3%A1-conduta-cient%C3%ADfica"><i class="fa fa-check"></i><b>10.2.1</b> Má conduta científica</a></li>
+<li class="chapter" data-level="10.2.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pl%C3%A1gio-e-suas-formas"><i class="fa fa-check"></i><b>10.2.2</b> Plágio e suas formas</a></li>
+<li class="chapter" data-level="10.2.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pr%C3%A1ticas-question%C3%A1veis-de-pesquisa"><i class="fa fa-check"></i><b>10.2.3</b> Práticas questionáveis de pesquisa</a></li>
+<li class="chapter" data-level="10.2.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#autoria-conflitos-de-interesse-e-uso-de-ferramentas"><i class="fa fa-check"></i><b>10.2.4</b> Autoria, conflitos de interesse e uso de ferramentas</a></li>
+<li class="chapter" data-level="10.2.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#corre%C3%A7%C3%A3o-da-literatura"><i class="fa fa-check"></i><b>10.2.5</b> Correção da literatura</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#regulamenta%C3%A7%C3%B5es-e-normas-em-pesquisa"><i class="fa fa-check"></i><b>10.3</b> Regulamentações e normas em pesquisa</a></li>
+<li class="chapter" data-level="10.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#responsabilidade-social-do-cientista"><i class="fa fa-check"></i><b>10.4</b> Responsabilidade social do cientista</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#os-valores-da-ci%C3%AAncia"><i class="fa fa-check"></i><b>10.4.1</b> Os valores da ciência</a></li>
+<li class="chapter" data-level="10.4.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#ci%C3%AAncia-aberta"><i class="fa fa-check"></i><b>10.4.2</b> Ciência aberta</a></li>
+<li class="chapter" data-level="10.4.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#comunica%C3%A7%C3%A3o-com-a-sociedade"><i class="fa fa-check"></i><b>10.4.3</b> Comunicação com a sociedade</a></li>
+<li class="chapter" data-level="10.4.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pesquisa-equidade-e-uso-do-conhecimento"><i class="fa fa-check"></i><b>10.4.4</b> Pesquisa, equidade e uso do conhecimento</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#resumo-do-cap%C3%ADtulo-7"><i class="fa fa-check"></i><b>10.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="10.6" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#exerc%C3%ADcios-7"><i class="fa fa-check"></i><b>10.6</b> Exercícios</a></li>
+<li class="chapter" data-level="10.7" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#respostas-dos-exerc%C3%ADcios-7"><i class="fa fa-check"></i><b>10.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html"><i class="fa fa-check"></i><b>11</b> Aplicações práticas e estudos de caso</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-saúde-pública"><i class="fa fa-check"></i><b>11.1</b> Epidemiologia e saúde pública</a></li>
-<li class="chapter" data-level="11.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#genética-e-biologia-molecular"><i class="fa fa-check"></i><b>11.2</b> Genética e biologia molecular</a></li>
-<li class="chapter" data-level="11.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conservação"><i class="fa fa-check"></i><b>11.3</b> Ecologia e conservação</a></li>
-<li class="chapter" data-level="11.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-clínicos"><i class="fa fa-check"></i><b>11.4</b> Farmacologia e ensaios clínicos</a></li>
+<li class="chapter" data-level="11.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-sa%C3%BAde-p%C3%BAblica"><i class="fa fa-check"></i><b>11.1</b> Epidemiologia e saúde pública</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#intervalos-de-confian%C3%A7a-para-medidas-de-associa%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>11.1.1</b> Intervalos de confiança para medidas de associação</a></li>
+<li class="chapter" data-level="11.1.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#padroniza%C3%A7%C3%A3o-de-taxas"><i class="fa fa-check"></i><b>11.1.2</b> Padronização de taxas</a></li>
+<li class="chapter" data-level="11.1.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#acur%C3%A1cia-de-testes-diagn%C3%B3sticos"><i class="fa fa-check"></i><b>11.1.3</b> Acurácia de testes diagnósticos</a></li>
+<li class="chapter" data-level="11.1.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#dados-secund%C3%A1rios-em-sa%C3%BAde-p%C3%BAblica"><i class="fa fa-check"></i><b>11.1.4</b> Dados secundários em saúde pública</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#gen%C3%A9tica-e-biologia-molecular"><i class="fa fa-check"></i><b>11.2</b> Genética e biologia molecular</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#equil%C3%ADbrio-de-hardyweinberg"><i class="fa fa-check"></i><b>11.2.1</b> Equilíbrio de Hardy–Weinberg</a></li>
+<li class="chapter" data-level="11.2.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#compara%C3%A7%C3%B5es-m%C3%BAltiplas-em-estudos-gen%C3%B4micos"><i class="fa fa-check"></i><b>11.2.2</b> Comparações múltiplas em estudos genômicos</a></li>
+<li class="chapter" data-level="11.2.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#quantifica%C3%A7%C3%A3o-relativa-por-pcr-em-tempo-real"><i class="fa fa-check"></i><b>11.2.3</b> Quantificação relativa por PCR em tempo real</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conserva%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>11.3</b> Ecologia e conservação</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#%C3%ADndices-de-diversidade"><i class="fa fa-check"></i><b>11.3.1</b> Índices de diversidade</a></li>
+<li class="chapter" data-level="11.3.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#estimativa-do-tamanho-populacional-por-captura-e-recaptura"><i class="fa fa-check"></i><b>11.3.2</b> Estimativa do tamanho populacional por captura e recaptura</a></li>
+<li class="chapter" data-level="11.3.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#contagens-e-superdispers%C3%A3o"><i class="fa fa-check"></i><b>11.3.3</b> Contagens e superdispersão</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>11.4</b> Farmacologia e ensaios clínicos</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#curvas-dose-resposta"><i class="fa fa-check"></i><b>11.4.1</b> Curvas dose-resposta</a></li>
+<li class="chapter" data-level="11.4.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#par%C3%A2metros-farmacocin%C3%A9ticos"><i class="fa fa-check"></i><b>11.4.2</b> Parâmetros farmacocinéticos</a></li>
+<li class="chapter" data-level="11.4.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#bioequival%C3%AAncia"><i class="fa fa-check"></i><b>11.4.3</b> Bioequivalência</a></li>
+<li class="chapter" data-level="11.4.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#tamanho-amostral-em-ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>11.4.4</b> Tamanho amostral em ensaios clínicos</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#resumo-do-cap%C3%ADtulo-8"><i class="fa fa-check"></i><b>11.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="11.6" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#exerc%C3%ADcios-8"><i class="fa fa-check"></i><b>11.6</b> Exercícios</a></li>
+<li class="chapter" data-level="11.7" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#respostas-dos-exerc%C3%ADcios-8"><i class="fa fa-check"></i><b>11.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html"><i class="fa fa-check"></i><b>12</b> Tópicos avançados em bioestatística</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-lineares-generalizados"><i class="fa fa-check"></i><b>12.1</b> Modelos lineares generalizados</a></li>
-<li class="chapter" data-level="12.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#análise-de-sobrevivência"><i class="fa fa-check"></i><b>12.2</b> Análise de sobrevivência</a></li>
-<li class="chapter" data-level="12.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#bioinformática-e-big-data"><i class="fa fa-check"></i><b>12.3</b> Bioinformática e <em>big data</em></a></li>
-<li class="chapter" data-level="12.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#metanálise"><i class="fa fa-check"></i><b>12.4</b> Metanálise</a></li>
+<li class="chapter" data-level="12.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-lineares-generalizados"><i class="fa fa-check"></i><b>12.1</b> Modelos lineares generalizados</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#por-que-generalizar-o-modelo-linear"><i class="fa fa-check"></i><b>12.1.1</b> Por que generalizar o modelo linear</a></li>
+<li class="chapter" data-level="12.1.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#regress%C3%A3o-log%C3%ADstica"><i class="fa fa-check"></i><b>12.1.2</b> Regressão logística</a></li>
+<li class="chapter" data-level="12.1.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#regress%C3%A3o-de-poisson-e-binomial-negativa"><i class="fa fa-check"></i><b>12.1.3</b> Regressão de Poisson e binomial negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-mistos"><i class="fa fa-check"></i><b>12.2</b> Modelos mistos</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#observa%C3%A7%C3%B5es-agrupadas-e-medidas-repetidas"><i class="fa fa-check"></i><b>12.2.1</b> Observações agrupadas e medidas repetidas</a></li>
+<li class="chapter" data-level="12.2.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exemplo"><i class="fa fa-check"></i><b>12.2.2</b> Exemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#an%C3%A1lise-de-sobreviv%C3%AAncia"><i class="fa fa-check"></i><b>12.3</b> Análise de sobrevivência</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#tempo-at%C3%A9-o-evento-e-censura"><i class="fa fa-check"></i><b>12.3.1</b> Tempo até o evento e censura</a></li>
+<li class="chapter" data-level="12.3.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#o-estimador-de-kaplanmeier"><i class="fa fa-check"></i><b>12.3.2</b> O estimador de Kaplan–Meier</a></li>
+<li class="chapter" data-level="12.3.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#compara%C3%A7%C3%A3o-de-grupos-log-rank-e-modelo-de-cox"><i class="fa fa-check"></i><b>12.3.3</b> Comparação de grupos: log-rank e modelo de Cox</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#infer%C3%AAncia-bayesiana"><i class="fa fa-check"></i><b>12.4</b> Inferência bayesiana</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#a-l%C3%B3gica-bayesiana"><i class="fa fa-check"></i><b>12.4.1</b> A lógica bayesiana</a></li>
+<li class="chapter" data-level="12.4.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#um-exemplo-com-propor%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>12.4.2</b> Um exemplo com proporção</a></li>
+<li class="chapter" data-level="12.4.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#vantagens-e-cuidados"><i class="fa fa-check"></i><b>12.4.3</b> Vantagens e cuidados</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#bioinform%C3%A1tica-e-big-data"><i class="fa fa-check"></i><b>12.5</b> Bioinformática e <em>big data</em></a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#dados-de-alta-dimens%C3%A3o"><i class="fa fa-check"></i><b>12.5.1</b> Dados de alta dimensão</a></li>
+<li class="chapter" data-level="12.5.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#sobreajuste-e-o-vi%C3%A9s-de-sele%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>12.5.2</b> Sobreajuste e o viés de seleção</a></li>
+<li class="chapter" data-level="12.5.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#efeitos-de-lote-e-outros-problemas"><i class="fa fa-check"></i><b>12.5.3</b> Efeitos de lote e outros problemas</a></li>
+<li class="chapter" data-level="12.5.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#grandes-bases-de-dados"><i class="fa fa-check"></i><b>12.5.4</b> Grandes bases de dados</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#metan%C3%A1lise"><i class="fa fa-check"></i><b>12.6</b> Metanálise</a>
+<ul>
+<li class="chapter" data-level="12.6.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#combinando-estudos"><i class="fa fa-check"></i><b>12.6.1</b> Combinando estudos</a></li>
+<li class="chapter" data-level="12.6.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#efeito-fixo-e-efeitos-aleat%C3%B3rios"><i class="fa fa-check"></i><b>12.6.2</b> Efeito fixo e efeitos aleatórios</a></li>
+<li class="chapter" data-level="12.6.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exemplo-1"><i class="fa fa-check"></i><b>12.6.3</b> Exemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#resumo-do-cap%C3%ADtulo-9"><i class="fa fa-check"></i><b>12.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="12.8" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exerc%C3%ADcios-9"><i class="fa fa-check"></i><b>12.8</b> Exercícios</a></li>
+<li class="chapter" data-level="12.9" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#respostas-dos-exerc%C3%ADcios-9"><i class="fa fa-check"></i><b>12.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html"><i class="fa fa-check"></i><b>13</b> Recursos adicionais</a>
 <ul>
-<li class="chapter" data-level="13.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bibliografia-recomendada"><i class="fa fa-check"></i><b>13.1</b> Bibliografia recomendada</a></li>
-<li class="chapter" data-level="13.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#glossário-de-termos"><i class="fa fa-check"></i><b>13.2</b> Glossário de termos</a></li>
-<li class="chapter" data-level="13.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#tabelas-estatísticas"><i class="fa fa-check"></i><b>13.3</b> Tabelas estatísticas</a></li>
-<li class="chapter" data-level="13.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#links-e-ferramentas-online"><i class="fa fa-check"></i><b>13.4</b> Links e ferramentas online</a></li>
+<li class="chapter" data-level="13.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bibliografia-recomendada"><i class="fa fa-check"></i><b>13.1</b> Bibliografia recomendada</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#metodologia-e-epidemiologia"><i class="fa fa-check"></i><b>13.1.1</b> Metodologia e epidemiologia</a></li>
+<li class="chapter" data-level="13.1.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bioestat%C3%ADstica"><i class="fa fa-check"></i><b>13.1.2</b> Bioestatística</a></li>
+<li class="chapter" data-level="13.1.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#programa%C3%A7%C3%A3o-e-an%C3%A1lise-reprodut%C3%ADvel"><i class="fa fa-check"></i><b>13.1.3</b> Programação e análise reprodutível</a></li>
+<li class="chapter" data-level="13.1.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#comunica%C3%A7%C3%A3o-e-integridade"><i class="fa fa-check"></i><b>13.1.4</b> Comunicação e integridade</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#gloss%C3%A1rio-de-termos"><i class="fa fa-check"></i><b>13.2</b> Glossário de termos</a></li>
+<li class="chapter" data-level="13.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#tabelas-estat%C3%ADsticas"><i class="fa fa-check"></i><b>13.3</b> Tabelas estatísticas</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-normal-padr%C3%A3o"><i class="fa fa-check"></i><b>13.3.1</b> Distribuição normal padrão</a></li>
+<li class="chapter" data-level="13.3.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-t-de-student-1"><i class="fa fa-check"></i><b>13.3.2</b> Distribuição <em>t</em> de Student</a></li>
+<li class="chapter" data-level="13.3.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-qui-quadrado-1"><i class="fa fa-check"></i><b>13.3.3</b> Distribuição qui-quadrado</a></li>
+<li class="chapter" data-level="13.3.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-f"><i class="fa fa-check"></i><b>13.3.4</b> Distribuição <em>F</em></a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#links-e-ferramentas-online"><i class="fa fa-check"></i><b>13.4</b> Links e ferramentas <em>online</em></a>
+<ul>
+<li class="chapter" data-level="13.4.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#programas-estat%C3%ADsticos"><i class="fa fa-check"></i><b>13.4.1</b> Programas estatísticos</a></li>
+<li class="chapter" data-level="13.4.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bases-bibliogr%C3%A1ficas-e-de-evid%C3%AAncias"><i class="fa fa-check"></i><b>13.4.2</b> Bases bibliográficas e de evidências</a></li>
+<li class="chapter" data-level="13.4.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#diretrizes-registros-e-integridade"><i class="fa fa-check"></i><b>13.4.3</b> Diretrizes, registros e integridade</a></li>
+<li class="chapter" data-level="13.4.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#dados-de-sa%C3%BAde"><i class="fa fa-check"></i><b>13.4.4</b> Dados de saúde</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
 <li class="divider"></li>
@@ -292,19 +615,521 @@ div.csl-indent {
 
             <section class="normal" id="section-">
 <div id="aplicações-práticas-e-estudos-de-caso" class="section level1 hasAnchor" number="11">
-<h1><span class="header-section-number">Capítulo 11</span> Aplicações práticas e estudos de caso<a href="aplicações-práticas-e-estudos-de-caso.html#aplicações-práticas-e-estudos-de-caso" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1><span class="header-section-number">Capítulo 11</span> Aplicações práticas e estudos de caso<a href="aplicações-práticas-e-estudos-de-caso.html#aplica%C3%A7%C3%B5es-pr%C3%A1ticas-e-estudos-de-caso" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Hércules Rezende Freitas, Ph.D.<span class="math inline">\(^1\)</span></p>
+<p><span class="math inline">\(^1\)</span>Universidade do Estado do Rio de Janeiro (UERJ), Faculdade de Ciências Médicas, Departamento de Ciências Médicas Integradas, Laboratório de Informática em Saúde (LabInfoS), Cabo Frio/RJ, Brasil.</p>
+<p>Este capítulo aplica os métodos dos capítulos anteriores a problemas típicos de quatro áreas: epidemiologia e saúde pública, genética e biologia molecular, ecologia e conservação, e farmacologia e ensaios clínicos. Cada seção apresenta os métodos mais característicos da área, com exemplos resolvidos e código em R, e destaca os erros mais frequentes. Os dados são fictícios ou simulados, construídos para ilustrar os cálculos.</p>
 <div id="epidemiologia-e-saúde-pública" class="section level2 hasAnchor" number="11.1">
-<h2><span class="header-section-number">11.1</span> Epidemiologia e saúde pública<a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-saúde-pública" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">11.1</span> Epidemiologia e saúde pública<a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-sa%C3%BAde-p%C3%BAblica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="intervalos-de-confiança-para-medidas-de-associação" class="section level3 hasAnchor" number="11.1.1">
+<h3><span class="header-section-number">11.1.1</span> Intervalos de confiança para medidas de associação<a href="aplicações-práticas-e-estudos-de-caso.html#intervalos-de-confian%C3%A7a-para-medidas-de-associa%C3%A7%C3%A3o" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O capítulo <em>Desenhos de pesquisa</em> apresentou o risco relativo (RR), a razão de chances (OR), a diferença de riscos (DR) e o número necessário para tratar ou para causar dano (NNT/NNH). Como qualquer estimativa, essas medidas precisam de intervalos de confiança. Retomamos o exemplo da coorte daquele capítulo: 80 casos entre 2.000 fumantes e 30 casos entre 3.000 não fumantes, em cinco anos. Na notação da tabela 2 × 2, <span class="math inline">\(a = 80\)</span>, <span class="math inline">\(b = 1.920\)</span>, <span class="math inline">\(c = 30\)</span> e <span class="math inline">\(d = 2.970\)</span>.</p>
+<p><strong>Risco relativo.</strong> A distribuição amostral do RR é assimétrica (ele não pode ser negativo e pode crescer sem limite), mas a do seu <strong>logaritmo</strong> é aproximadamente normal. Por isso, o intervalo é calculado na escala logarítmica e depois transformado de volta <span class="citation">(<a href="#ref-katz1978">Katz et al. 1978</a>)</span>:</p>
+<p><span class="math display">\[
+\begin{gathered}
+\text{EP}[\ln(\text{RR})] = \sqrt{\frac{1}{a} - \frac{1}{a+b} + \frac{1}{c} - \frac{1}{c+d}}, \\
+\text{IC}_{95\%} = \exp\left[\ln(\text{RR}) \pm 1{,}96 \times \text{EP}\right].
+\end{gathered}
+\]</span></p>
+<p>No exemplo, <span class="math inline">\(\ln(4) = 1{,}386\)</span> e <span class="math inline">\(\text{EP} = \sqrt{1/80 - 1/2.000 + 1/30 - 1/3.000} \approx 0{,}212\)</span>. O intervalo é <span class="math inline">\(\exp(1{,}386 \pm 0{,}416)\)</span>, de 2,64 a 6,06. Note que o intervalo não é simétrico em torno de 4: a assimetria na escala original é consequência da simetria na escala logarítmica.</p>
+<p><strong>Razão de chances.</strong> O método de Woolf <span class="citation">(<a href="#ref-woolf1955">Woolf 1955</a>)</span> segue a mesma lógica:</p>
+<p><span class="math display">\[
+\text{EP}[\ln(\text{OR})] = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}} .
+\]</span></p>
+<p>No exemplo, <span class="math inline">\(\text{OR} = 4{,}125\)</span>, <span class="math inline">\(\text{EP} \approx 0{,}216\)</span> e o IC de 95% vai de 2,70 a 6,30.</p>
+<p><strong>Diferença de riscos.</strong> O intervalo mais simples (de Wald) é <span class="math inline">\(\text{DR} \pm 1{,}96\sqrt{p_1(1-p_1)/n_1 + p_0(1-p_0)/n_0}\)</span>, mas, assim como o intervalo de Wald para uma proporção (capítulo <em>Bioestatística inferencial</em>), tem cobertura ruim quando os riscos são pequenos ou as amostras são pequenas. O método de Newcombe <span class="citation">(<a href="#ref-newcombe1998">Newcombe 1998</a>)</span> combina os intervalos de Wilson de cada proporção e tem desempenho muito melhor. Sendo <span class="math inline">\((l_1, u_1)\)</span> e <span class="math inline">\((l_0, u_0)\)</span> os intervalos de Wilson de <span class="math inline">\(p_1\)</span> e <span class="math inline">\(p_0\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{limite inferior} &amp;= \text{DR} - \sqrt{(p_1 - l_1)^2 + (u_0 - p_0)^2}, \\
+\text{limite superior} &amp;= \text{DR} + \sqrt{(u_1 - p_1)^2 + (p_0 - l_0)^2}.
+\end{aligned}
+\]</span></p>
+<p><strong>NNT e NNH.</strong> O intervalo de confiança do NNT (ou NNH) é obtido invertendo os limites do intervalo da diferença de riscos <span class="citation">(<a href="#ref-altman1998">Altman 1998</a>)</span>. Quando o intervalo da DR inclui zero, o intervalo do NNT passa pelo infinito e deve ser apresentado com cuidado (por exemplo, “NNT para benefício de 10 a ∞ e NNT para dano de 50 a ∞”).</p>
+<p>O código a seguir implementa os quatro cálculos:</p>
+<div class="sourceCode" id="cb416"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb416-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-1" tabindex="-1"></a>medidas_2x2 <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b, c, d, <span class="at">nivel =</span> <span class="fl">0.95</span>) {</span>
+<span id="cb416-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-2" tabindex="-1"></a>  z <span class="ot">&lt;-</span> <span class="fu">qnorm</span>(<span class="dv">1</span> <span class="sc">-</span> (<span class="dv">1</span> <span class="sc">-</span> nivel) <span class="sc">/</span> <span class="dv">2</span>)</span>
+<span id="cb416-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-3" tabindex="-1"></a>  n1 <span class="ot">&lt;-</span> a <span class="sc">+</span> b; n0 <span class="ot">&lt;-</span> c <span class="sc">+</span> d; p1 <span class="ot">&lt;-</span> a <span class="sc">/</span> n1; p0 <span class="ot">&lt;-</span> c <span class="sc">/</span> n0</span>
+<span id="cb416-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-4" tabindex="-1"></a>  rr <span class="ot">&lt;-</span> p1 <span class="sc">/</span> p0; ep_rr <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span><span class="sc">/</span>a <span class="sc">-</span> <span class="dv">1</span><span class="sc">/</span>n1 <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>c <span class="sc">-</span> <span class="dv">1</span><span class="sc">/</span>n0)</span>
+<span id="cb416-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-5" tabindex="-1"></a>  or <span class="ot">&lt;-</span> (a <span class="sc">*</span> d) <span class="sc">/</span> (b <span class="sc">*</span> c); ep_or <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">1</span><span class="sc">/</span>a <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>b <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>c <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span>d)</span>
+<span id="cb416-6"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-6" tabindex="-1"></a>  rd <span class="ot">&lt;-</span> p1 <span class="sc">-</span> p0</span>
+<span id="cb416-7"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-7" tabindex="-1"></a>  w1 <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(a, n1, <span class="at">correct =</span> <span class="cn">FALSE</span>, <span class="at">conf.level =</span> nivel)<span class="sc">$</span>conf.int</span>
+<span id="cb416-8"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-8" tabindex="-1"></a>  w0 <span class="ot">&lt;-</span> <span class="fu">prop.test</span>(c, n0, <span class="at">correct =</span> <span class="cn">FALSE</span>, <span class="at">conf.level =</span> nivel)<span class="sc">$</span>conf.int</span>
+<span id="cb416-9"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-9" tabindex="-1"></a>  rd_ic <span class="ot">&lt;-</span> <span class="fu">c</span>(rd <span class="sc">-</span> <span class="fu">sqrt</span>((p1 <span class="sc">-</span> w1[<span class="dv">1</span>])<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> (w0[<span class="dv">2</span>] <span class="sc">-</span> p0)<span class="sc">^</span><span class="dv">2</span>),</span>
+<span id="cb416-10"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-10" tabindex="-1"></a>             rd <span class="sc">+</span> <span class="fu">sqrt</span>((w1[<span class="dv">2</span>] <span class="sc">-</span> p1)<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> (p0 <span class="sc">-</span> w0[<span class="dv">1</span>])<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb416-11"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-11" tabindex="-1"></a>  <span class="fu">data.frame</span>(</span>
+<span id="cb416-12"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-12" tabindex="-1"></a>    <span class="at">medida =</span> <span class="fu">c</span>(<span class="st">&quot;Risco relativo&quot;</span>, <span class="st">&quot;Razão de chances&quot;</span>, <span class="st">&quot;Diferença de riscos&quot;</span>, <span class="st">&quot;NNT/NNH&quot;</span>),</span>
+<span id="cb416-13"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-13" tabindex="-1"></a>    <span class="at">estimativa =</span> <span class="fu">c</span>(rr, or, rd, <span class="dv">1</span> <span class="sc">/</span> rd),</span>
+<span id="cb416-14"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-14" tabindex="-1"></a>    <span class="at">inferior =</span> <span class="fu">c</span>(<span class="fu">exp</span>(<span class="fu">log</span>(rr) <span class="sc">-</span> z <span class="sc">*</span> ep_rr), <span class="fu">exp</span>(<span class="fu">log</span>(or) <span class="sc">-</span> z <span class="sc">*</span> ep_or), rd_ic[<span class="dv">1</span>], <span class="dv">1</span> <span class="sc">/</span> rd_ic[<span class="dv">2</span>]),</span>
+<span id="cb416-15"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-15" tabindex="-1"></a>    <span class="at">superior =</span> <span class="fu">c</span>(<span class="fu">exp</span>(<span class="fu">log</span>(rr) <span class="sc">+</span> z <span class="sc">*</span> ep_rr), <span class="fu">exp</span>(<span class="fu">log</span>(or) <span class="sc">+</span> z <span class="sc">*</span> ep_or), rd_ic[<span class="dv">2</span>], <span class="dv">1</span> <span class="sc">/</span> rd_ic[<span class="dv">1</span>])</span>
+<span id="cb416-16"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-16" tabindex="-1"></a>  )</span>
+<span id="cb416-17"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-17" tabindex="-1"></a>}</span>
+<span id="cb416-18"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-18" tabindex="-1"></a>res_coorte <span class="ot">&lt;-</span> <span class="fu">medidas_2x2</span>(<span class="at">a =</span> <span class="dv">80</span>, <span class="at">b =</span> <span class="dv">1920</span>, <span class="at">c =</span> <span class="dv">30</span>, <span class="at">d =</span> <span class="dv">2970</span>)</span>
+<span id="cb416-19"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-19" tabindex="-1"></a>res_coorte<span class="sc">$</span>estimativa <span class="ot">&lt;-</span> <span class="fu">round</span>(res_coorte<span class="sc">$</span>estimativa, <span class="dv">4</span>)</span>
+<span id="cb416-20"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-20" tabindex="-1"></a>res_coorte<span class="sc">$</span>inferior <span class="ot">&lt;-</span> <span class="fu">round</span>(res_coorte<span class="sc">$</span>inferior, <span class="dv">4</span>)</span>
+<span id="cb416-21"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-21" tabindex="-1"></a>res_coorte<span class="sc">$</span>superior <span class="ot">&lt;-</span> <span class="fu">round</span>(res_coorte<span class="sc">$</span>superior, <span class="dv">4</span>)</span>
+<span id="cb416-22"><a href="aplicações-práticas-e-estudos-de-caso.html#cb416-22" tabindex="-1"></a>res_coorte</span></code></pre></div>
+<pre><code>##                medida estimativa inferior superior
+## 1      Risco relativo     4.0000   2.6393   6.0622
+## 2    Razão de chances     4.1250   2.7008   6.3002
+## 3 Diferença de riscos     0.0300   0.0212   0.0400
+## 4             NNT/NNH    33.3333  25.0219  47.2320</code></pre>
+<p>O resultado pode ser relatado assim: “o risco de doença em cinco anos foi de 4,0% nos fumantes e de 1,0% nos não fumantes (RR = 4,0; IC 95%: 2,6 a 6,1; diferença de riscos de 3,0 pontos percentuais; IC 95%: 2,1 a 4,0; NNH = 33; IC 95%: 25 a 47)”. Pacotes como <code>epitools</code> e <code>epiR</code> oferecem essas e outras medidas, mas convém saber exatamente o que calculam.</p>
+</div>
+<div id="padronização-de-taxas" class="section level3 hasAnchor" number="11.1.2">
+<h3><span class="header-section-number">11.1.2</span> Padronização de taxas<a href="aplicações-práticas-e-estudos-de-caso.html#padroniza%C3%A7%C3%A3o-de-taxas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Comparar taxas brutas de mortalidade entre populações com estruturas etárias diferentes pode ser enganoso, porque a mortalidade depende fortemente da idade. A Tabela <a href="aplicações-práticas-e-estudos-de-caso.html#tab:apl-padron">11.1</a> mostra dois municípios fictícios.</p>
+<table>
+<caption><span id="tab:apl-padron">Tabela 11.1: </span>Óbitos, população e taxas de mortalidade por 1.000 habitantes em dois municípios fictícios, por faixa etária.</caption>
+<colgroup>
+<col width="15%" />
+<col width="9%" />
+<col width="12%" />
+<col width="11%" />
+<col width="9%" />
+<col width="12%" />
+<col width="11%" />
+<col width="17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Faixa</th>
+<th align="center">Óbitos A</th>
+<th align="center">População A</th>
+<th align="center">Taxa A (‰)</th>
+<th align="center">Óbitos B</th>
+<th align="center">População B</th>
+<th align="center">Taxa B (‰)</th>
+<th align="center">População padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0 a 39 anos</td>
+<td align="center">8</td>
+<td align="center">8000</td>
+<td align="center">1,0</td>
+<td align="center">3</td>
+<td align="center">3000</td>
+<td align="center">1,0</td>
+<td align="center">5000</td>
+</tr>
+<tr class="even">
+<td align="left">40 a 64 anos</td>
+<td align="center">9</td>
+<td align="center">1500</td>
+<td align="center">6,0</td>
+<td align="center">15</td>
+<td align="center">3000</td>
+<td align="center">5,0</td>
+<td align="center">3000</td>
+</tr>
+<tr class="odd">
+<td align="left">65 anos ou mais</td>
+<td align="center">25</td>
+<td align="center">500</td>
+<td align="center">50,0</td>
+<td align="center">160</td>
+<td align="center">4000</td>
+<td align="center">40,0</td>
+<td align="center">2000</td>
+</tr>
+<tr class="even">
+<td align="left">Total</td>
+<td align="center">42</td>
+<td align="center">10000</td>
+<td align="center">4,2</td>
+<td align="center">178</td>
+<td align="center">10000</td>
+<td align="center">17,8</td>
+<td align="center">10000</td>
+</tr>
+</tbody>
+</table>
+<p>A taxa bruta de B (17,8 por 1.000) é mais de quatro vezes a de A (4,2 por 1.000). Mas, em cada faixa etária, a mortalidade de A é igual ou maior que a de B. A diferença bruta se deve inteiramente à estrutura etária: 40% da população de B tem 65 anos ou mais, contra 5% em A. A idade é um fator de confusão na comparação, exatamente como no exemplo do café e do tabagismo do capítulo <em>Desenhos de pesquisa</em>.</p>
+<p>A <strong>padronização direta</strong> responde à pergunta: qual seria a taxa de cada município se ambos tivessem a mesma estrutura etária? Aplicam-se as taxas específicas de cada município a uma <strong>população padrão</strong> comum e calcula-se a taxa resultante:</p>
+<p><span class="math display">\[
+\text{taxa padronizada} = \frac{\sum_k t_k \, P_k}{\sum_k P_k},
+\]</span></p>
+<p>em que <span class="math inline">\(t_k\)</span> é a taxa na faixa <span class="math inline">\(k\)</span> e <span class="math inline">\(P_k\)</span> é a população padrão nessa faixa.</p>
+<div class="sourceCode" id="cb418"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb418-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb418-1" tabindex="-1"></a>taxa_padronizada <span class="ot">&lt;-</span> <span class="cf">function</span>(obitos, pop, pop_padrao) {</span>
+<span id="cb418-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb418-2" tabindex="-1"></a>  <span class="fu">sum</span>((obitos <span class="sc">/</span> pop) <span class="sc">*</span> pop_padrao) <span class="sc">/</span> <span class="fu">sum</span>(pop_padrao) <span class="sc">*</span> <span class="dv">1000</span></span>
+<span id="cb418-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb418-3" tabindex="-1"></a>}</span>
+<span id="cb418-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb418-4" tabindex="-1"></a><span class="fu">c</span>(<span class="at">A =</span> <span class="fu">taxa_padronizada</span>(obA, popA, padrao), <span class="at">B =</span> <span class="fu">taxa_padronizada</span>(obB, popB, padrao))</span></code></pre></div>
+<pre><code>##    A    B 
+## 12.3 10.0</code></pre>
+<p>Com a mesma estrutura etária, a taxa de A (12,3 por 1.000) é maior que a de B (10,0 por 1.000): a conclusão se inverte. Os valores absolutos das taxas padronizadas dependem da população padrão escolhida (frequentemente a população brasileira de um censo, ou a população padrão mundial da Organização Mundial da Saúde) e só servem para comparação; não devem ser interpretados como a mortalidade “real” de cada município. Quando as taxas específicas por idade de uma população são instáveis (populações pequenas), usa-se a <strong>padronização indireta</strong>, que aplica taxas de referência à estrutura etária da população estudada e produz a <strong>razão de mortalidade padronizada</strong> (óbitos observados / óbitos esperados).</p>
+</div>
+<div id="acurácia-de-testes-diagnósticos" class="section level3 hasAnchor" number="11.1.3">
+<h3><span class="header-section-number">11.1.3</span> Acurácia de testes diagnósticos<a href="aplicações-práticas-e-estudos-de-caso.html#acur%C3%A1cia-de-testes-diagn%C3%B3sticos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>No capítulo <em>Bioestatística inferencial</em>, vimos como sensibilidade, especificidade e prevalência determinam os valores preditivos. Em um estudo de acurácia, um teste é aplicado a 1.000 pessoas que também passam pelo padrão de referência: 100 têm a doença, das quais 90 testam positivo; 900 não a têm, das quais 855 testam negativo.</p>
+<div class="sourceCode" id="cb420"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb420-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb420-1" tabindex="-1"></a>vp <span class="ot">&lt;-</span> <span class="dv">90</span>; fn <span class="ot">&lt;-</span> <span class="dv">10</span>; fp <span class="ot">&lt;-</span> <span class="dv">45</span>; vn <span class="ot">&lt;-</span> <span class="dv">855</span></span>
+<span id="cb420-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb420-2" tabindex="-1"></a>sens <span class="ot">&lt;-</span> vp <span class="sc">/</span> (vp <span class="sc">+</span> fn); espec <span class="ot">&lt;-</span> vn <span class="sc">/</span> (vn <span class="sc">+</span> fp)</span>
+<span id="cb420-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb420-3" tabindex="-1"></a><span class="fu">c</span>(<span class="at">sensibilidade =</span> sens, <span class="at">especificidade =</span> espec,</span>
+<span id="cb420-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb420-4" tabindex="-1"></a>  <span class="at">RV_positiva =</span> sens <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">-</span> espec), <span class="at">RV_negativa =</span> (<span class="dv">1</span> <span class="sc">-</span> sens) <span class="sc">/</span> espec)</span></code></pre></div>
+<pre><code>##  sensibilidade especificidade    RV_positiva    RV_negativa 
+##      0.9000000      0.9500000     18.0000000      0.1052632</code></pre>
+<div class="sourceCode" id="cb422"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb422-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb422-1" tabindex="-1"></a><span class="fu">prop.test</span>(vp, vp <span class="sc">+</span> fn, <span class="at">correct =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>conf.int    <span class="co"># IC de Wilson para a sensibilidade</span></span></code></pre></div>
+<pre><code>## [1] 0.8256343 0.9447709
+## attr(,&quot;conf.level&quot;)
+## [1] 0.95</code></pre>
+<div class="sourceCode" id="cb424"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb424-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb424-1" tabindex="-1"></a><span class="fu">prop.test</span>(vn, vn <span class="sc">+</span> fp, <span class="at">correct =</span> <span class="cn">FALSE</span>)<span class="sc">$</span>conf.int    <span class="co"># IC de Wilson para a especificidade</span></span></code></pre></div>
+<pre><code>## [1] 0.9337508 0.9624241
+## attr(,&quot;conf.level&quot;)
+## [1] 0.95</code></pre>
+<p>A sensibilidade é de 90% (IC 95%: 82,6% a 94,5%) e a especificidade, de 95% (93,4% a 96,2%). Note que a sensibilidade, estimada com apenas 100 doentes, é muito menos precisa que a especificidade, estimada com 900. Estudos de acurácia precisam planejar o tamanho amostral considerando o número de doentes e o de não doentes, e não apenas o total.</p>
+<p>As <strong>razões de verossimilhança</strong> (RV) combinam sensibilidade e especificidade em uma medida que não depende da prevalência. A RV positiva (<span class="math inline">\(\text{sens}/(1 - \text{espec}) = 18\)</span>) indica quantas vezes um resultado positivo é mais provável em um doente do que em um não doente. Na forma de chances do teorema de Bayes, a chance de doença após o teste é a chance antes do teste multiplicada pela RV: um teste positivo multiplica por 18 a chance de doença. RVs positivas acima de 10 e negativas abaixo de 0,1 costumam indicar testes que alteram substancialmente a probabilidade de doença. A diretriz STARD orienta o relato desses estudos.</p>
+</div>
+<div id="dados-secundários-em-saúde-pública" class="section level3 hasAnchor" number="11.1.4">
+<h3><span class="header-section-number">11.1.4</span> Dados secundários em saúde pública<a href="aplicações-práticas-e-estudos-de-caso.html#dados-secund%C3%A1rios-em-sa%C3%BAde-p%C3%BAblica" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Grande parte da pesquisa em saúde pública no Brasil usa dados secundários dos sistemas de informação do SUS: o Sistema de Informações sobre Mortalidade (SIM), o de Nascidos Vivos (SINASC), o de Internações Hospitalares (SIH), o Ambulatorial (SIA) e o de Agravos de Notificação (SINAN), disponibilizados pelo DATASUS. No R, o pacote <code>microdatasus</code> <span class="citation">(<a href="#ref-saldanha2019">Saldanha et al. 2019</a>)</span> automatiza o download e o pré-processamento desses microdados.</p>
+<p>Esses dados oferecem cobertura nacional e amostras enormes, mas foram produzidos para fins administrativos e de faturamento, e não para pesquisa. Antes de analisá-los, é preciso considerar: a completude e a qualidade de cada variável (que variam entre regiões e ao longo do tempo); a ausência de identificadores que permitam seguir o mesmo indivíduo entre registros (uma internação não é um paciente); mudanças de códigos, tabelas e regras de preenchimento; e o fato de os sistemas registrarem apenas quem teve acesso ao serviço. Uma amostra muito grande reduz o erro aleatório, mas não reduz nenhum desses vieses (veja a discussão sobre <em>big data</em> no capítulo <em>Tópicos avançados em bioestatística</em>).</p>
+</div>
 </div>
 <div id="genética-e-biologia-molecular" class="section level2 hasAnchor" number="11.2">
-<h2><span class="header-section-number">11.2</span> Genética e biologia molecular<a href="aplicações-práticas-e-estudos-de-caso.html#genética-e-biologia-molecular" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">11.2</span> Genética e biologia molecular<a href="aplicações-práticas-e-estudos-de-caso.html#gen%C3%A9tica-e-biologia-molecular" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="equilíbrio-de-hardyweinberg" class="section level3 hasAnchor" number="11.2.1">
+<h3><span class="header-section-number">11.2.1</span> Equilíbrio de Hardy–Weinberg<a href="aplicações-práticas-e-estudos-de-caso.html#equil%C3%ADbrio-de-hardyweinberg" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Em uma população grande, com acasalamento aleatório e sem seleção, mutação ou migração, as frequências genotípicas de um locus com dois alelos (A, com frequência <span class="math inline">\(p\)</span>, e a, com frequência <span class="math inline">\(q = 1 - p\)</span>) permanecem estáveis em <span class="math inline">\(p^2\)</span> (AA), <span class="math inline">\(2pq\)</span> (Aa) e <span class="math inline">\(q^2\)</span> (aa). Esse é o <strong>equilíbrio de Hardy–Weinberg</strong> <span class="citation">(<a href="#ref-hardy1908">Hardy 1908</a>)</span>. Em estudos genéticos de associação, desvios do equilíbrio entre os controles frequentemente indicam erros de genotipagem, e são usados como controle de qualidade.</p>
+<p><strong>Exemplo.</strong> Em 1.000 indivíduos, observaram-se 380 AA, 440 Aa e 180 aa. A frequência do alelo A é <span class="math inline">\(p = (2 \times 380 + 440)/2.000 = 0{,}60\)</span>. As frequências esperadas sob o equilíbrio são <span class="math inline">\(1.000 \times 0{,}36 = 360\)</span>, <span class="math inline">\(1.000 \times 0{,}48 = 480\)</span> e <span class="math inline">\(1.000 \times 0{,}16 = 160\)</span>. O teste qui-quadrado compara observados e esperados:</p>
+<p><span class="math display">\[
+X^2 = \frac{(380 - 360)^2}{360} + \frac{(440 - 480)^2}{480} + \frac{(180 - 160)^2}{160} = 1{,}11 + 3{,}33 + 2{,}50 = 6{,}94 .
+\]</span></p>
+<p>Os graus de liberdade são <span class="math inline">\(3 - 1 - 1 = 1\)</span>: três classes, menos um pela restrição de que o total é fixo, menos um pelo parâmetro <span class="math inline">\(p\)</span> estimado a partir dos próprios dados. O valor <em>p</em> é de cerca de 0,008, e há deficiência de heterozigotos em relação ao esperado.</p>
+<div class="sourceCode" id="cb426"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb426-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb426-1" tabindex="-1"></a>obs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">AA =</span> <span class="dv">380</span>, <span class="at">Aa =</span> <span class="dv">440</span>, <span class="at">aa =</span> <span class="dv">180</span>)</span>
+<span id="cb426-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb426-2" tabindex="-1"></a>p_A <span class="ot">&lt;-</span> (<span class="dv">2</span> <span class="sc">*</span> obs[<span class="st">&quot;AA&quot;</span>] <span class="sc">+</span> obs[<span class="st">&quot;Aa&quot;</span>]) <span class="sc">/</span> (<span class="dv">2</span> <span class="sc">*</span> <span class="fu">sum</span>(obs))</span>
+<span id="cb426-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb426-3" tabindex="-1"></a>esp <span class="ot">&lt;-</span> <span class="fu">sum</span>(obs) <span class="sc">*</span> <span class="fu">c</span>(p_A<span class="sc">^</span><span class="dv">2</span>, <span class="dv">2</span> <span class="sc">*</span> p_A <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> p_A), (<span class="dv">1</span> <span class="sc">-</span> p_A)<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb426-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb426-4" tabindex="-1"></a>x2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((obs <span class="sc">-</span> esp)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> esp)</span>
+<span id="cb426-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb426-5" tabindex="-1"></a><span class="fu">c</span>(<span class="at">qui_quadrado =</span> x2, <span class="at">p =</span> <span class="fu">pchisq</span>(x2, <span class="at">df =</span> <span class="dv">1</span>, <span class="at">lower.tail =</span> <span class="cn">FALSE</span>))</span></code></pre></div>
+<pre><code>## qui_quadrado            p 
+##  6.944444444  0.008407995</code></pre>
+<p>Note que a função <code>chisq.test()</code> não deve ser usada diretamente aqui, porque ela não desconta o grau de liberdade do parâmetro estimado. Para alelos raros, em que algumas frequências esperadas são pequenas, recomenda-se um teste exato <span class="citation">(<a href="#ref-wigginton2005">Wigginton et al. 2005</a>)</span>.</p>
+</div>
+<div id="comparações-múltiplas-em-estudos-genômicos" class="section level3 hasAnchor" number="11.2.2">
+<h3><span class="header-section-number">11.2.2</span> Comparações múltiplas em estudos genômicos<a href="aplicações-práticas-e-estudos-de-caso.html#compara%C3%A7%C3%B5es-m%C3%BAltiplas-em-estudos-gen%C3%B4micos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Estudos de expressão gênica, de associação genômica ampla ou de proteômica testam milhares de hipóteses ao mesmo tempo. Com 20.000 genes e <span class="math inline">\(\alpha = 0{,}05\)</span>, cerca de 1.000 genes seriam “significativos” por acaso, mesmo que nenhum estivesse associado ao desfecho. Há duas estratégias principais de correção.</p>
+<ul>
+<li><strong>Controle da taxa de erro por família</strong> (FWER): limita a probabilidade de <strong>ao menos um</strong> falso positivo. O método de Bonferroni compara cada valor <em>p</em> com <span class="math inline">\(\alpha/m\)</span>, sendo <span class="math inline">\(m\)</span> o número de testes. É muito conservador quando <span class="math inline">\(m\)</span> é grande. Nos estudos de associação genômica ampla, o limiar convencional de <span class="math inline">\(5 \times 10^{-8}\)</span> corresponde a uma correção de Bonferroni para cerca de um milhão de testes independentes.</li>
+<li><strong>Controle da taxa de falsas descobertas</strong> (FDR): limita a <strong>proporção esperada</strong> de falsos positivos entre os resultados declarados significativos. O procedimento de Benjamini e Hochberg <span class="citation">(<a href="#ref-benjamini1995">Benjamini and Hochberg 1995</a>)</span> ordena os <span class="math inline">\(m\)</span> valores <em>p</em> do menor para o maior, <span class="math inline">\(p_{(1)} \le \cdots \le p_{(m)}\)</span>, encontra o maior <span class="math inline">\(k\)</span> tal que <span class="math inline">\(p_{(k)} \le \frac{k}{m}q\)</span>, em que <span class="math inline">\(q\)</span> é a FDR desejada, e declara significativos os <span class="math inline">\(k\)</span> menores valores <em>p</em>. Em estudos exploratórios de grande escala, em que se aceita que uma fração pequena das descobertas seja falsa em troca de mais poder, a FDR é o critério usual.</li>
+</ul>
+<div class="sourceCode" id="cb428"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb428-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb428-1" tabindex="-1"></a>p_valores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.0002</span>, <span class="fl">0.0009</span>, <span class="fl">0.004</span>, <span class="fl">0.008</span>, <span class="fl">0.012</span>, <span class="fl">0.019</span>, <span class="fl">0.031</span>, <span class="fl">0.044</span>, <span class="fl">0.27</span>, <span class="fl">0.62</span>)</span>
+<span id="cb428-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb428-2" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">p =</span> p_valores,</span>
+<span id="cb428-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb428-3" tabindex="-1"></a>           <span class="at">p_bonferroni =</span> <span class="fu">p.adjust</span>(p_valores, <span class="at">method =</span> <span class="st">&quot;bonferroni&quot;</span>),</span>
+<span id="cb428-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb428-4" tabindex="-1"></a>           <span class="at">p_BH =</span> <span class="fu">round</span>(<span class="fu">p.adjust</span>(p_valores, <span class="at">method =</span> <span class="st">&quot;BH&quot;</span>), <span class="dv">4</span>))</span></code></pre></div>
+<pre><code>##         p p_bonferroni   p_BH
+## 1  0.0002        0.002 0.0020
+## 2  0.0009        0.009 0.0045
+## 3  0.0040        0.040 0.0133
+## 4  0.0080        0.080 0.0200
+## 5  0.0120        0.120 0.0240
+## 6  0.0190        0.190 0.0317
+## 7  0.0310        0.310 0.0443
+## 8  0.0440        0.440 0.0550
+## 9  0.2700        1.000 0.3000
+## 10 0.6200        1.000 0.6200</code></pre>
+<p>Dos dez testes, oito têm <span class="math inline">\(p &lt; 0{,}05\)</span> sem correção; com Bonferroni, apenas três permanecem abaixo de 0,05; com Benjamini–Hochberg a uma FDR de 5%, sete. Os valores ajustados pelo método BH (às vezes chamados de valores <span class="math inline">\(q\)</span>) podem ser comparados diretamente com a FDR desejada.</p>
+</div>
+<div id="quantificação-relativa-por-pcr-em-tempo-real" class="section level3 hasAnchor" number="11.2.3">
+<h3><span class="header-section-number">11.2.3</span> Quantificação relativa por PCR em tempo real<a href="aplicações-práticas-e-estudos-de-caso.html#quantifica%C3%A7%C3%A3o-relativa-por-pcr-em-tempo-real" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Na PCR quantitativa em tempo real (qPCR), o <strong>ciclo de quantificação</strong> (Ct ou Cq) é o ciclo em que a fluorescência ultrapassa um limiar; quanto maior a quantidade inicial do alvo, menor o Ct. Se a eficiência da amplificação for próxima de 100%, a quantidade de produto dobra a cada ciclo, e uma diferença de um ciclo corresponde a uma diferença de duas vezes na quantidade inicial. O <strong>método <span class="math inline">\(2^{-\Delta\Delta C_t}\)</span></strong> <span class="citation">(<a href="#ref-livak2001">Livak and Schmittgen 2001</a>)</span> calcula a expressão relativa de um gene-alvo, normalizada por um gene de referência, entre uma condição tratada e uma controle:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\Delta C_t = C_t^{\text{alvo}} - C_t^{\text{referência}}\)</span>, para cada amostra;</li>
+<li><span class="math inline">\(\Delta\Delta C_t = \overline{\Delta C_t}_{\text{tratado}} - \overline{\Delta C_t}_{\text{controle}}\)</span>;</li>
+<li>expressão relativa (<em>fold change</em>) <span class="math inline">\(= 2^{-\Delta\Delta C_t}\)</span>.</li>
+</ol>
+<div class="sourceCode" id="cb430"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb430-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb430-1" tabindex="-1"></a>ct_alvo_c <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">24.1</span>, <span class="fl">24.5</span>, <span class="fl">23.9</span>); ct_ref_c <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">18.0</span>, <span class="fl">18.3</span>, <span class="fl">17.9</span>)   <span class="co"># controles</span></span>
+<span id="cb430-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb430-2" tabindex="-1"></a>ct_alvo_t <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">22.6</span>, <span class="fl">22.9</span>, <span class="fl">22.2</span>); ct_ref_t <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">18.1</span>, <span class="fl">18.2</span>, <span class="fl">17.8</span>)   <span class="co"># tratados</span></span>
+<span id="cb430-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb430-3" tabindex="-1"></a>dct_c <span class="ot">&lt;-</span> ct_alvo_c <span class="sc">-</span> ct_ref_c</span>
+<span id="cb430-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb430-4" tabindex="-1"></a>dct_t <span class="ot">&lt;-</span> ct_alvo_t <span class="sc">-</span> ct_ref_t</span>
+<span id="cb430-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb430-5" tabindex="-1"></a>ddct <span class="ot">&lt;-</span> <span class="fu">mean</span>(dct_t) <span class="sc">-</span> <span class="fu">mean</span>(dct_c)</span>
+<span id="cb430-6"><a href="aplicações-práticas-e-estudos-de-caso.html#cb430-6" tabindex="-1"></a>teste_qpcr <span class="ot">&lt;-</span> <span class="fu">t.test</span>(dct_t, dct_c)</span>
+<span id="cb430-7"><a href="aplicações-práticas-e-estudos-de-caso.html#cb430-7" tabindex="-1"></a><span class="fu">c</span>(<span class="at">ddCt =</span> ddct, <span class="at">fold_change =</span> <span class="dv">2</span><span class="sc">^-</span>ddct)</span></code></pre></div>
+<pre><code>##        ddCt fold_change 
+##   -1.566667    2.962195</code></pre>
+<div class="sourceCode" id="cb432"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb432-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb432-1" tabindex="-1"></a><span class="dv">2</span><span class="sc">^-</span><span class="fu">rev</span>(teste_qpcr<span class="sc">$</span>conf.int)   <span class="co"># IC 95% da expressão relativa</span></span></code></pre></div>
+<pre><code>## [1] 2.385974 3.677576</code></pre>
+<div class="sourceCode" id="cb434"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb434-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb434-1" tabindex="-1"></a>teste_qpcr<span class="sc">$</span>p.value</span></code></pre></div>
+<pre><code>## [1] 0.0003004469</code></pre>
+<p>O gene-alvo está cerca de 3,0 vezes mais expresso nas amostras tratadas (IC 95%: 2,4 a 3,7). A análise exige três cuidados:</p>
+<ol style="list-style-type: decimal">
+<li><strong>A análise estatística deve ser feita na escala dos <span class="math inline">\(\Delta C_t\)</span></strong>, que é logarítmica e aproximadamente normal, e não na escala do <em>fold change</em>. Os valores de expressão relativa são assimétricos (um aumento de duas vezes corresponde a 2, mas uma redução de duas vezes, a 0,5), e médias e testes nessa escala são enganosos. O intervalo é calculado nos <span class="math inline">\(\Delta C_t\)</span> e transformado depois, como no código.</li>
+<li><strong>A unidade experimental</strong> (capítulo <em>Desenhos de pesquisa</em>) é a amostra biológica independente (o animal, o paciente, a cultura independente), e não a réplica técnica (o mesmo cDNA pipetado em três poços). As réplicas técnicas devem ser promediadas antes da análise. Com apenas três réplicas biológicas por grupo, como no exemplo, as estimativas são imprecisas e o poder é baixo.</li>
+<li>O método supõe eficiências de amplificação próximas de 100% e semelhantes para o alvo e a referência, o que deve ser verificado com curvas de diluição, e que o gene de referência não seja afetado pelo tratamento. As diretrizes MIQE detalham os itens que devem ser relatados.</li>
+</ol>
+</div>
 </div>
 <div id="ecologia-e-conservação" class="section level2 hasAnchor" number="11.3">
-<h2><span class="header-section-number">11.3</span> Ecologia e conservação<a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conservação" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">11.3</span> Ecologia e conservação<a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conserva%C3%A7%C3%A3o" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="índices-de-diversidade" class="section level3 hasAnchor" number="11.3.1">
+<h3><span class="header-section-number">11.3.1</span> Índices de diversidade<a href="aplicações-práticas-e-estudos-de-caso.html#%C3%ADndices-de-diversidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A diversidade de uma comunidade depende de dois componentes: a <strong>riqueza</strong> (o número de espécies) e a <strong>equabilidade</strong> (quão uniformemente os indivíduos se distribuem entre as espécies). Duas comunidades com a mesma riqueza podem ter diversidades muito diferentes. Sendo <span class="math inline">\(p_i\)</span> a proporção de indivíduos da espécie <span class="math inline">\(i\)</span> em uma comunidade com <span class="math inline">\(S\)</span> espécies:</p>
+<ul>
+<li><strong>índice de Shannon</strong> <span class="citation">(<a href="#ref-shannon1948">Shannon 1948</a>)</span>: <span class="math inline">\(H&#39; = -\sum_{i=1}^{S} p_i \ln p_i\)</span>. Vale zero quando há uma única espécie e atinge o máximo, <span class="math inline">\(\ln S\)</span>, quando todas as espécies têm a mesma abundância;</li>
+<li><strong>índice de Gini–Simpson</strong> <span class="citation">(<a href="#ref-simpson1949">Simpson 1949</a>)</span>: <span class="math inline">\(1 - D = 1 - \sum_{i=1}^{S} p_i^2\)</span>, a probabilidade de dois indivíduos sorteados (com reposição) pertencerem a espécies diferentes.</li>
+</ul>
+<p>Considere duas comunidades com quatro espécies e 100 indivíduos cada: na comunidade A, as abundâncias são 40, 30, 20 e 10; na B, 85, 5, 5 e 5.</p>
+<div class="sourceCode" id="cb436"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb436-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb436-1" tabindex="-1"></a>shannon <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { p <span class="ot">&lt;-</span> x <span class="sc">/</span> <span class="fu">sum</span>(x); <span class="sc">-</span><span class="fu">sum</span>(p <span class="sc">*</span> <span class="fu">log</span>(p)) }</span>
+<span id="cb436-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb436-2" tabindex="-1"></a>gini_simpson <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { p <span class="ot">&lt;-</span> x <span class="sc">/</span> <span class="fu">sum</span>(x); <span class="dv">1</span> <span class="sc">-</span> <span class="fu">sum</span>(p<span class="sc">^</span><span class="dv">2</span>) }</span>
+<span id="cb436-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb436-3" tabindex="-1"></a>comunidades <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">A =</span> <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">30</span>, <span class="dv">20</span>, <span class="dv">10</span>), <span class="at">B =</span> <span class="fu">c</span>(<span class="dv">85</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>))</span>
+<span id="cb436-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb436-4" tabindex="-1"></a><span class="fu">t</span>(<span class="fu">sapply</span>(comunidades, <span class="cf">function</span>(x)</span>
+<span id="cb436-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb436-5" tabindex="-1"></a>  <span class="fu">c</span>(<span class="at">riqueza =</span> <span class="fu">length</span>(x), <span class="at">shannon =</span> <span class="fu">shannon</span>(x), <span class="at">gini_simpson =</span> <span class="fu">gini_simpson</span>(x),</span>
+<span id="cb436-6"><a href="aplicações-práticas-e-estudos-de-caso.html#cb436-6" tabindex="-1"></a>    <span class="at">especies_efetivas =</span> <span class="fu">exp</span>(<span class="fu">shannon</span>(x)))))</span></code></pre></div>
+<pre><code>##   riqueza   shannon gini_simpson especies_efetivas
+## A       4 1.2798542         0.70          3.596115
+## B       4 0.5875009         0.27          1.799486</code></pre>
+<p>As duas comunidades têm a mesma riqueza, mas A é muito mais diversa (<span class="math inline">\(H&#39; = 1{,}28\)</span> contra 0,59). Os valores dos índices não têm uma escala intuitiva. Uma forma de interpretá-los é convertê-los em <strong>números efetivos de espécies</strong> (os chamados números de Hill): <span class="math inline">\(\exp(H&#39;)\)</span> é o número de espécies igualmente abundantes que produziria o mesmo valor do índice. A comunidade A equivale a 3,6 espécies igualmente abundantes; a B, a apenas 1,8.</p>
+<p>A riqueza observada, porém, depende do <strong>esforço amostral</strong>, porque quanto mais indivíduos se amostram, mais espécies raras aparecem. Comparar a riqueza de áreas amostradas com esforços diferentes é inválido. Usam-se curvas de acumulação de espécies, rarefação (comparar as áreas com o mesmo número de indivíduos) ou estimadores de riqueza total, disponíveis em pacotes como <code>vegan</code> e <code>iNEXT</code>.</p>
+</div>
+<div id="estimativa-do-tamanho-populacional-por-captura-e-recaptura" class="section level3 hasAnchor" number="11.3.2">
+<h3><span class="header-section-number">11.3.2</span> Estimativa do tamanho populacional por captura e recaptura<a href="aplicações-práticas-e-estudos-de-caso.html#estimativa-do-tamanho-populacional-por-captura-e-recaptura" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Para estimar o tamanho <span class="math inline">\(N\)</span> de uma população animal que não pode ser contada diretamente, captura-se e marca-se uma amostra de <span class="math inline">\(M\)</span> indivíduos, que são soltos. Depois de um tempo suficiente para que se misturem à população, captura-se uma segunda amostra de <span class="math inline">\(C\)</span> indivíduos, dos quais <span class="math inline">\(R\)</span> estão marcados. Se a proporção de marcados na segunda amostra reflete a proporção na população, <span class="math inline">\(R/C \approx M/N\)</span>, o que leva ao <strong>estimador de Lincoln–Petersen</strong>: <span class="math inline">\(\hat{N} = MC/R\)</span>.</p>
+<p>Esse estimador é enviesado para cima em amostras pequenas. A versão corrigida de Chapman é</p>
+<p><span class="math display">\[
+\hat{N}_C = \frac{(M + 1)(C + 1)}{R + 1} - 1, \qquad
+\widehat{\text{Var}}(\hat{N}_C) = \frac{(M+1)(C+1)(M-R)(C-R)}{(R+1)^2(R+2)} .
+\]</span></p>
+<p><strong>Exemplo.</strong> Foram marcados 50 anfíbios; na segunda captura, 12 dos 60 indivíduos estavam marcados.</p>
+<div class="sourceCode" id="cb438"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb438-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb438-1" tabindex="-1"></a>M <span class="ot">&lt;-</span> <span class="dv">50</span>; C_cap <span class="ot">&lt;-</span> <span class="dv">60</span>; R <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb438-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb438-2" tabindex="-1"></a>N_lp <span class="ot">&lt;-</span> M <span class="sc">*</span> C_cap <span class="sc">/</span> R</span>
+<span id="cb438-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb438-3" tabindex="-1"></a>N_ch <span class="ot">&lt;-</span> (M <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">*</span> (C_cap <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">/</span> (R <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="cb438-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb438-4" tabindex="-1"></a>var_ch <span class="ot">&lt;-</span> (M <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">*</span> (C_cap <span class="sc">+</span> <span class="dv">1</span>) <span class="sc">*</span> (M <span class="sc">-</span> R) <span class="sc">*</span> (C_cap <span class="sc">-</span> R) <span class="sc">/</span> ((R <span class="sc">+</span> <span class="dv">1</span>)<span class="sc">^</span><span class="dv">2</span> <span class="sc">*</span> (R <span class="sc">+</span> <span class="dv">2</span>))</span>
+<span id="cb438-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb438-5" tabindex="-1"></a><span class="fu">c</span>(<span class="at">Lincoln_Petersen =</span> N_lp, <span class="at">Chapman =</span> N_ch, <span class="at">EP =</span> <span class="fu">sqrt</span>(var_ch),</span>
+<span id="cb438-6"><a href="aplicações-práticas-e-estudos-de-caso.html#cb438-6" tabindex="-1"></a>  <span class="at">IC_inf =</span> N_ch <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> <span class="fu">sqrt</span>(var_ch), <span class="at">IC_sup =</span> N_ch <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> <span class="fu">sqrt</span>(var_ch))</span></code></pre></div>
+<pre><code>## Lincoln_Petersen          Chapman               EP           IC_inf 
+##        250.00000        238.30769         48.97281        142.32098 
+##           IC_sup 
+##        334.29441</code></pre>
+<p>A estimativa de Chapman é de cerca de 238 indivíduos, com IC aproximado de 142 a 334. A amplitude do intervalo mostra que, com 12 recapturas, a estimativa é imprecisa. As suposições do método merecem tanta atenção quanto o cálculo: a população deve ser <strong>fechada</strong> entre as capturas (sem nascimentos, mortes ou migração), a marcação não pode afetar a sobrevivência nem a probabilidade de recaptura, as marcas não podem ser perdidas e todos os indivíduos devem ter a mesma probabilidade de captura. Animais que aprendem a evitar armadilhas, por exemplo, levam a superestimar <span class="math inline">\(N\)</span>. Para populações abertas e estudos com várias ocasiões de captura, existem modelos mais gerais (Jolly–Seber, modelos de ocupação).</p>
+</div>
+<div id="contagens-e-superdispersão" class="section level3 hasAnchor" number="11.3.3">
+<h3><span class="header-section-number">11.3.3</span> Contagens e superdispersão<a href="aplicações-práticas-e-estudos-de-caso.html#contagens-e-superdispers%C3%A3o" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Dados de ecologia são frequentemente <strong>contagens</strong>: número de indivíduos por parcela, de ninhos por transecto, de espécies por fragmento. Contagens são inteiras, não negativas e, em geral, assimétricas, e a distribuição de referência para elas é a de <strong>Poisson</strong>, em que a variância é igual à média. Na prática, contagens ecológicas costumam ter variância muito maior que a média (<strong>superdispersão</strong>), porque os organismos se agregam. Um índice simples é a razão variância/média: valores próximos de 1 são compatíveis com distribuição aleatória; valores muito maiores que 1 indicam agregação.</p>
+<div class="sourceCode" id="cb440"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb440-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb440-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">21</span>)</span>
+<span id="cb440-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb440-2" tabindex="-1"></a>parcelas <span class="ot">&lt;-</span> <span class="fu">rnbinom</span>(<span class="dv">40</span>, <span class="at">mu =</span> <span class="dv">4</span>, <span class="at">size =</span> <span class="fl">1.2</span>)   <span class="co"># contagens agregadas (binomial negativa)</span></span>
+<span id="cb440-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb440-3" tabindex="-1"></a><span class="fu">c</span>(<span class="at">media =</span> <span class="fu">mean</span>(parcelas), <span class="at">variancia =</span> <span class="fu">var</span>(parcelas), <span class="at">razao =</span> <span class="fu">var</span>(parcelas) <span class="sc">/</span> <span class="fu">mean</span>(parcelas))</span></code></pre></div>
+<pre><code>##     media variancia     razao 
+##  5.125000 19.086538  3.724203</code></pre>
+<p>Analisar contagens superdispersas como se fossem de Poisson subestima os erros padrão e produz valores <em>p</em> pequenos demais. Os modelos adequados (regressão de Poisson com correção, binomial negativa) são apresentados no capítulo <em>Tópicos avançados em bioestatística</em>. A pseudorreplicação (capítulo <em>Desenhos de pesquisa</em>) também é frequente em ecologia: várias parcelas dentro de um único fragmento de floresta não são réplicas independentes do efeito da fragmentação.</p>
+</div>
 </div>
 <div id="farmacologia-e-ensaios-clínicos" class="section level2 hasAnchor" number="11.4">
-<h2><span class="header-section-number">11.4</span> Farmacologia e ensaios clínicos<a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-clínicos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">11.4</span> Farmacologia e ensaios clínicos<a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-cl%C3%ADnicos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="curvas-dose-resposta" class="section level3 hasAnchor" number="11.4.1">
+<h3><span class="header-section-number">11.4.1</span> Curvas dose-resposta<a href="aplicações-práticas-e-estudos-de-caso.html#curvas-dose-resposta" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A relação entre a concentração de um fármaco e sua resposta costuma ter forma sigmoide quando a concentração é representada em escala logarítmica. O modelo logístico de quatro parâmetros (relacionado à equação de Hill) descreve essa relação:</p>
+<p><span class="math display">\[
+y = \text{mín} + \frac{\text{máx} - \text{mín}}{1 + 10^{(\log_{10}\text{EC}_{50} - \log_{10} x)\,h}},
+\]</span></p>
+<p>em que mín e máx são as respostas nas concentrações muito baixas e muito altas, <span class="math inline">\(\text{EC}_{50}\)</span> é a concentração que produz metade do efeito máximo (uma medida de <strong>potência</strong>) e <span class="math inline">\(h\)</span> é o coeficiente de inclinação. Como o modelo não é linear nos parâmetros, ele é ajustado por <strong>mínimos quadrados não lineares</strong>, com a função <code>nls()</code>. Estimar o <span class="math inline">\(\log_{10}\text{EC}_{50}\)</span>, e não a <span class="math inline">\(\text{EC}_{50}\)</span> diretamente, melhora o comportamento numérico e torna o intervalo de confiança mais apropriado.</p>
+<div class="sourceCode" id="cb442"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb442-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb442-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
+<span id="cb442-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb442-2" tabindex="-1"></a>dose <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">10</span><span class="sc">^</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">2</span>, <span class="dv">2</span>, <span class="at">by =</span> <span class="fl">0.5</span>), <span class="at">each =</span> <span class="dv">3</span>)</span>
+<span id="cb442-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb442-3" tabindex="-1"></a>resposta <span class="ot">&lt;-</span> <span class="dv">100</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> (<span class="dv">2</span> <span class="sc">/</span> dose)<span class="sc">^</span><span class="fl">1.2</span>) <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="fu">length</span>(dose), <span class="dv">0</span>, <span class="dv">5</span>)</span>
+<span id="cb442-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb442-4" tabindex="-1"></a>ajuste_dr <span class="ot">&lt;-</span> <span class="fu">nls</span>(resposta <span class="sc">~</span> minimo <span class="sc">+</span> (maximo <span class="sc">-</span> minimo) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="dv">10</span><span class="sc">^</span>((logEC50 <span class="sc">-</span> <span class="fu">log10</span>(dose)) <span class="sc">*</span> h)),</span>
+<span id="cb442-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb442-5" tabindex="-1"></a>                 <span class="at">start =</span> <span class="fu">list</span>(<span class="at">minimo =</span> <span class="dv">0</span>, <span class="at">maximo =</span> <span class="dv">100</span>, <span class="at">logEC50 =</span> <span class="dv">0</span>, <span class="at">h =</span> <span class="dv">1</span>))</span>
+<span id="cb442-6"><a href="aplicações-práticas-e-estudos-de-caso.html#cb442-6" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">summary</span>(ajuste_dr)<span class="sc">$</span>coefficients, <span class="dv">3</span>)</span></code></pre></div>
+<pre><code>##         Estimate Std. Error t value Pr(&gt;|t|)
+## minimo     3.044      2.342   1.300    0.206
+## maximo   102.822      3.667  28.037    0.000
+## logEC50    0.403      0.059   6.811    0.000
+## h          1.059      0.141   7.489    0.000</code></pre>
+<div class="sourceCode" id="cb444"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb444-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb444-1" tabindex="-1"></a>ic_log <span class="ot">&lt;-</span> <span class="fu">confint.default</span>(ajuste_dr)[<span class="st">&quot;logEC50&quot;</span>, ]</span>
+<span id="cb444-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb444-2" tabindex="-1"></a>ec50 <span class="ot">&lt;-</span> <span class="dv">10</span><span class="sc">^</span><span class="fu">c</span>(<span class="at">estimativa =</span> <span class="fu">unname</span>(<span class="fu">coef</span>(ajuste_dr)[<span class="st">&quot;logEC50&quot;</span>]), ic_log)</span>
+<span id="cb444-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb444-3" tabindex="-1"></a>ec50</span></code></pre></div>
+<pre><code>## estimativa      2.5 %     97.5 % 
+##   2.529236   1.936553   3.303309</code></pre>
+<div class="sourceCode" id="cb446"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb446-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb446-1" tabindex="-1"></a><span class="fu">plot</span>(dose, resposta, <span class="at">log =</span> <span class="st">&quot;x&quot;</span>, <span class="at">pch =</span> <span class="dv">19</span>, <span class="at">col =</span> <span class="st">&quot;grey35&quot;</span>,</span>
+<span id="cb446-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb446-2" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Concentração (µM, escala logarítmica)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Resposta (% do máximo)&quot;</span>)</span>
+<span id="cb446-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb446-3" tabindex="-1"></a>grade <span class="ot">&lt;-</span> <span class="dv">10</span><span class="sc">^</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">2</span>, <span class="dv">2</span>, <span class="at">length.out =</span> <span class="dv">200</span>)</span>
+<span id="cb446-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb446-4" tabindex="-1"></a><span class="fu">lines</span>(grade, <span class="fu">predict</span>(ajuste_dr, <span class="at">newdata =</span> <span class="fu">data.frame</span>(<span class="at">dose =</span> grade)), <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb446-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb446-5" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v =</span> ec50[<span class="dv">1</span>], <span class="at">lty =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:apl-dr-fig"></span>
+<img src="MCBSbook_files/figure-html/apl-dr-fig-1.png" alt="Curva dose-resposta ajustada pelo modelo logístico de quatro parâmetros (dados simulados, três réplicas por concentração). A linha vertical tracejada indica a EC50 estimada." width="85%" />
+<p class="caption">
+Figura 11.1: Curva dose-resposta ajustada pelo modelo logístico de quatro parâmetros (dados simulados, três réplicas por concentração). A linha vertical tracejada indica a EC50 estimada.
+</p>
+</div>
+<p>A <span class="math inline">\(\text{EC}_{50}\)</span> estimada é de 2,53 µM (IC 95%: 1,94 a 3,30); os dados foram simulados com <span class="math inline">\(\text{EC}_{50} = 2\)</span> µM. O intervalo foi calculado na escala logarítmica e transformado, e por isso é assimétrico. As réplicas devem ser experimentos independentes (por exemplo, culturas preparadas em dias diferentes), e não poços da mesma placa, para que o intervalo reflita a variabilidade relevante.</p>
+</div>
+<div id="parâmetros-farmacocinéticos" class="section level3 hasAnchor" number="11.4.2">
+<h3><span class="header-section-number">11.4.2</span> Parâmetros farmacocinéticos<a href="aplicações-práticas-e-estudos-de-caso.html#par%C3%A2metros-farmacocin%C3%A9ticos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Após a administração oral de uma dose única, as concentrações plasmáticas de um fármaco foram medidas em sete tempos (Tabela <a href="aplicações-práticas-e-estudos-de-caso.html#tab:apl-pk">11.2</a>).</p>
+<table>
+<caption><span id="tab:apl-pk">Tabela 11.2: </span>Concentrações plasmáticas após dose oral única (dados fictícios).</caption>
+<thead>
+<tr class="header">
+<th align="center">Tempo (h)</th>
+<th align="center">Concentração (ng/mL)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0,5</td>
+<td align="center">42</td>
+</tr>
+<tr class="even">
+<td align="center">1,0</td>
+<td align="center">68</td>
+</tr>
+<tr class="odd">
+<td align="center">2,0</td>
+<td align="center">80</td>
+</tr>
+<tr class="even">
+<td align="center">4,0</td>
+<td align="center">61</td>
+</tr>
+<tr class="odd">
+<td align="center">6,0</td>
+<td align="center">44</td>
+</tr>
+<tr class="even">
+<td align="center">8,0</td>
+<td align="center">31</td>
+</tr>
+<tr class="odd">
+<td align="center">12,0</td>
+<td align="center">16</td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>concentração máxima</strong> (<span class="math inline">\(C_{\text{máx}}\)</span>) é de 80 ng/mL, atingida em <span class="math inline">\(t_{\text{máx}} = 2\)</span> h. A <strong>área sob a curva</strong> (ASC, ou AUC), que mede a exposição total ao fármaco, é calculada pela <strong>regra dos trapézios</strong>: entre dois tempos consecutivos, a área é aproximada por um trapézio,</p>
+<p><span class="math display">\[
+\text{ASC}_{t_i \to t_{i+1}} = \frac{(C_i + C_{i+1})}{2}\,(t_{i+1} - t_i).
+\]</span></p>
+<p>Somando todos os trapézios (e o triângulo inicial, supondo concentração zero no tempo zero), obtém-se a <span class="math inline">\(\text{ASC}_{0-12}\)</span>. Na fase de eliminação, se a cinética for de primeira ordem, o logaritmo da concentração cai linearmente com o tempo, com inclinação <span class="math inline">\(-k_e\)</span> (a constante de eliminação). Daí se obtêm a <strong>meia-vida</strong>, <span class="math inline">\(t_{1/2} = \ln 2 / k_e\)</span>, e a área extrapolada até o infinito, <span class="math inline">\(\text{ASC}_{0-\infty} = \text{ASC}_{0-t} + C_{\text{última}}/k_e\)</span>.</p>
+<div class="sourceCode" id="cb447"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb447-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb447-1" tabindex="-1"></a>asc_trap <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">diff</span>(<span class="fu">c</span>(<span class="dv">0</span>, tempo_pk)) <span class="sc">*</span> (<span class="fu">head</span>(<span class="fu">c</span>(<span class="dv">0</span>, conc_pk), <span class="sc">-</span><span class="dv">1</span>) <span class="sc">+</span> <span class="fu">tail</span>(<span class="fu">c</span>(<span class="dv">0</span>, conc_pk), <span class="sc">-</span><span class="dv">1</span>)) <span class="sc">/</span> <span class="dv">2</span>)</span>
+<span id="cb447-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb447-2" tabindex="-1"></a>fase_elim <span class="ot">&lt;-</span> tempo_pk <span class="sc">&gt;=</span> <span class="dv">4</span></span>
+<span id="cb447-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb447-3" tabindex="-1"></a>ke <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fu">coef</span>(<span class="fu">lm</span>(<span class="fu">log</span>(conc_pk[fase_elim]) <span class="sc">~</span> tempo_pk[fase_elim]))[<span class="dv">2</span>]</span>
+<span id="cb447-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb447-4" tabindex="-1"></a><span class="fu">c</span>(<span class="at">ASC_0_12 =</span> asc_trap, <span class="at">ke =</span> <span class="fu">unname</span>(ke), <span class="at">meia_vida =</span> <span class="fu">unname</span>(<span class="fu">log</span>(<span class="dv">2</span>) <span class="sc">/</span> ke),</span>
+<span id="cb447-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb447-5" tabindex="-1"></a>  <span class="at">ASC_0_inf =</span> <span class="fu">unname</span>(asc_trap <span class="sc">+</span> conc_pk[<span class="fu">length</span>(conc_pk)] <span class="sc">/</span> ke))</span></code></pre></div>
+<pre><code>##    ASC_0_12          ke   meia_vida   ASC_0_inf 
+## 527.0000000   0.1677343   4.1324119 622.3889635</code></pre>
+<p>A <span class="math inline">\(\text{ASC}_{0-12}\)</span> é de 527 ng·h/mL, a meia-vida de eliminação é de cerca de 4,1 h e a <span class="math inline">\(\text{ASC}_{0-\infty}\)</span>, de cerca de 622 ng·h/mL. A escolha dos pontos da fase terminal (aqui, de 4 a 12 h) influencia a estimativa e deve seguir um critério definido previamente. Note que a área extrapolada (cerca de 15% do total) é considerável; diretrizes regulatórias recomendam que a coleta se estenda até que a extrapolação seja pequena.</p>
+</div>
+<div id="bioequivalência" class="section level3 hasAnchor" number="11.4.3">
+<h3><span class="header-section-number">11.4.3</span> Bioequivalência<a href="aplicações-práticas-e-estudos-de-caso.html#bioequival%C3%AAncia" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Dois medicamentos com o mesmo princípio ativo são considerados <strong>bioequivalentes</strong> quando produzem exposições sistêmicas semelhantes. Em um estudo típico, voluntários recebem o medicamento teste e o de referência em ordem aleatória (desenho cruzado, capítulo <em>Desenhos de pesquisa</em>), e comparam-se a ASC e a <span class="math inline">\(C_{\text{máx}}\)</span>. O critério usual é que o intervalo de confiança de 90% da <strong>razão das médias geométricas</strong> (teste/referência) esteja inteiramente contido entre 80% e 125%.</p>
+<p>Três aspectos desse critério merecem explicação:</p>
+<ol style="list-style-type: decimal">
+<li><strong>A análise é feita na escala logarítmica</strong>, porque parâmetros farmacocinéticos são assimétricos e porque diferenças de logaritmos correspondem a razões na escala original. Os limites são simétricos na escala log: <span class="math inline">\(\ln(0{,}80) = -0{,}223\)</span> e <span class="math inline">\(\ln(1{,}25) = +0{,}223\)</span>.</li>
+<li><strong>O intervalo é de 90%, e não de 95%</strong>, porque o procedimento equivale a dois testes unilaterais com <span class="math inline">\(\alpha = 5\%\)</span> cada (o procedimento TOST <span class="citation">(<a href="#ref-schuirmann1987">Schuirmann 1987</a>)</span>): rejeita-se que a razão seja menor que 80% e também que seja maior que 125%.</li>
+<li><strong>A hipótese nula é a de não equivalência.</strong> Ao contrário dos testes de superioridade, aqui a ausência de diferença estatisticamente significativa não demonstra equivalência; é preciso mostrar que o intervalo inteiro está dentro dos limites. Um estudo pequeno e impreciso não demonstra bioequivalência, mesmo que a razão estimada seja próxima de 100%.</li>
+</ol>
+<div class="sourceCode" id="cb449"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb449-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb449-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">7</span>)</span>
+<span id="cb449-2"><a href="aplicações-práticas-e-estudos-de-caso.html#cb449-2" tabindex="-1"></a>n_vol <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb449-3"><a href="aplicações-práticas-e-estudos-de-caso.html#cb449-3" tabindex="-1"></a>asc_ref <span class="ot">&lt;-</span> <span class="fu">rlnorm</span>(n_vol, <span class="fu">log</span>(<span class="dv">600</span>), <span class="fl">0.3</span>)</span>
+<span id="cb449-4"><a href="aplicações-práticas-e-estudos-de-caso.html#cb449-4" tabindex="-1"></a>asc_teste <span class="ot">&lt;-</span> asc_ref <span class="sc">*</span> <span class="fu">exp</span>(<span class="fu">rnorm</span>(n_vol, <span class="fu">log</span>(<span class="fl">0.95</span>), <span class="fl">0.10</span>))</span>
+<span id="cb449-5"><a href="aplicações-práticas-e-estudos-de-caso.html#cb449-5" tabindex="-1"></a>dif_log <span class="ot">&lt;-</span> <span class="fu">log</span>(asc_teste) <span class="sc">-</span> <span class="fu">log</span>(asc_ref)</span>
+<span id="cb449-6"><a href="aplicações-práticas-e-estudos-de-caso.html#cb449-6" tabindex="-1"></a>ic90 <span class="ot">&lt;-</span> <span class="fu">t.test</span>(dif_log, <span class="at">conf.level =</span> <span class="fl">0.90</span>)<span class="sc">$</span>conf.int</span>
+<span id="cb449-7"><a href="aplicações-práticas-e-estudos-de-caso.html#cb449-7" tabindex="-1"></a><span class="fu">c</span>(<span class="at">razao_geometrica =</span> <span class="fu">exp</span>(<span class="fu">mean</span>(dif_log)), <span class="at">IC90_inf =</span> <span class="fu">exp</span>(ic90[<span class="dv">1</span>]), <span class="at">IC90_sup =</span> <span class="fu">exp</span>(ic90[<span class="dv">2</span>]))</span></code></pre></div>
+<pre><code>## razao_geometrica         IC90_inf         IC90_sup 
+##        1.0004943        0.9464727        1.0575992</code></pre>
+<p>A razão das médias geométricas foi de 100,0%, com IC de 90% de 94,6% a 105,8%, inteiramente contido no intervalo de 80% a 125%: os produtos seriam considerados bioequivalentes para a ASC. Em um estudo real, a análise usaria um modelo que inclui os efeitos de sequência, período e formulação.</p>
+</div>
+<div id="tamanho-amostral-em-ensaios-clínicos" class="section level3 hasAnchor" number="11.4.4">
+<h3><span class="header-section-number">11.4.4</span> Tamanho amostral em ensaios clínicos<a href="aplicações-práticas-e-estudos-de-caso.html#tamanho-amostral-em-ensaios-cl%C3%ADnicos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>O cálculo do tamanho amostral deve ser feito antes do início do ensaio e baseado no desfecho principal. Ele depende de quatro elementos: o nível de significância (<span class="math inline">\(\alpha\)</span>), o poder desejado (<span class="math inline">\(1 - \beta\)</span>), o <strong>tamanho de efeito</strong> que se quer detectar e a <strong>variabilidade</strong> do desfecho (o desvio padrão, para desfechos contínuos, ou a proporção no grupo controle, para desfechos binários).</p>
+<p>Para um ensaio em que a proporção de eventos no grupo controle é de 30% e se deseja detectar uma redução para 20%, com <span class="math inline">\(\alpha = 0{,}05\)</span> e poder de 80%:</p>
+<div class="sourceCode" id="cb451"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb451-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb451-1" tabindex="-1"></a><span class="fu">power.prop.test</span>(<span class="at">p1 =</span> <span class="fl">0.30</span>, <span class="at">p2 =</span> <span class="fl">0.20</span>, <span class="at">sig.level =</span> <span class="fl">0.05</span>, <span class="at">power =</span> <span class="fl">0.80</span>)</span></code></pre></div>
+<pre><code>## 
+##      Two-sample comparison of proportions power calculation 
+## 
+##               n = 293.1513
+##              p1 = 0.3
+##              p2 = 0.2
+##       sig.level = 0.05
+##           power = 0.8
+##     alternative = two.sided
+## 
+## NOTE: n is number in *each* group</code></pre>
+<p>São necessários cerca de 294 participantes por grupo, antes de considerar as perdas de seguimento (se forem esperados 10% de perdas, recrutam-se cerca de <span class="math inline">\(294/0{,}9 \approx 327\)</span> por grupo). O ponto mais difícil do cálculo é a escolha do tamanho de efeito. Ele deve corresponder à <strong>menor diferença clinicamente relevante</strong>, e não ao efeito que se espera ou que se deseja encontrar: escolher um efeito irrealisticamente grande produz um tamanho amostral pequeno e um estudo sem poder para detectar efeitos plausíveis. Estimativas de estudos-piloto pequenos são muito imprecisas e tendem a superestimar os efeitos.</p>
+</div>
+</div>
+<div id="resumo-do-capítulo-8" class="section level2 hasAnchor" number="11.5">
+<h2><span class="header-section-number">11.5</span> Resumo do capítulo<a href="aplicações-práticas-e-estudos-de-caso.html#resumo-do-cap%C3%ADtulo-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Intervalos de confiança para RR e OR são calculados na escala logarítmica e transformados; para a diferença de riscos, o método de Newcombe é preferível ao de Wald; o intervalo do NNT inverte os limites da diferença de riscos.</li>
+<li>Taxas brutas podem ser confundidas pela estrutura etária; a padronização direta compara populações com uma estrutura comum.</li>
+<li>Em estudos de acurácia, a precisão da sensibilidade depende do número de doentes e a da especificidade, do número de não doentes. As razões de verossimilhança não dependem da prevalência.</li>
+<li>Dados secundários do SUS oferecem grande cobertura, mas trazem vieses que o tamanho da amostra não corrige.</li>
+<li>O teste de Hardy–Weinberg tem um grau de liberdade a menos pelo parâmetro estimado. Em estudos genômicos, controle a FDR (Benjamini–Hochberg) ou a FWER (Bonferroni), conforme o objetivo.</li>
+<li>Na qPCR, analise os <span class="math inline">\(\Delta C_t\)</span>, e não o <em>fold change</em>, e use réplicas biológicas como unidade experimental.</li>
+<li>Índices de diversidade combinam riqueza e equabilidade; a riqueza depende do esforço amostral. Captura e recaptura dependem de suposições fortes sobre a população e as marcas.</li>
+<li>Contagens superdispersas não devem ser analisadas como Poisson simples.</li>
+<li>Curvas dose-resposta são ajustadas por mínimos quadrados não lineares; estime o <span class="math inline">\(\log \text{EC}_{50}\)</span>.</li>
+<li>A ASC é calculada pela regra dos trapézios; a meia-vida, pela inclinação da fase terminal na escala logarítmica.</li>
+<li>A bioequivalência exige que o IC de 90% da razão geométrica esteja entre 80% e 125%; ausência de diferença não é equivalência.</li>
+<li>O tamanho amostral deve se basear na menor diferença clinicamente relevante e prever perdas.</li>
+</ul>
+</div>
+<div id="exercícios-8" class="section level2 hasAnchor" number="11.6">
+<h2><span class="header-section-number">11.6</span> Exercícios<a href="aplicações-práticas-e-estudos-de-caso.html#exerc%C3%ADcios-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Em um ensaio, 30 de 200 pacientes do grupo controle e 18 de 200 do grupo tratado tiveram o evento. Calcule o RR, a diferença de riscos e o NNT, com intervalos de confiança de 95%, usando a função <code>medidas_2x2()</code> (note que, para um tratamento benéfico, o “grupo exposto” na função pode ser o tratado). Interprete o intervalo do NNT.</p></li>
+<li><p>Por que a taxa de mortalidade bruta de um município com muitos idosos pode ser maior do que a de outro com população jovem, mesmo que a mortalidade em cada faixa etária seja menor? Como a padronização resolve esse problema?</p></li>
+<li><p>Em 500 controles de um estudo genético, observaram-se 300 GG, 150 GA e 50 AA. Teste o equilíbrio de Hardy–Weinberg.</p></li>
+<li><p>Um experimento de qPCR comparou três camundongos tratados e três controles, com três réplicas técnicas de cada amostra. O pesquisador analisou os 9 valores de cada grupo com um teste t sobre os valores de <em>fold change</em>. Aponte os dois erros.</p></li>
+<li><p>Calcule o índice de Shannon e o número efetivo de espécies de uma comunidade com cinco espécies de abundâncias iguais. Compare com o valor máximo <span class="math inline">\(\ln S\)</span>.</p></li>
+<li><p>Um estudo de bioequivalência com 8 voluntários obteve razão de médias geométricas de 100% e IC de 90% de 78% a 128%. Os produtos são bioequivalentes? Os produtos são diferentes? O que você recomendaria?</p></li>
+</ol>
+</div>
+<div id="respostas-dos-exercícios-8" class="section level2 hasAnchor" number="11.7">
+<h2><span class="header-section-number">11.7</span> Respostas dos exercícios<a href="aplicações-práticas-e-estudos-de-caso.html#respostas-dos-exerc%C3%ADcios-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Com o grupo tratado como “exposto” (<span class="math inline">\(a = 18\)</span>, <span class="math inline">\(b = 182\)</span>, <span class="math inline">\(c = 30\)</span>, <span class="math inline">\(d = 170\)</span>): risco de 9% nos tratados e 15% nos controles; RR = 0,60 (IC 95%: aproximadamente 0,35 a 1,04); diferença de riscos de −6 pontos percentuais (IC 95% de Newcombe: aproximadamente −12,5 a 0,4 pontos percentuais). O NNT estimado é cerca de 17 (a função devolve −16,7: o sinal negativo indica que o “exposto”, aqui o tratamento, reduz o risco, ou seja, trata-se de um NNT para benefício; valores positivos indicam NNH). Como o intervalo da diferença de riscos inclui zero, o intervalo do NNT passa pelo infinito: os dados são compatíveis desde um NNT para benefício de cerca de 8 até nenhum efeito, e até um pequeno dano (NNH muito grande, acima de 200). O estudo é inconclusivo.</p>
+<div class="sourceCode" id="cb453"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb453-1"><a href="aplicações-práticas-e-estudos-de-caso.html#cb453-1" tabindex="-1"></a><span class="fu">medidas_2x2</span>(<span class="at">a =</span> <span class="dv">18</span>, <span class="at">b =</span> <span class="dv">182</span>, <span class="at">c =</span> <span class="dv">30</span>, <span class="at">d =</span> <span class="dv">170</span>)</span></code></pre></div>
+<pre><code>##                medida  estimativa    inferior     superior
+## 1      Risco relativo   0.6000000   0.3459974  1.040470185
+## 2    Razão de chances   0.5604396   0.3012991  1.042460888
+## 3 Diferença de riscos  -0.0600000  -0.1247020  0.004178594
+## 4             NNT/NNH -16.6666667 239.3149571 -8.019115555</code></pre></li>
+<li><p>A mortalidade aumenta muito com a idade; um município com muitos idosos terá mais óbitos totais por habitante mesmo que, em cada faixa etária, as pessoas morram menos que no outro município. A idade confunde a comparação. A padronização direta aplica as taxas específicas de cada município a uma mesma população padrão, removendo o efeito da diferença de estrutura etária.</p></li>
+<li><p><span class="math inline">\(p(G) = (2 \times 300 + 150)/1.000 = 0{,}75\)</span>. Esperados: <span class="math inline">\(500 \times 0{,}5625 = 281{,}25\)</span> (GG), <span class="math inline">\(500 \times 0{,}375 = 187{,}5\)</span> (GA), <span class="math inline">\(500 \times 0{,}0625 = 31{,}25\)</span> (AA). <span class="math inline">\(X^2 = (18{,}75^2/281{,}25) + (37{,}5^2/187{,}5) + (18{,}75^2/31{,}25) = 1{,}25 + 7{,}5 + 11{,}25 = 20{,}0\)</span>, com 1 grau de liberdade, <span class="math inline">\(p &lt; 0{,}001\)</span>. Há forte desvio do equilíbrio (deficiência de heterozigotos), o que, em controles, sugere investigar erros de genotipagem ou estrutura populacional.</p></li>
+<li><ol style="list-style-type: lower-alpha">
+<li>Pseudorreplicação: as réplicas técnicas foram tratadas como observações independentes; o <span class="math inline">\(n\)</span> correto é 3 por grupo (a média das réplicas técnicas de cada animal). (b) O teste foi feito na escala do <em>fold change</em>, que é assimétrica; a análise deveria ser feita nos <span class="math inline">\(\Delta C_t\)</span> (escala logarítmica), com transformação posterior para apresentar a expressão relativa.</li>
+</ol></li>
+<li><p>Com <span class="math inline">\(p_i = 0{,}2\)</span> para todas: <span class="math inline">\(H&#39; = -5 \times 0{,}2 \times \ln 0{,}2 = \ln 5 \approx 1{,}609\)</span>, que é o máximo <span class="math inline">\(\ln S\)</span>. O número efetivo de espécies é <span class="math inline">\(\exp(1{,}609) = 5\)</span>: quando todas as espécies têm a mesma abundância, o número efetivo é igual à riqueza.</p></li>
+<li><p>Não é possível concluir bioequivalência, porque o IC de 90% ultrapassa os limites de 80% e 125%. Também não é possível concluir que sejam diferentes: a estimativa pontual é de 100%, e o intervalo largo reflete apenas a imprecisão de um estudo com 8 voluntários. O estudo é inconclusivo por falta de poder; a recomendação é realizar um estudo com tamanho amostral calculado a partir da variabilidade intraindividual observada.</p></li>
+</ol>
 
+</div>
+</div>
+<h3>Referências<a href="referências.html#refer%C3%AAncias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-altman1998" class="csl-entry">
+Altman, Douglas G. 1998. <span>“Confidence Intervals for the Number Needed to Treat.”</span> <em>BMJ</em> 317 (7168): 1309–12. <a href="https://doi.org/10.1136/bmj.317.7168.1309">https://doi.org/10.1136/bmj.317.7168.1309</a>.
+</div>
+<div id="ref-benjamini1995" class="csl-entry">
+Benjamini, Yoav, and Yosef Hochberg. 1995. <span>“Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 57 (1): 289–300. <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a>.
+</div>
+<div id="ref-hardy1908" class="csl-entry">
+Hardy, G. H. 1908. <span>“Mendelian Proportions in a Mixed Population.”</span> <em>Science</em> 28 (706): 49–50. <a href="https://doi.org/10.1126/science.28.706.49">https://doi.org/10.1126/science.28.706.49</a>.
+</div>
+<div id="ref-katz1978" class="csl-entry">
+Katz, D., J. Baptista, S. P. Azen, and M. C. Pike. 1978. <span>“Obtaining Confidence Intervals for the Risk Ratio in Cohort Studies.”</span> <em>Biometrics</em> 34 (3): 469–74. <a href="https://doi.org/10.2307/2530610">https://doi.org/10.2307/2530610</a>.
+</div>
+<div id="ref-livak2001" class="csl-entry">
+Livak, Kenneth J., and Thomas D. Schmittgen. 2001. <span>“Analysis of Relative Gene Expression Data Using Real-Time Quantitative <span>PCR</span> and the <span class="math inline">\(2^{-\Delta\Delta C_T}\)</span> Method.”</span> <em>Methods</em> 25 (4): 402–8. <a href="https://doi.org/10.1006/meth.2001.1262">https://doi.org/10.1006/meth.2001.1262</a>.
+</div>
+<div id="ref-newcombe1998" class="csl-entry">
+Newcombe, Robert G. 1998. <span>“Interval Estimation for the Difference Between Independent Proportions: Comparison of Eleven Methods.”</span> <em>Statistics in Medicine</em> 17 (8): 873–90. <a href="https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8%3C873::AID-SIM779%3E3.0.CO;2-I">https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8&lt;873::AID-SIM779&gt;3.0.CO;2-I</a>.
+</div>
+<div id="ref-saldanha2019" class="csl-entry">
+Saldanha, Raphael de Freitas, Ronaldo Rocha Bastos, and Christovam Barcellos. 2019. <span>“Microdatasus: Pacote Para Download e Pré-Processamento de Microdados Do Departamento de Informática Do <span>SUS</span> (<span>DATASUS</span>).”</span> <em>Cadernos de Saúde Pública</em> 35 (9): e00032419. <a href="https://doi.org/10.1590/0102-311X00032419">https://doi.org/10.1590/0102-311X00032419</a>.
+</div>
+<div id="ref-schuirmann1987" class="csl-entry">
+Schuirmann, Donald J. 1987. <span>“A Comparison of the Two One-Sided Tests Procedure and the Power Approach for Assessing the Equivalence of Average Bioavailability.”</span> <em>Journal of Pharmacokinetics and Biopharmaceutics</em> 15 (6): 657–80. <a href="https://doi.org/10.1007/BF01068419">https://doi.org/10.1007/BF01068419</a>.
+</div>
+<div id="ref-shannon1948" class="csl-entry">
+Shannon, C. E. 1948. <span>“A Mathematical Theory of Communication.”</span> <em>Bell System Technical Journal</em> 27 (3): 379–423. <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</a>.
+</div>
+<div id="ref-simpson1949" class="csl-entry">
+Simpson, E. H. 1949. <span>“Measurement of Diversity.”</span> <em>Nature</em> 163 (4148): 688. <a href="https://doi.org/10.1038/163688a0">https://doi.org/10.1038/163688a0</a>.
+</div>
+<div id="ref-wigginton2005" class="csl-entry">
+Wigginton, Janis E., David J. Cutler, and Gonçalo R. Abecasis. 2005. <span>“A Note on Exact Tests of <span>Hardy-Weinberg</span> Equilibrium.”</span> <em>American Journal of Human Genetics</em> 76 (5): 887–93. <a href="https://doi.org/10.1086/429864">https://doi.org/10.1086/429864</a>.
+</div>
+<div id="ref-woolf1955" class="csl-entry">
+Woolf, Barnet. 1955. <span>“On Estimating the Relation Between Blood Group and Disease.”</span> <em>Annals of Human Genetics</em> 19 (4): 251–53. <a href="https://doi.org/10.1111/j.1469-1809.1955.tb01348.x">https://doi.org/10.1111/j.1469-1809.1955.tb01348.x</a>.
 </div>
 </div>
             </section>
@@ -327,42 +1152,42 @@ div.csl-indent {
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

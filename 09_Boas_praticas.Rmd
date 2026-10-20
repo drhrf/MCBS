@@ -1,9 +1,212 @@
 # Ética e boas práticas em pesquisa
 
+Hércules Rezende Freitas, Ph.D.$^1$
+
+$^1$Universidade do Estado do Rio de Janeiro (UERJ), Faculdade de Ciências Médicas, Departamento de Ciências Médicas Integradas, Laboratório de Informática em Saúde (LabInfoS), Cabo Frio/RJ, Brasil.
+
+A ética na pesquisa tem duas faces. A primeira diz respeito aos **participantes**: as pessoas e os animais envolvidos em um estudo não podem ser tratados como meios para um fim, e seus direitos, sua segurança e seu bem-estar têm precedência sobre os interesses da ciência. A segunda diz respeito à **integridade** do próprio conhecimento: a confiança que a sociedade deposita na ciência depende de que os pesquisadores registrem, analisem e comuniquem seus resultados com honestidade. Este capítulo trata das duas, da regulamentação que as concretiza no Brasil e da responsabilidade social de quem faz ciência.
+
+As informações sobre legislação apresentadas aqui refletem as normas vigentes no momento da redação. Normas mudam, e o pesquisador deve sempre consultar as versões atualizadas e as orientações do comitê de ética de sua instituição.
+
 ## Consentimento informado e conformidade ética
+
+### Uma breve história
+
+As normas atuais de ética em pesquisa nasceram de abusos.
+
+- **O Código de Nuremberg (1947).** No julgamento dos médicos nazistas que conduziram experimentos em prisioneiros de campos de concentração, o tribunal formulou dez princípios para a pesquisa com seres humanos. O primeiro afirma que o **consentimento voluntário** do participante é absolutamente essencial.
+- **A Declaração de Helsinque (1964).** A Associação Médica Mundial adotou uma declaração de princípios para a pesquisa médica, revisada várias vezes; a versão mais recente, de outubro de 2024, passou a usar o termo "participantes" em vez de "sujeitos" e reforçou temas como a proteção de pessoas vulneráveis, a equidade na distribuição de riscos e benefícios e a transparência [@wma2025].
+- **O artigo de Beecher (1966).** Henry Beecher, anestesiologista de Harvard, descreveu 22 estudos publicados em periódicos de prestígio que expunham participantes a riscos sem consentimento adequado [@beecher1966], mostrando que os abusos não eram exclusividade de regimes totalitários.
+- **O estudo de Tuskegee (1932–1972).** O Serviço de Saúde Pública dos Estados Unidos acompanhou centenas de homens negros com sífilis para observar a evolução natural da doença, sem informá-los do diagnóstico e sem tratá-los, mesmo depois de a penicilina se tornar o tratamento de escolha. A denúncia pública do estudo, em 1972, levou à criação de uma comissão nacional que produziu o Relatório Belmont.
+- **O Relatório Belmont (1979)** sintetizou três princípios éticos fundamentais:
+  1. **respeito às pessoas**: os indivíduos devem ser tratados como agentes autônomos, e pessoas com autonomia reduzida têm direito a proteção adicional. Daí deriva o consentimento informado;
+  2. **beneficência**: não causar dano e maximizar os benefícios possíveis, minimizando os riscos. Daí deriva a avaliação de riscos e benefícios;
+  3. **justiça**: distribuir de forma equitativa os ônus e os benefícios da pesquisa. Daí deriva a seleção justa dos participantes, que não deve recair sobre grupos vulneráveis apenas por conveniência.
+
+### O sistema brasileiro
+
+No Brasil, a ética em pesquisa com seres humanos se organizou a partir da Resolução nº 196/1996 do Conselho Nacional de Saúde (CNS), que criou o sistema formado pelos **Comitês de Ética em Pesquisa** (CEPs) e pela **Comissão Nacional de Ética em Pesquisa** (Conep), conhecido como sistema CEP/Conep. A Resolução nº 196/1996 foi substituída pela **Resolução CNS nº 466/2012**, que estabelece as diretrizes gerais, e complementada pela **Resolução CNS nº 510/2016**, específica para pesquisas em ciências humanas e sociais, cujos métodos (entrevistas, observação participante, grupos focais) exigem adaptações das regras pensadas para a pesquisa biomédica. Os projetos são submetidos eletronicamente pela **Plataforma Brasil**.
+
+Em 2024, a **Lei nº 14.874**, de 28 de maio de 2024, deu à matéria, pela primeira vez, o estatuto de lei federal. Ela estabelece princípios e regras para a pesquisa com seres humanos e institui o **Sistema Nacional de Ética em Pesquisa com Seres Humanos**, composto por uma **instância nacional de ética em pesquisa**, no âmbito do Ministério da Saúde, e pela **instância de análise ética**, exercida pelos CEPs. Entre outros pontos, a lei:
+
+- classifica as pesquisas por nível de risco e define que as de risco baixo ou moderado podem ser analisadas por CEPs **credenciados**, enquanto as de risco elevado exigem CEPs **acreditados**;
+- fixa prazos para a análise dos projetos pelos CEPs;
+- regula o uso de placebo, que só é admitido isoladamente quando não houver métodos comprovados de prevenção, diagnóstico ou tratamento para a condição estudada;
+- regula o **acesso pós-estudo**, isto é, o fornecimento gratuito do medicamento experimental aos participantes de ensaios clínicos após o término do estudo, nas condições que especifica;
+- regula a guarda e o uso de material biológico em **biobancos** e **biorrepositórios**.
+
+A lei foi regulamentada pelo **Decreto nº 12.651/2025**, que prevê que as normas do Conselho Nacional de Saúde continuem em vigor, naquilo que não contrariarem a lei e o decreto, até que a instância nacional edite as suas, e que a Conep continue a atuar como instância recursal até a posse dos membros da instância nacional. Durante esse período de transição, o pesquisador deve acompanhar as orientações do CEP ao qual submete seus projetos.
+
+Para ensaios clínicos com medicamentos que visem ao registro sanitário, aplicam-se também as normas da **Agência Nacional de Vigilância Sanitária** (Anvisa), atualizadas pela RDC nº 945/2024, e as diretrizes internacionais de **Boas Práticas Clínicas** do ICH (*International Council for Harmonisation*), cuja versão E6(R3) foi finalizada em janeiro de 2025.
+
+### O que precisa passar pelo comitê de ética
+
+Toda pesquisa que envolva seres humanos, direta ou indiretamente, incluindo o uso de seus dados ou de seu material biológico, deve ser aprovada por um CEP **antes** de seu início. Isso inclui estudos que parecem inofensivos, como questionários anônimos, entrevistas e análises de prontuários. A avaliação ética não pode ser obtida retroativamente: dados coletados sem aprovação prévia não podem, em geral, ser publicados. As resoluções preveem situações específicas que dispensam a avaliação, como pesquisas com dados de acesso público irrestrito e sem identificação dos indivíduos (por exemplo, dados agregados publicados pelo DATASUS ou pelo IBGE); em caso de dúvida, a consulta ao CEP é o caminho seguro.
+
+O CEP avalia, entre outros aspectos: a relevância e a validade científica do projeto (um estudo mal desenhado expõe os participantes a riscos sem a perspectiva de produzir conhecimento útil, e é, por isso, antiético); a relação entre riscos e benefícios; a seleção dos participantes; o processo de consentimento; a proteção da privacidade e da confidencialidade; e a qualificação da equipe.
+
+### O consentimento livre e esclarecido
+
+O **consentimento livre e esclarecido** é a manifestação da vontade do participante de tomar parte na pesquisa, depois de ter recebido e compreendido as informações necessárias. É um **processo**, e não apenas um documento: começa no convite, envolve a explicação, o tempo para reflexão e para perguntas, e continua durante todo o estudo, com o direito de retirar o consentimento a qualquer momento, sem prejuízo.
+
+O **Termo de Consentimento Livre e Esclarecido** (TCLE) registra esse processo. Deve ser escrito em linguagem acessível ao participante (e não em jargão técnico ou jurídico) e conter, entre outros elementos:
+
+- a justificativa, os objetivos e os procedimentos do estudo, inclusive sua duração;
+- os riscos e desconfortos possíveis e as medidas para minimizá-los;
+- os benefícios esperados, sem exagerá-los;
+- as alternativas de tratamento disponíveis, quando for o caso;
+- a garantia de liberdade de recusar ou de retirar o consentimento sem penalidade;
+- a garantia de sigilo e privacidade;
+- as formas de ressarcimento de despesas e de indenização por eventuais danos;
+- os contatos do pesquisador e do CEP.
+
+O TCLE não pode conter cláusulas que sugiram renúncia a direitos ou isenção de responsabilidade do pesquisador.
+
+**Pessoas com autonomia reduzida.** Crianças, adolescentes e adultos com capacidade de decisão comprometida participam de pesquisas mediante consentimento de seus representantes legais e, sempre que possível, com seu próprio **assentimento**, obtido em linguagem adequada à sua compreensão. Outras situações de **vulnerabilidade** (pessoas privadas de liberdade, em relação de subordinação com o pesquisador, como alunos e funcionários, ou em situação de pobreza extrema) exigem cuidados adicionais para que a participação seja verdadeiramente livre.
+
+**Dispensa do TCLE.** Em estudos retrospectivos com dados de prontuários ou de bases administrativas, obter o consentimento de cada participante pode ser impossível (pacientes que morreram ou que não podem ser localizados) ou introduzir viés de seleção grave. Nessas situações, o CEP pode autorizar a dispensa do TCLE, mediante justificativa, desde que sejam garantidas a confidencialidade e a proteção dos dados.
+
+### Proteção de dados pessoais
+
+A **Lei Geral de Proteção de Dados Pessoais** (LGPD, Lei nº 13.709/2018) se aplica também à pesquisa. Dados de saúde, genéticos e biométricos são classificados como **dados pessoais sensíveis**. A lei permite o tratamento desses dados para a realização de estudos por órgão de pesquisa, garantida, sempre que possível, a **anonimização**. Na prática, isso significa:
+
+- coletar apenas os dados necessários aos objetivos do estudo (princípio da minimização);
+- separar os dados identificadores (nome, CPF, endereço) dos dados de pesquisa, ligando-os por um código cuja chave fica guardada em local seguro, com acesso restrito;
+- armazenar os dados em ambientes protegidos, e não em computadores pessoais sem criptografia ou em serviços de armazenamento sem garantias;
+- antes de compartilhar dados, avaliar o risco de **reidentificação**: a combinação de variáveis aparentemente inofensivas (data de nascimento, sexo, bairro, data de internação) pode identificar uma pessoa, sobretudo em populações pequenas ou com condições raras.
+
+### Pesquisa com animais
+
+A pesquisa com animais no Brasil é regulada pela **Lei nº 11.794/2008**, conhecida como Lei Arouca, que criou o **Conselho Nacional de Controle de Experimentação Animal** (Concea) e determinou que toda instituição que realize pesquisa ou ensino com animais tenha uma **Comissão de Ética no Uso de Animais** (Ceua). Nenhum projeto com animais pode começar sem aprovação da Ceua.
+
+O princípio orientador é o dos **3Rs**, proposto por Russell e Burch [-@russell1959]:
+
+- **substituição** (*replacement*): usar métodos alternativos que dispensem animais, sempre que possível (cultivos celulares, organoides, modelos computacionais);
+- **redução** (*reduction*): usar o menor número de animais compatível com uma resposta confiável, o que exige cálculo de tamanho amostral e bom desenho experimental. Note que reduzir o número de animais a ponto de o experimento não ter poder para responder à pergunta não é ético: os animais terão sido usados em vão;
+- **refinamento** (*refinement*): minimizar a dor, o sofrimento e o estresse, com analgesia, anestesia, manejo adequado, enriquecimento ambiental e critérios de desfecho humanitário.
+
+Os princípios de desenho experimental do capítulo *Desenhos de pesquisa* (unidade experimental, randomização, cegamento, controles adequados) são também exigências éticas: um experimento mal desenhado desperdiça vidas animais.
 
 ## Plágio e integridade acadêmica
 
+### Má conduta científica
+
+A definição mais aceita de **má conduta científica** abrange três práticas, resumidas pela sigla FFP:
+
+- **fabricação**: inventar dados ou resultados e registrá-los ou relatá-los;
+- **falsificação**: manipular materiais, equipamentos, processos, dados ou resultados, ou omitir dados, de modo que a pesquisa não seja representada com exatidão. Inclui a manipulação inadequada de imagens (por exemplo, duplicar ou recortar bandas de *western blot* de forma a alterar o resultado);
+- **plágio**: apropriar-se de ideias, processos, resultados ou textos de outra pessoa sem o devido crédito.
+
+Em uma metanálise de inquéritos com pesquisadores, cerca de 2% admitiram ter fabricado ou falsificado dados ao menos uma vez, e a proporção que relatou ter conhecimento dessas práticas por parte de colegas foi bem maior [@fanelli2009]. A manipulação inadequada de imagens foi identificada em cerca de 4% de mais de 20 mil artigos biomédicos examinados em um estudo sistemático [@bik2016]. Mais recentemente, as **fábricas de artigos** (*paper mills*), empresas que vendem manuscritos fraudulentos e autorias, tornaram-se um problema importante para os periódicos.
+
+### Plágio e suas formas
+
+O plágio não se limita à cópia literal de um texto. Inclui:
+
+- copiar trechos sem aspas e sem citação, mesmo que a fonte seja mencionada em outro lugar;
+- parafrasear de perto um texto, trocando palavras mas mantendo a estrutura, sem citação;
+- apresentar como próprias ideias, hipóteses ou dados de outros, inclusive de pareceres confidenciais ou de conversas;
+- traduzir um texto de outra língua sem citação.
+
+A **publicação duplicada** (publicar os mesmos resultados em mais de um artigo sem informar os editores e leitores) e o **fatiamento** (*salami slicing*: dividir os resultados de um mesmo estudo em vários artigos para aumentar o número de publicações) distorcem a literatura: em uma metanálise, o mesmo grupo de pacientes pode ser contado duas vezes. O **reaproveitamento de texto** dos próprios trabalhos anteriores (às vezes chamado de autoplágio) é aceitável em alguns contextos, como a descrição de métodos padronizados, desde que a fonte seja citada; não é aceitável na apresentação de resultados ou na discussão.
+
+Para evitar o plágio: cite a fonte de toda ideia, dado ou texto que não seja seu; use aspas para citações literais; ao fazer anotações de leitura, registre sempre a referência e distinga o que é citação literal do que é sua síntese; e escreva a partir da compreensão do conteúdo, e não a partir do texto original aberto ao lado.
+
+### Práticas questionáveis de pesquisa
+
+Entre a conduta íntegra e a má conduta explícita, há um conjunto de **práticas questionáveis de pesquisa**, muito mais frequentes que a fraude e, em conjunto, provavelmente mais danosas à confiabilidade da literatura [@john2012]:
+
+- relatar seletivamente os desfechos, as análises ou os estudos que deram resultados "positivos";
+- coletar mais dados depois de ver que o resultado não foi estatisticamente significativo, e parar quando ele se torna significativo;
+- testar várias especificações de modelo, transformações, critérios de exclusão de observações ou de *outliers* e relatar apenas a que produz o resultado desejado (*p-hacking*);
+- apresentar hipóteses formuladas depois de conhecer os resultados como se fossem prévias (HARKing, capítulo *Formulação de problemas e hipóteses*);
+- arredondar valores *p* para baixo (relatar $p = 0{,}054$ como "$p < 0{,}05$");
+- omitir limitações relevantes ou descrever os métodos de forma incompleta.
+
+O que torna essas práticas danosas é que cada uma, isoladamente, pode parecer uma decisão analítica razoável. Seu efeito cumulativo, porém, é inflar a taxa de falsos positivos muito além do nível nominal de 5%. As defesas são as discutidas ao longo do livro: plano de análise definido antes do acesso aos dados, registro prévio, relato completo de todos os desfechos e análises realizadas, compartilhamento de dados e código, e distinção explícita entre análises confirmatórias e exploratórias.
+
+### Autoria, conflitos de interesse e uso de ferramentas
+
+Os critérios de autoria foram apresentados no capítulo *Comunicação científica*. **Conflitos de interesse** existem quando interesses secundários (financeiros, profissionais, pessoais, institucionais) podem influenciar, ou parecer influenciar, o julgamento sobre o interesse primário, que é a validade da pesquisa. Ter conflitos de interesse não é, em si, má conduta; omiti-los é. Devem ser declarados aos comitês de ética, aos periódicos e aos leitores.
+
+O uso de ferramentas de **inteligência artificial generativa** na pesquisa e na redação levanta questões novas. As orientações de editores e de organizações como o ICMJE e o COPE convergem em alguns pontos: essas ferramentas não podem ser autoras, porque não podem assumir responsabilidade pelo trabalho; seu uso deve ser declarado; e os autores são integralmente responsáveis pela exatidão do conteúdo, inclusive por referências inexistentes ou afirmações incorretas que a ferramenta possa ter produzido. Revisores não devem carregar manuscritos confidenciais em serviços externos.
+
+### Correção da literatura
+
+Quando um erro grave ou uma má conduta é identificado em um artigo publicado, a literatura deve ser corrigida. Erros honestos que não invalidam as conclusões levam a uma **errata**; erros que as invalidam, ou má conduta, levam à **retratação**. Um artigo retratado continua acessível, marcado como tal, para que se saiba o que aconteceu. Corrigir os próprios erros é uma demonstração de integridade, e não um motivo de vergonha. O **COPE** (*Committee on Publication Ethics*) publica orientações seguidas pela maioria dos editores para lidar com suspeitas de má conduta.
+
+No Brasil, as principais agências de fomento publicaram diretrizes de integridade, como as do CNPq e o Código de Boas Práticas Científicas da FAPESP, e muitas universidades têm comissões de integridade em pesquisa que recebem e apuram denúncias.
+
 ## Regulamentações e normas em pesquisa
 
+Além das normas de ética com seres humanos e animais, outras regulamentações podem se aplicar, conforme o tipo de pesquisa.
+
+- **Ensaios clínicos.** Além da aprovação ética, ensaios clínicos com medicamentos e produtos para a saúde que visem ao registro sanitário estão sujeitos à anuência da Anvisa e devem ser **registrados** em uma plataforma pública antes do início do recrutamento, como o **ReBEC** (Registro Brasileiro de Ensaios Clínicos) ou outro registro primário reconhecido pela Organização Mundial da Saúde. A Lei nº 14.874/2024 também exige o registro de ensaios clínicos em bases públicas.
+- **Patrimônio genético e conhecimento tradicional associado.** Pesquisas que acessem o patrimônio genético brasileiro (por exemplo, sequenciar o genoma de uma planta ou de um microrganismo nativo, ou estudar compostos extraídos deles) ou o conhecimento tradicional associado de povos indígenas e comunidades tradicionais estão sujeitas à **Lei nº 13.123/2015** e devem ser cadastradas no **SisGen** antes da publicação dos resultados ou do envio de amostras ao exterior. A exigência alcança muitos projetos de ecologia, microbiologia e farmacologia de produtos naturais.
+- **Biossegurança.** Pesquisas com organismos geneticamente modificados estão sujeitas à **Lei nº 11.105/2005** e às normas da **Comissão Técnica Nacional de Biossegurança** (CTNBio), e a instituição deve ter uma **Comissão Interna de Biossegurança**. Laboratórios que manipulam agentes biológicos devem seguir as normas de níveis de biossegurança.
+- **Coleta de material biológico da biodiversidade.** Coletas de material zoológico e botânico para fins científicos, especialmente em unidades de conservação, exigem autorização, obtida pelo sistema **SISBIO**.
+- **Dados pessoais.** A LGPD, discutida acima, aplica-se a qualquer pesquisa que trate dados pessoais.
+
+Essas exigências não são burocracia sem sentido: protegem participantes, comunidades, a biodiversidade e a própria credibilidade da pesquisa. Devem ser consideradas desde o planejamento, porque podem levar meses para ser cumpridas.
+
 ## Responsabilidade social do cientista
+
+### Os valores da ciência
+
+O sociólogo Robert Merton [-@merton1973] descreveu um conjunto de normas que caracterizariam o *ethos* da ciência, conhecidas pela sigla CUDOS:
+
+- **comunalismo**: o conhecimento científico é um bem comum, e os resultados devem ser compartilhados;
+- **universalismo**: as afirmações são avaliadas por critérios impessoais, independentemente de quem as faz (nacionalidade, gênero, posição);
+- **desinteresse**: a pesquisa deve servir ao avanço do conhecimento, e não a interesses pessoais do pesquisador;
+- **ceticismo organizado**: toda afirmação deve ser submetida ao escrutínio crítico da comunidade antes de ser aceita.
+
+Essas normas descrevem um ideal, e não a prática real, que é afetada por competição, incentivos de carreira e interesses comerciais. Mas oferecem um ponto de referência útil para avaliar a própria conduta e as instituições científicas.
+
+### Ciência aberta
+
+A **ciência aberta** é um conjunto de práticas que busca tornar a pesquisa mais transparente, acessível e reprodutível: acesso aberto às publicações, compartilhamento de dados e código, protocolos e registros prévios públicos, revisão por pares aberta e participação da sociedade na pesquisa. A Recomendação da UNESCO sobre Ciência Aberta, de 2021, adotada pelos Estados-membros, incluindo o Brasil, propõe um marco comum para essas práticas. Para dados, os princípios **FAIR** orientam que eles sejam **localizáveis** (*findable*), **acessíveis**, **interoperáveis** e **reutilizáveis**. Compartilhar dados de saúde exige conciliar a abertura com a proteção da privacidade dos participantes, por exemplo por meio da anonimização ou do acesso controlado.
+
+### Comunicação com a sociedade
+
+A pesquisa em saúde é financiada, em grande parte, com recursos públicos, e seus resultados afetam decisões de pacientes, profissionais e gestores. Comunicar a ciência ao público, e não apenas aos pares, faz parte da responsabilidade do pesquisador. Isso inclui comunicar a **incerteza** de forma honesta (um único estudo raramente resolve uma questão), evitar o exagero nos comunicados à imprensa, que frequentemente transformam associações em causalidade e resultados em animais em promessas para humanos, e participar do combate à desinformação.
+
+### Pesquisa, equidade e uso do conhecimento
+
+A responsabilidade social também se manifesta nas escolhas sobre **o que** pesquisar e **com quem**. As doenças que afetam principalmente populações pobres recebem, proporcionalmente, pouco investimento em pesquisa. Grupos historicamente sub-representados em estudos clínicos (mulheres, idosos, populações não brancas, pessoas com múltiplas doenças) ficam sem evidência sobre a eficácia e a segurança dos tratamentos que recebem. Pesquisas em comunidades indígenas, quilombolas ou de baixa renda devem envolver essas comunidades no planejamento e garantir que elas se beneficiem dos resultados, e não apenas sirvam como fonte de dados.
+
+Por fim, o conhecimento produzido pode ser usado para fins diferentes dos pretendidos. Pesquisas de **uso dual**, que podem ser empregadas tanto para benefício quanto para dano (por exemplo, estudos que aumentam a transmissibilidade de patógenos), exigem avaliação cuidadosa de riscos e, às vezes, restrições à divulgação de detalhes técnicos. O cientista não controla todos os usos de seu trabalho, mas não está isento de refletir sobre eles.
+
+## Resumo do capítulo
+
+- As normas de ética em pesquisa nasceram de abusos (Nuremberg, Tuskegee) e se apoiam em três princípios: respeito às pessoas, beneficência e justiça.
+- No Brasil, a pesquisa com seres humanos é regida pela Lei nº 14.874/2024, regulamentada pelo Decreto nº 12.651/2025, e pelas resoluções do CNS (em especial a 466/2012 e a 510/2016) enquanto vigorarem. Toda pesquisa envolvendo seres humanos, seus dados ou seu material biológico deve ser aprovada por um CEP antes de começar.
+- O consentimento é um processo contínuo; o TCLE deve ser compreensível e não pode sugerir renúncia a direitos. Pessoas com autonomia reduzida exigem proteção adicional e, quando possível, assentimento.
+- A LGPD classifica dados de saúde como sensíveis; minimize, separe identificadores, proteja e avalie o risco de reidentificação.
+- A pesquisa com animais exige aprovação da Ceua e segue os 3Rs; um experimento mal desenhado é também antiético.
+- Má conduta inclui fabricação, falsificação e plágio. Práticas questionáveis (relato seletivo, *p-hacking*, HARKing) são mais frequentes e também comprometem a literatura.
+- Outras normas podem se aplicar: registro de ensaios clínicos, Lei da Biodiversidade (SisGen), biossegurança, autorizações de coleta.
+- A responsabilidade social do cientista inclui práticas de ciência aberta, comunicação honesta da incerteza, atenção à equidade e reflexão sobre os usos do conhecimento.
+
+## Exercícios
+
+1. Um pesquisador quer analisar dados de prontuários de 2.000 pacientes atendidos nos últimos dez anos em seu hospital. Precisa de aprovação do CEP? Precisa obter o TCLE de cada paciente? Justifique.
+
+2. Identifique os problemas éticos no seguinte cenário: um professor convida seus alunos de graduação a participar de uma pesquisa sobre hábitos de sono, durante a aula, e informa que a participação valerá um ponto extra na prova.
+
+3. Um grupo planeja um experimento com 4 camundongos por grupo, argumentando que assim reduz o número de animais, em respeito aos 3Rs. O cálculo de tamanho amostral indicou que seriam necessários 12 por grupo para detectar o efeito de interesse. Discuta.
+
+4. Um pesquisador analisou seus dados com e sem a exclusão de três pacientes com valores extremos. Sem a exclusão, $p = 0{,}09$; com a exclusão, $p = 0{,}03$. Ele relatou apenas a segunda análise, sem mencionar a primeira. Classifique a conduta e indique como ele deveria ter procedido.
+
+5. Um estudo de etnobotânica pretende identificar plantas usadas por uma comunidade tradicional para tratar feridas e testar a atividade antimicrobiana de seus extratos. Que normas, além da aprovação ética, se aplicam?
+
+## Respostas dos exercícios
+
+1. Sim, precisa de aprovação do CEP antes de iniciar: o uso de dados de pacientes é pesquisa envolvendo seres humanos, ainda que indiretamente. A obtenção do TCLE de cada paciente pode ser inviável (pacientes falecidos, sem contato atualizado) e introduzir viés de seleção; o pesquisador pode solicitar ao CEP a dispensa do TCLE, justificando a inviabilidade e descrevendo as medidas de proteção da confidencialidade (por exemplo, extração dos dados com codificação, sem nomes, com acesso restrito à chave de identificação). A decisão sobre a dispensa é do CEP.
+
+2. Há relação de subordinação entre professor e alunos, o que compromete a liberdade da decisão: os alunos podem se sentir pressionados a participar. O convite em sala, na presença do professor, agrava a pressão. O ponto extra é um incentivo indevido, que também prejudica os alunos que optarem por não participar. Uma alternativa seria o convite feito por outro pesquisador, sem o professor presente, com participação anônima e sem qualquer vínculo com a avaliação da disciplina.
+
+3. A redução prevista nos 3Rs não significa usar o menor número absoluto de animais, mas o menor número **suficiente para uma resposta confiável**. Com 4 animais por grupo, o experimento terá poder muito baixo; provavelmente não detectará o efeito, se existir, e, se detectar, tenderá a superestimá-lo. Os animais terão sido usados sem produzir conhecimento confiável, o que é eticamente pior do que usar 12 por grupo. Alternativas legítimas para reduzir o número são melhorar o desenho (blocos, medidas repetidas, desfechos mais precisos).
+
+4. É uma prática questionável de pesquisa (relato seletivo de análises, uma forma de *p-hacking*), que pode chegar à falsificação se a omissão for deliberada para alterar a conclusão. O critério de exclusão de valores extremos deveria ter sido definido antes da análise, no plano de análise; se não foi, as duas análises deveriam ser relatadas, com a justificativa para a exclusão, e a análise com todos os dados deveria ser apresentada como principal ou, no mínimo, como análise de sensibilidade.
+
+5. Aprovação do CEP, por envolver seres humanos (entrevistas com membros da comunidade), considerando a vulnerabilidade e a necessidade de consentimento adequado ao contexto cultural, inclusive coletivo; cadastro no SisGen, pela Lei nº 13.123/2015, por envolver acesso ao patrimônio genético e ao conhecimento tradicional associado, com consentimento prévio informado da comunidade e regras de repartição de benefícios; e, se a coleta ocorrer em unidade de conservação, autorização pelo SISBIO.

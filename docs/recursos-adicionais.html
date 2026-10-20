@@ -5,25 +5,24 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Capítulo 13 Recursos adicionais | Metodologia científica e Bioestatística</title>
-  <meta name="description" content="Capítulo 13 Recursos adicionais | Metodologia científica e Bioestatística." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Capítulo 13 Recursos adicionais | Metodologia científica e Bioestatística" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
-  <meta property="og:description" content="Capítulo 13 Recursos adicionais | Metodologia científica e Bioestatística." />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta property="og:image" content="https://drhrf.github.io/MCBS/images/MCBS_capa.png" />
+  <meta property="og:description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="github-repo" content="drhrf/MCBS" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Capítulo 13 Recursos adicionais | Metodologia científica e Bioestatística" />
   
-  <meta name="twitter:description" content="Capítulo 13 Recursos adicionais | Metodologia científica e Bioestatística." />
-  <meta name="twitter:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
+  <meta name="twitter:description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="twitter:image" content="https://drhrf.github.io/MCBS/images/MCBS_capa.png" />
 
-<meta name="author" content="Editor: Hércules Rezende Freitas, Ph.D." />
+<meta name="author" content="Hércules Rezende Freitas" />
 
 
-<meta name="date" content="2024-12-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,18 +51,18 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
 <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="libs/plotly-binding-4.12.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+<link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<a href="https://raw.githubusercontent.com/drhrf/MCBS/master/_main_files/MCBSbook.pdf" target="_blank" style="position: absolute; top: 10px; right: 60px;">
+<a href="MCBSbook.pdf" target="_blank" style="position: absolute; top: 10px; right: 60px;">
   <i class="fas fa-file-pdf" style="font-size: 24px; color: #333;"></i>
 </a>
 
@@ -78,6 +77,71 @@
 </script>
 
 
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
   
@@ -88,7 +152,6 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -120,155 +183,415 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
-<li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
+<li><a href="MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
+<li><a href="MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
 <li><a href="./">SUMÁRIO</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre o projeto</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Capa</a></li>
+<li class="chapter" data-level="" data-path="ficha-técnica.html"><a href="ficha-técnica.html"><i class="fa fa-check"></i>Ficha técnica</a></li>
+<li class="chapter" data-level="1" data-path="sobre-o-projeto.html"><a href="sobre-o-projeto.html"><i class="fa fa-check"></i><b>1</b> Sobre o projeto</a></li>
 <li class="chapter" data-level="2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html"><i class="fa fa-check"></i><b>2</b> Introdução à metodologia científica</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#conceitos-básicos-de-ciência"><i class="fa fa-check"></i><b>2.1</b> Conceitos básicos de ciência</a></li>
-<li class="chapter" data-level="2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-método-científico"><i class="fa fa-check"></i><b>2.2</b> O método científico</a></li>
-<li class="chapter" data-level="2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-científicos"><i class="fa fa-check"></i><b>2.3</b> Paradigmas científicos</a></li>
-<li class="chapter" data-level="2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#ética-na-pesquisa-científica"><i class="fa fa-check"></i><b>2.4</b> Ética na pesquisa científica</a></li>
+<li class="chapter" data-level="2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#conceitos-b%C3%A1sicos-de-ci%C3%AAncia"><i class="fa fa-check"></i><b>2.1</b> Conceitos básicos de ciência</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#formas-de-conhecimento"><i class="fa fa-check"></i><b>2.1.1</b> Formas de conhecimento</a></li>
+<li class="chapter" data-level="2.1.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-vocabul%C3%A1rio-da-ci%C3%AAncia"><i class="fa fa-check"></i><b>2.1.2</b> O vocabulário da ciência</a></li>
+<li class="chapter" data-level="2.1.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#pesquisa-b%C3%A1sica-aplicada-e-translacional"><i class="fa fa-check"></i><b>2.1.3</b> Pesquisa básica, aplicada e translacional</a></li>
+<li class="chapter" data-level="2.1.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#ci%C3%AAncia-e-pseudoci%C3%AAncia"><i class="fa fa-check"></i><b>2.1.4</b> Ciência e pseudociência</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-m%C3%A9todo-cient%C3%ADfico"><i class="fa fa-check"></i><b>2.2</b> O método científico</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#indu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.1</b> Indução</a></li>
+<li class="chapter" data-level="2.2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#dedu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.2</b> Dedução</a></li>
+<li class="chapter" data-level="2.2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-m%C3%A9todo-hipot%C3%A9tico-dedutivo"><i class="fa fa-check"></i><b>2.2.3</b> O método hipotético-dedutivo</a></li>
+<li class="chapter" data-level="2.2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#falseabilidade"><i class="fa fa-check"></i><b>2.2.4</b> Falseabilidade</a></li>
+<li class="chapter" data-level="2.2.5" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#abdu%C3%A7%C3%A3o-e-a-gera%C3%A7%C3%A3o-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>2.2.5</b> Abdução e a geração de hipóteses</a></li>
+<li class="chapter" data-level="2.2.6" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#reprodutibilidade-e-autocorre%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.6</b> Reprodutibilidade e autocorreção</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-cient%C3%ADficos"><i class="fa fa-check"></i><b>2.3</b> Paradigmas científicos</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#kuhn-e-as-revolu%C3%A7%C3%B5es-cient%C3%ADficas"><i class="fa fa-check"></i><b>2.3.1</b> Kuhn e as revoluções científicas</a></li>
+<li class="chapter" data-level="2.3.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#outras-perspectivas"><i class="fa fa-check"></i><b>2.3.2</b> Outras perspectivas</a></li>
+<li class="chapter" data-level="2.3.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-de-pesquisa-em-sa%C3%BAde"><i class="fa fa-check"></i><b>2.3.3</b> Paradigmas de pesquisa em saúde</a></li>
+<li class="chapter" data-level="2.3.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#medicina-baseada-em-evid%C3%AAncias"><i class="fa fa-check"></i><b>2.3.4</b> Medicina baseada em evidências</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#%C3%A9tica-na-pesquisa-cient%C3%ADfica"><i class="fa fa-check"></i><b>2.4</b> Ética na pesquisa científica</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#resumo-do-cap%C3%ADtulo"><i class="fa fa-check"></i><b>2.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="2.6" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#exerc%C3%ADcios"><i class="fa fa-check"></i><b>2.6</b> Exercícios</a></li>
+<li class="chapter" data-level="2.7" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#respostas-dos-exerc%C3%ADcios"><i class="fa fa-check"></i><b>2.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html"><i class="fa fa-check"></i><b>3</b> Formulação de problemas e hipóteses</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#identificação-de-problemas-de-pesquisa"><i class="fa fa-check"></i><b>3.1</b> Identificação de problemas de pesquisa</a></li>
-<li class="chapter" data-level="3.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#revisão-da-literatura"><i class="fa fa-check"></i><b>3.2</b> Revisão da literatura</a></li>
-<li class="chapter" data-level="3.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#definição-de-objetivos"><i class="fa fa-check"></i><b>3.3</b> Definição de objetivos</a></li>
-<li class="chapter" data-level="3.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#formulação-de-hipóteses"><i class="fa fa-check"></i><b>3.4</b> Formulação de hipóteses</a></li>
+<li class="chapter" data-level="3.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#identifica%C3%A7%C3%A3o-de-problemas-de-pesquisa"><i class="fa fa-check"></i><b>3.1</b> Identificação de problemas de pesquisa</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#do-tema-ao-problema-e-%C3%A0-pergunta"><i class="fa fa-check"></i><b>3.1.1</b> Do tema ao problema e à pergunta</a></li>
+<li class="chapter" data-level="3.1.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#fontes-de-problemas"><i class="fa fa-check"></i><b>3.1.2</b> Fontes de problemas</a></li>
+<li class="chapter" data-level="3.1.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#crit%C3%A9rios-para-uma-boa-pergunta-finer"><i class="fa fa-check"></i><b>3.1.3</b> Critérios para uma boa pergunta: FINER</a></li>
+<li class="chapter" data-level="3.1.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#estruturando-a-pergunta"><i class="fa fa-check"></i><b>3.1.4</b> Estruturando a pergunta</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#revis%C3%A3o-da-literatura"><i class="fa fa-check"></i><b>3.2</b> Revisão da literatura</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#tipos-de-revis%C3%A3o"><i class="fa fa-check"></i><b>3.2.1</b> Tipos de revisão</a></li>
+<li class="chapter" data-level="3.2.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#onde-buscar"><i class="fa fa-check"></i><b>3.2.2</b> Onde buscar</a></li>
+<li class="chapter" data-level="3.2.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#como-buscar"><i class="fa fa-check"></i><b>3.2.3</b> Como buscar</a></li>
+<li class="chapter" data-level="3.2.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#organizar-e-avaliar"><i class="fa fa-check"></i><b>3.2.4</b> Organizar e avaliar</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#defini%C3%A7%C3%A3o-de-objetivos"><i class="fa fa-check"></i><b>3.3</b> Definição de objetivos</a></li>
+<li class="chapter" data-level="3.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#formula%C3%A7%C3%A3o-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>3.4</b> Formulação de hipóteses</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#hip%C3%B3tese-de-pesquisa-e-hip%C3%B3tese-estat%C3%ADstica"><i class="fa fa-check"></i><b>3.4.1</b> Hipótese de pesquisa e hipótese estatística</a></li>
+<li class="chapter" data-level="3.4.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#caracter%C3%ADsticas-de-uma-boa-hip%C3%B3tese"><i class="fa fa-check"></i><b>3.4.2</b> Características de uma boa hipótese</a></li>
+<li class="chapter" data-level="3.4.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#estima%C3%A7%C3%A3o-ou-teste"><i class="fa fa-check"></i><b>3.4.3</b> Estimação ou teste?</a></li>
+<li class="chapter" data-level="3.4.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#harking-e-registro-pr%C3%A9vio"><i class="fa fa-check"></i><b>3.4.4</b> HARKing e registro prévio</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#resumo-do-cap%C3%ADtulo-1"><i class="fa fa-check"></i><b>3.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="3.6" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>3.6</b> Exercícios</a></li>
+<li class="chapter" data-level="3.7" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#respostas-dos-exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>3.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html"><i class="fa fa-check"></i><b>4</b> Desenhos de pesquisa</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-observacionais"><i class="fa fa-check"></i><b>4.1</b> Estudos observacionais</a>
+<li class="chapter" data-level="4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#da-pergunta-ao-desenho"><i class="fa fa-check"></i><b>4.1</b> Da pergunta ao desenho</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-transversais"><i class="fa fa-check"></i><b>4.1.1</b> Estudos transversais</a></li>
-<li class="chapter" data-level="4.1.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-coorte"><i class="fa fa-check"></i><b>4.1.2</b> Estudos de coorte</a></li>
-<li class="chapter" data-level="4.1.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-caso-controle"><i class="fa fa-check"></i><b>4.1.3</b> Estudos de caso-controle</a></li>
+<li class="chapter" data-level="4.1.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#a-pergunta-de-pesquisa"><i class="fa fa-check"></i><b>4.1.1</b> A pergunta de pesquisa</a></li>
+<li class="chapter" data-level="4.1.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#uma-classifica%C3%A7%C3%A3o-dos-desenhos"><i class="fa fa-check"></i><b>4.1.2</b> Uma classificação dos desenhos</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-clínicos"><i class="fa fa-check"></i><b>4.2</b> Ensaios clínicos</a>
+<li class="chapter" data-level="4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#medidas-de-frequ%C3%AAncia-e-de-associa%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>4.2</b> Medidas de frequência e de associação</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-randomizados-controlados"><i class="fa fa-check"></i><b>4.2.1</b> Ensaios randomizados controlados</a></li>
-<li class="chapter" data-level="4.2.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-duplo-cegos"><i class="fa fa-check"></i><b>4.2.2</b> Estudos duplo-cegos</a></li>
+<li class="chapter" data-level="4.2.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#preval%C3%AAncia-e-incid%C3%AAncia"><i class="fa fa-check"></i><b>4.2.1</b> Prevalência e incidência</a></li>
+<li class="chapter" data-level="4.2.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#medidas-de-associa%C3%A7%C3%A3o-em-tabelas-2-2"><i class="fa fa-check"></i><b>4.2.2</b> Medidas de associação em tabelas 2 × 2</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-experimentais"><i class="fa fa-check"></i><b>4.3</b> Estudos experimentais</a>
+<li class="chapter" data-level="4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#validade-erro-aleat%C3%B3rio-vi%C3%A9s-e-confus%C3%A3o"><i class="fa fa-check"></i><b>4.3</b> Validade: erro aleatório, viés e confusão</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#desenho-experimental"><i class="fa fa-check"></i><b>4.3.1</b> Desenho experimental</a></li>
-<li class="chapter" data-level="4.3.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#controle-e-aleatorização"><i class="fa fa-check"></i><b>4.3.2</b> Controle e aleatorização</a></li>
+<li class="chapter" data-level="4.3.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#erro-aleat%C3%B3rio"><i class="fa fa-check"></i><b>4.3.1</b> Erro aleatório</a></li>
+<li class="chapter" data-level="4.3.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#vi%C3%A9s"><i class="fa fa-check"></i><b>4.3.2</b> Viés</a></li>
+<li class="chapter" data-level="4.3.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#confus%C3%A3o"><i class="fa fa-check"></i><b>4.3.3</b> Confusão</a></li>
+<li class="chapter" data-level="4.3.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#da-associa%C3%A7%C3%A3o-%C3%A0-causalidade"><i class="fa fa-check"></i><b>4.3.4</b> Da associação à causalidade</a></li>
 </ul></li>
+<li class="chapter" data-level="4.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-observacionais"><i class="fa fa-check"></i><b>4.4</b> Estudos observacionais</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-transversais"><i class="fa fa-check"></i><b>4.4.1</b> Estudos transversais</a></li>
+<li class="chapter" data-level="4.4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-coorte"><i class="fa fa-check"></i><b>4.4.2</b> Estudos de coorte</a></li>
+<li class="chapter" data-level="4.4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-caso-controle"><i class="fa fa-check"></i><b>4.4.3</b> Estudos de caso-controle</a></li>
+<li class="chapter" data-level="4.4.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#outros-desenhos-observacionais"><i class="fa fa-check"></i><b>4.4.4</b> Outros desenhos observacionais</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>4.5</b> Ensaios clínicos</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-randomizados-controlados"><i class="fa fa-check"></i><b>4.5.1</b> Ensaios randomizados controlados</a></li>
+<li class="chapter" data-level="4.5.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-duplo-cegos"><i class="fa fa-check"></i><b>4.5.2</b> Estudos duplo-cegos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-experimentais"><i class="fa fa-check"></i><b>4.6</b> Estudos experimentais</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#desenho-experimental"><i class="fa fa-check"></i><b>4.6.1</b> Desenho experimental</a></li>
+<li class="chapter" data-level="4.6.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#controle-e-aleatoriza%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>4.6.2</b> Controle e aleatorização</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#resumo-do-cap%C3%ADtulo-2"><i class="fa fa-check"></i><b>4.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="4.8" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#exerc%C3%ADcios-2"><i class="fa fa-check"></i><b>4.8</b> Exercícios</a></li>
+<li class="chapter" data-level="4.9" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#respostas-dos-exerc%C3%ADcios-2"><i class="fa fa-check"></i><b>4.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html"><i class="fa fa-check"></i><b>5</b> Bioestatística descritiva</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-tendência-central"><i class="fa fa-check"></i><b>5.1</b> Medidas de tendência central</a>
+<li class="chapter" data-level="5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desc-tipos"><i class="fa fa-check"></i><b>5.1</b> Tipos de variáveis e escalas de medida</a></li>
+<li class="chapter" data-level="5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-tend%C3%AAncia-central"><i class="fa fa-check"></i><b>5.2</b> Medidas de tendência central</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#média"><i class="fa fa-check"></i><b>5.1.1</b> Média</a></li>
-<li class="chapter" data-level="5.1.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#mediana"><i class="fa fa-check"></i><b>5.1.2</b> Mediana</a></li>
-<li class="chapter" data-level="5.1.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#moda"><i class="fa fa-check"></i><b>5.1.3</b> Moda</a></li>
+<li class="chapter" data-level="5.2.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#m%C3%A9dia"><i class="fa fa-check"></i><b>5.2.1</b> Média</a></li>
+<li class="chapter" data-level="5.2.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#mediana"><i class="fa fa-check"></i><b>5.2.2</b> Mediana</a></li>
+<li class="chapter" data-level="5.2.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#moda"><i class="fa fa-check"></i><b>5.2.3</b> Moda</a></li>
+<li class="chapter" data-level="5.2.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#comparando-m%C3%A9dia-mediana-e-moda"><i class="fa fa-check"></i><b>5.2.4</b> Comparando média, mediana e moda</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-dispersão"><i class="fa fa-check"></i><b>5.2</b> Medidas de dispersão</a>
+<li class="chapter" data-level="5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-dispers%C3%A3o"><i class="fa fa-check"></i><b>5.3</b> Medidas de dispersão</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#variância"><i class="fa fa-check"></i><b>5.2.1</b> Variância</a></li>
-<li class="chapter" data-level="5.2.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desvio-padrão"><i class="fa fa-check"></i><b>5.2.2</b> Desvio padrão</a></li>
-<li class="chapter" data-level="5.2.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#amplitude"><i class="fa fa-check"></i><b>5.2.3</b> Amplitude</a></li>
+<li class="chapter" data-level="5.3.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#amplitude"><i class="fa fa-check"></i><b>5.3.1</b> Amplitude</a></li>
+<li class="chapter" data-level="5.3.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#vari%C3%A2ncia"><i class="fa fa-check"></i><b>5.3.2</b> Variância</a></li>
+<li class="chapter" data-level="5.3.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desvio-padr%C3%A3o"><i class="fa fa-check"></i><b>5.3.3</b> Desvio padrão</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#distribuições-de-frequência"><i class="fa fa-check"></i><b>5.3</b> Distribuições de frequência</a></li>
-<li class="chapter" data-level="5.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#representações-gráficas"><i class="fa fa-check"></i><b>5.4</b> Representações gráficas</a>
+<li class="chapter" data-level="5.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#distribui%C3%A7%C3%B5es-de-frequ%C3%AAncia"><i class="fa fa-check"></i><b>5.4</b> Distribuições de frequência</a>
 <ul>
-<li class="chapter" data-level="5.4.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#histogramas"><i class="fa fa-check"></i><b>5.4.1</b> Histogramas</a></li>
-<li class="chapter" data-level="5.4.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#boxplots"><i class="fa fa-check"></i><b>5.4.2</b> Boxplots</a></li>
-<li class="chapter" data-level="5.4.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#gráficos-de-dispersão"><i class="fa fa-check"></i><b>5.4.3</b> Gráficos de dispersão</a></li>
+<li class="chapter" data-level="5.4.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#forma-da-distribui%C3%A7%C3%A3o-assimetria-e-curtose"><i class="fa fa-check"></i><b>5.4.1</b> Forma da distribuição: assimetria e curtose</a></li>
 </ul></li>
+<li class="chapter" data-level="5.5" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#representa%C3%A7%C3%B5es-gr%C3%A1ficas"><i class="fa fa-check"></i><b>5.5</b> Representações gráficas</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#histogramas"><i class="fa fa-check"></i><b>5.5.1</b> Histogramas</a></li>
+<li class="chapter" data-level="5.5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#boxplots"><i class="fa fa-check"></i><b>5.5.2</b> Boxplots</a></li>
+<li class="chapter" data-level="5.5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#gr%C3%A1ficos-de-dispers%C3%A3o"><i class="fa fa-check"></i><b>5.5.3</b> Gráficos de dispersão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#como-relatar-estat%C3%ADsticas-descritivas"><i class="fa fa-check"></i><b>5.6</b> Como relatar estatísticas descritivas</a></li>
+<li class="chapter" data-level="5.7" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#resumo-do-cap%C3%ADtulo-3"><i class="fa fa-check"></i><b>5.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="5.8" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#exerc%C3%ADcios-3"><i class="fa fa-check"></i><b>5.8</b> Exercícios</a></li>
+<li class="chapter" data-level="5.9" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#respostas-dos-exerc%C3%ADcios-3"><i class="fa fa-check"></i><b>5.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html"><i class="fa fa-check"></i><b>6</b> Bioestatística inferencial</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#conceitos-de-probabilidade"><i class="fa fa-check"></i><b>6.1</b> Conceitos de probabilidade</a></li>
-<li class="chapter" data-level="6.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>6.2</b> Distribuições de probabilidade</a>
+<li class="chapter" data-level="6.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#popula%C3%A7%C3%A3o-amostra-e-variabilidade-amostral"><i class="fa fa-check"></i><b>6.1</b> População, amostra e variabilidade amostral</a></li>
+<li class="chapter" data-level="6.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#conceitos-de-probabilidade"><i class="fa fa-check"></i><b>6.2</b> Conceitos de probabilidade</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-normal"><i class="fa fa-check"></i><b>6.2.1</b> Distribuição normal</a></li>
-<li class="chapter" data-level="6.2.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-t-de-student"><i class="fa fa-check"></i><b>6.2.2</b> Distribuição t de student</a></li>
-<li class="chapter" data-level="6.2.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-qui-quadrado"><i class="fa fa-check"></i><b>6.2.3</b> Distribuição qui-quadrado</a></li>
+<li class="chapter" data-level="6.2.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#experimentos-aleat%C3%B3rios-eventos-e-interpreta%C3%A7%C3%B5es-da-probabilidade"><i class="fa fa-check"></i><b>6.2.1</b> Experimentos aleatórios, eventos e interpretações da probabilidade</a></li>
+<li class="chapter" data-level="6.2.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#regras-b%C3%A1sicas"><i class="fa fa-check"></i><b>6.2.2</b> Regras básicas</a></li>
+<li class="chapter" data-level="6.2.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#teorema-de-bayes-e-testes-diagn%C3%B3sticos"><i class="fa fa-check"></i><b>6.2.3</b> Teorema de Bayes e testes diagnósticos</a></li>
+<li class="chapter" data-level="6.2.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#vari%C3%A1veis-aleat%C3%B3rias-esperan%C3%A7a-e-vari%C3%A2ncia"><i class="fa fa-check"></i><b>6.2.4</b> Variáveis aleatórias, esperança e variância</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estimação-e-intervalos-de-confiança"><i class="fa fa-check"></i><b>6.3</b> Estimação e intervalos de confiança</a></li>
-<li class="chapter" data-level="6.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-de-hipóteses"><i class="fa fa-check"></i><b>6.4</b> Testes de hipóteses</a>
+<li class="chapter" data-level="6.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%B5es-de-probabilidade"><i class="fa fa-check"></i><b>6.3</b> Distribuições de probabilidade</a>
 <ul>
-<li class="chapter" data-level="6.4.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-paramétricos"><i class="fa fa-check"></i><b>6.4.1</b> Testes paramétricos</a></li>
-<li class="chapter" data-level="6.4.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-não-paramétricos"><i class="fa fa-check"></i><b>6.4.2</b> Testes não-paramétricos</a></li>
+<li class="chapter" data-level="6.3.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-binomial"><i class="fa fa-check"></i><b>6.3.1</b> Distribuição binomial</a></li>
+<li class="chapter" data-level="6.3.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-normal"><i class="fa fa-check"></i><b>6.3.2</b> Distribuição normal</a></li>
+<li class="chapter" data-level="6.3.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#o-teorema-central-do-limite"><i class="fa fa-check"></i><b>6.3.3</b> O teorema central do limite</a></li>
+<li class="chapter" data-level="6.3.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-t-de-student"><i class="fa fa-check"></i><b>6.3.4</b> Distribuição t de Student</a></li>
+<li class="chapter" data-level="6.3.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-qui-quadrado"><i class="fa fa-check"></i><b>6.3.5</b> Distribuição qui-quadrado</a></li>
 </ul></li>
+<li class="chapter" data-level="6.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estima%C3%A7%C3%A3o-e-intervalos-de-confian%C3%A7a"><i class="fa fa-check"></i><b>6.4</b> Estimação e intervalos de confiança</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estima%C3%A7%C3%A3o-pontual"><i class="fa fa-check"></i><b>6.4.1</b> Estimação pontual</a></li>
+<li class="chapter" data-level="6.4.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#intervalo-de-confian%C3%A7a-para-a-m%C3%A9dia"><i class="fa fa-check"></i><b>6.4.2</b> Intervalo de confiança para a média</a></li>
+<li class="chapter" data-level="6.4.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#como-interpretar-e-como-n%C3%A3o-interpretar-um-intervalo-de-confian%C3%A7a"><i class="fa fa-check"></i><b>6.4.3</b> Como interpretar (e como não interpretar) um intervalo de confiança</a></li>
+<li class="chapter" data-level="6.4.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#intervalo-de-confian%C3%A7a-para-uma-propor%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>6.4.4</b> Intervalo de confiança para uma proporção</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>6.5</b> Testes de hipóteses</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#a-l%C3%B3gica-do-teste"><i class="fa fa-check"></i><b>6.5.1</b> A lógica do teste</a></li>
+<li class="chapter" data-level="6.5.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#erros-n%C3%ADvel-de-signific%C3%A2ncia-e-poder"><i class="fa fa-check"></i><b>6.5.2</b> Erros, nível de significância e poder</a></li>
+<li class="chapter" data-level="6.5.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#o-que-o-valor-p-n%C3%A3o-%C3%A9"><i class="fa fa-check"></i><b>6.5.3</b> O que o valor <em>p</em> não é</a></li>
+<li class="chapter" data-level="6.5.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-param%C3%A9tricos"><i class="fa fa-check"></i><b>6.5.4</b> Testes paramétricos</a></li>
+<li class="chapter" data-level="6.5.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-n%C3%A3o-param%C3%A9tricos"><i class="fa fa-check"></i><b>6.5.5</b> Testes não paramétricos</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#resumo-do-cap%C3%ADtulo-4"><i class="fa fa-check"></i><b>6.6</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="6.7" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.7</b> Exercícios</a></li>
+<li class="chapter" data-level="6.8" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#respostas-dos-exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.8</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Análise de dados</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-e-regressão"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
+<li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-e-regress%C3%A3o"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-de-pearson-e-spearman"><i class="fa fa-check"></i><b>7.1.1</b> Correlação de Pearson e Spearman</a></li>
-<li class="chapter" data-level="7.1.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#regressão-linear-simples-e-múltipla"><i class="fa fa-check"></i><b>7.1.2</b> Regressão linear simples e múltipla</a></li>
+<li class="chapter" data-level="7.1.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-de-pearson-e-spearman"><i class="fa fa-check"></i><b>7.1.1</b> Correlação de Pearson e Spearman</a></li>
+<li class="chapter" data-level="7.1.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#regress%C3%A3o-linear-simples-e-m%C3%BAltipla"><i class="fa fa-check"></i><b>7.1.2</b> Regressão linear simples e múltipla</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-de-variância-anova"><i class="fa fa-check"></i><b>7.2</b> Análise de variância (ANOVA)</a>
+<li class="chapter" data-level="7.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#an%C3%A1lise-de-vari%C3%A2ncia-anova"><i class="fa fa-check"></i><b>7.2</b> Análise de variância (ANOVA)</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-de-uma-via"><i class="fa fa-check"></i><b>7.2.1</b> ANOVA de uma via</a></li>
-<li class="chapter" data-level="7.2.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-fatorial"><i class="fa fa-check"></i><b>7.2.2</b> ANOVA fatorial</a></li>
+<li class="chapter" data-level="7.2.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#a-distribui%C3%A7%C3%A3o-f"><i class="fa fa-check"></i><b>7.2.1</b> A distribuição F</a></li>
+<li class="chapter" data-level="7.2.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-de-uma-via"><i class="fa fa-check"></i><b>7.2.2</b> ANOVA de uma via</a></li>
+<li class="chapter" data-level="7.2.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-fatorial"><i class="fa fa-check"></i><b>7.2.3</b> ANOVA fatorial</a></li>
 </ul></li>
-<li class="chapter" data-level="7.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-multivariada"><i class="fa fa-check"></i><b>7.3</b> Análise multivariada</a>
+<li class="chapter" data-level="7.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#an%C3%A1lise-multivariada"><i class="fa fa-check"></i><b>7.3</b> Análise multivariada</a>
 <ul>
 <li class="chapter" data-level="7.3.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#componentes-principais"><i class="fa fa-check"></i><b>7.3.1</b> Componentes principais</a></li>
-<li class="chapter" data-level="7.3.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#clusterização"><i class="fa fa-check"></i><b>7.3.2</b> Clusterização</a></li>
+<li class="chapter" data-level="7.3.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#clusteriza%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>7.3.2</b> Clusterização</a></li>
 </ul></li>
+<li class="chapter" data-level="7.4" data-path="análise-de-dados.html"><a href="análise-de-dados.html#resumo-do-cap%C3%ADtulo-5"><i class="fa fa-check"></i><b>7.4</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="7.5" data-path="análise-de-dados.html"><a href="análise-de-dados.html#exerc%C3%ADcios-5"><i class="fa fa-check"></i><b>7.5</b> Exercícios</a></li>
+<li class="chapter" data-level="7.6" data-path="análise-de-dados.html"><a href="análise-de-dados.html#respostas-dos-exerc%C3%ADcios-5"><i class="fa fa-check"></i><b>7.6</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html"><i class="fa fa-check"></i><b>8</b> Uso de <em>softwares</em> estatísticos</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#softwares-no-code-e-low-code"><i class="fa fa-check"></i><b>8.1</b> <em>Softwares</em> “no-code” e “low-code”</a></li>
-<li class="chapter" data-level="8.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-para-análise-estatística"><i class="fa fa-check"></i><b>8.2</b> R para análise estatística</a>
+<li class="chapter" data-level="8.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#softwares-no-code-e-low-code"><i class="fa fa-check"></i><b>8.1</b> <em>Softwares</em> “no-code” e “low-code”</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#planilhas-eletr%C3%B4nicas"><i class="fa fa-check"></i><b>8.1.1</b> Planilhas eletrônicas</a></li>
+<li class="chapter" data-level="8.1.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#programas-com-interface-gr%C3%A1fica"><i class="fa fa-check"></i><b>8.1.2</b> Programas com interface gráfica</a></li>
+<li class="chapter" data-level="8.1.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vantagens-e-limita%C3%A7%C3%B5es"><i class="fa fa-check"></i><b>8.1.3</b> Vantagens e limitações</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-para-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>8.2</b> R para análise estatística</a>
 <ul>
 <li class="chapter" data-level="8.2.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#aprendendo-a-programar"><i class="fa fa-check"></i><b>8.2.1</b> Aprendendo a programar</a></li>
-<li class="chapter" data-level="8.2.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visão-geral-do-r-e-suas-aplicações"><i class="fa fa-check"></i><b>8.2.2</b> Visão geral do R e suas aplicações</a></li>
-<li class="chapter" data-level="8.2.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-r-e-o-rstudio"><i class="fa fa-check"></i><b>8.2.3</b> <strong>Instalando o R e o RStudio</strong> </a></li>
-<li class="chapter" data-level="8.2.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-básica-e-operações-no-r"><i class="fa fa-check"></i><b>8.2.4</b> Sintaxe básica e operações no R</a></li>
-<li class="chapter" data-level="8.2.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-código-eficiente-e-legível"><i class="fa fa-check"></i><b>8.2.5</b> Escrevendo código eficiente e legível</a></li>
-<li class="chapter" data-level="8.2.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#depuração-e-tratamento-de-erros-em-r"><i class="fa fa-check"></i><b>8.2.6</b> Depuração e tratamento de erros em R</a></li>
-<li class="chapter" data-level="8.2.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#documentando-e-compartilhando-seu-código"><i class="fa fa-check"></i><b>8.2.7</b> Documentando e compartilhando seu código</a></li>
-<li class="chapter" data-level="8.2.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#introdução-à-análise-estatística-com-r"><i class="fa fa-check"></i><b>8.2.8</b> Introdução à análise estatística com R</a></li>
-<li class="chapter" data-level="8.2.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#usando-r-para-estatísticas-descritivas"><i class="fa fa-check"></i><b>8.2.9</b> Usando R para estatísticas descritivas</a></li>
-<li class="chapter" data-level="8.2.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estatísticas-inferenciais-com-r"><i class="fa fa-check"></i><b>8.2.10</b> Estatísticas inferenciais com R</a></li>
-<li class="chapter" data-level="8.2.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#fundamentos-da-visualização-de-dados-em-r"><i class="fa fa-check"></i><b>8.2.11</b> Fundamentos da visualização de dados em R</a></li>
+<li class="chapter" data-level="8.2.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vis%C3%A3o-geral-do-r-e-suas-aplica%C3%A7%C3%B5es"><i class="fa fa-check"></i><b>8.2.2</b> Visão geral do R e suas aplicações</a></li>
+<li class="chapter" data-level="8.2.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-r-e-o-rstudio"><i class="fa fa-check"></i><b>8.2.3</b> Instalando o R e o RStudio</a></li>
+<li class="chapter" data-level="8.2.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-b%C3%A1sica-e-opera%C3%A7%C3%B5es-no-r"><i class="fa fa-check"></i><b>8.2.4</b> Sintaxe básica e operações no R</a></li>
+<li class="chapter" data-level="8.2.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-c%C3%B3digo-eficiente-e-leg%C3%ADvel"><i class="fa fa-check"></i><b>8.2.5</b> Escrevendo código eficiente e legível</a></li>
+<li class="chapter" data-level="8.2.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#depura%C3%A7%C3%A3o-e-tratamento-de-erros-em-r"><i class="fa fa-check"></i><b>8.2.6</b> Depuração e tratamento de erros em R</a></li>
+<li class="chapter" data-level="8.2.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#documentando-e-compartilhando-seu-c%C3%B3digo"><i class="fa fa-check"></i><b>8.2.7</b> Documentando e compartilhando seu código</a></li>
+<li class="chapter" data-level="8.2.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#introdu%C3%A7%C3%A3o-%C3%A0-an%C3%A1lise-estat%C3%ADstica-com-r"><i class="fa fa-check"></i><b>8.2.8</b> Introdução à análise estatística com R</a></li>
+<li class="chapter" data-level="8.2.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#usando-r-para-estat%C3%ADsticas-descritivas"><i class="fa fa-check"></i><b>8.2.9</b> Usando R para estatísticas descritivas</a></li>
+<li class="chapter" data-level="8.2.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADsticas-inferenciais-com-r"><i class="fa fa-check"></i><b>8.2.10</b> Estatísticas inferenciais com R</a></li>
+<li class="chapter" data-level="8.2.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#fundamentos-da-visualiza%C3%A7%C3%A3o-de-dados-em-r"><i class="fa fa-check"></i><b>8.2.11</b> Fundamentos da visualização de dados em R</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#python-para-análise-estatística"><i class="fa fa-check"></i><b>8.3</b> Python para análise estatística</a></li>
-<li class="chapter" data-level="8.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualização-de-dados-e-figuras-científicas"><i class="fa fa-check"></i><b>8.4</b> Visualização de dados e figuras científicas</a></li>
+<li class="chapter" data-level="8.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#python-para-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>8.3</b> Python para análise estatística</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vis%C3%A3o-geral"><i class="fa fa-check"></i><b>8.3.1</b> Visão geral</a></li>
+<li class="chapter" data-level="8.3.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-ou-python"><i class="fa fa-check"></i><b>8.3.2</b> R ou Python?</a></li>
+<li class="chapter" data-level="8.3.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-python-e-o-ambiente-de-trabalho"><i class="fa fa-check"></i><b>8.3.3</b> Instalando o Python e o ambiente de trabalho</a></li>
+<li class="chapter" data-level="8.3.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-b%C3%A1sica-e-opera%C3%A7%C3%B5es-em-python"><i class="fa fa-check"></i><b>8.3.4</b> Sintaxe básica e operações em Python</a></li>
+<li class="chapter" data-level="8.3.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#manipula%C3%A7%C3%A3o-de-dados-com-pandas"><i class="fa fa-check"></i><b>8.3.5</b> Manipulação de dados com pandas</a></li>
+<li class="chapter" data-level="8.3.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-c%C3%B3digo-leg%C3%ADvel-e-reprodut%C3%ADvel"><i class="fa fa-check"></i><b>8.3.6</b> Escrevendo código legível e reprodutível</a></li>
+<li class="chapter" data-level="8.3.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADstica-descritiva-com-python"><i class="fa fa-check"></i><b>8.3.7</b> Estatística descritiva com Python</a></li>
+<li class="chapter" data-level="8.3.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADstica-inferencial-com-python"><i class="fa fa-check"></i><b>8.3.8</b> Estatística inferencial com Python</a></li>
+<li class="chapter" data-level="8.3.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#modelos-avan%C3%A7ados-com-statsmodels"><i class="fa fa-check"></i><b>8.3.9</b> Modelos avançados com statsmodels</a></li>
+<li class="chapter" data-level="8.3.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualiza%C3%A7%C3%A3o-de-dados-com-python"><i class="fa fa-check"></i><b>8.3.10</b> Visualização de dados com Python</a></li>
+<li class="chapter" data-level="8.3.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#aprendizado-de-m%C3%A1quina-com-scikit-learn"><i class="fa fa-check"></i><b>8.3.11</b> Aprendizado de máquina com scikit-learn</a></li>
+<li class="chapter" data-level="8.3.12" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#notebooks-e-relat%C3%B3rios-reprodut%C3%ADveis"><i class="fa fa-check"></i><b>8.3.12</b> Notebooks e relatórios reprodutíveis</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualiza%C3%A7%C3%A3o-de-dados-e-figuras-cient%C3%ADficas"><i class="fa fa-check"></i><b>8.4</b> Visualização de dados e figuras científicas</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#come%C3%A7ar-pela-pergunta"><i class="fa fa-check"></i><b>8.4.1</b> Começar pela pergunta</a></li>
+<li class="chapter" data-level="8.4.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#como-percebemos-os-gr%C3%A1ficos"><i class="fa fa-check"></i><b>8.4.2</b> Como percebemos os gráficos</a></li>
+<li class="chapter" data-level="8.4.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#mostrar-os-dados"><i class="fa fa-check"></i><b>8.4.3</b> Mostrar os dados</a></li>
+<li class="chapter" data-level="8.4.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#cor"><i class="fa fa-check"></i><b>8.4.4</b> Cor</a></li>
+<li class="chapter" data-level="8.4.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#uma-figura-para-publica%C3%A7%C3%A3o-com-ggplot2"><i class="fa fa-check"></i><b>8.4.5</b> Uma figura para publicação com ggplot2</a></li>
+<li class="chapter" data-level="8.4.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#formatos-e-resolu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.4.6</b> Formatos e resolução</a></li>
+<li class="chapter" data-level="8.4.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#lista-de-verifica%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.4.7</b> Lista de verificação</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="comunicação-científica.html"><a href="comunicação-científica.html"><i class="fa fa-check"></i><b>9</b> Comunicação científica</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#redação-de-artigos-científicos"><i class="fa fa-check"></i><b>9.1</b> Redação de artigos científicos</a></li>
-<li class="chapter" data-level="9.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estrutura-de-relatórios-de-pesquisa"><i class="fa fa-check"></i><b>9.2</b> Estrutura de relatórios de pesquisa</a></li>
-<li class="chapter" data-level="9.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresentações-orais-e-posters"><i class="fa fa-check"></i><b>9.3</b> Apresentações orais e posters</a></li>
-<li class="chapter" data-level="9.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#publicação-e-revisão-por-pares"><i class="fa fa-check"></i><b>9.4</b> Publicação e revisão por pares</a></li>
+<li class="chapter" data-level="9.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#reda%C3%A7%C3%A3o-de-artigos-cient%C3%ADficos"><i class="fa fa-check"></i><b>9.1</b> Redação de artigos científicos</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#a-estrutura-imrad"><i class="fa fa-check"></i><b>9.1.1</b> A estrutura IMRaD</a></li>
+<li class="chapter" data-level="9.1.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#t%C3%ADtulo-e-resumo"><i class="fa fa-check"></i><b>9.1.2</b> Título e resumo</a></li>
+<li class="chapter" data-level="9.1.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#introdu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>9.1.3</b> Introdução</a></li>
+<li class="chapter" data-level="9.1.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#m%C3%A9todos"><i class="fa fa-check"></i><b>9.1.4</b> Métodos</a></li>
+<li class="chapter" data-level="9.1.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#resultados"><i class="fa fa-check"></i><b>9.1.5</b> Resultados</a></li>
+<li class="chapter" data-level="9.1.6" data-path="comunicação-científica.html"><a href="comunicação-científica.html#discuss%C3%A3o"><i class="fa fa-check"></i><b>9.1.6</b> Discussão</a></li>
+<li class="chapter" data-level="9.1.7" data-path="comunicação-científica.html"><a href="comunicação-científica.html#autoria"><i class="fa fa-check"></i><b>9.1.7</b> Autoria</a></li>
+<li class="chapter" data-level="9.1.8" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estilo"><i class="fa fa-check"></i><b>9.1.8</b> Estilo</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estrutura-de-relat%C3%B3rios-de-pesquisa"><i class="fa fa-check"></i><b>9.2</b> Estrutura de relatórios de pesquisa</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#disserta%C3%A7%C3%B5es-e-teses"><i class="fa fa-check"></i><b>9.2.1</b> Dissertações e teses</a></li>
+<li class="chapter" data-level="9.2.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#protocolos-e-planos-de-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>9.2.2</b> Protocolos e planos de análise estatística</a></li>
+<li class="chapter" data-level="9.2.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#relat%C3%B3rios-t%C3%A9cnicos-e-relat%C3%B3rios-reprodut%C3%ADveis"><i class="fa fa-check"></i><b>9.2.3</b> Relatórios técnicos e relatórios reprodutíveis</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresenta%C3%A7%C3%B5es-orais-e-p%C3%B4steres"><i class="fa fa-check"></i><b>9.3</b> Apresentações orais e pôsteres</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresenta%C3%A7%C3%B5es-orais"><i class="fa fa-check"></i><b>9.3.1</b> Apresentações orais</a></li>
+<li class="chapter" data-level="9.3.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#p%C3%B4steres"><i class="fa fa-check"></i><b>9.3.2</b> Pôsteres</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#publica%C3%A7%C3%A3o-e-revis%C3%A3o-por-pares"><i class="fa fa-check"></i><b>9.4</b> Publicação e revisão por pares</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#escolhendo-o-peri%C3%B3dico"><i class="fa fa-check"></i><b>9.4.1</b> Escolhendo o periódico</a></li>
+<li class="chapter" data-level="9.4.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#peri%C3%B3dicos-predat%C3%B3rios"><i class="fa fa-check"></i><b>9.4.2</b> Periódicos predatórios</a></li>
+<li class="chapter" data-level="9.4.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#submiss%C3%A3o"><i class="fa fa-check"></i><b>9.4.3</b> Submissão</a></li>
+<li class="chapter" data-level="9.4.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#revis%C3%A3o-por-pares"><i class="fa fa-check"></i><b>9.4.4</b> Revisão por pares</a></li>
+<li class="chapter" data-level="9.4.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#pr%C3%A9-prints-acesso-aberto-e-o-depois-da-publica%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>9.4.5</b> Pré-prints, acesso aberto e o depois da publicação</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#resumo-do-cap%C3%ADtulo-6"><i class="fa fa-check"></i><b>9.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="9.6" data-path="comunicação-científica.html"><a href="comunicação-científica.html#exerc%C3%ADcios-6"><i class="fa fa-check"></i><b>9.6</b> Exercícios</a></li>
+<li class="chapter" data-level="9.7" data-path="comunicação-científica.html"><a href="comunicação-científica.html#respostas-dos-exerc%C3%ADcios-6"><i class="fa fa-check"></i><b>9.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html"><i class="fa fa-check"></i><b>10</b> Ética e boas práticas em pesquisa</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#consentimento-informado-e-conformidade-ética"><i class="fa fa-check"></i><b>10.1</b> Consentimento informado e conformidade ética</a></li>
-<li class="chapter" data-level="10.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#plágio-e-integridade-acadêmica"><i class="fa fa-check"></i><b>10.2</b> Plágio e integridade acadêmica</a></li>
-<li class="chapter" data-level="10.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#regulamentações-e-normas-em-pesquisa"><i class="fa fa-check"></i><b>10.3</b> Regulamentações e normas em pesquisa</a></li>
-<li class="chapter" data-level="10.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#responsabilidade-social-do-cientista"><i class="fa fa-check"></i><b>10.4</b> Responsabilidade social do cientista</a></li>
+<li class="chapter" data-level="10.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#consentimento-informado-e-conformidade-%C3%A9tica"><i class="fa fa-check"></i><b>10.1</b> Consentimento informado e conformidade ética</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#uma-breve-hist%C3%B3ria"><i class="fa fa-check"></i><b>10.1.1</b> Uma breve história</a></li>
+<li class="chapter" data-level="10.1.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-sistema-brasileiro"><i class="fa fa-check"></i><b>10.1.2</b> O sistema brasileiro</a></li>
+<li class="chapter" data-level="10.1.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-que-precisa-passar-pelo-comit%C3%AA-de-%C3%A9tica"><i class="fa fa-check"></i><b>10.1.3</b> O que precisa passar pelo comitê de ética</a></li>
+<li class="chapter" data-level="10.1.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-consentimento-livre-e-esclarecido"><i class="fa fa-check"></i><b>10.1.4</b> O consentimento livre e esclarecido</a></li>
+<li class="chapter" data-level="10.1.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#prote%C3%A7%C3%A3o-de-dados-pessoais"><i class="fa fa-check"></i><b>10.1.5</b> Proteção de dados pessoais</a></li>
+<li class="chapter" data-level="10.1.6" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pesquisa-com-animais"><i class="fa fa-check"></i><b>10.1.6</b> Pesquisa com animais</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pl%C3%A1gio-e-integridade-acad%C3%AAmica"><i class="fa fa-check"></i><b>10.2</b> Plágio e integridade acadêmica</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#m%C3%A1-conduta-cient%C3%ADfica"><i class="fa fa-check"></i><b>10.2.1</b> Má conduta científica</a></li>
+<li class="chapter" data-level="10.2.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pl%C3%A1gio-e-suas-formas"><i class="fa fa-check"></i><b>10.2.2</b> Plágio e suas formas</a></li>
+<li class="chapter" data-level="10.2.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pr%C3%A1ticas-question%C3%A1veis-de-pesquisa"><i class="fa fa-check"></i><b>10.2.3</b> Práticas questionáveis de pesquisa</a></li>
+<li class="chapter" data-level="10.2.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#autoria-conflitos-de-interesse-e-uso-de-ferramentas"><i class="fa fa-check"></i><b>10.2.4</b> Autoria, conflitos de interesse e uso de ferramentas</a></li>
+<li class="chapter" data-level="10.2.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#corre%C3%A7%C3%A3o-da-literatura"><i class="fa fa-check"></i><b>10.2.5</b> Correção da literatura</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#regulamenta%C3%A7%C3%B5es-e-normas-em-pesquisa"><i class="fa fa-check"></i><b>10.3</b> Regulamentações e normas em pesquisa</a></li>
+<li class="chapter" data-level="10.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#responsabilidade-social-do-cientista"><i class="fa fa-check"></i><b>10.4</b> Responsabilidade social do cientista</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#os-valores-da-ci%C3%AAncia"><i class="fa fa-check"></i><b>10.4.1</b> Os valores da ciência</a></li>
+<li class="chapter" data-level="10.4.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#ci%C3%AAncia-aberta"><i class="fa fa-check"></i><b>10.4.2</b> Ciência aberta</a></li>
+<li class="chapter" data-level="10.4.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#comunica%C3%A7%C3%A3o-com-a-sociedade"><i class="fa fa-check"></i><b>10.4.3</b> Comunicação com a sociedade</a></li>
+<li class="chapter" data-level="10.4.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pesquisa-equidade-e-uso-do-conhecimento"><i class="fa fa-check"></i><b>10.4.4</b> Pesquisa, equidade e uso do conhecimento</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#resumo-do-cap%C3%ADtulo-7"><i class="fa fa-check"></i><b>10.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="10.6" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#exerc%C3%ADcios-7"><i class="fa fa-check"></i><b>10.6</b> Exercícios</a></li>
+<li class="chapter" data-level="10.7" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#respostas-dos-exerc%C3%ADcios-7"><i class="fa fa-check"></i><b>10.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html"><i class="fa fa-check"></i><b>11</b> Aplicações práticas e estudos de caso</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-saúde-pública"><i class="fa fa-check"></i><b>11.1</b> Epidemiologia e saúde pública</a></li>
-<li class="chapter" data-level="11.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#genética-e-biologia-molecular"><i class="fa fa-check"></i><b>11.2</b> Genética e biologia molecular</a></li>
-<li class="chapter" data-level="11.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conservação"><i class="fa fa-check"></i><b>11.3</b> Ecologia e conservação</a></li>
-<li class="chapter" data-level="11.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-clínicos"><i class="fa fa-check"></i><b>11.4</b> Farmacologia e ensaios clínicos</a></li>
+<li class="chapter" data-level="11.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-sa%C3%BAde-p%C3%BAblica"><i class="fa fa-check"></i><b>11.1</b> Epidemiologia e saúde pública</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#intervalos-de-confian%C3%A7a-para-medidas-de-associa%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>11.1.1</b> Intervalos de confiança para medidas de associação</a></li>
+<li class="chapter" data-level="11.1.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#padroniza%C3%A7%C3%A3o-de-taxas"><i class="fa fa-check"></i><b>11.1.2</b> Padronização de taxas</a></li>
+<li class="chapter" data-level="11.1.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#acur%C3%A1cia-de-testes-diagn%C3%B3sticos"><i class="fa fa-check"></i><b>11.1.3</b> Acurácia de testes diagnósticos</a></li>
+<li class="chapter" data-level="11.1.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#dados-secund%C3%A1rios-em-sa%C3%BAde-p%C3%BAblica"><i class="fa fa-check"></i><b>11.1.4</b> Dados secundários em saúde pública</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#gen%C3%A9tica-e-biologia-molecular"><i class="fa fa-check"></i><b>11.2</b> Genética e biologia molecular</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#equil%C3%ADbrio-de-hardyweinberg"><i class="fa fa-check"></i><b>11.2.1</b> Equilíbrio de Hardy–Weinberg</a></li>
+<li class="chapter" data-level="11.2.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#compara%C3%A7%C3%B5es-m%C3%BAltiplas-em-estudos-gen%C3%B4micos"><i class="fa fa-check"></i><b>11.2.2</b> Comparações múltiplas em estudos genômicos</a></li>
+<li class="chapter" data-level="11.2.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#quantifica%C3%A7%C3%A3o-relativa-por-pcr-em-tempo-real"><i class="fa fa-check"></i><b>11.2.3</b> Quantificação relativa por PCR em tempo real</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conserva%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>11.3</b> Ecologia e conservação</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#%C3%ADndices-de-diversidade"><i class="fa fa-check"></i><b>11.3.1</b> Índices de diversidade</a></li>
+<li class="chapter" data-level="11.3.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#estimativa-do-tamanho-populacional-por-captura-e-recaptura"><i class="fa fa-check"></i><b>11.3.2</b> Estimativa do tamanho populacional por captura e recaptura</a></li>
+<li class="chapter" data-level="11.3.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#contagens-e-superdispers%C3%A3o"><i class="fa fa-check"></i><b>11.3.3</b> Contagens e superdispersão</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>11.4</b> Farmacologia e ensaios clínicos</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#curvas-dose-resposta"><i class="fa fa-check"></i><b>11.4.1</b> Curvas dose-resposta</a></li>
+<li class="chapter" data-level="11.4.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#par%C3%A2metros-farmacocin%C3%A9ticos"><i class="fa fa-check"></i><b>11.4.2</b> Parâmetros farmacocinéticos</a></li>
+<li class="chapter" data-level="11.4.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#bioequival%C3%AAncia"><i class="fa fa-check"></i><b>11.4.3</b> Bioequivalência</a></li>
+<li class="chapter" data-level="11.4.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#tamanho-amostral-em-ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>11.4.4</b> Tamanho amostral em ensaios clínicos</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#resumo-do-cap%C3%ADtulo-8"><i class="fa fa-check"></i><b>11.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="11.6" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#exerc%C3%ADcios-8"><i class="fa fa-check"></i><b>11.6</b> Exercícios</a></li>
+<li class="chapter" data-level="11.7" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#respostas-dos-exerc%C3%ADcios-8"><i class="fa fa-check"></i><b>11.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html"><i class="fa fa-check"></i><b>12</b> Tópicos avançados em bioestatística</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-lineares-generalizados"><i class="fa fa-check"></i><b>12.1</b> Modelos lineares generalizados</a></li>
-<li class="chapter" data-level="12.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#análise-de-sobrevivência"><i class="fa fa-check"></i><b>12.2</b> Análise de sobrevivência</a></li>
-<li class="chapter" data-level="12.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#bioinformática-e-big-data"><i class="fa fa-check"></i><b>12.3</b> Bioinformática e <em>big data</em></a></li>
-<li class="chapter" data-level="12.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#metanálise"><i class="fa fa-check"></i><b>12.4</b> Metanálise</a></li>
+<li class="chapter" data-level="12.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-lineares-generalizados"><i class="fa fa-check"></i><b>12.1</b> Modelos lineares generalizados</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#por-que-generalizar-o-modelo-linear"><i class="fa fa-check"></i><b>12.1.1</b> Por que generalizar o modelo linear</a></li>
+<li class="chapter" data-level="12.1.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#regress%C3%A3o-log%C3%ADstica"><i class="fa fa-check"></i><b>12.1.2</b> Regressão logística</a></li>
+<li class="chapter" data-level="12.1.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#regress%C3%A3o-de-poisson-e-binomial-negativa"><i class="fa fa-check"></i><b>12.1.3</b> Regressão de Poisson e binomial negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-mistos"><i class="fa fa-check"></i><b>12.2</b> Modelos mistos</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#observa%C3%A7%C3%B5es-agrupadas-e-medidas-repetidas"><i class="fa fa-check"></i><b>12.2.1</b> Observações agrupadas e medidas repetidas</a></li>
+<li class="chapter" data-level="12.2.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exemplo"><i class="fa fa-check"></i><b>12.2.2</b> Exemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#an%C3%A1lise-de-sobreviv%C3%AAncia"><i class="fa fa-check"></i><b>12.3</b> Análise de sobrevivência</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#tempo-at%C3%A9-o-evento-e-censura"><i class="fa fa-check"></i><b>12.3.1</b> Tempo até o evento e censura</a></li>
+<li class="chapter" data-level="12.3.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#o-estimador-de-kaplanmeier"><i class="fa fa-check"></i><b>12.3.2</b> O estimador de Kaplan–Meier</a></li>
+<li class="chapter" data-level="12.3.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#compara%C3%A7%C3%A3o-de-grupos-log-rank-e-modelo-de-cox"><i class="fa fa-check"></i><b>12.3.3</b> Comparação de grupos: log-rank e modelo de Cox</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#infer%C3%AAncia-bayesiana"><i class="fa fa-check"></i><b>12.4</b> Inferência bayesiana</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#a-l%C3%B3gica-bayesiana"><i class="fa fa-check"></i><b>12.4.1</b> A lógica bayesiana</a></li>
+<li class="chapter" data-level="12.4.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#um-exemplo-com-propor%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>12.4.2</b> Um exemplo com proporção</a></li>
+<li class="chapter" data-level="12.4.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#vantagens-e-cuidados"><i class="fa fa-check"></i><b>12.4.3</b> Vantagens e cuidados</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#bioinform%C3%A1tica-e-big-data"><i class="fa fa-check"></i><b>12.5</b> Bioinformática e <em>big data</em></a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#dados-de-alta-dimens%C3%A3o"><i class="fa fa-check"></i><b>12.5.1</b> Dados de alta dimensão</a></li>
+<li class="chapter" data-level="12.5.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#sobreajuste-e-o-vi%C3%A9s-de-sele%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>12.5.2</b> Sobreajuste e o viés de seleção</a></li>
+<li class="chapter" data-level="12.5.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#efeitos-de-lote-e-outros-problemas"><i class="fa fa-check"></i><b>12.5.3</b> Efeitos de lote e outros problemas</a></li>
+<li class="chapter" data-level="12.5.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#grandes-bases-de-dados"><i class="fa fa-check"></i><b>12.5.4</b> Grandes bases de dados</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#metan%C3%A1lise"><i class="fa fa-check"></i><b>12.6</b> Metanálise</a>
+<ul>
+<li class="chapter" data-level="12.6.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#combinando-estudos"><i class="fa fa-check"></i><b>12.6.1</b> Combinando estudos</a></li>
+<li class="chapter" data-level="12.6.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#efeito-fixo-e-efeitos-aleat%C3%B3rios"><i class="fa fa-check"></i><b>12.6.2</b> Efeito fixo e efeitos aleatórios</a></li>
+<li class="chapter" data-level="12.6.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exemplo-1"><i class="fa fa-check"></i><b>12.6.3</b> Exemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#resumo-do-cap%C3%ADtulo-9"><i class="fa fa-check"></i><b>12.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="12.8" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exerc%C3%ADcios-9"><i class="fa fa-check"></i><b>12.8</b> Exercícios</a></li>
+<li class="chapter" data-level="12.9" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#respostas-dos-exerc%C3%ADcios-9"><i class="fa fa-check"></i><b>12.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html"><i class="fa fa-check"></i><b>13</b> Recursos adicionais</a>
 <ul>
-<li class="chapter" data-level="13.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bibliografia-recomendada"><i class="fa fa-check"></i><b>13.1</b> Bibliografia recomendada</a></li>
-<li class="chapter" data-level="13.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#glossário-de-termos"><i class="fa fa-check"></i><b>13.2</b> Glossário de termos</a></li>
-<li class="chapter" data-level="13.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#tabelas-estatísticas"><i class="fa fa-check"></i><b>13.3</b> Tabelas estatísticas</a></li>
-<li class="chapter" data-level="13.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#links-e-ferramentas-online"><i class="fa fa-check"></i><b>13.4</b> Links e ferramentas online</a></li>
+<li class="chapter" data-level="13.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bibliografia-recomendada"><i class="fa fa-check"></i><b>13.1</b> Bibliografia recomendada</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#metodologia-e-epidemiologia"><i class="fa fa-check"></i><b>13.1.1</b> Metodologia e epidemiologia</a></li>
+<li class="chapter" data-level="13.1.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bioestat%C3%ADstica"><i class="fa fa-check"></i><b>13.1.2</b> Bioestatística</a></li>
+<li class="chapter" data-level="13.1.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#programa%C3%A7%C3%A3o-e-an%C3%A1lise-reprodut%C3%ADvel"><i class="fa fa-check"></i><b>13.1.3</b> Programação e análise reprodutível</a></li>
+<li class="chapter" data-level="13.1.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#comunica%C3%A7%C3%A3o-e-integridade"><i class="fa fa-check"></i><b>13.1.4</b> Comunicação e integridade</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#gloss%C3%A1rio-de-termos"><i class="fa fa-check"></i><b>13.2</b> Glossário de termos</a></li>
+<li class="chapter" data-level="13.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#tabelas-estat%C3%ADsticas"><i class="fa fa-check"></i><b>13.3</b> Tabelas estatísticas</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-normal-padr%C3%A3o"><i class="fa fa-check"></i><b>13.3.1</b> Distribuição normal padrão</a></li>
+<li class="chapter" data-level="13.3.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-t-de-student-1"><i class="fa fa-check"></i><b>13.3.2</b> Distribuição <em>t</em> de Student</a></li>
+<li class="chapter" data-level="13.3.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-qui-quadrado-1"><i class="fa fa-check"></i><b>13.3.3</b> Distribuição qui-quadrado</a></li>
+<li class="chapter" data-level="13.3.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-f"><i class="fa fa-check"></i><b>13.3.4</b> Distribuição <em>F</em></a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#links-e-ferramentas-online"><i class="fa fa-check"></i><b>13.4</b> Links e ferramentas <em>online</em></a>
+<ul>
+<li class="chapter" data-level="13.4.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#programas-estat%C3%ADsticos"><i class="fa fa-check"></i><b>13.4.1</b> Programas estatísticos</a></li>
+<li class="chapter" data-level="13.4.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bases-bibliogr%C3%A1ficas-e-de-evid%C3%AAncias"><i class="fa fa-check"></i><b>13.4.2</b> Bases bibliográficas e de evidências</a></li>
+<li class="chapter" data-level="13.4.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#diretrizes-registros-e-integridade"><i class="fa fa-check"></i><b>13.4.3</b> Diretrizes, registros e integridade</a></li>
+<li class="chapter" data-level="13.4.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#dados-de-sa%C3%BAde"><i class="fa fa-check"></i><b>13.4.4</b> Dados de saúde</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
 <li class="divider"></li>
@@ -293,18 +616,1990 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="recursos-adicionais" class="section level1 hasAnchor" number="13">
 <h1><span class="header-section-number">Capítulo 13</span> Recursos adicionais<a href="recursos-adicionais.html#recursos-adicionais" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Este capítulo reúne materiais de consulta: uma bibliografia comentada para aprofundar os temas do livro, um glossário dos principais termos, tabelas das distribuições estatísticas usadas nos capítulos de inferência e análise, e uma lista de ferramentas e recursos <em>online</em>.</p>
 <div id="bibliografia-recomendada" class="section level2 hasAnchor" number="13.1">
 <h2><span class="header-section-number">13.1</span> Bibliografia recomendada<a href="recursos-adicionais.html#bibliografia-recomendada" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A lista a seguir não é exaustiva. Foram escolhidas obras de referência reconhecidas, que complementam este livro em profundidade ou em abordagem. Edições mais recentes devem ser preferidas quando existirem.</p>
+<div id="metodologia-e-epidemiologia" class="section level3 hasAnchor" number="13.1.1">
+<h3><span class="header-section-number">13.1.1</span> Metodologia e epidemiologia<a href="recursos-adicionais.html#metodologia-e-epidemiologia" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Hulley SB, Cummings SR, Browner WS, Grady DG, Newman TB. <em>Designing Clinical Research</em>. 4. ed. Lippincott Williams &amp; Wilkins, 2013.</strong> Guia prático para planejar estudos clínicos, da pergunta ao tamanho amostral. Há tradução para o português (<em>Delineando a pesquisa clínica</em>).</li>
+<li><strong>Lash TL, VanderWeele TJ, Haneuse S, Rothman KJ. <em>Modern Epidemiology</em>. 4. ed. Wolters Kluwer, 2021.</strong> A referência mais completa em métodos epidemiológicos, para leitores avançados.</li>
+<li><strong>Fletcher GS. <em>Clinical Epidemiology: The Essentials</em>. 6. ed. Wolters Kluwer, 2020.</strong> Introdução à epidemiologia clínica orientada para a prática médica, com tradução para o português (<em>Epidemiologia clínica: elementos essenciais</em>).</li>
+<li><strong>Hernán MA, Robins JM. <em>Causal Inference: What If</em>. Chapman &amp; Hall/CRC, 2020.</strong> Inferência causal com dados observacionais, incluindo a emulação de ensaios-alvo. Disponível gratuitamente no site dos autores.</li>
+</ul>
+</div>
+<div id="bioestatística" class="section level3 hasAnchor" number="13.1.2">
+<h3><span class="header-section-number">13.1.2</span> Bioestatística<a href="recursos-adicionais.html#bioestat%C3%ADstica" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Altman DG. <em>Practical Statistics for Medical Research</em>. Chapman &amp; Hall, 1991.</strong> Clássico, claro e orientado para a pesquisa médica.</li>
+<li><strong>Kirkwood BR, Sterne JAC. <em>Essential Medical Statistics</em>. 2. ed. Blackwell, 2003.</strong> Cobre de forma acessível desde os fundamentos até regressão logística, de Poisson e sobrevivência.</li>
+<li><strong>Harrell FE. <em>Regression Modeling Strategies</em>. 2. ed. Springer, 2015.</strong> Referência sobre construção, validação e interpretação de modelos de regressão, com ênfase em evitar o sobreajuste.</li>
+<li><strong>Gelman A, Hill J, Vehtari A. <em>Regression and Other Stories</em>. Cambridge University Press, 2020.</strong> Regressão aplicada com ênfase em simulação, interpretação e abordagem bayesiana. Disponível gratuitamente em formato eletrônico.</li>
+<li><strong>Gelman A, Carlin JB, Stern HS, Dunson DB, Vehtari A, Rubin DB. <em>Bayesian Data Analysis</em>. 3. ed. Chapman &amp; Hall/CRC, 2013.</strong> Referência em estatística bayesiana, para leitores avançados.</li>
+</ul>
+</div>
+<div id="programação-e-análise-reprodutível" class="section level3 hasAnchor" number="13.1.3">
+<h3><span class="header-section-number">13.1.3</span> Programação e análise reprodutível<a href="recursos-adicionais.html#programa%C3%A7%C3%A3o-e-an%C3%A1lise-reprodut%C3%ADvel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Wickham H, Çetinkaya-Rundel M, Grolemund G. <em>R for Data Science</em>. 2. ed. O’Reilly, 2023.</strong> Introdução à análise de dados com R e o <em>tidyverse</em>. Disponível gratuitamente <em>online</em>.</li>
+<li><strong>Xie Y. <em>bookdown: Authoring Books and Technical Documents with R Markdown</em>. Chapman &amp; Hall/CRC, 2016.</strong> Documentação do pacote usado para produzir este livro, também disponível <em>online</em>.</li>
+<li><strong>Wilke CO. <em>Fundamentals of Data Visualization</em>. O’Reilly, 2019.</strong> Princípios de construção de gráficos científicos, independentes do <em>software</em>. Disponível gratuitamente <em>online</em>.</li>
+</ul>
+</div>
+<div id="comunicação-e-integridade" class="section level3 hasAnchor" number="13.1.4">
+<h3><span class="header-section-number">13.1.4</span> Comunicação e integridade<a href="recursos-adicionais.html#comunica%C3%A7%C3%A3o-e-integridade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Recomendações do ICMJE</strong> (<em>Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals</em>), atualizadas periodicamente no site do comitê.</li>
+<li><strong>Diretrizes de relato da rede EQUATOR</strong>, reunidas no site da rede, com versões traduzidas para o português de várias delas.</li>
+</ul>
+</div>
 </div>
 <div id="glossário-de-termos" class="section level2 hasAnchor" number="13.2">
-<h2><span class="header-section-number">13.2</span> Glossário de termos<a href="recursos-adicionais.html#glossário-de-termos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">13.2</span> Glossário de termos<a href="recursos-adicionais.html#gloss%C3%A1rio-de-termos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Amostra.</strong> Subconjunto da população efetivamente observado em um estudo.</p>
+<p><strong>Amplitude interquartil (AIQ).</strong> Diferença entre o terceiro e o primeiro quartis; cobre os 50% centrais dos dados.</p>
+<p><strong>Análise por intenção de tratar.</strong> Análise de um ensaio randomizado em que os participantes são comparados segundo o grupo para o qual foram alocados, independentemente do tratamento efetivamente recebido.</p>
+<p><strong>Cegamento.</strong> Ocultação, para participantes, profissionais, avaliadores ou analistas, do tratamento recebido por cada participante.</p>
+<p><strong>Censura.</strong> Em análise de sobrevivência, situação em que o evento não foi observado durante o acompanhamento; sabe-se apenas que o tempo até o evento é maior que o tempo observado.</p>
+<p><strong>Coeficiente de correlação de Pearson (<span class="math inline">\(r\)</span>).</strong> Medida, entre −1 e 1, da intensidade da associação linear entre duas variáveis quantitativas.</p>
+<p><strong>Coeficiente de correlação de Spearman (<span class="math inline">\(r_s\)</span>).</strong> Correlação de Pearson calculada sobre os postos; mede associação monotônica.</p>
+<p><strong>Coeficiente de determinação (<span class="math inline">\(R^2\)</span>).</strong> Proporção da variabilidade da variável resposta explicada pelo modelo de regressão.</p>
+<p><strong>Coeficiente de variação.</strong> Desvio padrão dividido pela média, em geral expresso em porcentagem.</p>
+<p><strong>Colisor.</strong> Variável que é efeito comum de duas outras; ajustar para ela pode criar uma associação espúria entre essas duas.</p>
+<p><strong>Confusão.</strong> Distorção da associação entre exposição e desfecho causada por um terceiro fator associado a ambos e que não está no caminho causal.</p>
+<p><strong>Desvio padrão.</strong> Raiz quadrada da variância; medida de dispersão na mesma unidade dos dados.</p>
+<p><strong>Diferença de riscos.</strong> Diferença entre os riscos de dois grupos; medida absoluta de associação.</p>
+<p><strong>Distribuição amostral.</strong> Distribuição de uma estatística ao longo de todas as amostras possíveis de mesmo tamanho.</p>
+<p><strong>Efeito aleatório.</strong> Em modelos mistos, componente que representa a variação entre unidades (pacientes, hospitais) em torno de uma média.</p>
+<p><strong>Erro padrão.</strong> Desvio padrão da distribuição amostral de uma estatística; mede a precisão de uma estimativa.</p>
+<p><strong>Erro tipo I.</strong> Rejeitar a hipótese nula quando ela é verdadeira (falso positivo).</p>
+<p><strong>Erro tipo II.</strong> Não rejeitar a hipótese nula quando ela é falsa (falso negativo).</p>
+<p><strong>Especificidade.</strong> Proporção de não doentes com resultado negativo em um teste diagnóstico.</p>
+<p><strong>Estimador.</strong> Regra para calcular, a partir de uma amostra, uma aproximação de um parâmetro.</p>
+<p><strong>Falseabilidade.</strong> Propriedade de uma teoria que proíbe certos resultados, de modo que observações possam refutá-la.</p>
+<p><strong>Grau de liberdade.</strong> Número de valores que podem variar livremente no cálculo de uma estatística, dadas as restrições impostas.</p>
+<p><strong>HARKing.</strong> Apresentação de hipóteses formuladas depois de conhecer os resultados como se fossem prévias.</p>
+<p><strong>Heterogeneidade.</strong> Em metanálise, variação nos efeitos verdadeiros entre os estudos.</p>
+<p><strong>Hipótese nula.</strong> Hipótese estatística, em geral de ausência de efeito, que é avaliada por um teste de hipóteses.</p>
+<p><strong>Incidência.</strong> Ocorrência de casos novos de uma condição em uma população inicialmente livre dela, em um período (risco) ou por pessoa-tempo (taxa).</p>
+<p><strong>Interação.</strong> Situação em que o efeito de uma variável sobre o desfecho depende do valor de outra.</p>
+<p><strong>Intervalo de confiança.</strong> Intervalo calculado por um procedimento que, em amostras repetidas, contém o parâmetro em uma proporção especificada das vezes (por exemplo, 95%).</p>
+<p><strong>Intervalo de credibilidade.</strong> Na abordagem bayesiana, intervalo que contém o parâmetro com uma probabilidade especificada, dada a priori e os dados.</p>
+<p><strong>Mediador.</strong> Variável no caminho causal entre a exposição e o desfecho.</p>
+<p><strong>Mediana.</strong> Valor que divide a amostra ordenada em duas metades.</p>
+<p><strong>Metanálise.</strong> Combinação estatística dos resultados de vários estudos.</p>
+<p><strong>Moda.</strong> Valor ou categoria mais frequente.</p>
+<p><strong>Número necessário para tratar (NNT).</strong> Inverso da diferença de riscos; número de pacientes que precisam ser tratados para que um deles se beneficie.</p>
+<p><strong>Ocultação da alocação.</strong> Proteção da sequência de randomização para que a próxima alocação não possa ser conhecida antes da inclusão do participante.</p>
+<p><strong>Parâmetro.</strong> Característica numérica da população, em geral desconhecida.</p>
+<p><strong>Poder estatístico.</strong> Probabilidade de um teste rejeitar a hipótese nula quando existe um efeito de determinado tamanho.</p>
+<p><strong>Prevalência.</strong> Proporção de pessoas que têm uma condição em um momento.</p>
+<p><strong>Pseudorreplicação.</strong> Tratamento de medidas não independentes (por exemplo, várias células de um mesmo animal) como se fossem unidades experimentais independentes.</p>
+<p><strong>Quantil.</strong> Valor abaixo do qual está uma proporção especificada dos dados.</p>
+<p><strong>Randomização.</strong> Alocação dos participantes aos grupos por sorteio.</p>
+<p><strong>Razão de chances (OR).</strong> Razão entre as chances de um evento em dois grupos.</p>
+<p><strong>Razão de riscos (<em>hazard ratio</em>).</strong> Razão entre as funções de risco instantâneo de dois grupos, em análise de sobrevivência.</p>
+<p><strong>Regressão à média.</strong> Tendência de valores extremos em uma medida serem seguidos por valores mais próximos da média em uma segunda medida.</p>
+<p><strong>Risco relativo (RR).</strong> Razão entre os riscos de um evento em dois grupos.</p>
+<p><strong>Sensibilidade.</strong> Proporção de doentes com resultado positivo em um teste diagnóstico.</p>
+<p><strong>Sobreajuste.</strong> Ajuste de um modelo ao ruído de uma amostra específica, que resulta em desempenho ruim em dados novos.</p>
+<p><strong>Taxa de falsas descobertas (FDR).</strong> Proporção esperada de falsos positivos entre os resultados declarados significativos.</p>
+<p><strong>Teorema central do limite.</strong> Resultado segundo o qual a distribuição da média amostral se aproxima da normal à medida que o tamanho da amostra cresce.</p>
+<p><strong>Unidade experimental.</strong> Menor unidade que pode receber, de forma independente, uma condição experimental; define o tamanho amostral.</p>
+<p><strong>Valor <em>p</em>.</strong> Probabilidade de obter uma estatística de teste tão extrema quanto, ou mais extrema que, a observada, supondo verdadeiras a hipótese nula e as demais suposições do modelo.</p>
+<p><strong>Variância.</strong> Média dos quadrados dos desvios em relação à média (com divisor <span class="math inline">\(n - 1\)</span> na variância amostral).</p>
+<p><strong>Viés.</strong> Erro sistemático que desloca a estimativa em uma direção; não diminui com o aumento da amostra.</p>
 </div>
 <div id="tabelas-estatísticas" class="section level2 hasAnchor" number="13.3">
-<h2><span class="header-section-number">13.3</span> Tabelas estatísticas<a href="recursos-adicionais.html#tabelas-estatísticas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">13.3</span> Tabelas estatísticas<a href="recursos-adicionais.html#tabelas-estat%C3%ADsticas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>As tabelas a seguir foram geradas com as funções de distribuição do R (<code>pnorm()</code>, <code>qt()</code>, <code>qchisq()</code> e <code>qf()</code>), e podem ser reproduzidas ou ampliadas pelo leitor. Na prática, os programas estatísticos calculam valores <em>p</em> e quantis exatos, e as tabelas servem principalmente para consulta rápida e para o estudo dos exemplos resolvidos.</p>
+<div id="distribuição-normal-padrão" class="section level3 hasAnchor" number="13.3.1">
+<h3><span class="header-section-number">13.3.1</span> Distribuição normal padrão<a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-normal-padr%C3%A3o" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A Tabela <a href="recursos-adicionais.html#tab:rec-normal">13.1</a> fornece <span class="math inline">\(\Phi(z) = P(Z \le z)\)</span> para <span class="math inline">\(z\)</span> de 0,00 a 3,49. A linha indica o valor de <span class="math inline">\(z\)</span> até a primeira casa decimal, e a coluna, a segunda casa. Para valores negativos, use a simetria: <span class="math inline">\(\Phi(-z) = 1 - \Phi(z)\)</span>.</p>
+<table>
+<caption><span id="tab:rec-normal">Tabela 13.1: </span>Função de distribuição acumulada da normal padrão, Φ(z).</caption>
+<colgroup>
+<col width="5%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">z</th>
+<th align="center">0,00</th>
+<th align="center">0,01</th>
+<th align="center">0,02</th>
+<th align="center">0,03</th>
+<th align="center">0,04</th>
+<th align="center">0,05</th>
+<th align="center">0,06</th>
+<th align="center">0,07</th>
+<th align="center">0,08</th>
+<th align="center">0,09</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">0,0</td>
+<td align="center">0,5000</td>
+<td align="center">0,5040</td>
+<td align="center">0,5080</td>
+<td align="center">0,5120</td>
+<td align="center">0,5160</td>
+<td align="center">0,5199</td>
+<td align="center">0,5239</td>
+<td align="center">0,5279</td>
+<td align="center">0,5319</td>
+<td align="center">0,5359</td>
+</tr>
+<tr class="even">
+<td align="center">0,1</td>
+<td align="center">0,5398</td>
+<td align="center">0,5438</td>
+<td align="center">0,5478</td>
+<td align="center">0,5517</td>
+<td align="center">0,5557</td>
+<td align="center">0,5596</td>
+<td align="center">0,5636</td>
+<td align="center">0,5675</td>
+<td align="center">0,5714</td>
+<td align="center">0,5753</td>
+</tr>
+<tr class="odd">
+<td align="center">0,2</td>
+<td align="center">0,5793</td>
+<td align="center">0,5832</td>
+<td align="center">0,5871</td>
+<td align="center">0,5910</td>
+<td align="center">0,5948</td>
+<td align="center">0,5987</td>
+<td align="center">0,6026</td>
+<td align="center">0,6064</td>
+<td align="center">0,6103</td>
+<td align="center">0,6141</td>
+</tr>
+<tr class="even">
+<td align="center">0,3</td>
+<td align="center">0,6179</td>
+<td align="center">0,6217</td>
+<td align="center">0,6255</td>
+<td align="center">0,6293</td>
+<td align="center">0,6331</td>
+<td align="center">0,6368</td>
+<td align="center">0,6406</td>
+<td align="center">0,6443</td>
+<td align="center">0,6480</td>
+<td align="center">0,6517</td>
+</tr>
+<tr class="odd">
+<td align="center">0,4</td>
+<td align="center">0,6554</td>
+<td align="center">0,6591</td>
+<td align="center">0,6628</td>
+<td align="center">0,6664</td>
+<td align="center">0,6700</td>
+<td align="center">0,6736</td>
+<td align="center">0,6772</td>
+<td align="center">0,6808</td>
+<td align="center">0,6844</td>
+<td align="center">0,6879</td>
+</tr>
+<tr class="even">
+<td align="center">0,5</td>
+<td align="center">0,6915</td>
+<td align="center">0,6950</td>
+<td align="center">0,6985</td>
+<td align="center">0,7019</td>
+<td align="center">0,7054</td>
+<td align="center">0,7088</td>
+<td align="center">0,7123</td>
+<td align="center">0,7157</td>
+<td align="center">0,7190</td>
+<td align="center">0,7224</td>
+</tr>
+<tr class="odd">
+<td align="center">0,6</td>
+<td align="center">0,7257</td>
+<td align="center">0,7291</td>
+<td align="center">0,7324</td>
+<td align="center">0,7357</td>
+<td align="center">0,7389</td>
+<td align="center">0,7422</td>
+<td align="center">0,7454</td>
+<td align="center">0,7486</td>
+<td align="center">0,7517</td>
+<td align="center">0,7549</td>
+</tr>
+<tr class="even">
+<td align="center">0,7</td>
+<td align="center">0,7580</td>
+<td align="center">0,7611</td>
+<td align="center">0,7642</td>
+<td align="center">0,7673</td>
+<td align="center">0,7704</td>
+<td align="center">0,7734</td>
+<td align="center">0,7764</td>
+<td align="center">0,7794</td>
+<td align="center">0,7823</td>
+<td align="center">0,7852</td>
+</tr>
+<tr class="odd">
+<td align="center">0,8</td>
+<td align="center">0,7881</td>
+<td align="center">0,7910</td>
+<td align="center">0,7939</td>
+<td align="center">0,7967</td>
+<td align="center">0,7995</td>
+<td align="center">0,8023</td>
+<td align="center">0,8051</td>
+<td align="center">0,8078</td>
+<td align="center">0,8106</td>
+<td align="center">0,8133</td>
+</tr>
+<tr class="even">
+<td align="center">0,9</td>
+<td align="center">0,8159</td>
+<td align="center">0,8186</td>
+<td align="center">0,8212</td>
+<td align="center">0,8238</td>
+<td align="center">0,8264</td>
+<td align="center">0,8289</td>
+<td align="center">0,8315</td>
+<td align="center">0,8340</td>
+<td align="center">0,8365</td>
+<td align="center">0,8389</td>
+</tr>
+<tr class="odd">
+<td align="center">1,0</td>
+<td align="center">0,8413</td>
+<td align="center">0,8438</td>
+<td align="center">0,8461</td>
+<td align="center">0,8485</td>
+<td align="center">0,8508</td>
+<td align="center">0,8531</td>
+<td align="center">0,8554</td>
+<td align="center">0,8577</td>
+<td align="center">0,8599</td>
+<td align="center">0,8621</td>
+</tr>
+<tr class="even">
+<td align="center">1,1</td>
+<td align="center">0,8643</td>
+<td align="center">0,8665</td>
+<td align="center">0,8686</td>
+<td align="center">0,8708</td>
+<td align="center">0,8729</td>
+<td align="center">0,8749</td>
+<td align="center">0,8770</td>
+<td align="center">0,8790</td>
+<td align="center">0,8810</td>
+<td align="center">0,8830</td>
+</tr>
+<tr class="odd">
+<td align="center">1,2</td>
+<td align="center">0,8849</td>
+<td align="center">0,8869</td>
+<td align="center">0,8888</td>
+<td align="center">0,8907</td>
+<td align="center">0,8925</td>
+<td align="center">0,8944</td>
+<td align="center">0,8962</td>
+<td align="center">0,8980</td>
+<td align="center">0,8997</td>
+<td align="center">0,9015</td>
+</tr>
+<tr class="even">
+<td align="center">1,3</td>
+<td align="center">0,9032</td>
+<td align="center">0,9049</td>
+<td align="center">0,9066</td>
+<td align="center">0,9082</td>
+<td align="center">0,9099</td>
+<td align="center">0,9115</td>
+<td align="center">0,9131</td>
+<td align="center">0,9147</td>
+<td align="center">0,9162</td>
+<td align="center">0,9177</td>
+</tr>
+<tr class="odd">
+<td align="center">1,4</td>
+<td align="center">0,9192</td>
+<td align="center">0,9207</td>
+<td align="center">0,9222</td>
+<td align="center">0,9236</td>
+<td align="center">0,9251</td>
+<td align="center">0,9265</td>
+<td align="center">0,9279</td>
+<td align="center">0,9292</td>
+<td align="center">0,9306</td>
+<td align="center">0,9319</td>
+</tr>
+<tr class="even">
+<td align="center">1,5</td>
+<td align="center">0,9332</td>
+<td align="center">0,9345</td>
+<td align="center">0,9357</td>
+<td align="center">0,9370</td>
+<td align="center">0,9382</td>
+<td align="center">0,9394</td>
+<td align="center">0,9406</td>
+<td align="center">0,9418</td>
+<td align="center">0,9429</td>
+<td align="center">0,9441</td>
+</tr>
+<tr class="odd">
+<td align="center">1,6</td>
+<td align="center">0,9452</td>
+<td align="center">0,9463</td>
+<td align="center">0,9474</td>
+<td align="center">0,9484</td>
+<td align="center">0,9495</td>
+<td align="center">0,9505</td>
+<td align="center">0,9515</td>
+<td align="center">0,9525</td>
+<td align="center">0,9535</td>
+<td align="center">0,9545</td>
+</tr>
+<tr class="even">
+<td align="center">1,7</td>
+<td align="center">0,9554</td>
+<td align="center">0,9564</td>
+<td align="center">0,9573</td>
+<td align="center">0,9582</td>
+<td align="center">0,9591</td>
+<td align="center">0,9599</td>
+<td align="center">0,9608</td>
+<td align="center">0,9616</td>
+<td align="center">0,9625</td>
+<td align="center">0,9633</td>
+</tr>
+<tr class="odd">
+<td align="center">1,8</td>
+<td align="center">0,9641</td>
+<td align="center">0,9649</td>
+<td align="center">0,9656</td>
+<td align="center">0,9664</td>
+<td align="center">0,9671</td>
+<td align="center">0,9678</td>
+<td align="center">0,9686</td>
+<td align="center">0,9693</td>
+<td align="center">0,9699</td>
+<td align="center">0,9706</td>
+</tr>
+<tr class="even">
+<td align="center">1,9</td>
+<td align="center">0,9713</td>
+<td align="center">0,9719</td>
+<td align="center">0,9726</td>
+<td align="center">0,9732</td>
+<td align="center">0,9738</td>
+<td align="center">0,9744</td>
+<td align="center">0,9750</td>
+<td align="center">0,9756</td>
+<td align="center">0,9761</td>
+<td align="center">0,9767</td>
+</tr>
+<tr class="odd">
+<td align="center">2,0</td>
+<td align="center">0,9772</td>
+<td align="center">0,9778</td>
+<td align="center">0,9783</td>
+<td align="center">0,9788</td>
+<td align="center">0,9793</td>
+<td align="center">0,9798</td>
+<td align="center">0,9803</td>
+<td align="center">0,9808</td>
+<td align="center">0,9812</td>
+<td align="center">0,9817</td>
+</tr>
+<tr class="even">
+<td align="center">2,1</td>
+<td align="center">0,9821</td>
+<td align="center">0,9826</td>
+<td align="center">0,9830</td>
+<td align="center">0,9834</td>
+<td align="center">0,9838</td>
+<td align="center">0,9842</td>
+<td align="center">0,9846</td>
+<td align="center">0,9850</td>
+<td align="center">0,9854</td>
+<td align="center">0,9857</td>
+</tr>
+<tr class="odd">
+<td align="center">2,2</td>
+<td align="center">0,9861</td>
+<td align="center">0,9864</td>
+<td align="center">0,9868</td>
+<td align="center">0,9871</td>
+<td align="center">0,9875</td>
+<td align="center">0,9878</td>
+<td align="center">0,9881</td>
+<td align="center">0,9884</td>
+<td align="center">0,9887</td>
+<td align="center">0,9890</td>
+</tr>
+<tr class="even">
+<td align="center">2,3</td>
+<td align="center">0,9893</td>
+<td align="center">0,9896</td>
+<td align="center">0,9898</td>
+<td align="center">0,9901</td>
+<td align="center">0,9904</td>
+<td align="center">0,9906</td>
+<td align="center">0,9909</td>
+<td align="center">0,9911</td>
+<td align="center">0,9913</td>
+<td align="center">0,9916</td>
+</tr>
+<tr class="odd">
+<td align="center">2,4</td>
+<td align="center">0,9918</td>
+<td align="center">0,9920</td>
+<td align="center">0,9922</td>
+<td align="center">0,9925</td>
+<td align="center">0,9927</td>
+<td align="center">0,9929</td>
+<td align="center">0,9931</td>
+<td align="center">0,9932</td>
+<td align="center">0,9934</td>
+<td align="center">0,9936</td>
+</tr>
+<tr class="even">
+<td align="center">2,5</td>
+<td align="center">0,9938</td>
+<td align="center">0,9940</td>
+<td align="center">0,9941</td>
+<td align="center">0,9943</td>
+<td align="center">0,9945</td>
+<td align="center">0,9946</td>
+<td align="center">0,9948</td>
+<td align="center">0,9949</td>
+<td align="center">0,9951</td>
+<td align="center">0,9952</td>
+</tr>
+<tr class="odd">
+<td align="center">2,6</td>
+<td align="center">0,9953</td>
+<td align="center">0,9955</td>
+<td align="center">0,9956</td>
+<td align="center">0,9957</td>
+<td align="center">0,9959</td>
+<td align="center">0,9960</td>
+<td align="center">0,9961</td>
+<td align="center">0,9962</td>
+<td align="center">0,9963</td>
+<td align="center">0,9964</td>
+</tr>
+<tr class="even">
+<td align="center">2,7</td>
+<td align="center">0,9965</td>
+<td align="center">0,9966</td>
+<td align="center">0,9967</td>
+<td align="center">0,9968</td>
+<td align="center">0,9969</td>
+<td align="center">0,9970</td>
+<td align="center">0,9971</td>
+<td align="center">0,9972</td>
+<td align="center">0,9973</td>
+<td align="center">0,9974</td>
+</tr>
+<tr class="odd">
+<td align="center">2,8</td>
+<td align="center">0,9974</td>
+<td align="center">0,9975</td>
+<td align="center">0,9976</td>
+<td align="center">0,9977</td>
+<td align="center">0,9977</td>
+<td align="center">0,9978</td>
+<td align="center">0,9979</td>
+<td align="center">0,9979</td>
+<td align="center">0,9980</td>
+<td align="center">0,9981</td>
+</tr>
+<tr class="even">
+<td align="center">2,9</td>
+<td align="center">0,9981</td>
+<td align="center">0,9982</td>
+<td align="center">0,9982</td>
+<td align="center">0,9983</td>
+<td align="center">0,9984</td>
+<td align="center">0,9984</td>
+<td align="center">0,9985</td>
+<td align="center">0,9985</td>
+<td align="center">0,9986</td>
+<td align="center">0,9986</td>
+</tr>
+<tr class="odd">
+<td align="center">3,0</td>
+<td align="center">0,9987</td>
+<td align="center">0,9987</td>
+<td align="center">0,9987</td>
+<td align="center">0,9988</td>
+<td align="center">0,9988</td>
+<td align="center">0,9989</td>
+<td align="center">0,9989</td>
+<td align="center">0,9989</td>
+<td align="center">0,9990</td>
+<td align="center">0,9990</td>
+</tr>
+<tr class="even">
+<td align="center">3,1</td>
+<td align="center">0,9990</td>
+<td align="center">0,9991</td>
+<td align="center">0,9991</td>
+<td align="center">0,9991</td>
+<td align="center">0,9992</td>
+<td align="center">0,9992</td>
+<td align="center">0,9992</td>
+<td align="center">0,9992</td>
+<td align="center">0,9993</td>
+<td align="center">0,9993</td>
+</tr>
+<tr class="odd">
+<td align="center">3,2</td>
+<td align="center">0,9993</td>
+<td align="center">0,9993</td>
+<td align="center">0,9994</td>
+<td align="center">0,9994</td>
+<td align="center">0,9994</td>
+<td align="center">0,9994</td>
+<td align="center">0,9994</td>
+<td align="center">0,9995</td>
+<td align="center">0,9995</td>
+<td align="center">0,9995</td>
+</tr>
+<tr class="even">
+<td align="center">3,3</td>
+<td align="center">0,9995</td>
+<td align="center">0,9995</td>
+<td align="center">0,9995</td>
+<td align="center">0,9996</td>
+<td align="center">0,9996</td>
+<td align="center">0,9996</td>
+<td align="center">0,9996</td>
+<td align="center">0,9996</td>
+<td align="center">0,9996</td>
+<td align="center">0,9997</td>
+</tr>
+<tr class="odd">
+<td align="center">3,4</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9997</td>
+<td align="center">0,9998</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="distribuição-t-de-student-1" class="section level3 hasAnchor" number="13.3.2">
+<h3><span class="header-section-number">13.3.2</span> Distribuição <em>t</em> de Student<a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-t-de-student-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A Tabela <a href="recursos-adicionais.html#tab:rec-t">13.2</a> fornece os quantis <span class="math inline">\(t_{\text{gl};\,q}\)</span>, isto é, os valores tais que <span class="math inline">\(P(T \le t) = q\)</span>. Para um intervalo de confiança bilateral de 95%, use a coluna 0,975; para um teste bilateral com <span class="math inline">\(\alpha = 0{,}05\)</span>, o valor crítico é o mesmo.</p>
+<table>
+<caption><span id="tab:rec-t">Tabela 13.2: </span>Quantis da distribuição t de Student. A linha ∞ corresponde à normal padrão.</caption>
+<thead>
+<tr class="header">
+<th align="center">gl</th>
+<th align="center">0,9000</th>
+<th align="center">0,9500</th>
+<th align="center">0,9750</th>
+<th align="center">0,9900</th>
+<th align="center">0,9950</th>
+<th align="center">0,9995</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">3,078</td>
+<td align="center">6,314</td>
+<td align="center">12,706</td>
+<td align="center">31,821</td>
+<td align="center">63,657</td>
+<td align="center">636,619</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">1,886</td>
+<td align="center">2,920</td>
+<td align="center">4,303</td>
+<td align="center">6,965</td>
+<td align="center">9,925</td>
+<td align="center">31,599</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">1,638</td>
+<td align="center">2,353</td>
+<td align="center">3,182</td>
+<td align="center">4,541</td>
+<td align="center">5,841</td>
+<td align="center">12,924</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">1,533</td>
+<td align="center">2,132</td>
+<td align="center">2,776</td>
+<td align="center">3,747</td>
+<td align="center">4,604</td>
+<td align="center">8,610</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="center">1,476</td>
+<td align="center">2,015</td>
+<td align="center">2,571</td>
+<td align="center">3,365</td>
+<td align="center">4,032</td>
+<td align="center">6,869</td>
+</tr>
+<tr class="even">
+<td align="center">6</td>
+<td align="center">1,440</td>
+<td align="center">1,943</td>
+<td align="center">2,447</td>
+<td align="center">3,143</td>
+<td align="center">3,707</td>
+<td align="center">5,959</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="center">1,415</td>
+<td align="center">1,895</td>
+<td align="center">2,365</td>
+<td align="center">2,998</td>
+<td align="center">3,499</td>
+<td align="center">5,408</td>
+</tr>
+<tr class="even">
+<td align="center">8</td>
+<td align="center">1,397</td>
+<td align="center">1,860</td>
+<td align="center">2,306</td>
+<td align="center">2,896</td>
+<td align="center">3,355</td>
+<td align="center">5,041</td>
+</tr>
+<tr class="odd">
+<td align="center">9</td>
+<td align="center">1,383</td>
+<td align="center">1,833</td>
+<td align="center">2,262</td>
+<td align="center">2,821</td>
+<td align="center">3,250</td>
+<td align="center">4,781</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">1,372</td>
+<td align="center">1,812</td>
+<td align="center">2,228</td>
+<td align="center">2,764</td>
+<td align="center">3,169</td>
+<td align="center">4,587</td>
+</tr>
+<tr class="odd">
+<td align="center">11</td>
+<td align="center">1,363</td>
+<td align="center">1,796</td>
+<td align="center">2,201</td>
+<td align="center">2,718</td>
+<td align="center">3,106</td>
+<td align="center">4,437</td>
+</tr>
+<tr class="even">
+<td align="center">12</td>
+<td align="center">1,356</td>
+<td align="center">1,782</td>
+<td align="center">2,179</td>
+<td align="center">2,681</td>
+<td align="center">3,055</td>
+<td align="center">4,318</td>
+</tr>
+<tr class="odd">
+<td align="center">13</td>
+<td align="center">1,350</td>
+<td align="center">1,771</td>
+<td align="center">2,160</td>
+<td align="center">2,650</td>
+<td align="center">3,012</td>
+<td align="center">4,221</td>
+</tr>
+<tr class="even">
+<td align="center">14</td>
+<td align="center">1,345</td>
+<td align="center">1,761</td>
+<td align="center">2,145</td>
+<td align="center">2,624</td>
+<td align="center">2,977</td>
+<td align="center">4,140</td>
+</tr>
+<tr class="odd">
+<td align="center">15</td>
+<td align="center">1,341</td>
+<td align="center">1,753</td>
+<td align="center">2,131</td>
+<td align="center">2,602</td>
+<td align="center">2,947</td>
+<td align="center">4,073</td>
+</tr>
+<tr class="even">
+<td align="center">16</td>
+<td align="center">1,337</td>
+<td align="center">1,746</td>
+<td align="center">2,120</td>
+<td align="center">2,583</td>
+<td align="center">2,921</td>
+<td align="center">4,015</td>
+</tr>
+<tr class="odd">
+<td align="center">17</td>
+<td align="center">1,333</td>
+<td align="center">1,740</td>
+<td align="center">2,110</td>
+<td align="center">2,567</td>
+<td align="center">2,898</td>
+<td align="center">3,965</td>
+</tr>
+<tr class="even">
+<td align="center">18</td>
+<td align="center">1,330</td>
+<td align="center">1,734</td>
+<td align="center">2,101</td>
+<td align="center">2,552</td>
+<td align="center">2,878</td>
+<td align="center">3,922</td>
+</tr>
+<tr class="odd">
+<td align="center">19</td>
+<td align="center">1,328</td>
+<td align="center">1,729</td>
+<td align="center">2,093</td>
+<td align="center">2,539</td>
+<td align="center">2,861</td>
+<td align="center">3,883</td>
+</tr>
+<tr class="even">
+<td align="center">20</td>
+<td align="center">1,325</td>
+<td align="center">1,725</td>
+<td align="center">2,086</td>
+<td align="center">2,528</td>
+<td align="center">2,845</td>
+<td align="center">3,850</td>
+</tr>
+<tr class="odd">
+<td align="center">21</td>
+<td align="center">1,323</td>
+<td align="center">1,721</td>
+<td align="center">2,080</td>
+<td align="center">2,518</td>
+<td align="center">2,831</td>
+<td align="center">3,819</td>
+</tr>
+<tr class="even">
+<td align="center">22</td>
+<td align="center">1,321</td>
+<td align="center">1,717</td>
+<td align="center">2,074</td>
+<td align="center">2,508</td>
+<td align="center">2,819</td>
+<td align="center">3,792</td>
+</tr>
+<tr class="odd">
+<td align="center">23</td>
+<td align="center">1,319</td>
+<td align="center">1,714</td>
+<td align="center">2,069</td>
+<td align="center">2,500</td>
+<td align="center">2,807</td>
+<td align="center">3,768</td>
+</tr>
+<tr class="even">
+<td align="center">24</td>
+<td align="center">1,318</td>
+<td align="center">1,711</td>
+<td align="center">2,064</td>
+<td align="center">2,492</td>
+<td align="center">2,797</td>
+<td align="center">3,745</td>
+</tr>
+<tr class="odd">
+<td align="center">25</td>
+<td align="center">1,316</td>
+<td align="center">1,708</td>
+<td align="center">2,060</td>
+<td align="center">2,485</td>
+<td align="center">2,787</td>
+<td align="center">3,725</td>
+</tr>
+<tr class="even">
+<td align="center">26</td>
+<td align="center">1,315</td>
+<td align="center">1,706</td>
+<td align="center">2,056</td>
+<td align="center">2,479</td>
+<td align="center">2,779</td>
+<td align="center">3,707</td>
+</tr>
+<tr class="odd">
+<td align="center">27</td>
+<td align="center">1,314</td>
+<td align="center">1,703</td>
+<td align="center">2,052</td>
+<td align="center">2,473</td>
+<td align="center">2,771</td>
+<td align="center">3,690</td>
+</tr>
+<tr class="even">
+<td align="center">28</td>
+<td align="center">1,313</td>
+<td align="center">1,701</td>
+<td align="center">2,048</td>
+<td align="center">2,467</td>
+<td align="center">2,763</td>
+<td align="center">3,674</td>
+</tr>
+<tr class="odd">
+<td align="center">29</td>
+<td align="center">1,311</td>
+<td align="center">1,699</td>
+<td align="center">2,045</td>
+<td align="center">2,462</td>
+<td align="center">2,756</td>
+<td align="center">3,659</td>
+</tr>
+<tr class="even">
+<td align="center">30</td>
+<td align="center">1,310</td>
+<td align="center">1,697</td>
+<td align="center">2,042</td>
+<td align="center">2,457</td>
+<td align="center">2,750</td>
+<td align="center">3,646</td>
+</tr>
+<tr class="odd">
+<td align="center">40</td>
+<td align="center">1,303</td>
+<td align="center">1,684</td>
+<td align="center">2,021</td>
+<td align="center">2,423</td>
+<td align="center">2,704</td>
+<td align="center">3,551</td>
+</tr>
+<tr class="even">
+<td align="center">50</td>
+<td align="center">1,299</td>
+<td align="center">1,676</td>
+<td align="center">2,009</td>
+<td align="center">2,403</td>
+<td align="center">2,678</td>
+<td align="center">3,496</td>
+</tr>
+<tr class="odd">
+<td align="center">60</td>
+<td align="center">1,296</td>
+<td align="center">1,671</td>
+<td align="center">2,000</td>
+<td align="center">2,390</td>
+<td align="center">2,660</td>
+<td align="center">3,460</td>
+</tr>
+<tr class="even">
+<td align="center">80</td>
+<td align="center">1,292</td>
+<td align="center">1,664</td>
+<td align="center">1,990</td>
+<td align="center">2,374</td>
+<td align="center">2,639</td>
+<td align="center">3,416</td>
+</tr>
+<tr class="odd">
+<td align="center">100</td>
+<td align="center">1,290</td>
+<td align="center">1,660</td>
+<td align="center">1,984</td>
+<td align="center">2,364</td>
+<td align="center">2,626</td>
+<td align="center">3,390</td>
+</tr>
+<tr class="even">
+<td align="center">120</td>
+<td align="center">1,289</td>
+<td align="center">1,658</td>
+<td align="center">1,980</td>
+<td align="center">2,358</td>
+<td align="center">2,617</td>
+<td align="center">3,373</td>
+</tr>
+<tr class="odd">
+<td align="center">∞</td>
+<td align="center">1,282</td>
+<td align="center">1,645</td>
+<td align="center">1,960</td>
+<td align="center">2,326</td>
+<td align="center">2,576</td>
+<td align="center">3,291</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="distribuição-qui-quadrado-1" class="section level3 hasAnchor" number="13.3.3">
+<h3><span class="header-section-number">13.3.3</span> Distribuição qui-quadrado<a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-qui-quadrado-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A Tabela <a href="recursos-adicionais.html#tab:rec-qui">13.3</a> fornece os quantis <span class="math inline">\(\chi^2_{\text{gl};\,q}\)</span>. Para testes qui-quadrado (que são unilaterais à direita) com <span class="math inline">\(\alpha = 0{,}05\)</span>, use a coluna 0,95.</p>
+<table style="width:100%;">
+<caption><span id="tab:rec-qui">Tabela 13.3: </span>Quantis da distribuição qui-quadrado.</caption>
+<colgroup>
+<col width="6%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">gl</th>
+<th align="center">0,005</th>
+<th align="center">0,025</th>
+<th align="center">0,050</th>
+<th align="center">0,900</th>
+<th align="center">0,950</th>
+<th align="center">0,975</th>
+<th align="center">0,990</th>
+<th align="center">0,995</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">0,000</td>
+<td align="center">0,001</td>
+<td align="center">0,004</td>
+<td align="center">2,706</td>
+<td align="center">3,841</td>
+<td align="center">5,024</td>
+<td align="center">6,635</td>
+<td align="center">7,879</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">0,010</td>
+<td align="center">0,051</td>
+<td align="center">0,103</td>
+<td align="center">4,605</td>
+<td align="center">5,991</td>
+<td align="center">7,378</td>
+<td align="center">9,210</td>
+<td align="center">10,597</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">0,072</td>
+<td align="center">0,216</td>
+<td align="center">0,352</td>
+<td align="center">6,251</td>
+<td align="center">7,815</td>
+<td align="center">9,348</td>
+<td align="center">11,345</td>
+<td align="center">12,838</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">0,207</td>
+<td align="center">0,484</td>
+<td align="center">0,711</td>
+<td align="center">7,779</td>
+<td align="center">9,488</td>
+<td align="center">11,143</td>
+<td align="center">13,277</td>
+<td align="center">14,860</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="center">0,412</td>
+<td align="center">0,831</td>
+<td align="center">1,145</td>
+<td align="center">9,236</td>
+<td align="center">11,070</td>
+<td align="center">12,833</td>
+<td align="center">15,086</td>
+<td align="center">16,750</td>
+</tr>
+<tr class="even">
+<td align="center">6</td>
+<td align="center">0,676</td>
+<td align="center">1,237</td>
+<td align="center">1,635</td>
+<td align="center">10,645</td>
+<td align="center">12,592</td>
+<td align="center">14,449</td>
+<td align="center">16,812</td>
+<td align="center">18,548</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="center">0,989</td>
+<td align="center">1,690</td>
+<td align="center">2,167</td>
+<td align="center">12,017</td>
+<td align="center">14,067</td>
+<td align="center">16,013</td>
+<td align="center">18,475</td>
+<td align="center">20,278</td>
+</tr>
+<tr class="even">
+<td align="center">8</td>
+<td align="center">1,344</td>
+<td align="center">2,180</td>
+<td align="center">2,733</td>
+<td align="center">13,362</td>
+<td align="center">15,507</td>
+<td align="center">17,535</td>
+<td align="center">20,090</td>
+<td align="center">21,955</td>
+</tr>
+<tr class="odd">
+<td align="center">9</td>
+<td align="center">1,735</td>
+<td align="center">2,700</td>
+<td align="center">3,325</td>
+<td align="center">14,684</td>
+<td align="center">16,919</td>
+<td align="center">19,023</td>
+<td align="center">21,666</td>
+<td align="center">23,589</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">2,156</td>
+<td align="center">3,247</td>
+<td align="center">3,940</td>
+<td align="center">15,987</td>
+<td align="center">18,307</td>
+<td align="center">20,483</td>
+<td align="center">23,209</td>
+<td align="center">25,188</td>
+</tr>
+<tr class="odd">
+<td align="center">11</td>
+<td align="center">2,603</td>
+<td align="center">3,816</td>
+<td align="center">4,575</td>
+<td align="center">17,275</td>
+<td align="center">19,675</td>
+<td align="center">21,920</td>
+<td align="center">24,725</td>
+<td align="center">26,757</td>
+</tr>
+<tr class="even">
+<td align="center">12</td>
+<td align="center">3,074</td>
+<td align="center">4,404</td>
+<td align="center">5,226</td>
+<td align="center">18,549</td>
+<td align="center">21,026</td>
+<td align="center">23,337</td>
+<td align="center">26,217</td>
+<td align="center">28,300</td>
+</tr>
+<tr class="odd">
+<td align="center">13</td>
+<td align="center">3,565</td>
+<td align="center">5,009</td>
+<td align="center">5,892</td>
+<td align="center">19,812</td>
+<td align="center">22,362</td>
+<td align="center">24,736</td>
+<td align="center">27,688</td>
+<td align="center">29,819</td>
+</tr>
+<tr class="even">
+<td align="center">14</td>
+<td align="center">4,075</td>
+<td align="center">5,629</td>
+<td align="center">6,571</td>
+<td align="center">21,064</td>
+<td align="center">23,685</td>
+<td align="center">26,119</td>
+<td align="center">29,141</td>
+<td align="center">31,319</td>
+</tr>
+<tr class="odd">
+<td align="center">15</td>
+<td align="center">4,601</td>
+<td align="center">6,262</td>
+<td align="center">7,261</td>
+<td align="center">22,307</td>
+<td align="center">24,996</td>
+<td align="center">27,488</td>
+<td align="center">30,578</td>
+<td align="center">32,801</td>
+</tr>
+<tr class="even">
+<td align="center">16</td>
+<td align="center">5,142</td>
+<td align="center">6,908</td>
+<td align="center">7,962</td>
+<td align="center">23,542</td>
+<td align="center">26,296</td>
+<td align="center">28,845</td>
+<td align="center">32,000</td>
+<td align="center">34,267</td>
+</tr>
+<tr class="odd">
+<td align="center">17</td>
+<td align="center">5,697</td>
+<td align="center">7,564</td>
+<td align="center">8,672</td>
+<td align="center">24,769</td>
+<td align="center">27,587</td>
+<td align="center">30,191</td>
+<td align="center">33,409</td>
+<td align="center">35,718</td>
+</tr>
+<tr class="even">
+<td align="center">18</td>
+<td align="center">6,265</td>
+<td align="center">8,231</td>
+<td align="center">9,390</td>
+<td align="center">25,989</td>
+<td align="center">28,869</td>
+<td align="center">31,526</td>
+<td align="center">34,805</td>
+<td align="center">37,156</td>
+</tr>
+<tr class="odd">
+<td align="center">19</td>
+<td align="center">6,844</td>
+<td align="center">8,907</td>
+<td align="center">10,117</td>
+<td align="center">27,204</td>
+<td align="center">30,144</td>
+<td align="center">32,852</td>
+<td align="center">36,191</td>
+<td align="center">38,582</td>
+</tr>
+<tr class="even">
+<td align="center">20</td>
+<td align="center">7,434</td>
+<td align="center">9,591</td>
+<td align="center">10,851</td>
+<td align="center">28,412</td>
+<td align="center">31,410</td>
+<td align="center">34,170</td>
+<td align="center">37,566</td>
+<td align="center">39,997</td>
+</tr>
+<tr class="odd">
+<td align="center">21</td>
+<td align="center">8,034</td>
+<td align="center">10,283</td>
+<td align="center">11,591</td>
+<td align="center">29,615</td>
+<td align="center">32,671</td>
+<td align="center">35,479</td>
+<td align="center">38,932</td>
+<td align="center">41,401</td>
+</tr>
+<tr class="even">
+<td align="center">22</td>
+<td align="center">8,643</td>
+<td align="center">10,982</td>
+<td align="center">12,338</td>
+<td align="center">30,813</td>
+<td align="center">33,924</td>
+<td align="center">36,781</td>
+<td align="center">40,289</td>
+<td align="center">42,796</td>
+</tr>
+<tr class="odd">
+<td align="center">23</td>
+<td align="center">9,260</td>
+<td align="center">11,689</td>
+<td align="center">13,091</td>
+<td align="center">32,007</td>
+<td align="center">35,172</td>
+<td align="center">38,076</td>
+<td align="center">41,638</td>
+<td align="center">44,181</td>
+</tr>
+<tr class="even">
+<td align="center">24</td>
+<td align="center">9,886</td>
+<td align="center">12,401</td>
+<td align="center">13,848</td>
+<td align="center">33,196</td>
+<td align="center">36,415</td>
+<td align="center">39,364</td>
+<td align="center">42,980</td>
+<td align="center">45,559</td>
+</tr>
+<tr class="odd">
+<td align="center">25</td>
+<td align="center">10,520</td>
+<td align="center">13,120</td>
+<td align="center">14,611</td>
+<td align="center">34,382</td>
+<td align="center">37,652</td>
+<td align="center">40,646</td>
+<td align="center">44,314</td>
+<td align="center">46,928</td>
+</tr>
+<tr class="even">
+<td align="center">26</td>
+<td align="center">11,160</td>
+<td align="center">13,844</td>
+<td align="center">15,379</td>
+<td align="center">35,563</td>
+<td align="center">38,885</td>
+<td align="center">41,923</td>
+<td align="center">45,642</td>
+<td align="center">48,290</td>
+</tr>
+<tr class="odd">
+<td align="center">27</td>
+<td align="center">11,808</td>
+<td align="center">14,573</td>
+<td align="center">16,151</td>
+<td align="center">36,741</td>
+<td align="center">40,113</td>
+<td align="center">43,195</td>
+<td align="center">46,963</td>
+<td align="center">49,645</td>
+</tr>
+<tr class="even">
+<td align="center">28</td>
+<td align="center">12,461</td>
+<td align="center">15,308</td>
+<td align="center">16,928</td>
+<td align="center">37,916</td>
+<td align="center">41,337</td>
+<td align="center">44,461</td>
+<td align="center">48,278</td>
+<td align="center">50,993</td>
+</tr>
+<tr class="odd">
+<td align="center">29</td>
+<td align="center">13,121</td>
+<td align="center">16,047</td>
+<td align="center">17,708</td>
+<td align="center">39,087</td>
+<td align="center">42,557</td>
+<td align="center">45,722</td>
+<td align="center">49,588</td>
+<td align="center">52,336</td>
+</tr>
+<tr class="even">
+<td align="center">30</td>
+<td align="center">13,787</td>
+<td align="center">16,791</td>
+<td align="center">18,493</td>
+<td align="center">40,256</td>
+<td align="center">43,773</td>
+<td align="center">46,979</td>
+<td align="center">50,892</td>
+<td align="center">53,672</td>
+</tr>
+<tr class="odd">
+<td align="center">40</td>
+<td align="center">20,707</td>
+<td align="center">24,433</td>
+<td align="center">26,509</td>
+<td align="center">51,805</td>
+<td align="center">55,758</td>
+<td align="center">59,342</td>
+<td align="center">63,691</td>
+<td align="center">66,766</td>
+</tr>
+<tr class="even">
+<td align="center">50</td>
+<td align="center">27,991</td>
+<td align="center">32,357</td>
+<td align="center">34,764</td>
+<td align="center">63,167</td>
+<td align="center">67,505</td>
+<td align="center">71,420</td>
+<td align="center">76,154</td>
+<td align="center">79,490</td>
+</tr>
+<tr class="odd">
+<td align="center">60</td>
+<td align="center">35,534</td>
+<td align="center">40,482</td>
+<td align="center">43,188</td>
+<td align="center">74,397</td>
+<td align="center">79,082</td>
+<td align="center">83,298</td>
+<td align="center">88,379</td>
+<td align="center">91,952</td>
+</tr>
+<tr class="even">
+<td align="center">80</td>
+<td align="center">51,172</td>
+<td align="center">57,153</td>
+<td align="center">60,391</td>
+<td align="center">96,578</td>
+<td align="center">101,879</td>
+<td align="center">106,629</td>
+<td align="center">112,329</td>
+<td align="center">116,321</td>
+</tr>
+<tr class="odd">
+<td align="center">100</td>
+<td align="center">67,328</td>
+<td align="center">74,222</td>
+<td align="center">77,929</td>
+<td align="center">118,498</td>
+<td align="center">124,342</td>
+<td align="center">129,561</td>
+<td align="center">135,807</td>
+<td align="center">140,169</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="distribuição-f" class="section level3 hasAnchor" number="13.3.4">
+<h3><span class="header-section-number">13.3.4</span> Distribuição <em>F</em><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-f" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A Tabela <a href="recursos-adicionais.html#tab:rec-f">13.4</a> fornece os valores críticos <span class="math inline">\(F_{0{,}95}\)</span> (nível de significância de 5%), com os graus de liberdade do numerador nas colunas e os do denominador nas linhas. Para outros níveis, use <code>qf(1 - alfa, gl1, gl2)</code>.</p>
+<table>
+<caption><span id="tab:rec-f">Tabela 13.4: </span>Valores críticos da distribuição F para α = 0,05.</caption>
+<colgroup>
+<col width="9%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">gl2  gl1</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">7</th>
+<th align="center">8</th>
+<th align="center">9</th>
+<th align="center">10</th>
+<th align="center">12</th>
+<th align="center">15</th>
+<th align="center">20</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">1</td>
+<td align="center">161,45</td>
+<td align="center">199,50</td>
+<td align="center">215,71</td>
+<td align="center">224,58</td>
+<td align="center">230,16</td>
+<td align="center">233,99</td>
+<td align="center">236,77</td>
+<td align="center">238,88</td>
+<td align="center">240,54</td>
+<td align="center">241,88</td>
+<td align="center">243,91</td>
+<td align="center">245,95</td>
+<td align="center">248,01</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">18,51</td>
+<td align="center">19,00</td>
+<td align="center">19,16</td>
+<td align="center">19,25</td>
+<td align="center">19,30</td>
+<td align="center">19,33</td>
+<td align="center">19,35</td>
+<td align="center">19,37</td>
+<td align="center">19,38</td>
+<td align="center">19,40</td>
+<td align="center">19,41</td>
+<td align="center">19,43</td>
+<td align="center">19,45</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">10,13</td>
+<td align="center">9,55</td>
+<td align="center">9,28</td>
+<td align="center">9,12</td>
+<td align="center">9,01</td>
+<td align="center">8,94</td>
+<td align="center">8,89</td>
+<td align="center">8,85</td>
+<td align="center">8,81</td>
+<td align="center">8,79</td>
+<td align="center">8,74</td>
+<td align="center">8,70</td>
+<td align="center">8,66</td>
+</tr>
+<tr class="even">
+<td align="center">4</td>
+<td align="center">7,71</td>
+<td align="center">6,94</td>
+<td align="center">6,59</td>
+<td align="center">6,39</td>
+<td align="center">6,26</td>
+<td align="center">6,16</td>
+<td align="center">6,09</td>
+<td align="center">6,04</td>
+<td align="center">6,00</td>
+<td align="center">5,96</td>
+<td align="center">5,91</td>
+<td align="center">5,86</td>
+<td align="center">5,80</td>
+</tr>
+<tr class="odd">
+<td align="center">5</td>
+<td align="center">6,61</td>
+<td align="center">5,79</td>
+<td align="center">5,41</td>
+<td align="center">5,19</td>
+<td align="center">5,05</td>
+<td align="center">4,95</td>
+<td align="center">4,88</td>
+<td align="center">4,82</td>
+<td align="center">4,77</td>
+<td align="center">4,74</td>
+<td align="center">4,68</td>
+<td align="center">4,62</td>
+<td align="center">4,56</td>
+</tr>
+<tr class="even">
+<td align="center">6</td>
+<td align="center">5,99</td>
+<td align="center">5,14</td>
+<td align="center">4,76</td>
+<td align="center">4,53</td>
+<td align="center">4,39</td>
+<td align="center">4,28</td>
+<td align="center">4,21</td>
+<td align="center">4,15</td>
+<td align="center">4,10</td>
+<td align="center">4,06</td>
+<td align="center">4,00</td>
+<td align="center">3,94</td>
+<td align="center">3,87</td>
+</tr>
+<tr class="odd">
+<td align="center">7</td>
+<td align="center">5,59</td>
+<td align="center">4,74</td>
+<td align="center">4,35</td>
+<td align="center">4,12</td>
+<td align="center">3,97</td>
+<td align="center">3,87</td>
+<td align="center">3,79</td>
+<td align="center">3,73</td>
+<td align="center">3,68</td>
+<td align="center">3,64</td>
+<td align="center">3,57</td>
+<td align="center">3,51</td>
+<td align="center">3,44</td>
+</tr>
+<tr class="even">
+<td align="center">8</td>
+<td align="center">5,32</td>
+<td align="center">4,46</td>
+<td align="center">4,07</td>
+<td align="center">3,84</td>
+<td align="center">3,69</td>
+<td align="center">3,58</td>
+<td align="center">3,50</td>
+<td align="center">3,44</td>
+<td align="center">3,39</td>
+<td align="center">3,35</td>
+<td align="center">3,28</td>
+<td align="center">3,22</td>
+<td align="center">3,15</td>
+</tr>
+<tr class="odd">
+<td align="center">9</td>
+<td align="center">5,12</td>
+<td align="center">4,26</td>
+<td align="center">3,86</td>
+<td align="center">3,63</td>
+<td align="center">3,48</td>
+<td align="center">3,37</td>
+<td align="center">3,29</td>
+<td align="center">3,23</td>
+<td align="center">3,18</td>
+<td align="center">3,14</td>
+<td align="center">3,07</td>
+<td align="center">3,01</td>
+<td align="center">2,94</td>
+</tr>
+<tr class="even">
+<td align="center">10</td>
+<td align="center">4,96</td>
+<td align="center">4,10</td>
+<td align="center">3,71</td>
+<td align="center">3,48</td>
+<td align="center">3,33</td>
+<td align="center">3,22</td>
+<td align="center">3,14</td>
+<td align="center">3,07</td>
+<td align="center">3,02</td>
+<td align="center">2,98</td>
+<td align="center">2,91</td>
+<td align="center">2,85</td>
+<td align="center">2,77</td>
+</tr>
+<tr class="odd">
+<td align="center">11</td>
+<td align="center">4,84</td>
+<td align="center">3,98</td>
+<td align="center">3,59</td>
+<td align="center">3,36</td>
+<td align="center">3,20</td>
+<td align="center">3,09</td>
+<td align="center">3,01</td>
+<td align="center">2,95</td>
+<td align="center">2,90</td>
+<td align="center">2,85</td>
+<td align="center">2,79</td>
+<td align="center">2,72</td>
+<td align="center">2,65</td>
+</tr>
+<tr class="even">
+<td align="center">12</td>
+<td align="center">4,75</td>
+<td align="center">3,89</td>
+<td align="center">3,49</td>
+<td align="center">3,26</td>
+<td align="center">3,11</td>
+<td align="center">3,00</td>
+<td align="center">2,91</td>
+<td align="center">2,85</td>
+<td align="center">2,80</td>
+<td align="center">2,75</td>
+<td align="center">2,69</td>
+<td align="center">2,62</td>
+<td align="center">2,54</td>
+</tr>
+<tr class="odd">
+<td align="center">13</td>
+<td align="center">4,67</td>
+<td align="center">3,81</td>
+<td align="center">3,41</td>
+<td align="center">3,18</td>
+<td align="center">3,03</td>
+<td align="center">2,92</td>
+<td align="center">2,83</td>
+<td align="center">2,77</td>
+<td align="center">2,71</td>
+<td align="center">2,67</td>
+<td align="center">2,60</td>
+<td align="center">2,53</td>
+<td align="center">2,46</td>
+</tr>
+<tr class="even">
+<td align="center">14</td>
+<td align="center">4,60</td>
+<td align="center">3,74</td>
+<td align="center">3,34</td>
+<td align="center">3,11</td>
+<td align="center">2,96</td>
+<td align="center">2,85</td>
+<td align="center">2,76</td>
+<td align="center">2,70</td>
+<td align="center">2,65</td>
+<td align="center">2,60</td>
+<td align="center">2,53</td>
+<td align="center">2,46</td>
+<td align="center">2,39</td>
+</tr>
+<tr class="odd">
+<td align="center">15</td>
+<td align="center">4,54</td>
+<td align="center">3,68</td>
+<td align="center">3,29</td>
+<td align="center">3,06</td>
+<td align="center">2,90</td>
+<td align="center">2,79</td>
+<td align="center">2,71</td>
+<td align="center">2,64</td>
+<td align="center">2,59</td>
+<td align="center">2,54</td>
+<td align="center">2,48</td>
+<td align="center">2,40</td>
+<td align="center">2,33</td>
+</tr>
+<tr class="even">
+<td align="center">16</td>
+<td align="center">4,49</td>
+<td align="center">3,63</td>
+<td align="center">3,24</td>
+<td align="center">3,01</td>
+<td align="center">2,85</td>
+<td align="center">2,74</td>
+<td align="center">2,66</td>
+<td align="center">2,59</td>
+<td align="center">2,54</td>
+<td align="center">2,49</td>
+<td align="center">2,42</td>
+<td align="center">2,35</td>
+<td align="center">2,28</td>
+</tr>
+<tr class="odd">
+<td align="center">17</td>
+<td align="center">4,45</td>
+<td align="center">3,59</td>
+<td align="center">3,20</td>
+<td align="center">2,96</td>
+<td align="center">2,81</td>
+<td align="center">2,70</td>
+<td align="center">2,61</td>
+<td align="center">2,55</td>
+<td align="center">2,49</td>
+<td align="center">2,45</td>
+<td align="center">2,38</td>
+<td align="center">2,31</td>
+<td align="center">2,23</td>
+</tr>
+<tr class="even">
+<td align="center">18</td>
+<td align="center">4,41</td>
+<td align="center">3,55</td>
+<td align="center">3,16</td>
+<td align="center">2,93</td>
+<td align="center">2,77</td>
+<td align="center">2,66</td>
+<td align="center">2,58</td>
+<td align="center">2,51</td>
+<td align="center">2,46</td>
+<td align="center">2,41</td>
+<td align="center">2,34</td>
+<td align="center">2,27</td>
+<td align="center">2,19</td>
+</tr>
+<tr class="odd">
+<td align="center">19</td>
+<td align="center">4,38</td>
+<td align="center">3,52</td>
+<td align="center">3,13</td>
+<td align="center">2,90</td>
+<td align="center">2,74</td>
+<td align="center">2,63</td>
+<td align="center">2,54</td>
+<td align="center">2,48</td>
+<td align="center">2,42</td>
+<td align="center">2,38</td>
+<td align="center">2,31</td>
+<td align="center">2,23</td>
+<td align="center">2,16</td>
+</tr>
+<tr class="even">
+<td align="center">20</td>
+<td align="center">4,35</td>
+<td align="center">3,49</td>
+<td align="center">3,10</td>
+<td align="center">2,87</td>
+<td align="center">2,71</td>
+<td align="center">2,60</td>
+<td align="center">2,51</td>
+<td align="center">2,45</td>
+<td align="center">2,39</td>
+<td align="center">2,35</td>
+<td align="center">2,28</td>
+<td align="center">2,20</td>
+<td align="center">2,12</td>
+</tr>
+<tr class="odd">
+<td align="center">21</td>
+<td align="center">4,32</td>
+<td align="center">3,47</td>
+<td align="center">3,07</td>
+<td align="center">2,84</td>
+<td align="center">2,68</td>
+<td align="center">2,57</td>
+<td align="center">2,49</td>
+<td align="center">2,42</td>
+<td align="center">2,37</td>
+<td align="center">2,32</td>
+<td align="center">2,25</td>
+<td align="center">2,18</td>
+<td align="center">2,10</td>
+</tr>
+<tr class="even">
+<td align="center">22</td>
+<td align="center">4,30</td>
+<td align="center">3,44</td>
+<td align="center">3,05</td>
+<td align="center">2,82</td>
+<td align="center">2,66</td>
+<td align="center">2,55</td>
+<td align="center">2,46</td>
+<td align="center">2,40</td>
+<td align="center">2,34</td>
+<td align="center">2,30</td>
+<td align="center">2,23</td>
+<td align="center">2,15</td>
+<td align="center">2,07</td>
+</tr>
+<tr class="odd">
+<td align="center">23</td>
+<td align="center">4,28</td>
+<td align="center">3,42</td>
+<td align="center">3,03</td>
+<td align="center">2,80</td>
+<td align="center">2,64</td>
+<td align="center">2,53</td>
+<td align="center">2,44</td>
+<td align="center">2,37</td>
+<td align="center">2,32</td>
+<td align="center">2,27</td>
+<td align="center">2,20</td>
+<td align="center">2,13</td>
+<td align="center">2,05</td>
+</tr>
+<tr class="even">
+<td align="center">24</td>
+<td align="center">4,26</td>
+<td align="center">3,40</td>
+<td align="center">3,01</td>
+<td align="center">2,78</td>
+<td align="center">2,62</td>
+<td align="center">2,51</td>
+<td align="center">2,42</td>
+<td align="center">2,36</td>
+<td align="center">2,30</td>
+<td align="center">2,25</td>
+<td align="center">2,18</td>
+<td align="center">2,11</td>
+<td align="center">2,03</td>
+</tr>
+<tr class="odd">
+<td align="center">25</td>
+<td align="center">4,24</td>
+<td align="center">3,39</td>
+<td align="center">2,99</td>
+<td align="center">2,76</td>
+<td align="center">2,60</td>
+<td align="center">2,49</td>
+<td align="center">2,40</td>
+<td align="center">2,34</td>
+<td align="center">2,28</td>
+<td align="center">2,24</td>
+<td align="center">2,16</td>
+<td align="center">2,09</td>
+<td align="center">2,01</td>
+</tr>
+<tr class="even">
+<td align="center">26</td>
+<td align="center">4,23</td>
+<td align="center">3,37</td>
+<td align="center">2,98</td>
+<td align="center">2,74</td>
+<td align="center">2,59</td>
+<td align="center">2,47</td>
+<td align="center">2,39</td>
+<td align="center">2,32</td>
+<td align="center">2,27</td>
+<td align="center">2,22</td>
+<td align="center">2,15</td>
+<td align="center">2,07</td>
+<td align="center">1,99</td>
+</tr>
+<tr class="odd">
+<td align="center">27</td>
+<td align="center">4,21</td>
+<td align="center">3,35</td>
+<td align="center">2,96</td>
+<td align="center">2,73</td>
+<td align="center">2,57</td>
+<td align="center">2,46</td>
+<td align="center">2,37</td>
+<td align="center">2,31</td>
+<td align="center">2,25</td>
+<td align="center">2,20</td>
+<td align="center">2,13</td>
+<td align="center">2,06</td>
+<td align="center">1,97</td>
+</tr>
+<tr class="even">
+<td align="center">28</td>
+<td align="center">4,20</td>
+<td align="center">3,34</td>
+<td align="center">2,95</td>
+<td align="center">2,71</td>
+<td align="center">2,56</td>
+<td align="center">2,45</td>
+<td align="center">2,36</td>
+<td align="center">2,29</td>
+<td align="center">2,24</td>
+<td align="center">2,19</td>
+<td align="center">2,12</td>
+<td align="center">2,04</td>
+<td align="center">1,96</td>
+</tr>
+<tr class="odd">
+<td align="center">29</td>
+<td align="center">4,18</td>
+<td align="center">3,33</td>
+<td align="center">2,93</td>
+<td align="center">2,70</td>
+<td align="center">2,55</td>
+<td align="center">2,43</td>
+<td align="center">2,35</td>
+<td align="center">2,28</td>
+<td align="center">2,22</td>
+<td align="center">2,18</td>
+<td align="center">2,10</td>
+<td align="center">2,03</td>
+<td align="center">1,94</td>
+</tr>
+<tr class="even">
+<td align="center">30</td>
+<td align="center">4,17</td>
+<td align="center">3,32</td>
+<td align="center">2,92</td>
+<td align="center">2,69</td>
+<td align="center">2,53</td>
+<td align="center">2,42</td>
+<td align="center">2,33</td>
+<td align="center">2,27</td>
+<td align="center">2,21</td>
+<td align="center">2,16</td>
+<td align="center">2,09</td>
+<td align="center">2,01</td>
+<td align="center">1,93</td>
+</tr>
+<tr class="odd">
+<td align="center">40</td>
+<td align="center">4,08</td>
+<td align="center">3,23</td>
+<td align="center">2,84</td>
+<td align="center">2,61</td>
+<td align="center">2,45</td>
+<td align="center">2,34</td>
+<td align="center">2,25</td>
+<td align="center">2,18</td>
+<td align="center">2,12</td>
+<td align="center">2,08</td>
+<td align="center">2,00</td>
+<td align="center">1,92</td>
+<td align="center">1,84</td>
+</tr>
+<tr class="even">
+<td align="center">60</td>
+<td align="center">4,00</td>
+<td align="center">3,15</td>
+<td align="center">2,76</td>
+<td align="center">2,53</td>
+<td align="center">2,37</td>
+<td align="center">2,25</td>
+<td align="center">2,17</td>
+<td align="center">2,10</td>
+<td align="center">2,04</td>
+<td align="center">1,99</td>
+<td align="center">1,92</td>
+<td align="center">1,84</td>
+<td align="center">1,75</td>
+</tr>
+<tr class="odd">
+<td align="center">120</td>
+<td align="center">3,92</td>
+<td align="center">3,07</td>
+<td align="center">2,68</td>
+<td align="center">2,45</td>
+<td align="center">2,29</td>
+<td align="center">2,18</td>
+<td align="center">2,09</td>
+<td align="center">2,02</td>
+<td align="center">1,96</td>
+<td align="center">1,91</td>
+<td align="center">1,83</td>
+<td align="center">1,75</td>
+<td align="center">1,66</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div id="links-e-ferramentas-online" class="section level2 hasAnchor" number="13.4">
-<h2><span class="header-section-number">13.4</span> Links e ferramentas online<a href="recursos-adicionais.html#links-e-ferramentas-online" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">13.4</span> Links e ferramentas <em>online</em><a href="recursos-adicionais.html#links-e-ferramentas-online" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Os endereços abaixo eram válidos no momento da redação. Como sítios mudam, recomenda-se localizar os recursos pelo nome em um buscador caso algum endereço deixe de funcionar.</p>
+<div id="programas-estatísticos" class="section level3 hasAnchor" number="13.4.1">
+<h3><span class="header-section-number">13.4.1</span> Programas estatísticos<a href="recursos-adicionais.html#programas-estat%C3%ADsticos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>R e CRAN</strong>: <a href="https://cran.r-project.org" class="uri">https://cran.r-project.org</a> (linguagem R e repositório de pacotes).</li>
+<li><strong>RStudio</strong> (Posit): <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a> (ambiente de desenvolvimento para R).</li>
+<li><strong>Quarto</strong>: <a href="https://quarto.org" class="uri">https://quarto.org</a> (documentos reprodutíveis com R, Python e outras linguagens).</li>
+<li><strong>Python</strong>: <a href="https://www.python.org" class="uri">https://www.python.org</a>; <strong>Jupyter</strong>: <a href="https://jupyter.org" class="uri">https://jupyter.org</a>.</li>
+<li><strong>JASP</strong>: <a href="https://jasp-stats.org" class="uri">https://jasp-stats.org</a> e <strong>jamovi</strong>: <a href="https://www.jamovi.org" class="uri">https://www.jamovi.org</a> (programas gratuitos com interface gráfica, baseados em R).</li>
+<li><strong>G*Power</strong>: programa gratuito para cálculo de poder e tamanho amostral.</li>
+<li><strong>OpenEpi</strong>: <a href="https://www.openepi.com" class="uri">https://www.openepi.com</a> (calculadoras epidemiológicas <em>online</em>).</li>
+</ul>
+</div>
+<div id="bases-bibliográficas-e-de-evidências" class="section level3 hasAnchor" number="13.4.2">
+<h3><span class="header-section-number">13.4.2</span> Bases bibliográficas e de evidências<a href="recursos-adicionais.html#bases-bibliogr%C3%A1ficas-e-de-evid%C3%AAncias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>PubMed</strong>: <a href="https://pubmed.ncbi.nlm.nih.gov" class="uri">https://pubmed.ncbi.nlm.nih.gov</a>.</li>
+<li><strong>Biblioteca Virtual em Saúde</strong> (LILACS e outras bases): <a href="https://bvsalud.org" class="uri">https://bvsalud.org</a>.</li>
+<li><strong>DeCS/MeSH</strong>: <a href="https://decs.bvsalud.org" class="uri">https://decs.bvsalud.org</a>.</li>
+<li><strong>SciELO</strong>: <a href="https://www.scielo.org" class="uri">https://www.scielo.org</a>.</li>
+<li><strong>Portal de Periódicos da CAPES</strong>: <a href="https://www.periodicos.capes.gov.br" class="uri">https://www.periodicos.capes.gov.br</a>.</li>
+<li><strong>Cochrane Library</strong>: <a href="https://www.cochranelibrary.com" class="uri">https://www.cochranelibrary.com</a>.</li>
+<li><strong>DOAJ</strong> (periódicos de acesso aberto): <a href="https://doaj.org" class="uri">https://doaj.org</a>.</li>
+</ul>
+</div>
+<div id="diretrizes-registros-e-integridade" class="section level3 hasAnchor" number="13.4.3">
+<h3><span class="header-section-number">13.4.3</span> Diretrizes, registros e integridade<a href="recursos-adicionais.html#diretrizes-registros-e-integridade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Rede EQUATOR</strong> (diretrizes de relato): <a href="https://www.equator-network.org" class="uri">https://www.equator-network.org</a>.</li>
+<li><strong>ICMJE</strong>: <a href="https://www.icmje.org" class="uri">https://www.icmje.org</a>.</li>
+<li><strong>COPE</strong>: <a href="https://publicationethics.org" class="uri">https://publicationethics.org</a>.</li>
+<li><strong>ReBEC</strong> (Registro Brasileiro de Ensaios Clínicos): <a href="https://ensaiosclinicos.gov.br" class="uri">https://ensaiosclinicos.gov.br</a>.</li>
+<li><strong>ClinicalTrials.gov</strong>: <a href="https://clinicaltrials.gov" class="uri">https://clinicaltrials.gov</a>.</li>
+<li><strong>PROSPERO</strong> (registro de revisões sistemáticas): <a href="https://www.crd.york.ac.uk/prospero/" class="uri">https://www.crd.york.ac.uk/prospero/</a>.</li>
+<li><strong>OSF</strong> (<em>Open Science Framework</em>, registro prévio e compartilhamento de dados): <a href="https://osf.io" class="uri">https://osf.io</a>.</li>
+<li><strong>Zenodo</strong> (repositório de dados e código): <a href="https://zenodo.org" class="uri">https://zenodo.org</a>.</li>
+<li><strong>Plataforma Brasil</strong> (submissão de projetos aos CEPs): <a href="https://plataformabrasil.saude.gov.br" class="uri">https://plataformabrasil.saude.gov.br</a>.</li>
+<li><strong>Retraction Watch</strong>: <a href="https://retractionwatch.com" class="uri">https://retractionwatch.com</a>.</li>
+</ul>
+</div>
+<div id="dados-de-saúde" class="section level3 hasAnchor" number="13.4.4">
+<h3><span class="header-section-number">13.4.4</span> Dados de saúde<a href="recursos-adicionais.html#dados-de-sa%C3%BAde" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>DATASUS</strong> (informações de saúde e TabNet): <a href="https://datasus.saude.gov.br" class="uri">https://datasus.saude.gov.br</a>.</li>
+<li><strong>IBGE</strong> (dados demográficos e sistema SIDRA): <a href="https://www.ibge.gov.br" class="uri">https://www.ibge.gov.br</a>.</li>
+<li><strong>Global Health Observatory</strong> (OMS): <a href="https://www.who.int/data/gho" class="uri">https://www.who.int/data/gho</a>.</li>
+</ul>
 
+</div>
 </div>
 </div>
             </section>
@@ -327,42 +2622,42 @@ div.csl-indent {
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

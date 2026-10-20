@@ -5,25 +5,24 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Referências | Metodologia científica e Bioestatística</title>
-  <meta name="description" content="Referências | Metodologia científica e Bioestatística." />
-  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+  <meta name="description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Referências | Metodologia científica e Bioestatística" />
   <meta property="og:type" content="book" />
-  <meta property="og:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
-  <meta property="og:description" content="Referências | Metodologia científica e Bioestatística." />
-  <meta name="github-repo" content="rstudio/bookdown-demo" />
+  <meta property="og:image" content="https://drhrf.github.io/MCBS/images/MCBS_capa.png" />
+  <meta property="og:description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="github-repo" content="drhrf/MCBS" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Referências | Metodologia científica e Bioestatística" />
   
-  <meta name="twitter:description" content="Referências | Metodologia científica e Bioestatística." />
-  <meta name="twitter:image" content="https://drhrf.github.io/MCBS/images/MCBS_cover.png" />
+  <meta name="twitter:description" content="Livro de acesso aberto sobre os fundamentos da metodologia científica e da bioestatística aplicados às ciências da saúde e da vida, com exemplos reproduzíveis em R e Python." />
+  <meta name="twitter:image" content="https://drhrf.github.io/MCBS/images/MCBS_capa.png" />
 
-<meta name="author" content="Editor: Hércules Rezende Freitas, Ph.D." />
+<meta name="author" content="Hércules Rezende Freitas" />
 
 
-<meta name="date" content="2024-12-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,18 +51,18 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
 <script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="libs/plotly-binding-4.12.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+<link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<a href="https://raw.githubusercontent.com/drhrf/MCBS/master/_main_files/MCBSbook.pdf" target="_blank" style="position: absolute; top: 10px; right: 60px;">
+<a href="MCBSbook.pdf" target="_blank" style="position: absolute; top: 10px; right: 60px;">
   <i class="fas fa-file-pdf" style="font-size: 24px; color: #333;"></i>
 </a>
 
@@ -78,6 +77,71 @@
 </script>
 
 
+<style type="text/css">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
   
@@ -88,7 +152,6 @@
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -120,155 +183,415 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
-<li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
+<li><a href="MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
+<li><a href="MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
 <li><a href="./">SUMÁRIO</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre o projeto</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Capa</a></li>
+<li class="chapter" data-level="" data-path="ficha-técnica.html"><a href="ficha-técnica.html"><i class="fa fa-check"></i>Ficha técnica</a></li>
+<li class="chapter" data-level="1" data-path="sobre-o-projeto.html"><a href="sobre-o-projeto.html"><i class="fa fa-check"></i><b>1</b> Sobre o projeto</a></li>
 <li class="chapter" data-level="2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html"><i class="fa fa-check"></i><b>2</b> Introdução à metodologia científica</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#conceitos-básicos-de-ciência"><i class="fa fa-check"></i><b>2.1</b> Conceitos básicos de ciência</a></li>
-<li class="chapter" data-level="2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-método-científico"><i class="fa fa-check"></i><b>2.2</b> O método científico</a></li>
-<li class="chapter" data-level="2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-científicos"><i class="fa fa-check"></i><b>2.3</b> Paradigmas científicos</a></li>
-<li class="chapter" data-level="2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#ética-na-pesquisa-científica"><i class="fa fa-check"></i><b>2.4</b> Ética na pesquisa científica</a></li>
+<li class="chapter" data-level="2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#conceitos-b%C3%A1sicos-de-ci%C3%AAncia"><i class="fa fa-check"></i><b>2.1</b> Conceitos básicos de ciência</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#formas-de-conhecimento"><i class="fa fa-check"></i><b>2.1.1</b> Formas de conhecimento</a></li>
+<li class="chapter" data-level="2.1.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-vocabul%C3%A1rio-da-ci%C3%AAncia"><i class="fa fa-check"></i><b>2.1.2</b> O vocabulário da ciência</a></li>
+<li class="chapter" data-level="2.1.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#pesquisa-b%C3%A1sica-aplicada-e-translacional"><i class="fa fa-check"></i><b>2.1.3</b> Pesquisa básica, aplicada e translacional</a></li>
+<li class="chapter" data-level="2.1.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#ci%C3%AAncia-e-pseudoci%C3%AAncia"><i class="fa fa-check"></i><b>2.1.4</b> Ciência e pseudociência</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-m%C3%A9todo-cient%C3%ADfico"><i class="fa fa-check"></i><b>2.2</b> O método científico</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#indu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.1</b> Indução</a></li>
+<li class="chapter" data-level="2.2.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#dedu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.2</b> Dedução</a></li>
+<li class="chapter" data-level="2.2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#o-m%C3%A9todo-hipot%C3%A9tico-dedutivo"><i class="fa fa-check"></i><b>2.2.3</b> O método hipotético-dedutivo</a></li>
+<li class="chapter" data-level="2.2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#falseabilidade"><i class="fa fa-check"></i><b>2.2.4</b> Falseabilidade</a></li>
+<li class="chapter" data-level="2.2.5" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#abdu%C3%A7%C3%A3o-e-a-gera%C3%A7%C3%A3o-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>2.2.5</b> Abdução e a geração de hipóteses</a></li>
+<li class="chapter" data-level="2.2.6" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#reprodutibilidade-e-autocorre%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>2.2.6</b> Reprodutibilidade e autocorreção</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-cient%C3%ADficos"><i class="fa fa-check"></i><b>2.3</b> Paradigmas científicos</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#kuhn-e-as-revolu%C3%A7%C3%B5es-cient%C3%ADficas"><i class="fa fa-check"></i><b>2.3.1</b> Kuhn e as revoluções científicas</a></li>
+<li class="chapter" data-level="2.3.2" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#outras-perspectivas"><i class="fa fa-check"></i><b>2.3.2</b> Outras perspectivas</a></li>
+<li class="chapter" data-level="2.3.3" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#paradigmas-de-pesquisa-em-sa%C3%BAde"><i class="fa fa-check"></i><b>2.3.3</b> Paradigmas de pesquisa em saúde</a></li>
+<li class="chapter" data-level="2.3.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#medicina-baseada-em-evid%C3%AAncias"><i class="fa fa-check"></i><b>2.3.4</b> Medicina baseada em evidências</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#%C3%A9tica-na-pesquisa-cient%C3%ADfica"><i class="fa fa-check"></i><b>2.4</b> Ética na pesquisa científica</a></li>
+<li class="chapter" data-level="2.5" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#resumo-do-cap%C3%ADtulo"><i class="fa fa-check"></i><b>2.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="2.6" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#exerc%C3%ADcios"><i class="fa fa-check"></i><b>2.6</b> Exercícios</a></li>
+<li class="chapter" data-level="2.7" data-path="introdução-à-metodologia-científica.html"><a href="introdução-à-metodologia-científica.html#respostas-dos-exerc%C3%ADcios"><i class="fa fa-check"></i><b>2.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html"><i class="fa fa-check"></i><b>3</b> Formulação de problemas e hipóteses</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#identificação-de-problemas-de-pesquisa"><i class="fa fa-check"></i><b>3.1</b> Identificação de problemas de pesquisa</a></li>
-<li class="chapter" data-level="3.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#revisão-da-literatura"><i class="fa fa-check"></i><b>3.2</b> Revisão da literatura</a></li>
-<li class="chapter" data-level="3.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#definição-de-objetivos"><i class="fa fa-check"></i><b>3.3</b> Definição de objetivos</a></li>
-<li class="chapter" data-level="3.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#formulação-de-hipóteses"><i class="fa fa-check"></i><b>3.4</b> Formulação de hipóteses</a></li>
+<li class="chapter" data-level="3.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#identifica%C3%A7%C3%A3o-de-problemas-de-pesquisa"><i class="fa fa-check"></i><b>3.1</b> Identificação de problemas de pesquisa</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#do-tema-ao-problema-e-%C3%A0-pergunta"><i class="fa fa-check"></i><b>3.1.1</b> Do tema ao problema e à pergunta</a></li>
+<li class="chapter" data-level="3.1.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#fontes-de-problemas"><i class="fa fa-check"></i><b>3.1.2</b> Fontes de problemas</a></li>
+<li class="chapter" data-level="3.1.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#crit%C3%A9rios-para-uma-boa-pergunta-finer"><i class="fa fa-check"></i><b>3.1.3</b> Critérios para uma boa pergunta: FINER</a></li>
+<li class="chapter" data-level="3.1.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#estruturando-a-pergunta"><i class="fa fa-check"></i><b>3.1.4</b> Estruturando a pergunta</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#revis%C3%A3o-da-literatura"><i class="fa fa-check"></i><b>3.2</b> Revisão da literatura</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#tipos-de-revis%C3%A3o"><i class="fa fa-check"></i><b>3.2.1</b> Tipos de revisão</a></li>
+<li class="chapter" data-level="3.2.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#onde-buscar"><i class="fa fa-check"></i><b>3.2.2</b> Onde buscar</a></li>
+<li class="chapter" data-level="3.2.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#como-buscar"><i class="fa fa-check"></i><b>3.2.3</b> Como buscar</a></li>
+<li class="chapter" data-level="3.2.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#organizar-e-avaliar"><i class="fa fa-check"></i><b>3.2.4</b> Organizar e avaliar</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#defini%C3%A7%C3%A3o-de-objetivos"><i class="fa fa-check"></i><b>3.3</b> Definição de objetivos</a></li>
+<li class="chapter" data-level="3.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#formula%C3%A7%C3%A3o-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>3.4</b> Formulação de hipóteses</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#hip%C3%B3tese-de-pesquisa-e-hip%C3%B3tese-estat%C3%ADstica"><i class="fa fa-check"></i><b>3.4.1</b> Hipótese de pesquisa e hipótese estatística</a></li>
+<li class="chapter" data-level="3.4.2" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#caracter%C3%ADsticas-de-uma-boa-hip%C3%B3tese"><i class="fa fa-check"></i><b>3.4.2</b> Características de uma boa hipótese</a></li>
+<li class="chapter" data-level="3.4.3" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#estima%C3%A7%C3%A3o-ou-teste"><i class="fa fa-check"></i><b>3.4.3</b> Estimação ou teste?</a></li>
+<li class="chapter" data-level="3.4.4" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#harking-e-registro-pr%C3%A9vio"><i class="fa fa-check"></i><b>3.4.4</b> HARKing e registro prévio</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#resumo-do-cap%C3%ADtulo-1"><i class="fa fa-check"></i><b>3.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="3.6" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>3.6</b> Exercícios</a></li>
+<li class="chapter" data-level="3.7" data-path="formulação-de-problemas-e-hipóteses.html"><a href="formulação-de-problemas-e-hipóteses.html#respostas-dos-exerc%C3%ADcios-1"><i class="fa fa-check"></i><b>3.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html"><i class="fa fa-check"></i><b>4</b> Desenhos de pesquisa</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-observacionais"><i class="fa fa-check"></i><b>4.1</b> Estudos observacionais</a>
+<li class="chapter" data-level="4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#da-pergunta-ao-desenho"><i class="fa fa-check"></i><b>4.1</b> Da pergunta ao desenho</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-transversais"><i class="fa fa-check"></i><b>4.1.1</b> Estudos transversais</a></li>
-<li class="chapter" data-level="4.1.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-coorte"><i class="fa fa-check"></i><b>4.1.2</b> Estudos de coorte</a></li>
-<li class="chapter" data-level="4.1.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-caso-controle"><i class="fa fa-check"></i><b>4.1.3</b> Estudos de caso-controle</a></li>
+<li class="chapter" data-level="4.1.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#a-pergunta-de-pesquisa"><i class="fa fa-check"></i><b>4.1.1</b> A pergunta de pesquisa</a></li>
+<li class="chapter" data-level="4.1.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#uma-classifica%C3%A7%C3%A3o-dos-desenhos"><i class="fa fa-check"></i><b>4.1.2</b> Uma classificação dos desenhos</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-clínicos"><i class="fa fa-check"></i><b>4.2</b> Ensaios clínicos</a>
+<li class="chapter" data-level="4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#medidas-de-frequ%C3%AAncia-e-de-associa%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>4.2</b> Medidas de frequência e de associação</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-randomizados-controlados"><i class="fa fa-check"></i><b>4.2.1</b> Ensaios randomizados controlados</a></li>
-<li class="chapter" data-level="4.2.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-duplo-cegos"><i class="fa fa-check"></i><b>4.2.2</b> Estudos duplo-cegos</a></li>
+<li class="chapter" data-level="4.2.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#preval%C3%AAncia-e-incid%C3%AAncia"><i class="fa fa-check"></i><b>4.2.1</b> Prevalência e incidência</a></li>
+<li class="chapter" data-level="4.2.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#medidas-de-associa%C3%A7%C3%A3o-em-tabelas-2-2"><i class="fa fa-check"></i><b>4.2.2</b> Medidas de associação em tabelas 2 × 2</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-experimentais"><i class="fa fa-check"></i><b>4.3</b> Estudos experimentais</a>
+<li class="chapter" data-level="4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#validade-erro-aleat%C3%B3rio-vi%C3%A9s-e-confus%C3%A3o"><i class="fa fa-check"></i><b>4.3</b> Validade: erro aleatório, viés e confusão</a>
 <ul>
-<li class="chapter" data-level="4.3.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#desenho-experimental"><i class="fa fa-check"></i><b>4.3.1</b> Desenho experimental</a></li>
-<li class="chapter" data-level="4.3.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#controle-e-aleatorização"><i class="fa fa-check"></i><b>4.3.2</b> Controle e aleatorização</a></li>
+<li class="chapter" data-level="4.3.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#erro-aleat%C3%B3rio"><i class="fa fa-check"></i><b>4.3.1</b> Erro aleatório</a></li>
+<li class="chapter" data-level="4.3.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#vi%C3%A9s"><i class="fa fa-check"></i><b>4.3.2</b> Viés</a></li>
+<li class="chapter" data-level="4.3.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#confus%C3%A3o"><i class="fa fa-check"></i><b>4.3.3</b> Confusão</a></li>
+<li class="chapter" data-level="4.3.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#da-associa%C3%A7%C3%A3o-%C3%A0-causalidade"><i class="fa fa-check"></i><b>4.3.4</b> Da associação à causalidade</a></li>
 </ul></li>
+<li class="chapter" data-level="4.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-observacionais"><i class="fa fa-check"></i><b>4.4</b> Estudos observacionais</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-transversais"><i class="fa fa-check"></i><b>4.4.1</b> Estudos transversais</a></li>
+<li class="chapter" data-level="4.4.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-coorte"><i class="fa fa-check"></i><b>4.4.2</b> Estudos de coorte</a></li>
+<li class="chapter" data-level="4.4.3" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-de-caso-controle"><i class="fa fa-check"></i><b>4.4.3</b> Estudos de caso-controle</a></li>
+<li class="chapter" data-level="4.4.4" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#outros-desenhos-observacionais"><i class="fa fa-check"></i><b>4.4.4</b> Outros desenhos observacionais</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>4.5</b> Ensaios clínicos</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#ensaios-randomizados-controlados"><i class="fa fa-check"></i><b>4.5.1</b> Ensaios randomizados controlados</a></li>
+<li class="chapter" data-level="4.5.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-duplo-cegos"><i class="fa fa-check"></i><b>4.5.2</b> Estudos duplo-cegos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#estudos-experimentais"><i class="fa fa-check"></i><b>4.6</b> Estudos experimentais</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#desenho-experimental"><i class="fa fa-check"></i><b>4.6.1</b> Desenho experimental</a></li>
+<li class="chapter" data-level="4.6.2" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#controle-e-aleatoriza%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>4.6.2</b> Controle e aleatorização</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#resumo-do-cap%C3%ADtulo-2"><i class="fa fa-check"></i><b>4.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="4.8" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#exerc%C3%ADcios-2"><i class="fa fa-check"></i><b>4.8</b> Exercícios</a></li>
+<li class="chapter" data-level="4.9" data-path="desenhos-de-pesquisa.html"><a href="desenhos-de-pesquisa.html#respostas-dos-exerc%C3%ADcios-2"><i class="fa fa-check"></i><b>4.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html"><i class="fa fa-check"></i><b>5</b> Bioestatística descritiva</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-tendência-central"><i class="fa fa-check"></i><b>5.1</b> Medidas de tendência central</a>
+<li class="chapter" data-level="5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desc-tipos"><i class="fa fa-check"></i><b>5.1</b> Tipos de variáveis e escalas de medida</a></li>
+<li class="chapter" data-level="5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-tend%C3%AAncia-central"><i class="fa fa-check"></i><b>5.2</b> Medidas de tendência central</a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#média"><i class="fa fa-check"></i><b>5.1.1</b> Média</a></li>
-<li class="chapter" data-level="5.1.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#mediana"><i class="fa fa-check"></i><b>5.1.2</b> Mediana</a></li>
-<li class="chapter" data-level="5.1.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#moda"><i class="fa fa-check"></i><b>5.1.3</b> Moda</a></li>
+<li class="chapter" data-level="5.2.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#m%C3%A9dia"><i class="fa fa-check"></i><b>5.2.1</b> Média</a></li>
+<li class="chapter" data-level="5.2.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#mediana"><i class="fa fa-check"></i><b>5.2.2</b> Mediana</a></li>
+<li class="chapter" data-level="5.2.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#moda"><i class="fa fa-check"></i><b>5.2.3</b> Moda</a></li>
+<li class="chapter" data-level="5.2.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#comparando-m%C3%A9dia-mediana-e-moda"><i class="fa fa-check"></i><b>5.2.4</b> Comparando média, mediana e moda</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-dispersão"><i class="fa fa-check"></i><b>5.2</b> Medidas de dispersão</a>
+<li class="chapter" data-level="5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#medidas-de-dispers%C3%A3o"><i class="fa fa-check"></i><b>5.3</b> Medidas de dispersão</a>
 <ul>
-<li class="chapter" data-level="5.2.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#variância"><i class="fa fa-check"></i><b>5.2.1</b> Variância</a></li>
-<li class="chapter" data-level="5.2.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desvio-padrão"><i class="fa fa-check"></i><b>5.2.2</b> Desvio padrão</a></li>
-<li class="chapter" data-level="5.2.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#amplitude"><i class="fa fa-check"></i><b>5.2.3</b> Amplitude</a></li>
+<li class="chapter" data-level="5.3.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#amplitude"><i class="fa fa-check"></i><b>5.3.1</b> Amplitude</a></li>
+<li class="chapter" data-level="5.3.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#vari%C3%A2ncia"><i class="fa fa-check"></i><b>5.3.2</b> Variância</a></li>
+<li class="chapter" data-level="5.3.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#desvio-padr%C3%A3o"><i class="fa fa-check"></i><b>5.3.3</b> Desvio padrão</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#distribuições-de-frequência"><i class="fa fa-check"></i><b>5.3</b> Distribuições de frequência</a></li>
-<li class="chapter" data-level="5.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#representações-gráficas"><i class="fa fa-check"></i><b>5.4</b> Representações gráficas</a>
+<li class="chapter" data-level="5.4" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#distribui%C3%A7%C3%B5es-de-frequ%C3%AAncia"><i class="fa fa-check"></i><b>5.4</b> Distribuições de frequência</a>
 <ul>
-<li class="chapter" data-level="5.4.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#histogramas"><i class="fa fa-check"></i><b>5.4.1</b> Histogramas</a></li>
-<li class="chapter" data-level="5.4.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#boxplots"><i class="fa fa-check"></i><b>5.4.2</b> Boxplots</a></li>
-<li class="chapter" data-level="5.4.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#gráficos-de-dispersão"><i class="fa fa-check"></i><b>5.4.3</b> Gráficos de dispersão</a></li>
+<li class="chapter" data-level="5.4.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#forma-da-distribui%C3%A7%C3%A3o-assimetria-e-curtose"><i class="fa fa-check"></i><b>5.4.1</b> Forma da distribuição: assimetria e curtose</a></li>
 </ul></li>
+<li class="chapter" data-level="5.5" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#representa%C3%A7%C3%B5es-gr%C3%A1ficas"><i class="fa fa-check"></i><b>5.5</b> Representações gráficas</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#histogramas"><i class="fa fa-check"></i><b>5.5.1</b> Histogramas</a></li>
+<li class="chapter" data-level="5.5.2" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#boxplots"><i class="fa fa-check"></i><b>5.5.2</b> Boxplots</a></li>
+<li class="chapter" data-level="5.5.3" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#gr%C3%A1ficos-de-dispers%C3%A3o"><i class="fa fa-check"></i><b>5.5.3</b> Gráficos de dispersão</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#como-relatar-estat%C3%ADsticas-descritivas"><i class="fa fa-check"></i><b>5.6</b> Como relatar estatísticas descritivas</a></li>
+<li class="chapter" data-level="5.7" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#resumo-do-cap%C3%ADtulo-3"><i class="fa fa-check"></i><b>5.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="5.8" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#exerc%C3%ADcios-3"><i class="fa fa-check"></i><b>5.8</b> Exercícios</a></li>
+<li class="chapter" data-level="5.9" data-path="bioestatística-descritiva.html"><a href="bioestatística-descritiva.html#respostas-dos-exerc%C3%ADcios-3"><i class="fa fa-check"></i><b>5.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html"><i class="fa fa-check"></i><b>6</b> Bioestatística inferencial</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#conceitos-de-probabilidade"><i class="fa fa-check"></i><b>6.1</b> Conceitos de probabilidade</a></li>
-<li class="chapter" data-level="6.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuições-de-probabilidade"><i class="fa fa-check"></i><b>6.2</b> Distribuições de probabilidade</a>
+<li class="chapter" data-level="6.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#popula%C3%A7%C3%A3o-amostra-e-variabilidade-amostral"><i class="fa fa-check"></i><b>6.1</b> População, amostra e variabilidade amostral</a></li>
+<li class="chapter" data-level="6.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#conceitos-de-probabilidade"><i class="fa fa-check"></i><b>6.2</b> Conceitos de probabilidade</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-normal"><i class="fa fa-check"></i><b>6.2.1</b> Distribuição normal</a></li>
-<li class="chapter" data-level="6.2.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-t-de-student"><i class="fa fa-check"></i><b>6.2.2</b> Distribuição t de student</a></li>
-<li class="chapter" data-level="6.2.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribuição-qui-quadrado"><i class="fa fa-check"></i><b>6.2.3</b> Distribuição qui-quadrado</a></li>
+<li class="chapter" data-level="6.2.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#experimentos-aleat%C3%B3rios-eventos-e-interpreta%C3%A7%C3%B5es-da-probabilidade"><i class="fa fa-check"></i><b>6.2.1</b> Experimentos aleatórios, eventos e interpretações da probabilidade</a></li>
+<li class="chapter" data-level="6.2.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#regras-b%C3%A1sicas"><i class="fa fa-check"></i><b>6.2.2</b> Regras básicas</a></li>
+<li class="chapter" data-level="6.2.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#teorema-de-bayes-e-testes-diagn%C3%B3sticos"><i class="fa fa-check"></i><b>6.2.3</b> Teorema de Bayes e testes diagnósticos</a></li>
+<li class="chapter" data-level="6.2.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#vari%C3%A1veis-aleat%C3%B3rias-esperan%C3%A7a-e-vari%C3%A2ncia"><i class="fa fa-check"></i><b>6.2.4</b> Variáveis aleatórias, esperança e variância</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estimação-e-intervalos-de-confiança"><i class="fa fa-check"></i><b>6.3</b> Estimação e intervalos de confiança</a></li>
-<li class="chapter" data-level="6.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-de-hipóteses"><i class="fa fa-check"></i><b>6.4</b> Testes de hipóteses</a>
+<li class="chapter" data-level="6.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%B5es-de-probabilidade"><i class="fa fa-check"></i><b>6.3</b> Distribuições de probabilidade</a>
 <ul>
-<li class="chapter" data-level="6.4.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-paramétricos"><i class="fa fa-check"></i><b>6.4.1</b> Testes paramétricos</a></li>
-<li class="chapter" data-level="6.4.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-não-paramétricos"><i class="fa fa-check"></i><b>6.4.2</b> Testes não-paramétricos</a></li>
+<li class="chapter" data-level="6.3.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-binomial"><i class="fa fa-check"></i><b>6.3.1</b> Distribuição binomial</a></li>
+<li class="chapter" data-level="6.3.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-normal"><i class="fa fa-check"></i><b>6.3.2</b> Distribuição normal</a></li>
+<li class="chapter" data-level="6.3.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#o-teorema-central-do-limite"><i class="fa fa-check"></i><b>6.3.3</b> O teorema central do limite</a></li>
+<li class="chapter" data-level="6.3.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-t-de-student"><i class="fa fa-check"></i><b>6.3.4</b> Distribuição t de Student</a></li>
+<li class="chapter" data-level="6.3.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#distribui%C3%A7%C3%A3o-qui-quadrado"><i class="fa fa-check"></i><b>6.3.5</b> Distribuição qui-quadrado</a></li>
 </ul></li>
+<li class="chapter" data-level="6.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estima%C3%A7%C3%A3o-e-intervalos-de-confian%C3%A7a"><i class="fa fa-check"></i><b>6.4</b> Estimação e intervalos de confiança</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#estima%C3%A7%C3%A3o-pontual"><i class="fa fa-check"></i><b>6.4.1</b> Estimação pontual</a></li>
+<li class="chapter" data-level="6.4.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#intervalo-de-confian%C3%A7a-para-a-m%C3%A9dia"><i class="fa fa-check"></i><b>6.4.2</b> Intervalo de confiança para a média</a></li>
+<li class="chapter" data-level="6.4.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#como-interpretar-e-como-n%C3%A3o-interpretar-um-intervalo-de-confian%C3%A7a"><i class="fa fa-check"></i><b>6.4.3</b> Como interpretar (e como não interpretar) um intervalo de confiança</a></li>
+<li class="chapter" data-level="6.4.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#intervalo-de-confian%C3%A7a-para-uma-propor%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>6.4.4</b> Intervalo de confiança para uma proporção</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-de-hip%C3%B3teses"><i class="fa fa-check"></i><b>6.5</b> Testes de hipóteses</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#a-l%C3%B3gica-do-teste"><i class="fa fa-check"></i><b>6.5.1</b> A lógica do teste</a></li>
+<li class="chapter" data-level="6.5.2" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#erros-n%C3%ADvel-de-signific%C3%A2ncia-e-poder"><i class="fa fa-check"></i><b>6.5.2</b> Erros, nível de significância e poder</a></li>
+<li class="chapter" data-level="6.5.3" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#o-que-o-valor-p-n%C3%A3o-%C3%A9"><i class="fa fa-check"></i><b>6.5.3</b> O que o valor <em>p</em> não é</a></li>
+<li class="chapter" data-level="6.5.4" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-param%C3%A9tricos"><i class="fa fa-check"></i><b>6.5.4</b> Testes paramétricos</a></li>
+<li class="chapter" data-level="6.5.5" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#testes-n%C3%A3o-param%C3%A9tricos"><i class="fa fa-check"></i><b>6.5.5</b> Testes não paramétricos</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#resumo-do-cap%C3%ADtulo-4"><i class="fa fa-check"></i><b>6.6</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="6.7" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.7</b> Exercícios</a></li>
+<li class="chapter" data-level="6.8" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#respostas-dos-exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.8</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Análise de dados</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-e-regressão"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
+<li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-e-regress%C3%A3o"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correlação-de-pearson-e-spearman"><i class="fa fa-check"></i><b>7.1.1</b> Correlação de Pearson e Spearman</a></li>
-<li class="chapter" data-level="7.1.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#regressão-linear-simples-e-múltipla"><i class="fa fa-check"></i><b>7.1.2</b> Regressão linear simples e múltipla</a></li>
+<li class="chapter" data-level="7.1.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-de-pearson-e-spearman"><i class="fa fa-check"></i><b>7.1.1</b> Correlação de Pearson e Spearman</a></li>
+<li class="chapter" data-level="7.1.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#regress%C3%A3o-linear-simples-e-m%C3%BAltipla"><i class="fa fa-check"></i><b>7.1.2</b> Regressão linear simples e múltipla</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-de-variância-anova"><i class="fa fa-check"></i><b>7.2</b> Análise de variância (ANOVA)</a>
+<li class="chapter" data-level="7.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#an%C3%A1lise-de-vari%C3%A2ncia-anova"><i class="fa fa-check"></i><b>7.2</b> Análise de variância (ANOVA)</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-de-uma-via"><i class="fa fa-check"></i><b>7.2.1</b> ANOVA de uma via</a></li>
-<li class="chapter" data-level="7.2.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-fatorial"><i class="fa fa-check"></i><b>7.2.2</b> ANOVA fatorial</a></li>
+<li class="chapter" data-level="7.2.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#a-distribui%C3%A7%C3%A3o-f"><i class="fa fa-check"></i><b>7.2.1</b> A distribuição F</a></li>
+<li class="chapter" data-level="7.2.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-de-uma-via"><i class="fa fa-check"></i><b>7.2.2</b> ANOVA de uma via</a></li>
+<li class="chapter" data-level="7.2.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#anova-fatorial"><i class="fa fa-check"></i><b>7.2.3</b> ANOVA fatorial</a></li>
 </ul></li>
-<li class="chapter" data-level="7.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#análise-multivariada"><i class="fa fa-check"></i><b>7.3</b> Análise multivariada</a>
+<li class="chapter" data-level="7.3" data-path="análise-de-dados.html"><a href="análise-de-dados.html#an%C3%A1lise-multivariada"><i class="fa fa-check"></i><b>7.3</b> Análise multivariada</a>
 <ul>
 <li class="chapter" data-level="7.3.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#componentes-principais"><i class="fa fa-check"></i><b>7.3.1</b> Componentes principais</a></li>
-<li class="chapter" data-level="7.3.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#clusterização"><i class="fa fa-check"></i><b>7.3.2</b> Clusterização</a></li>
+<li class="chapter" data-level="7.3.2" data-path="análise-de-dados.html"><a href="análise-de-dados.html#clusteriza%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>7.3.2</b> Clusterização</a></li>
 </ul></li>
+<li class="chapter" data-level="7.4" data-path="análise-de-dados.html"><a href="análise-de-dados.html#resumo-do-cap%C3%ADtulo-5"><i class="fa fa-check"></i><b>7.4</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="7.5" data-path="análise-de-dados.html"><a href="análise-de-dados.html#exerc%C3%ADcios-5"><i class="fa fa-check"></i><b>7.5</b> Exercícios</a></li>
+<li class="chapter" data-level="7.6" data-path="análise-de-dados.html"><a href="análise-de-dados.html#respostas-dos-exerc%C3%ADcios-5"><i class="fa fa-check"></i><b>7.6</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html"><i class="fa fa-check"></i><b>8</b> Uso de <em>softwares</em> estatísticos</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#softwares-no-code-e-low-code"><i class="fa fa-check"></i><b>8.1</b> <em>Softwares</em> “no-code” e “low-code”</a></li>
-<li class="chapter" data-level="8.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-para-análise-estatística"><i class="fa fa-check"></i><b>8.2</b> R para análise estatística</a>
+<li class="chapter" data-level="8.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#softwares-no-code-e-low-code"><i class="fa fa-check"></i><b>8.1</b> <em>Softwares</em> “no-code” e “low-code”</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#planilhas-eletr%C3%B4nicas"><i class="fa fa-check"></i><b>8.1.1</b> Planilhas eletrônicas</a></li>
+<li class="chapter" data-level="8.1.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#programas-com-interface-gr%C3%A1fica"><i class="fa fa-check"></i><b>8.1.2</b> Programas com interface gráfica</a></li>
+<li class="chapter" data-level="8.1.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vantagens-e-limita%C3%A7%C3%B5es"><i class="fa fa-check"></i><b>8.1.3</b> Vantagens e limitações</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-para-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>8.2</b> R para análise estatística</a>
 <ul>
 <li class="chapter" data-level="8.2.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#aprendendo-a-programar"><i class="fa fa-check"></i><b>8.2.1</b> Aprendendo a programar</a></li>
-<li class="chapter" data-level="8.2.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visão-geral-do-r-e-suas-aplicações"><i class="fa fa-check"></i><b>8.2.2</b> Visão geral do R e suas aplicações</a></li>
-<li class="chapter" data-level="8.2.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-r-e-o-rstudio"><i class="fa fa-check"></i><b>8.2.3</b> <strong>Instalando o R e o RStudio</strong> </a></li>
-<li class="chapter" data-level="8.2.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-básica-e-operações-no-r"><i class="fa fa-check"></i><b>8.2.4</b> Sintaxe básica e operações no R</a></li>
-<li class="chapter" data-level="8.2.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-código-eficiente-e-legível"><i class="fa fa-check"></i><b>8.2.5</b> Escrevendo código eficiente e legível</a></li>
-<li class="chapter" data-level="8.2.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#depuração-e-tratamento-de-erros-em-r"><i class="fa fa-check"></i><b>8.2.6</b> Depuração e tratamento de erros em R</a></li>
-<li class="chapter" data-level="8.2.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#documentando-e-compartilhando-seu-código"><i class="fa fa-check"></i><b>8.2.7</b> Documentando e compartilhando seu código</a></li>
-<li class="chapter" data-level="8.2.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#introdução-à-análise-estatística-com-r"><i class="fa fa-check"></i><b>8.2.8</b> Introdução à análise estatística com R</a></li>
-<li class="chapter" data-level="8.2.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#usando-r-para-estatísticas-descritivas"><i class="fa fa-check"></i><b>8.2.9</b> Usando R para estatísticas descritivas</a></li>
-<li class="chapter" data-level="8.2.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estatísticas-inferenciais-com-r"><i class="fa fa-check"></i><b>8.2.10</b> Estatísticas inferenciais com R</a></li>
-<li class="chapter" data-level="8.2.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#fundamentos-da-visualização-de-dados-em-r"><i class="fa fa-check"></i><b>8.2.11</b> Fundamentos da visualização de dados em R</a></li>
+<li class="chapter" data-level="8.2.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vis%C3%A3o-geral-do-r-e-suas-aplica%C3%A7%C3%B5es"><i class="fa fa-check"></i><b>8.2.2</b> Visão geral do R e suas aplicações</a></li>
+<li class="chapter" data-level="8.2.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-r-e-o-rstudio"><i class="fa fa-check"></i><b>8.2.3</b> Instalando o R e o RStudio</a></li>
+<li class="chapter" data-level="8.2.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-b%C3%A1sica-e-opera%C3%A7%C3%B5es-no-r"><i class="fa fa-check"></i><b>8.2.4</b> Sintaxe básica e operações no R</a></li>
+<li class="chapter" data-level="8.2.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-c%C3%B3digo-eficiente-e-leg%C3%ADvel"><i class="fa fa-check"></i><b>8.2.5</b> Escrevendo código eficiente e legível</a></li>
+<li class="chapter" data-level="8.2.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#depura%C3%A7%C3%A3o-e-tratamento-de-erros-em-r"><i class="fa fa-check"></i><b>8.2.6</b> Depuração e tratamento de erros em R</a></li>
+<li class="chapter" data-level="8.2.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#documentando-e-compartilhando-seu-c%C3%B3digo"><i class="fa fa-check"></i><b>8.2.7</b> Documentando e compartilhando seu código</a></li>
+<li class="chapter" data-level="8.2.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#introdu%C3%A7%C3%A3o-%C3%A0-an%C3%A1lise-estat%C3%ADstica-com-r"><i class="fa fa-check"></i><b>8.2.8</b> Introdução à análise estatística com R</a></li>
+<li class="chapter" data-level="8.2.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#usando-r-para-estat%C3%ADsticas-descritivas"><i class="fa fa-check"></i><b>8.2.9</b> Usando R para estatísticas descritivas</a></li>
+<li class="chapter" data-level="8.2.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADsticas-inferenciais-com-r"><i class="fa fa-check"></i><b>8.2.10</b> Estatísticas inferenciais com R</a></li>
+<li class="chapter" data-level="8.2.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#fundamentos-da-visualiza%C3%A7%C3%A3o-de-dados-em-r"><i class="fa fa-check"></i><b>8.2.11</b> Fundamentos da visualização de dados em R</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#python-para-análise-estatística"><i class="fa fa-check"></i><b>8.3</b> Python para análise estatística</a></li>
-<li class="chapter" data-level="8.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualização-de-dados-e-figuras-científicas"><i class="fa fa-check"></i><b>8.4</b> Visualização de dados e figuras científicas</a></li>
+<li class="chapter" data-level="8.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#python-para-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>8.3</b> Python para análise estatística</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#vis%C3%A3o-geral"><i class="fa fa-check"></i><b>8.3.1</b> Visão geral</a></li>
+<li class="chapter" data-level="8.3.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#r-ou-python"><i class="fa fa-check"></i><b>8.3.2</b> R ou Python?</a></li>
+<li class="chapter" data-level="8.3.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#instalando-o-python-e-o-ambiente-de-trabalho"><i class="fa fa-check"></i><b>8.3.3</b> Instalando o Python e o ambiente de trabalho</a></li>
+<li class="chapter" data-level="8.3.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#sintaxe-b%C3%A1sica-e-opera%C3%A7%C3%B5es-em-python"><i class="fa fa-check"></i><b>8.3.4</b> Sintaxe básica e operações em Python</a></li>
+<li class="chapter" data-level="8.3.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#manipula%C3%A7%C3%A3o-de-dados-com-pandas"><i class="fa fa-check"></i><b>8.3.5</b> Manipulação de dados com pandas</a></li>
+<li class="chapter" data-level="8.3.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#escrevendo-c%C3%B3digo-leg%C3%ADvel-e-reprodut%C3%ADvel"><i class="fa fa-check"></i><b>8.3.6</b> Escrevendo código legível e reprodutível</a></li>
+<li class="chapter" data-level="8.3.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADstica-descritiva-com-python"><i class="fa fa-check"></i><b>8.3.7</b> Estatística descritiva com Python</a></li>
+<li class="chapter" data-level="8.3.8" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#estat%C3%ADstica-inferencial-com-python"><i class="fa fa-check"></i><b>8.3.8</b> Estatística inferencial com Python</a></li>
+<li class="chapter" data-level="8.3.9" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#modelos-avan%C3%A7ados-com-statsmodels"><i class="fa fa-check"></i><b>8.3.9</b> Modelos avançados com statsmodels</a></li>
+<li class="chapter" data-level="8.3.10" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualiza%C3%A7%C3%A3o-de-dados-com-python"><i class="fa fa-check"></i><b>8.3.10</b> Visualização de dados com Python</a></li>
+<li class="chapter" data-level="8.3.11" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#aprendizado-de-m%C3%A1quina-com-scikit-learn"><i class="fa fa-check"></i><b>8.3.11</b> Aprendizado de máquina com scikit-learn</a></li>
+<li class="chapter" data-level="8.3.12" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#notebooks-e-relat%C3%B3rios-reprodut%C3%ADveis"><i class="fa fa-check"></i><b>8.3.12</b> Notebooks e relatórios reprodutíveis</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#visualiza%C3%A7%C3%A3o-de-dados-e-figuras-cient%C3%ADficas"><i class="fa fa-check"></i><b>8.4</b> Visualização de dados e figuras científicas</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#come%C3%A7ar-pela-pergunta"><i class="fa fa-check"></i><b>8.4.1</b> Começar pela pergunta</a></li>
+<li class="chapter" data-level="8.4.2" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#como-percebemos-os-gr%C3%A1ficos"><i class="fa fa-check"></i><b>8.4.2</b> Como percebemos os gráficos</a></li>
+<li class="chapter" data-level="8.4.3" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#mostrar-os-dados"><i class="fa fa-check"></i><b>8.4.3</b> Mostrar os dados</a></li>
+<li class="chapter" data-level="8.4.4" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#cor"><i class="fa fa-check"></i><b>8.4.4</b> Cor</a></li>
+<li class="chapter" data-level="8.4.5" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#uma-figura-para-publica%C3%A7%C3%A3o-com-ggplot2"><i class="fa fa-check"></i><b>8.4.5</b> Uma figura para publicação com ggplot2</a></li>
+<li class="chapter" data-level="8.4.6" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#formatos-e-resolu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.4.6</b> Formatos e resolução</a></li>
+<li class="chapter" data-level="8.4.7" data-path="uso-de-softwares-estatísticos.html"><a href="uso-de-softwares-estatísticos.html#lista-de-verifica%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>8.4.7</b> Lista de verificação</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="comunicação-científica.html"><a href="comunicação-científica.html"><i class="fa fa-check"></i><b>9</b> Comunicação científica</a>
 <ul>
-<li class="chapter" data-level="9.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#redação-de-artigos-científicos"><i class="fa fa-check"></i><b>9.1</b> Redação de artigos científicos</a></li>
-<li class="chapter" data-level="9.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estrutura-de-relatórios-de-pesquisa"><i class="fa fa-check"></i><b>9.2</b> Estrutura de relatórios de pesquisa</a></li>
-<li class="chapter" data-level="9.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresentações-orais-e-posters"><i class="fa fa-check"></i><b>9.3</b> Apresentações orais e posters</a></li>
-<li class="chapter" data-level="9.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#publicação-e-revisão-por-pares"><i class="fa fa-check"></i><b>9.4</b> Publicação e revisão por pares</a></li>
+<li class="chapter" data-level="9.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#reda%C3%A7%C3%A3o-de-artigos-cient%C3%ADficos"><i class="fa fa-check"></i><b>9.1</b> Redação de artigos científicos</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#a-estrutura-imrad"><i class="fa fa-check"></i><b>9.1.1</b> A estrutura IMRaD</a></li>
+<li class="chapter" data-level="9.1.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#t%C3%ADtulo-e-resumo"><i class="fa fa-check"></i><b>9.1.2</b> Título e resumo</a></li>
+<li class="chapter" data-level="9.1.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#introdu%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>9.1.3</b> Introdução</a></li>
+<li class="chapter" data-level="9.1.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#m%C3%A9todos"><i class="fa fa-check"></i><b>9.1.4</b> Métodos</a></li>
+<li class="chapter" data-level="9.1.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#resultados"><i class="fa fa-check"></i><b>9.1.5</b> Resultados</a></li>
+<li class="chapter" data-level="9.1.6" data-path="comunicação-científica.html"><a href="comunicação-científica.html#discuss%C3%A3o"><i class="fa fa-check"></i><b>9.1.6</b> Discussão</a></li>
+<li class="chapter" data-level="9.1.7" data-path="comunicação-científica.html"><a href="comunicação-científica.html#autoria"><i class="fa fa-check"></i><b>9.1.7</b> Autoria</a></li>
+<li class="chapter" data-level="9.1.8" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estilo"><i class="fa fa-check"></i><b>9.1.8</b> Estilo</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#estrutura-de-relat%C3%B3rios-de-pesquisa"><i class="fa fa-check"></i><b>9.2</b> Estrutura de relatórios de pesquisa</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#disserta%C3%A7%C3%B5es-e-teses"><i class="fa fa-check"></i><b>9.2.1</b> Dissertações e teses</a></li>
+<li class="chapter" data-level="9.2.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#protocolos-e-planos-de-an%C3%A1lise-estat%C3%ADstica"><i class="fa fa-check"></i><b>9.2.2</b> Protocolos e planos de análise estatística</a></li>
+<li class="chapter" data-level="9.2.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#relat%C3%B3rios-t%C3%A9cnicos-e-relat%C3%B3rios-reprodut%C3%ADveis"><i class="fa fa-check"></i><b>9.2.3</b> Relatórios técnicos e relatórios reprodutíveis</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresenta%C3%A7%C3%B5es-orais-e-p%C3%B4steres"><i class="fa fa-check"></i><b>9.3</b> Apresentações orais e pôsteres</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#apresenta%C3%A7%C3%B5es-orais"><i class="fa fa-check"></i><b>9.3.1</b> Apresentações orais</a></li>
+<li class="chapter" data-level="9.3.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#p%C3%B4steres"><i class="fa fa-check"></i><b>9.3.2</b> Pôsteres</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#publica%C3%A7%C3%A3o-e-revis%C3%A3o-por-pares"><i class="fa fa-check"></i><b>9.4</b> Publicação e revisão por pares</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="comunicação-científica.html"><a href="comunicação-científica.html#escolhendo-o-peri%C3%B3dico"><i class="fa fa-check"></i><b>9.4.1</b> Escolhendo o periódico</a></li>
+<li class="chapter" data-level="9.4.2" data-path="comunicação-científica.html"><a href="comunicação-científica.html#peri%C3%B3dicos-predat%C3%B3rios"><i class="fa fa-check"></i><b>9.4.2</b> Periódicos predatórios</a></li>
+<li class="chapter" data-level="9.4.3" data-path="comunicação-científica.html"><a href="comunicação-científica.html#submiss%C3%A3o"><i class="fa fa-check"></i><b>9.4.3</b> Submissão</a></li>
+<li class="chapter" data-level="9.4.4" data-path="comunicação-científica.html"><a href="comunicação-científica.html#revis%C3%A3o-por-pares"><i class="fa fa-check"></i><b>9.4.4</b> Revisão por pares</a></li>
+<li class="chapter" data-level="9.4.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#pr%C3%A9-prints-acesso-aberto-e-o-depois-da-publica%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>9.4.5</b> Pré-prints, acesso aberto e o depois da publicação</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="comunicação-científica.html"><a href="comunicação-científica.html#resumo-do-cap%C3%ADtulo-6"><i class="fa fa-check"></i><b>9.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="9.6" data-path="comunicação-científica.html"><a href="comunicação-científica.html#exerc%C3%ADcios-6"><i class="fa fa-check"></i><b>9.6</b> Exercícios</a></li>
+<li class="chapter" data-level="9.7" data-path="comunicação-científica.html"><a href="comunicação-científica.html#respostas-dos-exerc%C3%ADcios-6"><i class="fa fa-check"></i><b>9.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html"><i class="fa fa-check"></i><b>10</b> Ética e boas práticas em pesquisa</a>
 <ul>
-<li class="chapter" data-level="10.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#consentimento-informado-e-conformidade-ética"><i class="fa fa-check"></i><b>10.1</b> Consentimento informado e conformidade ética</a></li>
-<li class="chapter" data-level="10.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#plágio-e-integridade-acadêmica"><i class="fa fa-check"></i><b>10.2</b> Plágio e integridade acadêmica</a></li>
-<li class="chapter" data-level="10.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#regulamentações-e-normas-em-pesquisa"><i class="fa fa-check"></i><b>10.3</b> Regulamentações e normas em pesquisa</a></li>
-<li class="chapter" data-level="10.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#responsabilidade-social-do-cientista"><i class="fa fa-check"></i><b>10.4</b> Responsabilidade social do cientista</a></li>
+<li class="chapter" data-level="10.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#consentimento-informado-e-conformidade-%C3%A9tica"><i class="fa fa-check"></i><b>10.1</b> Consentimento informado e conformidade ética</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#uma-breve-hist%C3%B3ria"><i class="fa fa-check"></i><b>10.1.1</b> Uma breve história</a></li>
+<li class="chapter" data-level="10.1.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-sistema-brasileiro"><i class="fa fa-check"></i><b>10.1.2</b> O sistema brasileiro</a></li>
+<li class="chapter" data-level="10.1.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-que-precisa-passar-pelo-comit%C3%AA-de-%C3%A9tica"><i class="fa fa-check"></i><b>10.1.3</b> O que precisa passar pelo comitê de ética</a></li>
+<li class="chapter" data-level="10.1.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#o-consentimento-livre-e-esclarecido"><i class="fa fa-check"></i><b>10.1.4</b> O consentimento livre e esclarecido</a></li>
+<li class="chapter" data-level="10.1.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#prote%C3%A7%C3%A3o-de-dados-pessoais"><i class="fa fa-check"></i><b>10.1.5</b> Proteção de dados pessoais</a></li>
+<li class="chapter" data-level="10.1.6" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pesquisa-com-animais"><i class="fa fa-check"></i><b>10.1.6</b> Pesquisa com animais</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pl%C3%A1gio-e-integridade-acad%C3%AAmica"><i class="fa fa-check"></i><b>10.2</b> Plágio e integridade acadêmica</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#m%C3%A1-conduta-cient%C3%ADfica"><i class="fa fa-check"></i><b>10.2.1</b> Má conduta científica</a></li>
+<li class="chapter" data-level="10.2.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pl%C3%A1gio-e-suas-formas"><i class="fa fa-check"></i><b>10.2.2</b> Plágio e suas formas</a></li>
+<li class="chapter" data-level="10.2.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pr%C3%A1ticas-question%C3%A1veis-de-pesquisa"><i class="fa fa-check"></i><b>10.2.3</b> Práticas questionáveis de pesquisa</a></li>
+<li class="chapter" data-level="10.2.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#autoria-conflitos-de-interesse-e-uso-de-ferramentas"><i class="fa fa-check"></i><b>10.2.4</b> Autoria, conflitos de interesse e uso de ferramentas</a></li>
+<li class="chapter" data-level="10.2.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#corre%C3%A7%C3%A3o-da-literatura"><i class="fa fa-check"></i><b>10.2.5</b> Correção da literatura</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#regulamenta%C3%A7%C3%B5es-e-normas-em-pesquisa"><i class="fa fa-check"></i><b>10.3</b> Regulamentações e normas em pesquisa</a></li>
+<li class="chapter" data-level="10.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#responsabilidade-social-do-cientista"><i class="fa fa-check"></i><b>10.4</b> Responsabilidade social do cientista</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#os-valores-da-ci%C3%AAncia"><i class="fa fa-check"></i><b>10.4.1</b> Os valores da ciência</a></li>
+<li class="chapter" data-level="10.4.2" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#ci%C3%AAncia-aberta"><i class="fa fa-check"></i><b>10.4.2</b> Ciência aberta</a></li>
+<li class="chapter" data-level="10.4.3" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#comunica%C3%A7%C3%A3o-com-a-sociedade"><i class="fa fa-check"></i><b>10.4.3</b> Comunicação com a sociedade</a></li>
+<li class="chapter" data-level="10.4.4" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#pesquisa-equidade-e-uso-do-conhecimento"><i class="fa fa-check"></i><b>10.4.4</b> Pesquisa, equidade e uso do conhecimento</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#resumo-do-cap%C3%ADtulo-7"><i class="fa fa-check"></i><b>10.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="10.6" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#exerc%C3%ADcios-7"><i class="fa fa-check"></i><b>10.6</b> Exercícios</a></li>
+<li class="chapter" data-level="10.7" data-path="ética-e-boas-práticas-em-pesquisa.html"><a href="ética-e-boas-práticas-em-pesquisa.html#respostas-dos-exerc%C3%ADcios-7"><i class="fa fa-check"></i><b>10.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="11" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html"><i class="fa fa-check"></i><b>11</b> Aplicações práticas e estudos de caso</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-saúde-pública"><i class="fa fa-check"></i><b>11.1</b> Epidemiologia e saúde pública</a></li>
-<li class="chapter" data-level="11.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#genética-e-biologia-molecular"><i class="fa fa-check"></i><b>11.2</b> Genética e biologia molecular</a></li>
-<li class="chapter" data-level="11.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conservação"><i class="fa fa-check"></i><b>11.3</b> Ecologia e conservação</a></li>
-<li class="chapter" data-level="11.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-clínicos"><i class="fa fa-check"></i><b>11.4</b> Farmacologia e ensaios clínicos</a></li>
+<li class="chapter" data-level="11.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#epidemiologia-e-sa%C3%BAde-p%C3%BAblica"><i class="fa fa-check"></i><b>11.1</b> Epidemiologia e saúde pública</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#intervalos-de-confian%C3%A7a-para-medidas-de-associa%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>11.1.1</b> Intervalos de confiança para medidas de associação</a></li>
+<li class="chapter" data-level="11.1.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#padroniza%C3%A7%C3%A3o-de-taxas"><i class="fa fa-check"></i><b>11.1.2</b> Padronização de taxas</a></li>
+<li class="chapter" data-level="11.1.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#acur%C3%A1cia-de-testes-diagn%C3%B3sticos"><i class="fa fa-check"></i><b>11.1.3</b> Acurácia de testes diagnósticos</a></li>
+<li class="chapter" data-level="11.1.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#dados-secund%C3%A1rios-em-sa%C3%BAde-p%C3%BAblica"><i class="fa fa-check"></i><b>11.1.4</b> Dados secundários em saúde pública</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#gen%C3%A9tica-e-biologia-molecular"><i class="fa fa-check"></i><b>11.2</b> Genética e biologia molecular</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#equil%C3%ADbrio-de-hardyweinberg"><i class="fa fa-check"></i><b>11.2.1</b> Equilíbrio de Hardy–Weinberg</a></li>
+<li class="chapter" data-level="11.2.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#compara%C3%A7%C3%B5es-m%C3%BAltiplas-em-estudos-gen%C3%B4micos"><i class="fa fa-check"></i><b>11.2.2</b> Comparações múltiplas em estudos genômicos</a></li>
+<li class="chapter" data-level="11.2.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#quantifica%C3%A7%C3%A3o-relativa-por-pcr-em-tempo-real"><i class="fa fa-check"></i><b>11.2.3</b> Quantificação relativa por PCR em tempo real</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#ecologia-e-conserva%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>11.3</b> Ecologia e conservação</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#%C3%ADndices-de-diversidade"><i class="fa fa-check"></i><b>11.3.1</b> Índices de diversidade</a></li>
+<li class="chapter" data-level="11.3.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#estimativa-do-tamanho-populacional-por-captura-e-recaptura"><i class="fa fa-check"></i><b>11.3.2</b> Estimativa do tamanho populacional por captura e recaptura</a></li>
+<li class="chapter" data-level="11.3.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#contagens-e-superdispers%C3%A3o"><i class="fa fa-check"></i><b>11.3.3</b> Contagens e superdispersão</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#farmacologia-e-ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>11.4</b> Farmacologia e ensaios clínicos</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#curvas-dose-resposta"><i class="fa fa-check"></i><b>11.4.1</b> Curvas dose-resposta</a></li>
+<li class="chapter" data-level="11.4.2" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#par%C3%A2metros-farmacocin%C3%A9ticos"><i class="fa fa-check"></i><b>11.4.2</b> Parâmetros farmacocinéticos</a></li>
+<li class="chapter" data-level="11.4.3" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#bioequival%C3%AAncia"><i class="fa fa-check"></i><b>11.4.3</b> Bioequivalência</a></li>
+<li class="chapter" data-level="11.4.4" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#tamanho-amostral-em-ensaios-cl%C3%ADnicos"><i class="fa fa-check"></i><b>11.4.4</b> Tamanho amostral em ensaios clínicos</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#resumo-do-cap%C3%ADtulo-8"><i class="fa fa-check"></i><b>11.5</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="11.6" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#exerc%C3%ADcios-8"><i class="fa fa-check"></i><b>11.6</b> Exercícios</a></li>
+<li class="chapter" data-level="11.7" data-path="aplicações-práticas-e-estudos-de-caso.html"><a href="aplicações-práticas-e-estudos-de-caso.html#respostas-dos-exerc%C3%ADcios-8"><i class="fa fa-check"></i><b>11.7</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html"><i class="fa fa-check"></i><b>12</b> Tópicos avançados em bioestatística</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-lineares-generalizados"><i class="fa fa-check"></i><b>12.1</b> Modelos lineares generalizados</a></li>
-<li class="chapter" data-level="12.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#análise-de-sobrevivência"><i class="fa fa-check"></i><b>12.2</b> Análise de sobrevivência</a></li>
-<li class="chapter" data-level="12.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#bioinformática-e-big-data"><i class="fa fa-check"></i><b>12.3</b> Bioinformática e <em>big data</em></a></li>
-<li class="chapter" data-level="12.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#metanálise"><i class="fa fa-check"></i><b>12.4</b> Metanálise</a></li>
+<li class="chapter" data-level="12.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-lineares-generalizados"><i class="fa fa-check"></i><b>12.1</b> Modelos lineares generalizados</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#por-que-generalizar-o-modelo-linear"><i class="fa fa-check"></i><b>12.1.1</b> Por que generalizar o modelo linear</a></li>
+<li class="chapter" data-level="12.1.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#regress%C3%A3o-log%C3%ADstica"><i class="fa fa-check"></i><b>12.1.2</b> Regressão logística</a></li>
+<li class="chapter" data-level="12.1.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#regress%C3%A3o-de-poisson-e-binomial-negativa"><i class="fa fa-check"></i><b>12.1.3</b> Regressão de Poisson e binomial negativa</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#modelos-mistos"><i class="fa fa-check"></i><b>12.2</b> Modelos mistos</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#observa%C3%A7%C3%B5es-agrupadas-e-medidas-repetidas"><i class="fa fa-check"></i><b>12.2.1</b> Observações agrupadas e medidas repetidas</a></li>
+<li class="chapter" data-level="12.2.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exemplo"><i class="fa fa-check"></i><b>12.2.2</b> Exemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#an%C3%A1lise-de-sobreviv%C3%AAncia"><i class="fa fa-check"></i><b>12.3</b> Análise de sobrevivência</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#tempo-at%C3%A9-o-evento-e-censura"><i class="fa fa-check"></i><b>12.3.1</b> Tempo até o evento e censura</a></li>
+<li class="chapter" data-level="12.3.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#o-estimador-de-kaplanmeier"><i class="fa fa-check"></i><b>12.3.2</b> O estimador de Kaplan–Meier</a></li>
+<li class="chapter" data-level="12.3.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#compara%C3%A7%C3%A3o-de-grupos-log-rank-e-modelo-de-cox"><i class="fa fa-check"></i><b>12.3.3</b> Comparação de grupos: log-rank e modelo de Cox</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#infer%C3%AAncia-bayesiana"><i class="fa fa-check"></i><b>12.4</b> Inferência bayesiana</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#a-l%C3%B3gica-bayesiana"><i class="fa fa-check"></i><b>12.4.1</b> A lógica bayesiana</a></li>
+<li class="chapter" data-level="12.4.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#um-exemplo-com-propor%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>12.4.2</b> Um exemplo com proporção</a></li>
+<li class="chapter" data-level="12.4.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#vantagens-e-cuidados"><i class="fa fa-check"></i><b>12.4.3</b> Vantagens e cuidados</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#bioinform%C3%A1tica-e-big-data"><i class="fa fa-check"></i><b>12.5</b> Bioinformática e <em>big data</em></a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#dados-de-alta-dimens%C3%A3o"><i class="fa fa-check"></i><b>12.5.1</b> Dados de alta dimensão</a></li>
+<li class="chapter" data-level="12.5.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#sobreajuste-e-o-vi%C3%A9s-de-sele%C3%A7%C3%A3o"><i class="fa fa-check"></i><b>12.5.2</b> Sobreajuste e o viés de seleção</a></li>
+<li class="chapter" data-level="12.5.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#efeitos-de-lote-e-outros-problemas"><i class="fa fa-check"></i><b>12.5.3</b> Efeitos de lote e outros problemas</a></li>
+<li class="chapter" data-level="12.5.4" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#grandes-bases-de-dados"><i class="fa fa-check"></i><b>12.5.4</b> Grandes bases de dados</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#metan%C3%A1lise"><i class="fa fa-check"></i><b>12.6</b> Metanálise</a>
+<ul>
+<li class="chapter" data-level="12.6.1" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#combinando-estudos"><i class="fa fa-check"></i><b>12.6.1</b> Combinando estudos</a></li>
+<li class="chapter" data-level="12.6.2" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#efeito-fixo-e-efeitos-aleat%C3%B3rios"><i class="fa fa-check"></i><b>12.6.2</b> Efeito fixo e efeitos aleatórios</a></li>
+<li class="chapter" data-level="12.6.3" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exemplo-1"><i class="fa fa-check"></i><b>12.6.3</b> Exemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#resumo-do-cap%C3%ADtulo-9"><i class="fa fa-check"></i><b>12.7</b> Resumo do capítulo</a></li>
+<li class="chapter" data-level="12.8" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#exerc%C3%ADcios-9"><i class="fa fa-check"></i><b>12.8</b> Exercícios</a></li>
+<li class="chapter" data-level="12.9" data-path="tópicos-avançados-em-bioestatística.html"><a href="tópicos-avançados-em-bioestatística.html#respostas-dos-exerc%C3%ADcios-9"><i class="fa fa-check"></i><b>12.9</b> Respostas dos exercícios</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html"><i class="fa fa-check"></i><b>13</b> Recursos adicionais</a>
 <ul>
-<li class="chapter" data-level="13.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bibliografia-recomendada"><i class="fa fa-check"></i><b>13.1</b> Bibliografia recomendada</a></li>
-<li class="chapter" data-level="13.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#glossário-de-termos"><i class="fa fa-check"></i><b>13.2</b> Glossário de termos</a></li>
-<li class="chapter" data-level="13.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#tabelas-estatísticas"><i class="fa fa-check"></i><b>13.3</b> Tabelas estatísticas</a></li>
-<li class="chapter" data-level="13.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#links-e-ferramentas-online"><i class="fa fa-check"></i><b>13.4</b> Links e ferramentas online</a></li>
+<li class="chapter" data-level="13.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bibliografia-recomendada"><i class="fa fa-check"></i><b>13.1</b> Bibliografia recomendada</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#metodologia-e-epidemiologia"><i class="fa fa-check"></i><b>13.1.1</b> Metodologia e epidemiologia</a></li>
+<li class="chapter" data-level="13.1.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bioestat%C3%ADstica"><i class="fa fa-check"></i><b>13.1.2</b> Bioestatística</a></li>
+<li class="chapter" data-level="13.1.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#programa%C3%A7%C3%A3o-e-an%C3%A1lise-reprodut%C3%ADvel"><i class="fa fa-check"></i><b>13.1.3</b> Programação e análise reprodutível</a></li>
+<li class="chapter" data-level="13.1.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#comunica%C3%A7%C3%A3o-e-integridade"><i class="fa fa-check"></i><b>13.1.4</b> Comunicação e integridade</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#gloss%C3%A1rio-de-termos"><i class="fa fa-check"></i><b>13.2</b> Glossário de termos</a></li>
+<li class="chapter" data-level="13.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#tabelas-estat%C3%ADsticas"><i class="fa fa-check"></i><b>13.3</b> Tabelas estatísticas</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-normal-padr%C3%A3o"><i class="fa fa-check"></i><b>13.3.1</b> Distribuição normal padrão</a></li>
+<li class="chapter" data-level="13.3.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-t-de-student-1"><i class="fa fa-check"></i><b>13.3.2</b> Distribuição <em>t</em> de Student</a></li>
+<li class="chapter" data-level="13.3.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-qui-quadrado-1"><i class="fa fa-check"></i><b>13.3.3</b> Distribuição qui-quadrado</a></li>
+<li class="chapter" data-level="13.3.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#distribui%C3%A7%C3%A3o-f"><i class="fa fa-check"></i><b>13.3.4</b> Distribuição <em>F</em></a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#links-e-ferramentas-online"><i class="fa fa-check"></i><b>13.4</b> Links e ferramentas <em>online</em></a>
+<ul>
+<li class="chapter" data-level="13.4.1" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#programas-estat%C3%ADsticos"><i class="fa fa-check"></i><b>13.4.1</b> Programas estatísticos</a></li>
+<li class="chapter" data-level="13.4.2" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#bases-bibliogr%C3%A1ficas-e-de-evid%C3%AAncias"><i class="fa fa-check"></i><b>13.4.2</b> Bases bibliográficas e de evidências</a></li>
+<li class="chapter" data-level="13.4.3" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#diretrizes-registros-e-integridade"><i class="fa fa-check"></i><b>13.4.3</b> Diretrizes, registros e integridade</a></li>
+<li class="chapter" data-level="13.4.4" data-path="recursos-adicionais.html"><a href="recursos-adicionais.html#dados-de-sa%C3%BAde"><i class="fa fa-check"></i><b>13.4.4</b> Dados de saúde</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="referências.html"><a href="referências.html"><i class="fa fa-check"></i>Referências</a></li>
 <li class="divider"></li>
@@ -292,11 +615,56 @@ div.csl-indent {
 
             <section class="normal" id="section-">
 <div id="referências" class="section level1 unnumbered hasAnchor">
-<h1>Referências<a href="referências.html#referências" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<h1>Referências<a href="referências.html#refer%C3%AAncias" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div class="csl-entry">
+Agresti, Alan, and Brent A. Coull. 1998. <span>“Approximate Is Better Than <span>‘Exact’</span> for Interval Estimation of Binomial Proportions.”</span> <em>The American Statistician</em> 52 (2): 119–26. <a href="https://doi.org/10.1080/00031305.1998.10480550">https://doi.org/10.1080/00031305.1998.10480550</a>.
+</div>
+<div class="csl-entry">
+Altman, Douglas G. 1998. <span>“Confidence Intervals for the Number Needed to Treat.”</span> <em>BMJ</em> 317 (7168): 1309–12. <a href="https://doi.org/10.1136/bmj.317.7168.1309">https://doi.org/10.1136/bmj.317.7168.1309</a>.
+</div>
+<div class="csl-entry">
+Altman, Douglas G., and J. Martin Bland. 1996. <span>“Detecting Skewness from Summary Information.”</span> <em>BMJ</em> 313 (7066): 1200. <a href="https://doi.org/10.1136/bmj.313.7066.1200">https://doi.org/10.1136/bmj.313.7066.1200</a>.
+</div>
+<div class="csl-entry">
+Altman, Douglas G., and J. Martin Bland. 2005. <span>“Standard Deviations and Standard Errors.”</span> <em>BMJ</em> 331 (7521): 903. <a href="https://doi.org/10.1136/bmj.331.7521.903">https://doi.org/10.1136/bmj.331.7521.903</a>.
+</div>
+<div class="csl-entry">
+Ambroise, Christophe, and Geoffrey J. McLachlan. 2002. <span>“Selection Bias in Gene Extraction on the Basis of Microarray Gene-Expression Data.”</span> <em>Proceedings of the National Academy of Sciences</em> 99 (10): 6562–66. <a href="https://doi.org/10.1073/pnas.102102699">https://doi.org/10.1073/pnas.102102699</a>.
+</div>
+<div class="csl-entry">
+Anscombe, F. J. 1973. <span>“Graphs in Statistical Analysis.”</span> <em>The American Statistician</em> 27 (1): 17–21. <a href="https://doi.org/10.1080/00031305.1973.10478966">https://doi.org/10.1080/00031305.1973.10478966</a>.
+</div>
+<div class="csl-entry">
+Austin, Peter C., and Ewout W. Steyerberg. 2015. <span>“The Number of Subjects Per Variable Required in Linear Regression Analyses.”</span> <em>Journal of Clinical Epidemiology</em> 68 (6): 627–36. <a href="https://doi.org/10.1016/j.jclinepi.2014.12.014">https://doi.org/10.1016/j.jclinepi.2014.12.014</a>.
+</div>
 <div class="csl-entry">
 Baumer, Benjamin, and Dana Udwin. 2015. <span>“R Markdown.”</span> <em>WIREs Computational Statistics</em> 7 (3): 167–77. <a href="https://doi.org/10.1002/wics.1348">https://doi.org/10.1002/wics.1348</a>.
+</div>
+<div class="csl-entry">
+Beecher, Henry K. 1966. <span>“Ethics and Clinical Research.”</span> <em>New England Journal of Medicine</em> 274 (24): 1354–60. <a href="https://doi.org/10.1056/NEJM196606162742405">https://doi.org/10.1056/NEJM196606162742405</a>.
+</div>
+<div class="csl-entry">
+Benjamini, Yoav, and Yosef Hochberg. 1995. <span>“Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 57 (1): 289–300. <a href="https://doi.org/10.1111/j.2517-6161.1995.tb02031.x">https://doi.org/10.1111/j.2517-6161.1995.tb02031.x</a>.
+</div>
+<div class="csl-entry">
+Bik, Elisabeth M., Arturo Casadevall, and Ferric C. Fang. 2016. <span>“The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications.”</span> <em>mBio</em> 7 (3): e00809–16. <a href="https://doi.org/10.1128/mBio.00809-16">https://doi.org/10.1128/mBio.00809-16</a>.
+</div>
+<div class="csl-entry">
+Bland, J. Martin, and Douglas G. Altman. 1986. <span>“Statistical Methods for Assessing Agreement Between Two Methods of Clinical Measurement.”</span> <em>The Lancet</em> 327 (8476): 307–10. <a href="https://doi.org/10.1016/S0140-6736(86)90837-8">https://doi.org/10.1016/S0140-6736(86)90837-8</a>.
+</div>
+<div class="csl-entry">
+Boutron, Isabelle, Susan Dutton, Philippe Ravaud, and Douglas G. Altman. 2010. <span>“Reporting and Interpretation of Randomized Controlled Trials with Statistically Nonsignificant Results for Primary Outcomes.”</span> <em>JAMA</em> 303 (20): 2058–64. <a href="https://doi.org/10.1001/jama.2010.651">https://doi.org/10.1001/jama.2010.651</a>.
+</div>
+<div class="csl-entry">
+Brand, Amy, Liz Allen, Micah Altman, Marjorie Hlava, and Jo Scott. 2015. <span>“Beyond Authorship: Attribution, Contribution, Collaboration, and Credit.”</span> <em>Learned Publishing</em> 28 (2): 151–55. <a href="https://doi.org/10.1087/20150211">https://doi.org/10.1087/20150211</a>.
+</div>
+<div class="csl-entry">
+Broman, Karl W., and Kara H. Woo. 2018. <span>“Data Organization in Spreadsheets.”</span> <em>The American Statistician</em> 72 (1): 2–10. <a href="https://doi.org/10.1080/00031305.2017.1375989">https://doi.org/10.1080/00031305.2017.1375989</a>.
+</div>
+<div class="csl-entry">
+Brown, Lawrence D., T. Tony Cai, and Anirban DasGupta. 2001. <span>“Interval Estimation for a Binomial Proportion.”</span> <em>Statistical Science</em> 16 (2): 101–33. <a href="https://doi.org/10.1214/ss/1009213286">https://doi.org/10.1214/ss/1009213286</a>.
 </div>
 <div class="csl-entry">
 Bryan, Jennifer. 2023. <em>Gapminder: Data from Gapminder</em>. <a href="https://cran.r-project.org/web/packages/gapminder/index.html">https://cran.r-project.org/web/packages/gapminder/index.html</a>.
@@ -305,28 +673,304 @@ Bryan, Jennifer. 2023. <em>Gapminder: Data from Gapminder</em>. <a href="https:/
 Chambers, John M. 1980. <span>“Statistical Computing: History and Trends.”</span> <em>The American Statistician</em> 34 (4): 238–43. <a href="https://doi.org/10.1080/00031305.1980.10483038">https://doi.org/10.1080/00031305.1980.10483038</a>.
 </div>
 <div class="csl-entry">
-Chang, Winston, Joe Cheng, J. J. Allaire, Carson Sievert, Barret Schloerke, Yihui Xie, Jeff Allen, et al. 2024. <em>Shiny: Web Application Framework for r</em>. <a href="https://cran.r-project.org/web/packages/shiny/index.html">https://cran.r-project.org/web/packages/shiny/index.html</a>.
+Chang, Winston, Joe Cheng, J. J. Allaire, et al. 2024. <em>Shiny: Web Application Framework for <span>R</span></em>. <a href="https://cran.r-project.org/web/packages/shiny/index.html">https://cran.r-project.org/web/packages/shiny/index.html</a>.
 </div>
 <div class="csl-entry">
-Hornik, Kurt. 2012. <span>“The Comprehensive R Archive Network.”</span> <em>WIREs Computational Statistics</em> 4 (4): 394–98. <a href="https://doi.org/10.1002/wics.1212">https://doi.org/10.1002/wics.1212</a>.
+Cleveland, William S., and Robert McGill. 1984. <span>“Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods.”</span> <em>Journal of the American Statistical Association</em> 79 (387): 531–54. <a href="https://doi.org/10.1080/01621459.1984.10478080">https://doi.org/10.1080/01621459.1984.10478080</a>.
+</div>
+<div class="csl-entry">
+Cochran, William G. 1954. <span>“Some Methods for Strengthening the Common <span class="math inline">\(\chi^2\)</span> Tests.”</span> <em>Biometrics</em> 10 (4): 417–51. <a href="https://doi.org/10.2307/3001616">https://doi.org/10.2307/3001616</a>.
+</div>
+<div class="csl-entry">
+Cox, D. R. 1972. <span>“Regression Models and Life-Tables.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 34 (2): 187–220. <a href="https://doi.org/10.1111/j.2517-6161.1972.tb00899.x">https://doi.org/10.1111/j.2517-6161.1972.tb00899.x</a>.
+</div>
+<div class="csl-entry">
+Delacre, Marie, Daniël Lakens, and Christophe Leys. 2017. <span>“Why Psychologists Should by Default Use <span class="nocase">Welch’s</span> t-Test Instead of <span class="nocase">Student’s</span> t-Test.”</span> <em>International Review of Social Psychology</em> 30 (1): 92–101. <a href="https://doi.org/10.5334/irsp.82">https://doi.org/10.5334/irsp.82</a>.
+</div>
+<div class="csl-entry">
+DerSimonian, Rebecca, and Nan Laird. 1986. <span>“Meta-Analysis in Clinical Trials.”</span> <em>Controlled Clinical Trials</em> 7 (3): 177–88. <a href="https://doi.org/10.1016/0197-2456(86)90046-2">https://doi.org/10.1016/0197-2456(86)90046-2</a>.
+</div>
+<div class="csl-entry">
+Devereaux, P. J., Braden J. Manns, William A. Ghali, et al. 2001. <span>“Physician Interpretations and Textbook Definitions of Blinding Terminology in Randomized Controlled Trials.”</span> <em>JAMA</em> 285 (15): 2000–2003. <a href="https://doi.org/10.1001/jama.285.15.2000">https://doi.org/10.1001/jama.285.15.2000</a>.
+</div>
+<div class="csl-entry">
+Divine, George W., H. James Norton, Anna E. Barón, and Elizabeth Juarez-Colunga. 2018. <span>“The <span>Wilcoxon–Mann–Whitney</span> Procedure Fails as a Test of Medians.”</span> <em>The American Statistician</em> 72 (3): 278–86. <a href="https://doi.org/10.1080/00031305.2017.1305291">https://doi.org/10.1080/00031305.2017.1305291</a>.
+</div>
+<div class="csl-entry">
+Doll, Richard, and A. Bradford Hill. 1950. <span>“Smoking and Carcinoma of the Lung.”</span> <em>British Medical Journal</em> 2 (4682): 739–48. <a href="https://doi.org/10.1136/bmj.2.4682.739">https://doi.org/10.1136/bmj.2.4682.739</a>.
+</div>
+<div class="csl-entry">
+Egger, Matthias, George Davey Smith, Martin Schneider, and Christoph Minder. 1997. <span>“Bias in Meta-Analysis Detected by a Simple, Graphical Test.”</span> <em>BMJ</em> 315 (7109): 629–34. <a href="https://doi.org/10.1136/bmj.315.7109.629">https://doi.org/10.1136/bmj.315.7109.629</a>.
+</div>
+<div class="csl-entry">
+Evidence-Based Medicine Working Group. 1992. <span>“Evidence-Based Medicine: A New Approach to Teaching the Practice of Medicine.”</span> <em>JAMA</em> 268 (17): 2420–25. <a href="https://doi.org/10.1001/jama.1992.03490170092032">https://doi.org/10.1001/jama.1992.03490170092032</a>.
+</div>
+<div class="csl-entry">
+Fanelli, Daniele. 2009. <span>“How Many Scientists Fabricate and Falsify Research? <span>A</span> Systematic Review and Meta-Analysis of Survey Data.”</span> <em>PLoS ONE</em> 4 (5): e5738. <a href="https://doi.org/10.1371/journal.pone.0005738">https://doi.org/10.1371/journal.pone.0005738</a>.
+</div>
+<div class="csl-entry">
+Freedman, David, and Persi Diaconis. 1981. <span>“On the Histogram as a Density Estimator: <span>L2</span> Theory.”</span> <em>Zeitschrift f<span>ü</span>r Wahrscheinlichkeitstheorie Und Verwandte Gebiete</em> 57 (4): 453–76. <a href="https://doi.org/10.1007/BF01025868">https://doi.org/10.1007/BF01025868</a>.
+</div>
+<div class="csl-entry">
+Galton, Francis. 1886. <span>“Regression Towards Mediocrity in Hereditary Stature.”</span> <em>The Journal of the Anthropological Institute of Great Britain and Ireland</em> 15: 246–63. <a href="https://doi.org/10.2307/2841583">https://doi.org/10.2307/2841583</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">Gamble, Carrol, Ashma Krishan, Deborah Stocken, et al.</span> 2017. <span>“Guidelines for the Content of Statistical Analysis Plans in Clinical Trials.”</span> <em>JAMA</em> 318 (23): 2337–43. <a href="https://doi.org/10.1001/jama.2017.18556">https://doi.org/10.1001/jama.2017.18556</a>.
+</div>
+<div class="csl-entry">
+Gelman, Andrew, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari, and Donald B. Rubin. 2013. <em>Bayesian Data Analysis</em>. 3rd ed. Chapman; Hall/CRC.
+</div>
+<div class="csl-entry">
+Greenland, Sander, Judea Pearl, and James M. Robins. 1999. <span>“Causal Diagrams for Epidemiologic Research.”</span> <em>Epidemiology</em> 10 (1): 37–48. <a href="https://doi.org/10.1097/00001648-199901000-00008">https://doi.org/10.1097/00001648-199901000-00008</a>.
+</div>
+<div class="csl-entry">
+Greenland, Sander, Stephen J. Senn, Kenneth J. Rothman, et al. 2016. <span>“Statistical Tests, p Values, Confidence Intervals, and Power: A Guide to Misinterpretations.”</span> <em>European Journal of Epidemiology</em> 31 (4): 337–50. <a href="https://doi.org/10.1007/s10654-016-0149-3">https://doi.org/10.1007/s10654-016-0149-3</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">Grudniewicz, Agnes, David Moher, Kelly D. Cobey, et al.</span> 2019. <span>“Predatory Journals: No Definition, No Defence.”</span> <em>Nature</em> 576 (7786): 210–12. <a href="https://doi.org/10.1038/d41586-019-03759-y">https://doi.org/10.1038/d41586-019-03759-y</a>.
+</div>
+<div class="csl-entry">
+Hardy, G. H. 1908. <span>“Mendelian Proportions in a Mixed Population.”</span> <em>Science</em> 28 (706): 49–50. <a href="https://doi.org/10.1126/science.28.706.49">https://doi.org/10.1126/science.28.706.49</a>.
+</div>
+<div class="csl-entry">
+Harrell, Frank E., Jr. 2015. <em>Regression Modeling Strategies: With Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis</em>. 2nd ed. Springer Series in Statistics. Springer. <a href="https://doi.org/10.1007/978-3-319-19425-7">https://doi.org/10.1007/978-3-319-19425-7</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">Harris, Charles R., K. Jarrod Millman, Stéfan J. van der Walt, et al.</span> 2020. <span>“Array Programming with <span>NumPy</span>.”</span> <em>Nature</em> 585: 357–62. <a href="https://doi.org/10.1038/s41586-020-2649-2">https://doi.org/10.1038/s41586-020-2649-2</a>.
+</div>
+<div class="csl-entry">
+Hempel, Carl G. 1966. <em>Philosophy of Natural Science</em>. Prentice-Hall.
+</div>
+<div class="csl-entry">
+Hernán, Miguel A., and James M. Robins. 2016. <span>“Using Big Data to Emulate a Target Trial When a Randomized Trial Is Not Available.”</span> <em>American Journal of Epidemiology</em> 183 (8): 758–64. <a href="https://doi.org/10.1093/aje/kwv254">https://doi.org/10.1093/aje/kwv254</a>.
+</div>
+<div class="csl-entry">
+Herndon, Thomas, Michael Ash, and Robert Pollin. 2014. <span>“Does High Public Debt Consistently Stifle Economic Growth? <span>A</span> Critique of <span>Reinhart</span> and <span>Rogoff</span>.”</span> <em>Cambridge Journal of Economics</em> 38 (2): 257–79. <a href="https://doi.org/10.1093/cje/bet075">https://doi.org/10.1093/cje/bet075</a>.
+</div>
+<div class="csl-entry">
+Higgins, Julian P. T., and Simon G. Thompson. 2002. <span>“Quantifying Heterogeneity in a Meta-Analysis.”</span> <em>Statistics in Medicine</em> 21 (11): 1539–58. <a href="https://doi.org/10.1002/sim.1186">https://doi.org/10.1002/sim.1186</a>.
+</div>
+<div class="csl-entry">
+Hill, Austin Bradford. 1965. <span>“The Environment and Disease: Association or Causation?”</span> <em>Proceedings of the Royal Society of Medicine</em> 58 (5): 295–300. <a href="https://doi.org/10.1177/003591576505800503">https://doi.org/10.1177/003591576505800503</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">Hopewell, Sally, An-Wen Chan, Gary S. Collins, et al.</span> 2025. <span>“<span>CONSORT</span> 2025 Statement: Updated Guideline for Reporting Randomised Trials.”</span> <em>BMJ</em> 389: e081123. <a href="https://doi.org/10.1136/bmj-2024-081123">https://doi.org/10.1136/bmj-2024-081123</a>.
+</div>
+<div class="csl-entry">
+Hornik, Kurt. 2012. <span>“The Comprehensive r Archive Network.”</span> <em>WIREs Computational Statistics</em> 4 (4): 394–98. <a href="https://doi.org/10.1002/wics.1212">https://doi.org/10.1002/wics.1212</a>.
+</div>
+<div class="csl-entry">
+Hulley, Stephen B., Steven R. Cummings, Warren S. Browner, Deborah G. Grady, and Thomas B. Newman. 2013. <em>Designing Clinical Research</em>. 4th ed. Lippincott Williams &amp; Wilkins.
+</div>
+<div class="csl-entry">
+Hunter, John D. 2007. <span>“Matplotlib: A <span>2D</span> Graphics Environment.”</span> <em>Computing in Science &amp; Engineering</em> 9 (3): 90–95. <a href="https://doi.org/10.1109/MCSE.2007.55">https://doi.org/10.1109/MCSE.2007.55</a>.
+</div>
+<div class="csl-entry">
+Hyndman, Rob J., and Yanan Fan. 1996. <span>“Sample Quantiles in Statistical Packages.”</span> <em>The American Statistician</em> 50 (4): 361–65. <a href="https://doi.org/10.1080/00031305.1996.10473566">https://doi.org/10.1080/00031305.1996.10473566</a>.
 </div>
 <div class="csl-entry">
 Ihaka, Ross, and Robert Gentleman. 1996. <span>“R: A Language for Data Analysis and Graphics.”</span> <em>Journal of Computational and Graphical Statistics</em> 5 (3): 299–314. <a href="https://doi.org/10.1080/10618600.1996.10474713">https://doi.org/10.1080/10618600.1996.10474713</a>.
 </div>
 <div class="csl-entry">
-Pebesma, Edzer, Roger Bivand, Etienne Racine, Michael Sumner, Ian Cook, Tim Keitt, Robin Lovelace, et al. 2024. <em>Sf: Simple Features for r</em>. <a href="https://cran.r-project.org/web/packages/sf/index.html">https://cran.r-project.org/web/packages/sf/index.html</a>.
+IntHout, Joanna, John P. A. Ioannidis, and George F. Borm. 2014. <span>“The <span>Hartung-Knapp-Sidik-Jonkman</span> Method for Random Effects Meta-Analysis Is Straightforward and Considerably Outperforms the Standard <span>DerSimonian-Laird</span> Method.”</span> <em>BMC Medical Research Methodology</em> 14: 25. <a href="https://doi.org/10.1186/1471-2288-14-25">https://doi.org/10.1186/1471-2288-14-25</a>.
 </div>
 <div class="csl-entry">
-Pedersen, Thomas Lin, David Robinson, Posit, and PBC. 2024. <em>Gganimate: A Grammar of Animated Graphics</em>. <a href="https://cran.r-project.org/web/packages/gganimate/index.html">https://cran.r-project.org/web/packages/gganimate/index.html</a>.
+Ioannidis, John P. A. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLoS Medicine</em> 2 (8): e124. <a href="https://doi.org/10.1371/journal.pmed.0020124">https://doi.org/10.1371/journal.pmed.0020124</a>.
+</div>
+<div class="csl-entry">
+John, Leslie K., George Loewenstein, and Drazen Prelec. 2012. <span>“Measuring the Prevalence of Questionable Research Practices with Incentives for Truth Telling.”</span> <em>Psychological Science</em> 23 (5): 524–32. <a href="https://doi.org/10.1177/0956797611430953">https://doi.org/10.1177/0956797611430953</a>.
+</div>
+<div class="csl-entry">
+Jolliffe, Ian T., and Jorge Cadima. 2016. <span>“Principal Component Analysis: A Review and Recent Developments.”</span> <em>Philosophical Transactions of the Royal Society A</em> 374 (2065): 20150202. <a href="https://doi.org/10.1098/rsta.2015.0202">https://doi.org/10.1098/rsta.2015.0202</a>.
+</div>
+<div class="csl-entry">
+Kaplan, E. L., and Paul Meier. 1958. <span>“Nonparametric Estimation from Incomplete Observations.”</span> <em>Journal of the American Statistical Association</em> 53 (282): 457–81. <a href="https://doi.org/10.1080/01621459.1958.10501452">https://doi.org/10.1080/01621459.1958.10501452</a>.
+</div>
+<div class="csl-entry">
+Katz, D., J. Baptista, S. P. Azen, and M. C. Pike. 1978. <span>“Obtaining Confidence Intervals for the Risk Ratio in Cohort Studies.”</span> <em>Biometrics</em> 34 (3): 469–74. <a href="https://doi.org/10.2307/2530610">https://doi.org/10.2307/2530610</a>.
+</div>
+<div class="csl-entry">
+Kerr, Norbert L. 1998. <span>“<span>HARKing</span>: Hypothesizing After the Results Are Known.”</span> <em>Personality and Social Psychology Review</em> 2 (3): 196–217. <a href="https://doi.org/10.1207/s15327957pspr0203_4">https://doi.org/10.1207/s15327957pspr0203_4</a>.
+</div>
+<div class="csl-entry">
+Kuhn, Thomas S. 1962. <em>The Structure of Scientific Revolutions</em>. University of Chicago Press.
+</div>
+<div class="csl-entry">
+Lang, Thomas A., and Douglas G. Altman. 2015. <span>“Basic Statistical Reporting for Articles Published in Biomedical Journals: The "Statistical Analyses and Methods in the Published Literature" or the <span>SAMPL</span> Guidelines.”</span> <em>International Journal of Nursing Studies</em> 52 (1): 5–9. <a href="https://doi.org/10.1016/j.ijnurstu.2014.09.006">https://doi.org/10.1016/j.ijnurstu.2014.09.006</a>.
+</div>
+<div class="csl-entry">
+Lazic, Stanley E. 2010. <span>“The Problem of Pseudoreplication in Neuroscientific Studies: Is It Affecting Your Analysis?”</span> <em>BMC Neuroscience</em> 11: 5. <a href="https://doi.org/10.1186/1471-2202-11-5">https://doi.org/10.1186/1471-2202-11-5</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">Leek, Jeffrey T., Robert B. Scharpf, Héctor Corrada Bravo, et al.</span> 2010. <span>“Tackling the Widespread and Critical Impact of Batch Effects in High-Throughput Data.”</span> <em>Nature Reviews Genetics</em> 11 (10): 733–39. <a href="https://doi.org/10.1038/nrg2825">https://doi.org/10.1038/nrg2825</a>.
+</div>
+<div class="csl-entry">
+Livak, Kenneth J., and Thomas D. Schmittgen. 2001. <span>“Analysis of Relative Gene Expression Data Using Real-Time Quantitative <span>PCR</span> and the <span class="math inline">\(2^{-\Delta\Delta C_T}\)</span> Method.”</span> <em>Methods</em> 25 (4): 402–8. <a href="https://doi.org/10.1006/meth.2001.1262">https://doi.org/10.1006/meth.2001.1262</a>.
+</div>
+<div class="csl-entry">
+Mann, H. B., and D. R. Whitney. 1947. <span>“On a Test of Whether One of Two Random Variables Is Stochastically Larger Than the Other.”</span> <em>The Annals of Mathematical Statistics</em> 18 (1): 50–60. <a href="https://doi.org/10.1214/aoms/1177730491">https://doi.org/10.1214/aoms/1177730491</a>.
+</div>
+<div class="csl-entry">
+Marshall, Barry J., and J. Robin Warren. 1984. <span>“Unidentified Curved Bacilli in the Stomach of Patients with Gastritis and Peptic Ulceration.”</span> <em>The Lancet</em> 323 (8390): 1311–15. <a href="https://doi.org/10.1016/S0140-6736(84)91816-6">https://doi.org/10.1016/S0140-6736(84)91816-6</a>.
+</div>
+<div class="csl-entry">
+McGill, Robert, John W. Tukey, and Wayne A. Larsen. 1978. <span>“Variations of Box Plots.”</span> <em>The American Statistician</em> 32 (1): 12–16. <a href="https://doi.org/10.1080/00031305.1978.10479236">https://doi.org/10.1080/00031305.1978.10479236</a>.
+</div>
+<div class="csl-entry">
+McKinney, Wes. 2010. <span>“Data Structures for Statistical Computing in <span>Python</span>.”</span> <em>Proceedings of the 9th Python in Science Conference</em>, 56–61. <a href="https://doi.org/10.25080/Majora-92bf1922-00a">https://doi.org/10.25080/Majora-92bf1922-00a</a>.
+</div>
+<div class="csl-entry">
+Meng, Xiao-Li. 2018. <span>“Statistical Paradises and Paradoxes in Big Data (<span>I</span>): Law of Large Populations, Big Data Paradox, and the 2016 <span>US</span> Presidential Election.”</span> <em>The Annals of Applied Statistics</em> 12 (2): 685–726. <a href="https://doi.org/10.1214/18-AOAS1161SF">https://doi.org/10.1214/18-AOAS1161SF</a>.
+</div>
+<div class="csl-entry">
+Merton, Robert K. 1973. <em>The Sociology of Science: Theoretical and Empirical Investigations</em>. University of Chicago Press.
+</div>
+<div class="csl-entry">
+Nelder, J. A., and R. W. M. Wedderburn. 1972. <span>“Generalized Linear Models.”</span> <em>Journal of the Royal Statistical Society: Series A (General)</em> 135 (3): 370–84. <a href="https://doi.org/10.2307/2344614">https://doi.org/10.2307/2344614</a>.
+</div>
+<div class="csl-entry">
+Newcombe, Robert G. 1998. <span>“Interval Estimation for the Difference Between Independent Proportions: Comparison of Eleven Methods.”</span> <em>Statistics in Medicine</em> 17 (8): 873–90. <a href="https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8%3C873::AID-SIM779%3E3.0.CO;2-I">https://doi.org/10.1002/(SICI)1097-0258(19980430)17:8&lt;873::AID-SIM779&gt;3.0.CO;2-I</a>.
+</div>
+<div class="csl-entry">
+Nosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. <span>“The Preregistration Revolution.”</span> <em>Proceedings of the National Academy of Sciences</em> 115 (11): 2600–2606. <a href="https://doi.org/10.1073/pnas.1708274114">https://doi.org/10.1073/pnas.1708274114</a>.
+</div>
+<div class="csl-entry">
+Open Science Collaboration. 2015. <span>“Estimating the Reproducibility of Psychological Science.”</span> <em>Science</em> 349 (6251): aac4716. <a href="https://doi.org/10.1126/science.aac4716">https://doi.org/10.1126/science.aac4716</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">Page, Matthew J., Joanne E. McKenzie, Patrick M. Bossuyt, et al.</span> 2021. <span>“The <span>PRISMA</span> 2020 Statement: An Updated Guideline for Reporting Systematic Reviews.”</span> <em>BMJ</em> 372: n71. <a href="https://doi.org/10.1136/bmj.n71">https://doi.org/10.1136/bmj.n71</a>.
+</div>
+<div class="csl-entry">
+Pebesma, Edzer, Roger Bivand, Etienne Racine, et al. 2024. <em>Sf: Simple Features for <span>R</span></em>. <a href="https://cran.r-project.org/web/packages/sf/index.html">https://cran.r-project.org/web/packages/sf/index.html</a>.
+</div>
+<div class="csl-entry">
+Pedersen, Thomas Lin, and David Robinson. 2024. <em>Gganimate: A Grammar of Animated Graphics</em>. <a href="https://cran.r-project.org/web/packages/gganimate/index.html">https://cran.r-project.org/web/packages/gganimate/index.html</a>.
+</div>
+<div class="csl-entry">
+Peduzzi, Peter, John Concato, Elizabeth Kemper, Theodore R. Holford, and Alvan R. Feinstein. 1996. <span>“A Simulation Study of the Number of Events Per Variable in Logistic Regression Analysis.”</span> <em>Journal of Clinical Epidemiology</em> 49 (12): 1373–79. <a href="https://doi.org/10.1016/S0895-4356(96)00236-3">https://doi.org/10.1016/S0895-4356(96)00236-3</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">Percie du Sert, Nathalie, Viki Hurst, Amrita Ahluwalia, et al.</span> 2020. <span>“The <span>ARRIVE</span> Guidelines 2.0: Updated Guidelines for Reporting Animal Research.”</span> <em>PLoS Biology</em> 18 (7): e3000410. <a href="https://doi.org/10.1371/journal.pbio.3000410">https://doi.org/10.1371/journal.pbio.3000410</a>.
+</div>
+<div class="csl-entry">
+Pinheiro, José C., and Douglas M. Bates. 2000. <em>Mixed-Effects Models in <span>S</span> and <span>S-PLUS</span></em>. Springer. <a href="https://doi.org/10.1007/b98882">https://doi.org/10.1007/b98882</a>.
+</div>
+<div class="csl-entry">
+Popper, Karl R. 1959. <em>The Logic of Scientific Discovery</em>. Hutchinson.
+</div>
+<div class="csl-entry">
+<span class="nocase">Riley, Richard D., Joie Ensor, Kym I. E. Snell, et al.</span> 2020. <span>“Calculating the Sample Size Required for Developing a Clinical Prediction Model.”</span> <em>BMJ</em> 368: m441. <a href="https://doi.org/10.1136/bmj.m441">https://doi.org/10.1136/bmj.m441</a>.
+</div>
+<div class="csl-entry">
+Rochon, Justine, Matthias Gondan, and Meinhard Kieser. 2012. <span>“To Test or Not to Test: Preliminary Assessment of Normality When Comparing Two Independent Samples.”</span> <em>BMC Medical Research Methodology</em> 12: 81. <a href="https://doi.org/10.1186/1471-2288-12-81">https://doi.org/10.1186/1471-2288-12-81</a>.
+</div>
+<div class="csl-entry">
+Rougier, Nicolas P., Michael Droettboom, and Philip E. Bourne. 2014. <span>“Ten Simple Rules for Better Figures.”</span> <em>PLoS Computational Biology</em> 10 (9): e1003833. <a href="https://doi.org/10.1371/journal.pcbi.1003833">https://doi.org/10.1371/journal.pcbi.1003833</a>.
+</div>
+<div class="csl-entry">
+Rousseeuw, Peter J. 1987. <span>“Silhouettes: A Graphical Aid to the Interpretation and Validation of Cluster Analysis.”</span> <em>Journal of Computational and Applied Mathematics</em> 20: 53–65. <a href="https://doi.org/10.1016/0377-0427(87)90125-7">https://doi.org/10.1016/0377-0427(87)90125-7</a>.
+</div>
+<div class="csl-entry">
+Russell, W. M. S., and R. L. Burch. 1959. <em>The Principles of Humane Experimental Technique</em>. Methuen.
+</div>
+<div class="csl-entry">
+Sackett, David L. 1979. <span>“Bias in Analytic Research.”</span> <em>Journal of Chronic Diseases</em> 32 (1-2): 51–63. <a href="https://doi.org/10.1016/0021-9681(79)90012-2">https://doi.org/10.1016/0021-9681(79)90012-2</a>.
+</div>
+<div class="csl-entry">
+Sackett, David L., William M. C. Rosenberg, J. A. Muir Gray, R. Brian Haynes, and W. Scott Richardson. 1996. <span>“Evidence Based Medicine: What It Is and What It Isn’t.”</span> <em>BMJ</em> 312 (7023): 71–72. <a href="https://doi.org/10.1136/bmj.312.7023.71">https://doi.org/10.1136/bmj.312.7023.71</a>.
+</div>
+<div class="csl-entry">
+Saldanha, Raphael de Freitas, Ronaldo Rocha Bastos, and Christovam Barcellos. 2019. <span>“Microdatasus: Pacote Para Download e Pré-Processamento de Microdados Do Departamento de Informática Do <span>SUS</span> (<span>DATASUS</span>).”</span> <em>Cadernos de Saúde Pública</em> 35 (9): e00032419. <a href="https://doi.org/10.1590/0102-311X00032419">https://doi.org/10.1590/0102-311X00032419</a>.
+</div>
+<div class="csl-entry">
+Schuirmann, Donald J. 1987. <span>“A Comparison of the Two One-Sided Tests Procedure and the Power Approach for Assessing the Equivalence of Average Bioavailability.”</span> <em>Journal of Pharmacokinetics and Biopharmaceutics</em> 15 (6): 657–80. <a href="https://doi.org/10.1007/BF01068419">https://doi.org/10.1007/BF01068419</a>.
+</div>
+<div class="csl-entry">
+Schulz, Kenneth F., Iain Chalmers, Richard J. Hayes, and Douglas G. Altman. 1995. <span>“Empirical Evidence of Bias: Dimensions of Methodological Quality Associated with Estimates of Treatment Effects in Controlled Trials.”</span> <em>JAMA</em> 273 (5): 408–12. <a href="https://doi.org/10.1001/jama.1995.03520290060030">https://doi.org/10.1001/jama.1995.03520290060030</a>.
+</div>
+<div class="csl-entry">
+Seabold, Skipper, and Josef Perktold. 2010. <span>“Statsmodels: Econometric and Statistical Modeling with <span>Python</span>.”</span> <em>Proceedings of the 9th Python in Science Conference</em>, 92–96. <a href="https://doi.org/10.25080/Majora-92bf1922-011">https://doi.org/10.25080/Majora-92bf1922-011</a>.
+</div>
+<div class="csl-entry">
+Shannon, C. E. 1948. <span>“A Mathematical Theory of Communication.”</span> <em>Bell System Technical Journal</em> 27 (3): 379–423. <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</a>.
+</div>
+<div class="csl-entry">
+Siegel, Sidney, and N. John Castellan Jr. 1988. <em>Nonparametric Statistics for the Behavioral Sciences</em>. 2nd ed. McGraw-Hill.
+</div>
+<div class="csl-entry">
+Simpson, E. H. 1949. <span>“Measurement of Diversity.”</span> <em>Nature</em> 163 (4148): 688. <a href="https://doi.org/10.1038/163688a0">https://doi.org/10.1038/163688a0</a>.
+</div>
+<div class="csl-entry">
+Sollaci, Luciana B., and Mauricio G. Pereira. 2004. <span>“The Introduction, Methods, Results, and Discussion (<span>IMRAD</span>) Structure: A Fifty-Year Survey.”</span> <em>Journal of the Medical Library Association</em> 92 (3): 364–67.
+</div>
+<div class="csl-entry">
+Spearman, C. 1904. <span>“The Proof and Measurement of Association Between Two Things.”</span> <em>The American Journal of Psychology</em> 15 (1): 72–101. <a href="https://doi.org/10.2307/1412159">https://doi.org/10.2307/1412159</a>.
+</div>
+<div class="csl-entry">
+Stevens, S. S. 1946. <span>“On the Theory of Scales of Measurement.”</span> <em>Science</em> 103 (2684): 677–80. <a href="https://doi.org/10.1126/science.103.2684.677">https://doi.org/10.1126/science.103.2684.677</a>.
+</div>
+<div class="csl-entry">
+Student. 1908. <span>“The Probable Error of a Mean.”</span> <em>Biometrika</em> 6 (1): 1–25. <a href="https://doi.org/10.1093/biomet/6.1.1">https://doi.org/10.1093/biomet/6.1.1</a>.
+</div>
+<div class="csl-entry">
+Sturges, Herbert A. 1926. <span>“The Choice of a Class Interval.”</span> <em>Journal of the American Statistical Association</em> 21 (153): 65–66. <a href="https://doi.org/10.1080/01621459.1926.10502161">https://doi.org/10.1080/01621459.1926.10502161</a>.
+</div>
+<div class="csl-entry">
+Tibshirani, Robert. 1996. <span>“Regression Shrinkage and Selection via the Lasso.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 58 (1): 267–88. <a href="https://doi.org/10.1111/j.2517-6161.1996.tb02080.x">https://doi.org/10.1111/j.2517-6161.1996.tb02080.x</a>.
+</div>
+<div class="csl-entry">
+Tukey, John W. 1949. <span>“Comparing Individual Means in the Analysis of Variance.”</span> <em>Biometrics</em> 5 (2): 99–114. <a href="https://doi.org/10.2307/3001913">https://doi.org/10.2307/3001913</a>.
+</div>
+<div class="csl-entry">
+Tukey, John W. 1977. <em>Exploratory Data Analysis</em>. Addison-Wesley.
+</div>
+<div class="csl-entry">
+<span class="nocase">Virtanen, Pauli, Ralf Gommers, Travis E. Oliphant, et al.</span> 2020. <span>“<span>SciPy</span> 1.0: Fundamental Algorithms for Scientific Computing in <span>Python</span>.”</span> <em>Nature Methods</em> 17: 261–72. <a href="https://doi.org/10.1038/s41592-019-0686-2">https://doi.org/10.1038/s41592-019-0686-2</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">von Elm, Erik, Douglas G. Altman, Matthias Egger, Stuart J. Pocock, Peter C. Gøtzsche, and Jan P. Vandenbroucke</span>. 2007. <span>“The Strengthening the Reporting of Observational Studies in Epidemiology (<span>STROBE</span>) Statement: Guidelines for Reporting Observational Studies.”</span> <em>The Lancet</em> 370 (9596): 1453–57. <a href="https://doi.org/10.1016/S0140-6736(07)61602-X">https://doi.org/10.1016/S0140-6736(07)61602-X</a>.
+</div>
+<div class="csl-entry">
+<span class="nocase">von Hippel, Paul T.</span> 2005. <span>“Mean, Median, and Skew: Correcting a Textbook Rule.”</span> <em>Journal of Statistics Education</em> 13 (2). <a href="https://doi.org/10.1080/10691898.2005.11910556">https://doi.org/10.1080/10691898.2005.11910556</a>.
+</div>
+<div class="csl-entry">
+Wasserstein, Ronald L., and Nicole A. Lazar. 2016. <span>“The <span>ASA</span> Statement on p-Values: Context, Process, and Purpose.”</span> <em>The American Statistician</em> 70 (2): 129–33. <a href="https://doi.org/10.1080/00031305.2016.1154108">https://doi.org/10.1080/00031305.2016.1154108</a>.
+</div>
+<div class="csl-entry">
+Weissgerber, Tracey L., Natasa M. Milic, Stacey J. Winham, and Vesna D. Garovic. 2015. <span>“Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm.”</span> <em>PLoS Biology</em> 13 (4): e1002128. <a href="https://doi.org/10.1371/journal.pbio.1002128">https://doi.org/10.1371/journal.pbio.1002128</a>.
+</div>
+<div class="csl-entry">
+Welch, B. L. 1947. <span>“The Generalization of <span>‘<span class="nocase">Student’s</span>’</span> Problem When Several Different Population Variances Are Involved.”</span> <em>Biometrika</em> 34 (1-2): 28–35. <a href="https://doi.org/10.1093/biomet/34.1-2.28">https://doi.org/10.1093/biomet/34.1-2.28</a>.
 </div>
 <div class="csl-entry">
 Wickham, Hadley. 2011. <span>“Ggplot2.”</span> <em>WIREs Computational Statistics</em> 3 (2): 180–85. <a href="https://doi.org/10.1002/wics.147">https://doi.org/10.1002/wics.147</a>.
 </div>
 <div class="csl-entry">
-Wickham, Hadley, Peter Danenberg, Gábor Csárdi, Manuel Eugster, Posit Software, and PBC. 2024. <em>Roxygen2: In-Line Documentation for r</em>. <a href="https://cran.r-project.org/web/packages/roxygen2/index.html">https://cran.r-project.org/web/packages/roxygen2/index.html</a>.
+Wickham, Hadley, Peter Danenberg, Gábor Csárdi, and Manuel Eugster. 2024. <em>Roxygen2: In-Line Documentation for <span>R</span></em>. <a href="https://cran.r-project.org/web/packages/roxygen2/index.html">https://cran.r-project.org/web/packages/roxygen2/index.html</a>.
 </div>
 <div class="csl-entry">
-Xie [aut, Yihui, cre, Abhraneel Sarma, Adam Vogt, Alastair Andrew, Alex Zvoleff, Amar Al-Zubaidi, et al. 2024. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in r</em>. <a href="https://cran.r-project.org/web/packages/knitr/index.html">https://cran.r-project.org/web/packages/knitr/index.html</a>.
+Wigginton, Janis E., David J. Cutler, and Gonçalo R. Abecasis. 2005. <span>“A Note on Exact Tests of <span>Hardy-Weinberg</span> Equilibrium.”</span> <em>American Journal of Human Genetics</em> 76 (5): 887–93. <a href="https://doi.org/10.1086/429864">https://doi.org/10.1086/429864</a>.
+</div>
+<div class="csl-entry">
+Wilcoxon, Frank. 1945. <span>“Individual Comparisons by Ranking Methods.”</span> <em>Biometrics Bulletin</em> 1 (6): 80–83. <a href="https://doi.org/10.2307/3001968">https://doi.org/10.2307/3001968</a>.
+</div>
+<div class="csl-entry">
+Wilke, Claus O. 2019. <em>Fundamentals of Data Visualization</em>. O’Reilly Media.
+</div>
+<div class="csl-entry">
+Wilson, Edwin B. 1927. <span>“Probable Inference, the Law of Succession, and Statistical Inference.”</span> <em>Journal of the American Statistical Association</em> 22 (158): 209–12. <a href="https://doi.org/10.1080/01621459.1927.10502953">https://doi.org/10.1080/01621459.1927.10502953</a>.
+</div>
+<div class="csl-entry">
+Woolf, Barnet. 1955. <span>“On Estimating the Relation Between Blood Group and Disease.”</span> <em>Annals of Human Genetics</em> 19 (4): 251–53. <a href="https://doi.org/10.1111/j.1469-1809.1955.tb01348.x">https://doi.org/10.1111/j.1469-1809.1955.tb01348.x</a>.
+</div>
+<div class="csl-entry">
+World Medical Association. 2025. <span>“World Medical Association Declaration of Helsinki: Ethical Principles for Medical Research Involving Human Participants.”</span> <em>JAMA</em> 333 (1): 71–74. <a href="https://doi.org/10.1001/jama.2024.21972">https://doi.org/10.1001/jama.2024.21972</a>.
+</div>
+<div class="csl-entry">
+Xie, Yihui. 2024. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in <span>R</span></em>. <a href="https://cran.r-project.org/web/packages/knitr/index.html">https://cran.r-project.org/web/packages/knitr/index.html</a>.
+</div>
+<div class="csl-entry">
+Ziemann, Mark, Yotam Eren, and Assam El-Osta. 2016. <span>“Gene Name Errors Are Widespread in the Scientific Literature.”</span> <em>Genome Biology</em> 17: 177. <a href="https://doi.org/10.1186/s13059-016-1044-7">https://doi.org/10.1186/s13059-016-1044-7</a>.
 </div>
 </div>
 </div>
@@ -350,42 +994,42 @@ Xie [aut, Yihui, cre, Abhraneel Sarma, Adam Vogt, Alastair Andrew, Alex Zvoleff,
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

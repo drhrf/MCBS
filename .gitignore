@@ -1,4 +1,11 @@
-.Rproj.user
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store
+*.log
+_bookdown_files/
+_book/
+_main_files/
+/MCBSbook_files/
+capa/*.png

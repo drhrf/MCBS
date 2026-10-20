@@ -4,3 +4,8 @@ book_filename: "MCBSbook"
 language:
   ui:
     chapter_name: "Capítulo "
+
+  label:
+    fig: "Figura "
+    tab: "Tabela "
+    eq: "Equação "

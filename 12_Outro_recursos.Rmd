@@ -1,9 +1,257 @@
 # Recursos adicionais
 
+```{r rec-setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+fmt <- function(x, d) formatC(x, format = "f", digits = d, decimal.mark = ",")
+```
+
+Este capítulo reúne materiais de consulta: uma bibliografia comentada para aprofundar os temas do livro, um glossário dos principais termos, tabelas das distribuições estatísticas usadas nos capítulos de inferência e análise, e uma lista de ferramentas e recursos *online*.
+
 ## Bibliografia recomendada
+
+A lista a seguir não é exaustiva. Foram escolhidas obras de referência reconhecidas, que complementam este livro em profundidade ou em abordagem. Edições mais recentes devem ser preferidas quando existirem.
+
+### Metodologia e epidemiologia
+
+- **Hulley SB, Cummings SR, Browner WS, Grady DG, Newman TB. *Designing Clinical Research*. 4. ed. Lippincott Williams & Wilkins, 2013.** Guia prático para planejar estudos clínicos, da pergunta ao tamanho amostral. Há tradução para o português (*Delineando a pesquisa clínica*).
+- **Lash TL, VanderWeele TJ, Haneuse S, Rothman KJ. *Modern Epidemiology*. 4. ed. Wolters Kluwer, 2021.** A referência mais completa em métodos epidemiológicos, para leitores avançados.
+- **Fletcher GS. *Clinical Epidemiology: The Essentials*. 6. ed. Wolters Kluwer, 2020.** Introdução à epidemiologia clínica orientada para a prática médica, com tradução para o português (*Epidemiologia clínica: elementos essenciais*).
+- **Hernán MA, Robins JM. *Causal Inference: What If*. Chapman & Hall/CRC, 2020.** Inferência causal com dados observacionais, incluindo a emulação de ensaios-alvo. Disponível gratuitamente no site dos autores.
+
+### Bioestatística
+
+- **Altman DG. *Practical Statistics for Medical Research*. Chapman & Hall, 1991.** Clássico, claro e orientado para a pesquisa médica.
+- **Kirkwood BR, Sterne JAC. *Essential Medical Statistics*. 2. ed. Blackwell, 2003.** Cobre de forma acessível desde os fundamentos até regressão logística, de Poisson e sobrevivência.
+- **Harrell FE. *Regression Modeling Strategies*. 2. ed. Springer, 2015.** Referência sobre construção, validação e interpretação de modelos de regressão, com ênfase em evitar o sobreajuste.
+- **Gelman A, Hill J, Vehtari A. *Regression and Other Stories*. Cambridge University Press, 2020.** Regressão aplicada com ênfase em simulação, interpretação e abordagem bayesiana. Disponível gratuitamente em formato eletrônico.
+- **Gelman A, Carlin JB, Stern HS, Dunson DB, Vehtari A, Rubin DB. *Bayesian Data Analysis*. 3. ed. Chapman & Hall/CRC, 2013.** Referência em estatística bayesiana, para leitores avançados.
+
+### Programação e análise reprodutível
+
+- **Wickham H, Çetinkaya-Rundel M, Grolemund G. *R for Data Science*. 2. ed. O'Reilly, 2023.** Introdução à análise de dados com R e o *tidyverse*. Disponível gratuitamente *online*.
+- **Xie Y. *bookdown: Authoring Books and Technical Documents with R Markdown*. Chapman & Hall/CRC, 2016.** Documentação do pacote usado para produzir este livro, também disponível *online*.
+- **Wilke CO. *Fundamentals of Data Visualization*. O'Reilly, 2019.** Princípios de construção de gráficos científicos, independentes do *software*. Disponível gratuitamente *online*.
+
+### Comunicação e integridade
+
+- **Recomendações do ICMJE** (*Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals*), atualizadas periodicamente no site do comitê.
+- **Diretrizes de relato da rede EQUATOR**, reunidas no site da rede, com versões traduzidas para o português de várias delas.
 
 ## Glossário de termos
 
+**Amostra.** Subconjunto da população efetivamente observado em um estudo.
+
+**Amplitude interquartil (AIQ).** Diferença entre o terceiro e o primeiro quartis; cobre os 50% centrais dos dados.
+
+**Análise por intenção de tratar.** Análise de um ensaio randomizado em que os participantes são comparados segundo o grupo para o qual foram alocados, independentemente do tratamento efetivamente recebido.
+
+**Cegamento.** Ocultação, para participantes, profissionais, avaliadores ou analistas, do tratamento recebido por cada participante.
+
+**Censura.** Em análise de sobrevivência, situação em que o evento não foi observado durante o acompanhamento; sabe-se apenas que o tempo até o evento é maior que o tempo observado.
+
+**Coeficiente de correlação de Pearson ($r$).** Medida, entre −1 e 1, da intensidade da associação linear entre duas variáveis quantitativas.
+
+**Coeficiente de correlação de Spearman ($r_s$).** Correlação de Pearson calculada sobre os postos; mede associação monotônica.
+
+**Coeficiente de determinação ($R^2$).** Proporção da variabilidade da variável resposta explicada pelo modelo de regressão.
+
+**Coeficiente de variação.** Desvio padrão dividido pela média, em geral expresso em porcentagem.
+
+**Colisor.** Variável que é efeito comum de duas outras; ajustar para ela pode criar uma associação espúria entre essas duas.
+
+**Confusão.** Distorção da associação entre exposição e desfecho causada por um terceiro fator associado a ambos e que não está no caminho causal.
+
+**Desvio padrão.** Raiz quadrada da variância; medida de dispersão na mesma unidade dos dados.
+
+**Diferença de riscos.** Diferença entre os riscos de dois grupos; medida absoluta de associação.
+
+**Distribuição amostral.** Distribuição de uma estatística ao longo de todas as amostras possíveis de mesmo tamanho.
+
+**Efeito aleatório.** Em modelos mistos, componente que representa a variação entre unidades (pacientes, hospitais) em torno de uma média.
+
+**Erro padrão.** Desvio padrão da distribuição amostral de uma estatística; mede a precisão de uma estimativa.
+
+**Erro tipo I.** Rejeitar a hipótese nula quando ela é verdadeira (falso positivo).
+
+**Erro tipo II.** Não rejeitar a hipótese nula quando ela é falsa (falso negativo).
+
+**Especificidade.** Proporção de não doentes com resultado negativo em um teste diagnóstico.
+
+**Estimador.** Regra para calcular, a partir de uma amostra, uma aproximação de um parâmetro.
+
+**Falseabilidade.** Propriedade de uma teoria que proíbe certos resultados, de modo que observações possam refutá-la.
+
+**Grau de liberdade.** Número de valores que podem variar livremente no cálculo de uma estatística, dadas as restrições impostas.
+
+**HARKing.** Apresentação de hipóteses formuladas depois de conhecer os resultados como se fossem prévias.
+
+**Heterogeneidade.** Em metanálise, variação nos efeitos verdadeiros entre os estudos.
+
+**Hipótese nula.** Hipótese estatística, em geral de ausência de efeito, que é avaliada por um teste de hipóteses.
+
+**Incidência.** Ocorrência de casos novos de uma condição em uma população inicialmente livre dela, em um período (risco) ou por pessoa-tempo (taxa).
+
+**Interação.** Situação em que o efeito de uma variável sobre o desfecho depende do valor de outra.
+
+**Intervalo de confiança.** Intervalo calculado por um procedimento que, em amostras repetidas, contém o parâmetro em uma proporção especificada das vezes (por exemplo, 95%).
+
+**Intervalo de credibilidade.** Na abordagem bayesiana, intervalo que contém o parâmetro com uma probabilidade especificada, dada a priori e os dados.
+
+**Mediador.** Variável no caminho causal entre a exposição e o desfecho.
+
+**Mediana.** Valor que divide a amostra ordenada em duas metades.
+
+**Metanálise.** Combinação estatística dos resultados de vários estudos.
+
+**Moda.** Valor ou categoria mais frequente.
+
+**Número necessário para tratar (NNT).** Inverso da diferença de riscos; número de pacientes que precisam ser tratados para que um deles se beneficie.
+
+**Ocultação da alocação.** Proteção da sequência de randomização para que a próxima alocação não possa ser conhecida antes da inclusão do participante.
+
+**Parâmetro.** Característica numérica da população, em geral desconhecida.
+
+**Poder estatístico.** Probabilidade de um teste rejeitar a hipótese nula quando existe um efeito de determinado tamanho.
+
+**Prevalência.** Proporção de pessoas que têm uma condição em um momento.
+
+**Pseudorreplicação.** Tratamento de medidas não independentes (por exemplo, várias células de um mesmo animal) como se fossem unidades experimentais independentes.
+
+**Quantil.** Valor abaixo do qual está uma proporção especificada dos dados.
+
+**Randomização.** Alocação dos participantes aos grupos por sorteio.
+
+**Razão de chances (OR).** Razão entre as chances de um evento em dois grupos.
+
+**Razão de riscos (*hazard ratio*).** Razão entre as funções de risco instantâneo de dois grupos, em análise de sobrevivência.
+
+**Regressão à média.** Tendência de valores extremos em uma medida serem seguidos por valores mais próximos da média em uma segunda medida.
+
+**Risco relativo (RR).** Razão entre os riscos de um evento em dois grupos.
+
+**Sensibilidade.** Proporção de doentes com resultado positivo em um teste diagnóstico.
+
+**Sobreajuste.** Ajuste de um modelo ao ruído de uma amostra específica, que resulta em desempenho ruim em dados novos.
+
+**Taxa de falsas descobertas (FDR).** Proporção esperada de falsos positivos entre os resultados declarados significativos.
+
+**Teorema central do limite.** Resultado segundo o qual a distribuição da média amostral se aproxima da normal à medida que o tamanho da amostra cresce.
+
+**Unidade experimental.** Menor unidade que pode receber, de forma independente, uma condição experimental; define o tamanho amostral.
+
+**Valor *p*.** Probabilidade de obter uma estatística de teste tão extrema quanto, ou mais extrema que, a observada, supondo verdadeiras a hipótese nula e as demais suposições do modelo.
+
+**Variância.** Média dos quadrados dos desvios em relação à média (com divisor $n - 1$ na variância amostral).
+
+**Viés.** Erro sistemático que desloca a estimativa em uma direção; não diminui com o aumento da amostra.
+
 ## Tabelas estatísticas
 
-## Links e ferramentas online
+As tabelas a seguir foram geradas com as funções de distribuição do R (`pnorm()`, `qt()`, `qchisq()` e `qf()`), e podem ser reproduzidas ou ampliadas pelo leitor. Na prática, os programas estatísticos calculam valores *p* e quantis exatos, e as tabelas servem principalmente para consulta rápida e para o estudo dos exemplos resolvidos.
+
+### Distribuição normal padrão
+
+A Tabela \@ref(tab:rec-normal) fornece $\Phi(z) = P(Z \le z)$ para $z$ de 0,00 a 3,49. A linha indica o valor de $z$ até a primeira casa decimal, e a coluna, a segunda casa. Para valores negativos, use a simetria: $\Phi(-z) = 1 - \Phi(z)$.
+
+```{r rec-normal}
+linhas_z <- seq(0, 3.4, by = 0.1)
+colunas_z <- seq(0, 0.09, by = 0.01)
+tab_z <- outer(linhas_z, colunas_z, function(a, b) pnorm(a + b))
+tab_z <- data.frame(z = fmt(linhas_z, 1), matrix(fmt(tab_z, 4), nrow = length(linhas_z)))
+names(tab_z) <- c("z", fmt(colunas_z, 2))
+tab_pdf(knitr::kable(tab_z, align = "c", caption = "Função de distribuição acumulada da normal padrão, Φ(z)."),
+        reduzir = TRUE)
+```
+
+### Distribuição *t* de Student
+
+A Tabela \@ref(tab:rec-t) fornece os quantis $t_{\text{gl};\,q}$, isto é, os valores tais que $P(T \le t) = q$. Para um intervalo de confiança bilateral de 95%, use a coluna 0,975; para um teste bilateral com $\alpha = 0{,}05$, o valor crítico é o mesmo.
+
+```{r rec-t}
+gl_t <- c(1:30, 40, 50, 60, 80, 100, 120, Inf)
+q_t <- c(0.90, 0.95, 0.975, 0.99, 0.995, 0.9995)
+tab_t <- sapply(q_t, function(q) qt(q, df = gl_t))
+tab_t <- data.frame(gl = ifelse(is.infinite(gl_t), "∞", gl_t), matrix(fmt(tab_t, 3), nrow = length(gl_t)))
+names(tab_t) <- c("gl", fmt(q_t, 4))
+knitr::kable(tab_t, align = "c", caption = "Quantis da distribuição t de Student. A linha ∞ corresponde à normal padrão.")
+```
+
+### Distribuição qui-quadrado
+
+A Tabela \@ref(tab:rec-qui) fornece os quantis $\chi^2_{\text{gl};\,q}$. Para testes qui-quadrado (que são unilaterais à direita) com $\alpha = 0{,}05$, use a coluna 0,95.
+
+```{r rec-qui}
+gl_q <- c(1:30, 40, 50, 60, 80, 100)
+q_q <- c(0.005, 0.025, 0.05, 0.90, 0.95, 0.975, 0.99, 0.995)
+tab_q <- sapply(q_q, function(q) qchisq(q, df = gl_q))
+tab_q <- data.frame(gl = gl_q, matrix(fmt(tab_q, 3), nrow = length(gl_q)))
+names(tab_q) <- c("gl", fmt(q_q, 3))
+tab_pdf(knitr::kable(tab_q, align = "c", caption = "Quantis da distribuição qui-quadrado."),
+        reduzir = TRUE)
+```
+
+### Distribuição *F*
+
+A Tabela \@ref(tab:rec-f) fornece os valores críticos $F_{0{,}95}$ (nível de significância de 5%), com os graus de liberdade do numerador nas colunas e os do denominador nas linhas. Para outros níveis, use `qf(1 - alfa, gl1, gl2)`.
+
+```{r rec-f}
+gl1 <- c(1:10, 12, 15, 20)
+gl2 <- c(1:30, 40, 60, 120)
+tab_f <- outer(gl2, gl1, function(d2, d1) qf(0.95, d1, d2))
+tab_f <- data.frame(gl2 = gl2, matrix(fmt(tab_f, 2), nrow = length(gl2)))
+names(tab_f) <- c("gl2 \\ gl1", gl1)
+if (knitr::is_latex_output()) {
+  # No PDF, a tabela é dividida em duas partes para caber na largura da página;
+  # a segunda parte repete o número da primeira.
+  parte1 <- knitr::kable(tab_f[, 1:8], align = "c",
+                         caption = "Valores críticos da distribuição F para α = 0,05.")
+  parte2 <- knitr::kable(tab_f[, c(1, 9:14)], align = "c", label = NA,
+                         caption = "Valores críticos da distribuição F para α = 0,05 (continuação).")
+  knitr::asis_output(paste("", parte1, "\\addtocounter{table}{-1}", parte2, "", sep = "\n\n"))
+} else {
+  knitr::kable(tab_f, align = "c", caption = "Valores críticos da distribuição F para α = 0,05.")
+}
+```
+
+## Links e ferramentas *online*
+
+Os endereços abaixo eram válidos no momento da redação. Como sítios mudam, recomenda-se localizar os recursos pelo nome em um buscador caso algum endereço deixe de funcionar.
+
+### Programas estatísticos
+
+- **R e CRAN**: <https://cran.r-project.org> (linguagem R e repositório de pacotes).
+- **RStudio** (Posit): <https://posit.co/download/rstudio-desktop/> (ambiente de desenvolvimento para R).
+- **Quarto**: <https://quarto.org> (documentos reprodutíveis com R, Python e outras linguagens).
+- **Python**: <https://www.python.org>; **Jupyter**: <https://jupyter.org>.
+- **JASP**: <https://jasp-stats.org> e **jamovi**: <https://www.jamovi.org> (programas gratuitos com interface gráfica, baseados em R).
+- **G\*Power**: programa gratuito para cálculo de poder e tamanho amostral.
+- **OpenEpi**: <https://www.openepi.com> (calculadoras epidemiológicas *online*).
+
+### Bases bibliográficas e de evidências
+
+- **PubMed**: <https://pubmed.ncbi.nlm.nih.gov>.
+- **Biblioteca Virtual em Saúde** (LILACS e outras bases): <https://bvsalud.org>.
+- **DeCS/MeSH**: <https://decs.bvsalud.org>.
+- **SciELO**: <https://www.scielo.org>.
+- **Portal de Periódicos da CAPES**: <https://www.periodicos.capes.gov.br>.
+- **Cochrane Library**: <https://www.cochranelibrary.com>.
+- **DOAJ** (periódicos de acesso aberto): <https://doaj.org>.
+
+### Diretrizes, registros e integridade
+
+- **Rede EQUATOR** (diretrizes de relato): <https://www.equator-network.org>.
+- **ICMJE**: <https://www.icmje.org>.
+- **COPE**: <https://publicationethics.org>.
+- **ReBEC** (Registro Brasileiro de Ensaios Clínicos): <https://ensaiosclinicos.gov.br>.
+- **ClinicalTrials.gov**: <https://clinicaltrials.gov>.
+- **PROSPERO** (registro de revisões sistemáticas): <https://www.crd.york.ac.uk/prospero/>.
+- **OSF** (*Open Science Framework*, registro prévio e compartilhamento de dados): <https://osf.io>.
+- **Zenodo** (repositório de dados e código): <https://zenodo.org>.
+- **Plataforma Brasil** (submissão de projetos aos CEPs): <https://plataformabrasil.saude.gov.br>.
+- **Retraction Watch**: <https://retractionwatch.com>.
+
+### Dados de saúde
+
+- **DATASUS** (informações de saúde e TabNet): <https://datasus.saude.gov.br>.
+- **IBGE** (dados demográficos e sistema SIDRA): <https://www.ibge.gov.br>.
+- **Global Health Observatory** (OMS): <https://www.who.int/data/gho>.

@@ -1,9 +1,237 @@
 # Comunicação científica
 
+Hércules Rezende Freitas, Ph.D.$^1$
+
+$^1$Universidade do Estado do Rio de Janeiro (UERJ), Faculdade de Ciências Médicas, Departamento de Ciências Médicas Integradas, Laboratório de Informática em Saúde (LabInfoS), Cabo Frio/RJ, Brasil.
+
+Uma pesquisa que não é comunicada não existe para a ciência. Os resultados só entram no conhecimento coletivo quando são publicados de forma que outros possam entendê-los, avaliá-los, reproduzi-los e usá-los. Comunicar bem não é um acessório da pesquisa, mas parte dela: um artigo que omite detalhes dos métodos impede a replicação; um resumo que exagera os resultados engana leitores que não lerão o texto completo; uma figura mal construída esconde o que os dados mostram.
+
+Este capítulo trata da redação de artigos científicos, da estrutura de relatórios de pesquisa (incluindo dissertações e teses), das apresentações orais e de pôsteres, e do processo de publicação e revisão por pares.
+
 ## Redação de artigos científicos
+
+### A estrutura IMRaD
+
+A grande maioria dos artigos originais em ciências da saúde segue a estrutura **IMRaD**: **I**ntrodução, **M**étodos, **R**esultados **a**nd **D**iscussão. Ela se consolidou ao longo do século XX e se tornou predominante nos principais periódicos médicos a partir das décadas de 1970 e 1980 [@sollaci2004]. Cada seção responde a uma pergunta:
+
+- **Introdução**: por que o estudo foi feito?
+- **Métodos**: como foi feito?
+- **Resultados**: o que foi encontrado?
+- **Discussão**: o que os resultados significam?
+
+A estrutura não é apenas uma convenção: ela separa o que foi **observado** (resultados) do que é **interpretado** (discussão), permitindo que o leitor avalie os dados independentemente das conclusões dos autores. Uma boa prática é escrever na ordem que facilita a coerência, e não na ordem em que as seções aparecem: muitos autores começam pelos métodos e resultados (o que foi feito e encontrado), depois a discussão e a introdução, e por último o resumo e o título.
+
+### Título e resumo
+
+O título e o resumo são as partes mais lidas de um artigo, e frequentemente as únicas. O **título** deve identificar o tema, a população e, quando possível, o desenho do estudo ("Exercício aeróbico e memória em idosos com comprometimento cognitivo leve: ensaio clínico randomizado"). Títulos que anunciam conclusões ("O exercício aeróbico melhora a memória...") são aceitos por alguns periódicos, mas tendem a simplificar resultados que raramente se resumem a uma frase.
+
+O **resumo estruturado** (objetivo, métodos, resultados, conclusões) é exigido pela maioria dos periódicos de saúde. Ele deve conter os números principais: o tamanho da amostra, a estimativa do efeito no desfecho principal com seu intervalo de confiança, e não apenas a afirmação de que "houve diferença significativa". Deve ser coerente com o texto completo: o resumo é o lugar mais frequente de **distorção interpretativa** (*spin*), isto é, a apresentação de resultados de forma mais favorável do que os dados permitem. Em uma amostra de ensaios randomizados com desfecho principal sem diferença estatisticamente significativa, Boutron e colaboradores [-@boutron2010] encontraram algum tipo de distorção na maioria dos resumos, como a ênfase em desfechos secundários ou em análises de subgrupo favoráveis.
+
+### Introdução
+
+A introdução deve ser curta e organizada como um **funil**: parte do contexto geral (a relevância do problema), passa pelo que se sabe e pelo que não se sabe (a lacuna identificada na revisão da literatura, capítulo *Formulação de problemas e hipóteses*) e termina com o **objetivo** do estudo, de preferência no último parágrafo. Não é uma revisão exaustiva da literatura: cada parágrafo deve conduzir o leitor até a pergunta que o estudo responde.
+
+### Métodos
+
+Os métodos devem ser descritos com detalhe suficiente para que outro pesquisador possa **reproduzir** o estudo. Isso inclui: desenho; local e período; critérios de elegibilidade; como os participantes foram recrutados; definição precisa e forma de medida da exposição, do desfecho e das covariáveis; cálculo do tamanho amostral; métodos estatísticos, com o programa e a versão utilizados; e aspectos éticos (aprovação pelo comitê de ética, consentimento, registro do estudo).
+
+A descrição da análise estatística deve permitir que um leitor com acesso aos dados reproduza os resultados: que modelos foram ajustados, com quais variáveis, como se lidou com dados faltantes, quais análises foram planejadas e quais foram exploratórias. Frases genéricas como "os dados foram analisados com testes estatísticos apropriados" não informam nada.
+
+Para cada tipo de estudo há uma **diretriz de relato** que lista os itens essenciais, reunidas pela rede EQUATOR (*Enhancing the QUAlity and Transparency Of health Research*). As principais são:
+
+- **CONSORT**: ensaios clínicos randomizados (capítulo *Desenhos de pesquisa*);
+- **SPIRIT**: protocolos de ensaios clínicos;
+- **STROBE**: estudos observacionais (coorte, caso-controle, transversal);
+- **PRISMA**: revisões sistemáticas e metanálises;
+- **STARD**: estudos de acurácia diagnóstica;
+- **TRIPOD**: modelos de predição;
+- **ARRIVE**: pesquisas com animais;
+- **CARE**: relatos de caso;
+- **SRQR** e **COREQ**: pesquisas qualitativas.
+
+Muitos periódicos exigem que a lista de verificação da diretriz correspondente seja preenchida e enviada com o manuscrito. Usá-la desde o planejamento do estudo, e não apenas na redação, evita descobrir tarde demais que uma informação essencial não foi coletada.
+
+### Resultados
+
+Os resultados apresentam os achados **sem interpretá-los**. A ordem usual é: fluxo de participantes (quantos foram avaliados, incluídos, perdidos e analisados, frequentemente em um diagrama), características da amostra (a "Tabela 1", capítulo *Bioestatística descritiva*), resultado do desfecho principal, desfechos secundários e análises adicionais.
+
+O texto não deve repetir tudo o que está nas tabelas; deve destacar os achados principais e remeter às tabelas e figuras para os detalhes. Algumas regras de apresentação numérica:
+
+- relate o **tamanho do efeito com seu intervalo de confiança**, e não apenas o valor *p*: "a pressão sistólica diminuiu em média 6,1 mmHg (IC 95%: 1,4 a 10,8; $p = 0{,}018$)", e não "houve redução significativa da pressão ($p < 0{,}05$)";
+- informe os **valores *p* exatos**, com duas ou três casas decimais, e use "$p < 0{,}001$" apenas para valores muito pequenos;
+- use precisão compatível com os dados: porcentagens com uma casa decimal, médias com no máximo uma casa a mais que a precisão da medida;
+- informe sempre os **denominadores**, especialmente quando houver dados faltantes;
+- relate os resultados de **todos** os desfechos pré-especificados, inclusive os negativos.
+
+As diretrizes SAMPL, discutidas no capítulo *Bioestatística descritiva*, detalham essas recomendações.
+
+### Discussão
+
+Uma discussão bem estruturada costuma conter, nesta ordem:
+
+1. **o achado principal**, em uma ou duas frases, respondendo à pergunta do estudo;
+2. **a comparação com a literatura**: os resultados concordam ou discordam de estudos anteriores, e por quê? Explicações possíveis para as discordâncias (populações, métodos, tamanhos amostrais) são mais úteis do que listas de estudos concordantes;
+3. **os mecanismos plausíveis**, quando relevante, deixando claro o que é especulação;
+4. **as limitações**, de forma honesta e específica: não basta escrever "o estudo tem limitações, como o tamanho amostral"; é preciso discutir qual a provável direção e magnitude de cada viés e como ele afeta a interpretação;
+5. **os pontos fortes**;
+6. **as implicações** para a prática e para a pesquisa futura;
+7. **a conclusão**, que deve decorrer diretamente dos resultados, sem extrapolá-los.
+
+Três tipos de extrapolação são frequentes e devem ser evitados: concluir causalidade a partir de estudos observacionais sem discutir confusão ("o consumo de X **causa** Y"); generalizar para populações muito diferentes da estudada; e interpretar a ausência de significância estatística como prova de ausência de efeito (capítulo *Bioestatística inferencial*).
+
+### Autoria
+
+Ser autor de um artigo significa assumir **responsabilidade** pelo seu conteúdo, e não apenas receber crédito. As recomendações do **ICMJE** (*International Committee of Medical Journal Editors*), adotadas pela maioria dos periódicos médicos, estabelecem que um autor deve atender aos quatro critérios a seguir:
+
+1. contribuição substancial para a concepção ou o desenho do trabalho, ou para a aquisição, análise ou interpretação dos dados;
+2. redação do trabalho ou revisão crítica de seu conteúdo intelectual importante;
+3. aprovação final da versão a ser publicada;
+4. concordância em ser responsável por todos os aspectos do trabalho, garantindo que questões sobre a exatidão ou a integridade de qualquer parte sejam adequadamente investigadas e resolvidas.
+
+Quem contribuiu sem atender aos quatro critérios (por exemplo, obtendo financiamento, coletando dados ou chefiando o laboratório) deve ser mencionado nos agradecimentos. A taxonomia **CRediT** (*Contributor Roles Taxonomy*) [@brand2015] padroniza a descrição das contribuições de cada autor em 14 papéis (conceituação, curadoria de dados, análise formal, obtenção de financiamento, investigação, metodologia, administração do projeto, recursos, *software*, supervisão, validação, visualização, redação do rascunho original e revisão e edição), e é adotada por muitos periódicos. A autoria "presenteada" (incluir quem não contribuiu) e a autoria "fantasma" (omitir quem contribuiu substancialmente, como redatores pagos pela indústria) são violações da integridade científica (capítulo *Ética e boas práticas em pesquisa*).
+
+### Estilo
+
+A redação científica busca **clareza** e **precisão**, não ornamento. Algumas orientações:
+
+- prefira frases curtas e diretas, com uma ideia principal por frase;
+- use a mesma palavra para o mesmo conceito ao longo do texto: se o desfecho é "evento cardiovascular maior", não alterne com "complicação cardíaca" e "evento coronariano" por variedade estilística;
+- evite termos vagos ("vários", "alguns", "significativamente" no sentido não estatístico) quando um número pode ser dado;
+- distinga o uso estatístico de "significativo" do uso cotidiano; na dúvida, escreva "estatisticamente significativo" ou, melhor, apresente a estimativa e o intervalo;
+- use abreviaturas com parcimônia, definindo-as na primeira ocorrência;
+- revise o texto várias vezes, de preferência depois de alguns dias de distância, e peça a colegas de fora da área que o leiam.
+
+O uso de ferramentas de inteligência artificial para auxiliar a redação deve seguir as políticas do periódico. Em geral, essas ferramentas não podem ser listadas como autoras, porque não podem assumir responsabilidade pelo trabalho, e seu uso deve ser declarado. Os autores continuam integralmente responsáveis por todo o conteúdo, inclusive por verificar a exatidão de afirmações e referências.
 
 ## Estrutura de relatórios de pesquisa
 
-## Apresentações orais e posters
+Além dos artigos, a pesquisa é comunicada em outros formatos, cada um com convenções próprias.
+
+### Dissertações e teses
+
+Os programas de pós-graduação brasileiros admitem, em geral, dois formatos:
+
+- **formato tradicional**: introdução, revisão da literatura, objetivos, métodos, resultados, discussão e conclusões, como uma monografia extensa;
+- **formato de artigos**: introdução geral e objetivos, seguidos de um ou mais artigos (publicados, submetidos ou em preparação) e de uma discussão geral que integra os achados.
+
+As regras de cada programa e as normas da ABNT para trabalhos acadêmicos, citações e referências definem a formatação. Independentemente do formato, a dissertação ou tese deve permitir ao leitor avaliar o trabalho como um todo: os métodos podem ser descritos com mais detalhe do que nos artigos, e análises complementares que não couberam nos artigos podem ser apresentadas.
+
+### Protocolos e planos de análise estatística
+
+O **protocolo** é o documento que descreve o estudo antes de sua realização: justificativa, objetivos, desenho, população, intervenções, desfechos, tamanho amostral, análise e aspectos éticos. É exigido pelos comitês de ética e, para ensaios clínicos, deve seguir a diretriz SPIRIT.
+
+O **plano de análise estatística** (PAE, ou SAP, do inglês *statistical analysis plan*) detalha as análises de forma a eliminar a flexibilidade depois que os dados são conhecidos: definição exata das populações de análise, dos desfechos e de como serão derivados, dos modelos, do tratamento de dados faltantes, das análises de sensibilidade e de subgrupo, e do formato das tabelas. Para ensaios clínicos, há diretrizes específicas sobre o conteúdo mínimo do plano [@gamble2017]. Em estudos observacionais, um plano escrito antes do acesso aos dados oferece proteção semelhante contra a escolha seletiva de análises.
+
+### Relatórios técnicos e relatórios reprodutíveis
+
+Relatórios técnicos para instituições, gestores ou financiadores priorizam a utilidade prática: um resumo executivo no início, com as principais conclusões e recomendações, seguido do detalhamento dos métodos e dos resultados.
+
+Para qualquer relatório que envolva análise de dados, uma prática que aumenta muito a confiabilidade é produzi-lo como um **documento reprodutível**: o texto, o código e os resultados ficam no mesmo arquivo (R Markdown ou Quarto, por exemplo; capítulo *Uso de softwares estatísticos*), e os números citados no texto são gerados diretamente pelo código, e não copiados à mão. Este livro é escrito dessa forma. Assim, se os dados forem corrigidos, o relatório inteiro é atualizado ao ser recompilado, e erros de transcrição deixam de existir.
+
+## Apresentações orais e pôsteres
+
+### Apresentações orais
+
+Uma apresentação oral não é um artigo lido em voz alta. O público não pode voltar atrás para reler uma frase, e a atenção é limitada. Algumas orientações:
+
+- **conheça o tempo e respeite-o**: como referência, conte cerca de um minuto por slide de conteúdo; uma apresentação de 10 minutos comporta em torno de 8 a 10 slides;
+- **conte uma história**: qual era o problema, o que foi feito, o que foi encontrado, por que importa. Uma mensagem principal clara, repetida no início e no final, vale mais do que muitos detalhes;
+- **um slide, uma ideia**: o título do slide pode ser a própria mensagem ("O treinamento aeróbico melhorou a memória em 3 pontos"), e o conteúdo, a evidência que a sustenta;
+- **pouco texto**: o slide apoia a fala, não a substitui. Listas longas de tópicos levam o público a ler em vez de ouvir;
+- **figuras em vez de tabelas**: tabelas extensas são ilegíveis em projeção. Mostre os números essenciais, em fonte grande, e as figuras simplificadas para a projeção;
+- **legibilidade**: fontes sem serifa, de tamanho suficiente para serem lidas do fundo da sala, e alto contraste. Cerca de 8% dos homens têm alguma forma de deficiência na percepção de cores, por isso a informação não deve depender apenas da distinção entre vermelho e verde;
+- **ensaie** em voz alta, com cronômetro, e prepare-se para perguntas.
+
+### Pôsteres
+
+O pôster é lido em pé, em poucos minutos, frequentemente à distância. O erro mais comum é colocar nele o artigo inteiro. Um bom pôster:
+
+- tem um **título curto e informativo**, legível a alguns metros de distância;
+- organiza o conteúdo em **colunas**, lidas de cima para baixo e da esquerda para a direita, com seções curtas;
+- dá destaque à **mensagem principal**, que pode ser escrita em uma frase em fonte grande, no centro ou no topo;
+- usa **figuras** como elemento principal, com legendas autoexplicativas;
+- deixa **espaço em branco**: um pôster congestionado afasta os leitores;
+- inclui o contato dos autores e, se desejado, um código QR que leve ao resumo, ao artigo ou aos materiais suplementares.
+
+Os princípios de construção de figuras científicas estão no capítulo *Uso de softwares estatísticos*. Rougier e colaboradores [-@rougier2014] resumem dez regras práticas, entre elas conhecer o público, adaptar a figura ao meio (artigo, slide, pôster), evitar os padrões automáticos dos programas e não enganar o leitor.
 
 ## Publicação e revisão por pares
+
+### Escolhendo o periódico
+
+A escolha do periódico deve ser feita cedo, porque define o formato, o limite de palavras e o público. Critérios a considerar:
+
+- **escopo**: o periódico publica estudos sobre o tema e com o tipo de desenho? Ler alguns artigos recentes e as instruções aos autores responde a essa pergunta;
+- **público**: quem precisa ler o resultado? Clínicos, gestores, pesquisadores de uma área específica?
+- **indexação**: o periódico está indexado nas bases relevantes (MEDLINE, Scopus, Web of Science, SciELO, LILACS)?
+- **acesso e custos**: o periódico é de acesso aberto? Cobra taxa de processamento de artigos (APC)? Há acordos institucionais que isentam os autores? Os acordos transformativos negociados pela CAPES com algumas editoras permitem a autores de instituições brasileiras publicar em acesso aberto em determinados periódicos híbridos sem pagar a taxa; as condições mudam e devem ser verificadas no Portal de Periódicos;
+- **tempo de avaliação e taxa de aceitação**, frequentemente informados pelo próprio periódico;
+- **métricas de impacto**: indicadores como o fator de impacto ou o CiteScore medem citações médias do periódico, não a qualidade de um artigo específico, e devem ser apenas um dos critérios.
+
+### Periódicos predatórios
+
+**Periódicos predatórios** são publicações que cobram taxas dos autores sem oferecer os serviços editoriais que anunciam, em particular uma revisão por pares real. Uma definição de consenso os descreve como entidades que priorizam o interesse próprio em detrimento da erudição, caracterizadas por informações falsas ou enganosas, desvio das melhores práticas editoriais, falta de transparência e solicitações agressivas e indiscriminadas [@grudniewicz2019]. Sinais de alerta incluem: convites por e-mail para submeter a periódicos de que o autor nunca ouviu falar, frequentemente fora de sua área; promessa de aceitação ou publicação muito rápida; corpo editorial falso ou não verificável; métricas de impacto inventadas; indexação alegada que não se confirma nas bases. Publicar em um periódico predatório desperdiça o trabalho de pesquisa, porque o artigo terá pouca visibilidade e credibilidade, e pode prejudicar a carreira do autor.
+
+### Submissão
+
+A submissão é feita pelo sistema eletrônico do periódico e inclui, em geral: o manuscrito formatado segundo as instruções aos autores; as figuras e tabelas; a **carta ao editor** (*cover letter*), que explica brevemente o que o estudo encontrou, por que é relevante para os leitores daquele periódico e declara que o manuscrito não está submetido em outro lugar; as declarações de conflitos de interesse, financiamento, aprovação ética e contribuições dos autores; a lista de verificação da diretriz de relato; e, cada vez mais, a declaração de disponibilidade dos dados e do código.
+
+### Revisão por pares
+
+O editor faz uma primeira avaliação e pode rejeitar o manuscrito sem enviá-lo a revisores (*desk rejection*), em geral por estar fora do escopo, ter problemas metodológicos evidentes ou baixa prioridade para o periódico. Se o manuscrito prosseguir, é enviado a dois ou mais **revisores**, especialistas na área, que avaliam sua validade, originalidade e clareza. Os modelos de revisão incluem:
+
+- **simples-cego**: os revisores conhecem a identidade dos autores, mas não o contrário;
+- **duplo-cego**: nenhuma das partes conhece a identidade da outra;
+- **aberta**: as identidades são conhecidas e, em alguns periódicos, os pareceres são publicados com o artigo.
+
+Com base nos pareceres, o editor decide: aceitar (raro na primeira rodada), solicitar revisões menores ou maiores, ou rejeitar.
+
+**Respondendo aos revisores.** A resposta deve ser feita em uma **carta ponto a ponto**, reproduzindo cada comentário e explicando o que foi alterado (com indicação de página e linha) ou, quando o autor discordar, por que não foi alterado. A discordância é legítima, desde que fundamentada e cortês. Mesmo comentários que parecem resultar de uma leitura equivocada indicam que o texto não estava claro para pelo menos um leitor qualificado, e merecem uma alteração no texto, e não apenas uma explicação na carta.
+
+**Rejeição.** A rejeição é parte normal da vida científica, inclusive para pesquisadores experientes. Os pareceres recebidos devem ser usados para melhorar o manuscrito antes de submetê-lo a outro periódico.
+
+**Atuando como revisor.** Revisar manuscritos é uma contribuição importante à comunidade. Um bom parecer resume o estudo, avalia se as conclusões decorrem dos métodos e resultados, identifica problemas metodológicos de forma específica e construtiva, e distingue questões essenciais de sugestões menores. O revisor deve declarar conflitos de interesse e manter a confidencialidade do manuscrito.
+
+### Pré-prints, acesso aberto e o depois da publicação
+
+**Pré-prints** são versões de manuscritos disponibilizadas publicamente antes da revisão por pares, em servidores como medRxiv, bioRxiv e SciELO Preprints. Aceleram a disseminação e permitem receber comentários, mas não foram avaliados por pares, o que deve ser considerado por quem os lê. A maioria dos periódicos aceita manuscritos que foram previamente divulgados como pré-print, mas é preciso verificar a política de cada um.
+
+O **acesso aberto** torna o artigo gratuitamente disponível a qualquer leitor. Na via **dourada**, o próprio periódico publica em acesso aberto (às vezes mediante taxa); na via **verde**, o autor deposita uma versão do manuscrito em um repositório institucional ou temático; periódicos **diamante** são de acesso aberto e não cobram taxas de autores nem de leitores, sendo financiados por instituições, como muitos periódicos da coleção SciELO.
+
+Depois da publicação, o artigo continua sujeito ao escrutínio da comunidade, por meio de cartas ao editor, comentários em plataformas e tentativas de replicação. Erros honestos devem ser corrigidos por meio de **errata**; erros graves que invalidam as conclusões, ou má conduta, levam à **retratação** do artigo, tema do capítulo *Ética e boas práticas em pesquisa*. Compartilhar dados e código em repositórios públicos (como Zenodo, OSF ou repositórios institucionais), respeitando a privacidade dos participantes, permite que outros verifiquem e reaproveitem o trabalho.
+
+## Resumo do capítulo
+
+- A estrutura IMRaD separa o que foi feito e observado (métodos e resultados) do que é interpretado (discussão).
+- O resumo deve conter as estimativas principais com seus intervalos e ser fiel ao texto; é o local mais frequente de distorção interpretativa.
+- Os métodos devem permitir a reprodução do estudo. Use a diretriz de relato correspondente (CONSORT, STROBE, PRISMA, STARD, ARRIVE, entre outras) desde o planejamento.
+- Nos resultados, relate tamanhos de efeito com intervalos de confiança, valores *p* exatos e denominadores, para todos os desfechos pré-especificados.
+- A discussão apresenta o achado principal, compara com a literatura, discute limitações de forma específica e não extrapola as conclusões.
+- Autoria exige responsabilidade e o cumprimento dos quatro critérios do ICMJE. A taxonomia CRediT descreve as contribuições.
+- Planos de análise escritos antes do acesso aos dados e relatórios reprodutíveis aumentam a confiabilidade.
+- Apresentações orais e pôsteres exigem síntese: uma mensagem principal, poucas palavras, figuras legíveis.
+- Escolha o periódico pelo escopo, público, indexação e custos; evite periódicos predatórios. Responda aos revisores ponto a ponto, com cortesia e fundamentação.
+
+## Exercícios
+
+1. Reescreva a frase a seguir para um resumo, seguindo as recomendações deste capítulo: "O grupo que recebeu o tratamento apresentou melhora significativa em relação ao controle ($p < 0{,}05$)." Invente números plausíveis, se necessário.
+
+2. Identifique os problemas nesta conclusão de um estudo transversal com 200 adultos: "Concluímos que o consumo de café previne a depressão, e recomendamos que a população consuma ao menos três xícaras por dia."
+
+3. Um pesquisador coletou dados, outro realizou a análise estatística e redigiu os resultados, um terceiro conseguiu o financiamento e chefia o laboratório, e um quarto revisou criticamente o manuscrito e aprovou sua versão final, mas não participou de nenhuma outra etapa. Quem deve ser autor segundo os critérios do ICMJE? Como as contribuições poderiam ser descritas com a taxonomia CRediT?
+
+4. Você recebeu um e-mail convidando-o a submeter um artigo a um periódico com "fator de impacto 5,8", com promessa de publicação em sete dias mediante taxa de 300 dólares. Que verificações você faria antes de considerar o convite?
+
+5. Um revisor afirma que seu estudo não considerou a idade como confundidor, mas a idade está incluída no modelo, como descrito na seção de métodos. Como você responderia?
+
+## Respostas dos exercícios
+
+1. Por exemplo: "Após 12 semanas, a pressão sistólica foi em média 6,1 mmHg menor no grupo tratado do que no grupo controle (IC 95%: 1,4 a 10,8; $p = 0{,}018$)." A versão reescrita informa o desfecho, o momento, a direção e a magnitude do efeito, sua precisão e o valor *p* exato.
+
+2. (a) Linguagem causal ("previne") a partir de um estudo transversal, que não estabelece a ordem temporal (pessoas deprimidas podem consumir menos café) nem controla confusão não medida. (b) A recomendação populacional extrapola muito o que o estudo permite, e não considera possíveis efeitos adversos. (c) A precisão das estimativas não depende apenas do total de 200 participantes, mas sobretudo do número de pessoas com depressão, que pode ser pequeno; sem a estimativa de efeito e seu intervalo de confiança, não é possível julgar se a associação foi estimada com precisão. Uma conclusão adequada seria: "o consumo de café foi associado a menor prevalência de sintomas depressivos; estudos longitudinais são necessários para avaliar se a associação é causal".
+
+3. Pelos critérios do ICMJE, um autor precisa atender aos quatro critérios. O pesquisador que realizou a análise e redigiu os resultados atende ao critério 1 (análise e interpretação) e ao 2 (redação) e, se aprovar a versão final e aceitar a responsabilidade, aos critérios 3 e 4. Quem apenas coletou dados, quem apenas obteve financiamento e quem apenas revisou e aprovou não atendem ao critério 1 ou ao 2 de forma completa, a menos que tenham participado também de outras etapas; se não participaram, devem constar nos agradecimentos. Pela CRediT: análise formal e redação do rascunho original (segundo pesquisador); investigação ou curadoria de dados (primeiro); obtenção de financiamento e supervisão (terceiro); revisão e edição (quarto). Note que a CRediT descreve contribuições, mas não substitui os critérios de autoria.
+
+4. Verificar se o periódico está indexado nas bases que ele alega (MEDLINE, Scopus, Web of Science) consultando as próprias bases, e não o site do periódico; se o fator de impacto aparece no Journal Citation Reports; se os membros do corpo editorial existem e confirmam o vínculo; se o periódico consta do DOAJ (para periódicos de acesso aberto); se os artigos publicados são de qualidade e da sua área; se há informações claras sobre o processo de revisão. A promessa de publicação em sete dias é incompatível com uma revisão por pares real.
+
+5. Com cortesia, agradecer o comentário, indicar que a idade foi incluída no modelo ajustado e onde isso está descrito, e, reconhecendo que a informação pode não ter ficado clara, explicitá-la melhor no texto (por exemplo, listando as covariáveis do modelo na legenda da tabela e no texto dos métodos), indicando página e linha da alteração.

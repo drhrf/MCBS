@@ -3,8 +3,8 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
-        <li><a href="https://raw.githubusercontent.com/drhrf/MCBS/master/docs/MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
+        <li><a href="MCBSbook.pdf" target="blank">Baixar MCBS como PDF</a></li>
+        <li><a href="MCBSbook.epub" target="blank">Baixar MCBS como EPUB</a></li>
         <li><a href="./">SUMÁRIO</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado com bookdown</a></li>
@@ -14,9 +14,8 @@ bookdown::gitbook:
     in_header: _custom_header.html
 bookdown::pdf_book:
   includes:
-    in_header: custom-header.tex
+    in_header: [custom-header.tex, latex/codigo.tex, latex/caracteres.tex, latex/capa-folha-rosto.tex]
   latex_engine: xelatex
   keep_tex: yes
   output_file: "MCBSbook.pdf"
-  output_dir: "_main_files"
 bookdown::epub_book: default
