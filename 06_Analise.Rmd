@@ -1,4 +1,4 @@
-# Análise de dados
+# Relações entre variáveis {#análise-de-dados}
 
 Hércules Rezende Freitas, Ph.D.$^1$
 

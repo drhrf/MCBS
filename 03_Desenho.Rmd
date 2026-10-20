@@ -192,7 +192,7 @@ par(op)
 
 Os diagramas tornam explícitas três lições. Primeira: a confusão é um conceito **causal**, não estatístico; nenhum teste nos dados decide se uma variável é um confundidor, e a decisão depende do conhecimento sobre o problema. Segunda: ajustar para todas as variáveis disponíveis não é uma estratégia segura, porque ajustar para um mediador remove parte do efeito de interesse e ajustar para um colisor cria associações espúrias. Terceira: só se pode ajustar para o que foi medido; a **confusão residual** por fatores não medidos é a principal limitação dos estudos observacionais.
 
-A confusão pode ser controlada no **desenho** (restrição, pareamento, randomização) ou na **análise** (estratificação, regressão múltipla, como no capítulo *Análise de dados*, escores de propensão). Apenas a randomização controla também os confundidores não medidos.
+A confusão pode ser controlada no **desenho** (restrição, pareamento, randomização) ou na **análise** (estratificação, regressão múltipla, como no capítulo *Relações entre variáveis*, escores de propensão). Apenas a randomização controla também os confundidores não medidos.
 
 ### Da associação à causalidade
 
@@ -278,7 +278,7 @@ par(op)
 ### Outros desenhos observacionais
 
 - **Relatos e séries de casos** descrevem um ou mais pacientes com uma condição. Não têm grupo de comparação e, portanto, não permitem avaliar associações, mas são fundamentais para identificar doenças novas e efeitos adversos inesperados (a epidemia de aids e a embriopatia da talidomida foram reconhecidas por séries de casos).
-- **Estudos ecológicos** usam grupos (municípios, países, períodos), e não indivíduos, como unidade de análise. São úteis para avaliar efeitos de políticas e exposições de nível populacional, mas a associação observada entre grupos não pode ser transferida para indivíduos (a **falácia ecológica**, discutida no capítulo *Análise de dados*).
+- **Estudos ecológicos** usam grupos (municípios, países, períodos), e não indivíduos, como unidade de análise. São úteis para avaliar efeitos de políticas e exposições de nível populacional, mas a associação observada entre grupos não pode ser transferida para indivíduos (a **falácia ecológica**, discutida no capítulo *Relações entre variáveis*).
 
 Para o relato de estudos observacionais, a diretriz **STROBE** [@vonelm2007] especifica os itens que um artigo deve conter.
 
@@ -346,7 +346,7 @@ Em quase todos os ensaios, alguns participantes não recebem o tratamento alocad
 #### Outros desenhos de ensaio
 
 - **Ensaio cruzado** (*crossover*): cada participante recebe os dois tratamentos, em ordem sorteada, separados por um período de eliminação (*washout*). Cada um é seu próprio controle, o que reduz o tamanho amostral necessário. Só é adequado para condições crônicas e estáveis e tratamentos de efeito reversível.
-- **Ensaio fatorial**: avalia duas intervenções ao mesmo tempo, alocando os participantes a nenhuma, uma, outra ou ambas (veja a ANOVA fatorial no capítulo *Análise de dados*).
+- **Ensaio fatorial**: avalia duas intervenções ao mesmo tempo, alocando os participantes a nenhuma, uma, outra ou ambas (veja a ANOVA fatorial no capítulo *Relações entre variáveis*).
 - **Ensaio por conglomerados** (*cluster*): randomizam-se grupos (escolas, unidades de saúde, comunidades), e não indivíduos. Necessário quando a intervenção é aplicada no nível do grupo ou quando há risco de contaminação entre participantes. Como os indivíduos de um mesmo conglomerado são correlacionados, o tamanho amostral e a análise precisam levar em conta essa correlação.
 - **Ensaios de não inferioridade**: buscam mostrar que um novo tratamento (mais barato, mais seguro, mais cômodo) não é pior que o padrão por mais do que uma margem predefinida. Exigem cuidados específicos de desenho e análise.
 
@@ -384,7 +384,7 @@ Medir 50 neurônios de cada um de três animais por grupo e analisar os dados co
 
 - **Inteiramente casualizado**: as unidades experimentais são distribuídas aleatoriamente entre os tratamentos, sem restrições. É o mais simples e adequado quando as unidades são homogêneas.
 - **Em blocos casualizados**: as unidades são primeiro agrupadas em **blocos** de unidades semelhantes (animais da mesma ninhada, amostras processadas no mesmo dia, placas do mesmo lote) e, dentro de cada bloco, os tratamentos são sorteados. A variação entre blocos é removida da comparação entre tratamentos, aumentando a precisão. O bloco deve ser incluído na análise (por exemplo, como fator em uma ANOVA).
-- **Fatorial**: dois ou mais fatores são estudados simultaneamente em todas as combinações, o que permite avaliar interações com eficiência (capítulo *Análise de dados*).
+- **Fatorial**: dois ou mais fatores são estudados simultaneamente em todas as combinações, o que permite avaliar interações com eficiência (capítulo *Relações entre variáveis*).
 - **Medidas repetidas**: a mesma unidade é medida várias vezes ao longo do tempo ou sob várias condições, o que exige análises que considerem a correlação entre medidas.
 
 ### Controle e aleatorização

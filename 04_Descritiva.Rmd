@@ -586,7 +586,7 @@ Ao examinar um gráfico de dispersão, procure responder:
 4. **Pontos atípicos**: há observações distantes do padrão geral, que possam influenciar desproporcionalmente as análises (como nos conjuntos 3 e 4 de Anscombe)?
 5. **Heterogeneidade**: a dispersão de $y$ é semelhante ao longo de todo o eixo $x$, ou aumenta (formato de funil)?
 
-Na Figura \@ref(fig:desc-fig-dispersao), há uma associação positiva, aproximadamente linear e de intensidade moderada entre IMC e pressão arterial sistólica. A quantificação dessa associação (coeficientes de correlação de Pearson e de Spearman) e sua modelagem (regressão linear) são temas do capítulo *Análise de dados*. Lembre-se também de que associação não implica causalidade: o gráfico de dispersão descreve como as variáveis variam em conjunto, não por que variam.
+Na Figura \@ref(fig:desc-fig-dispersao), há uma associação positiva, aproximadamente linear e de intensidade moderada entre IMC e pressão arterial sistólica. A quantificação dessa associação (coeficientes de correlação de Pearson e de Spearman) e sua modelagem (regressão linear) são temas do capítulo *Relações entre variáveis*. Lembre-se também de que associação não implica causalidade: o gráfico de dispersão descreve como as variáveis variam em conjunto, não por que variam.
 
 Quando há muitos pontos sobrepostos, use transparência (como nos exemplos acima, com `adjustcolor()`), pequenos deslocamentos aleatórios (*jitter*) para variáveis discretas, ou gráficos de densidade bidimensional. Para incluir uma terceira variável categórica, varie o símbolo ou a cor dos pontos, sempre com legenda.
 

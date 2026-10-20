@@ -302,7 +302,7 @@ Os capítulos seguem a ordem em que as decisões aparecem em uma pesquisa:
 \item
   \textbf{Desenhos de pesquisa} apresenta as medidas de frequência e de associação, as ameaças à validade (erro aleatório, viés e confusão) e os principais desenhos observacionais, experimentais e de ensaios clínicos;
 \item
-  \textbf{Bioestatística descritiva}, \textbf{Bioestatística inferencial} e \textbf{Análise de dados} formam o núcleo estatístico do livro: descrição de dados, probabilidade, distribuições, intervalos de confiança, testes de hipóteses, correlação, regressão, análise de variância e métodos multivariados;
+  \textbf{Bioestatística descritiva}, \textbf{Bioestatística inferencial} e \textbf{Relações entre variáveis} formam o núcleo estatístico do livro: descrição de dados, probabilidade, distribuições, intervalos de confiança, testes de hipóteses, correlação, regressão, análise de variância e métodos multivariados;
 \item
   \textbf{Uso de softwares estatísticos} introduz o R, o Python, os programas com interface gráfica e os princípios de construção de figuras científicas;
 \item
@@ -315,7 +315,7 @@ Os capítulos seguem a ordem em que as decisões aparecem em uma pesquisa:
 
 \emph{Como ler este livro}
 
-Os capítulos podem ser lidos de forma independente, mas os de bioestatística pressupõem os anteriores: a inferência usa os conceitos da estatística descritiva, e a análise de dados usa os da inferência. Cada capítulo termina com um resumo, exercícios e respostas comentadas. Recomenda-se tentar resolver os exercícios antes de consultar as respostas e reproduzir no próprio computador os códigos apresentados.
+Os capítulos podem ser lidos de forma independente, mas os de bioestatística pressupõem os anteriores: a inferência usa os conceitos da estatística descritiva, e o estudo das relações entre variáveis usa os da inferência. Cada capítulo termina com um resumo, exercícios e respostas comentadas. Recomenda-se tentar resolver os exercícios antes de consultar as respostas e reproduzir no próprio computador os códigos apresentados.
 
 Algumas convenções são usadas ao longo do texto:
 
@@ -1133,7 +1133,7 @@ O RR bruto é \((42/500)/(18/500) = 2{,}33\), mas, entre os fumantes, o risco é
 
 Os diagramas tornam explícitas três lições. Primeira: a confusão é um conceito \textbf{causal}, não estatístico; nenhum teste nos dados decide se uma variável é um confundidor, e a decisão depende do conhecimento sobre o problema. Segunda: ajustar para todas as variáveis disponíveis não é uma estratégia segura, porque ajustar para um mediador remove parte do efeito de interesse e ajustar para um colisor cria associações espúrias. Terceira: só se pode ajustar para o que foi medido; a \textbf{confusão residual} por fatores não medidos é a principal limitação dos estudos observacionais.
 
-A confusão pode ser controlada no \textbf{desenho} (restrição, pareamento, randomização) ou na \textbf{análise} (estratificação, regressão múltipla, como no capítulo \emph{Análise de dados}, escores de propensão). Apenas a randomização controla também os confundidores não medidos.
+A confusão pode ser controlada no \textbf{desenho} (restrição, pareamento, randomização) ou na \textbf{análise} (estratificação, regressão múltipla, como no capítulo \emph{Relações entre variáveis}, escores de propensão). Apenas a randomização controla também os confundidores não medidos.
 
 \subsection{Da associação à causalidade}\label{da-associauxe7uxe3o-uxe0-causalidade}
 
@@ -1243,7 +1243,7 @@ No estudo \textbf{caso-controle}, o ponto de partida é o \textbf{desfecho}. Sel
 \item
   \textbf{Relatos e séries de casos} descrevem um ou mais pacientes com uma condição. Não têm grupo de comparação e, portanto, não permitem avaliar associações, mas são fundamentais para identificar doenças novas e efeitos adversos inesperados (a epidemia de aids e a embriopatia da talidomida foram reconhecidas por séries de casos).
 \item
-  \textbf{Estudos ecológicos} usam grupos (municípios, países, períodos), e não indivíduos, como unidade de análise. São úteis para avaliar efeitos de políticas e exposições de nível populacional, mas a associação observada entre grupos não pode ser transferida para indivíduos (a \textbf{falácia ecológica}, discutida no capítulo \emph{Análise de dados}).
+  \textbf{Estudos ecológicos} usam grupos (municípios, países, períodos), e não indivíduos, como unidade de análise. São úteis para avaliar efeitos de políticas e exposições de nível populacional, mas a associação observada entre grupos não pode ser transferida para indivíduos (a \textbf{falácia ecológica}, discutida no capítulo \emph{Relações entre variáveis}).
 \end{itemize}
 
 Para o relato de estudos observacionais, a diretriz \textbf{STROBE} (\citeproc{ref-vonelm2007}{{von Elm et al.} 2007}) especifica os itens que um artigo deve conter.
@@ -1354,7 +1354,7 @@ Em quase todos os ensaios, alguns participantes não recebem o tratamento alocad
 \item
   \textbf{Ensaio cruzado} (\emph{crossover}): cada participante recebe os dois tratamentos, em ordem sorteada, separados por um período de eliminação (\emph{washout}). Cada um é seu próprio controle, o que reduz o tamanho amostral necessário. Só é adequado para condições crônicas e estáveis e tratamentos de efeito reversível.
 \item
-  \textbf{Ensaio fatorial}: avalia duas intervenções ao mesmo tempo, alocando os participantes a nenhuma, uma, outra ou ambas (veja a ANOVA fatorial no capítulo \emph{Análise de dados}).
+  \textbf{Ensaio fatorial}: avalia duas intervenções ao mesmo tempo, alocando os participantes a nenhuma, uma, outra ou ambas (veja a ANOVA fatorial no capítulo \emph{Relações entre variáveis}).
 \item
   \textbf{Ensaio por conglomerados} (\emph{cluster}): randomizam-se grupos (escolas, unidades de saúde, comunidades), e não indivíduos. Necessário quando a intervenção é aplicada no nível do grupo ou quando há risco de contaminação entre participantes. Como os indivíduos de um mesmo conglomerado são correlacionados, o tamanho amostral e a análise precisam levar em conta essa correlação.
 \item
@@ -1412,7 +1412,7 @@ Medir 50 neurônios de cada um de três animais por grupo e analisar os dados co
 \item
   \textbf{Em blocos casualizados}: as unidades são primeiro agrupadas em \textbf{blocos} de unidades semelhantes (animais da mesma ninhada, amostras processadas no mesmo dia, placas do mesmo lote) e, dentro de cada bloco, os tratamentos são sorteados. A variação entre blocos é removida da comparação entre tratamentos, aumentando a precisão. O bloco deve ser incluído na análise (por exemplo, como fator em uma ANOVA).
 \item
-  \textbf{Fatorial}: dois ou mais fatores são estudados simultaneamente em todas as combinações, o que permite avaliar interações com eficiência (capítulo \emph{Análise de dados}).
+  \textbf{Fatorial}: dois ou mais fatores são estudados simultaneamente em todas as combinações, o que permite avaliar interações com eficiência (capítulo \emph{Relações entre variáveis}).
 \item
   \textbf{Medidas repetidas}: a mesma unidade é medida várias vezes ao longo do tempo ou sob várias condições, o que exige análises que considerem a correlação entre medidas.
 \end{itemize}
@@ -2468,7 +2468,7 @@ Ao examinar um gráfico de dispersão, procure responder:
   \textbf{Heterogeneidade}: a dispersão de \(y\) é semelhante ao longo de todo o eixo \(x\), ou aumenta (formato de funil)?
 \end{enumerate}
 
-Na Figura \ref{fig:desc-fig-dispersao}, há uma associação positiva, aproximadamente linear e de intensidade moderada entre IMC e pressão arterial sistólica. A quantificação dessa associação (coeficientes de correlação de Pearson e de Spearman) e sua modelagem (regressão linear) são temas do capítulo \emph{Análise de dados}. Lembre-se também de que associação não implica causalidade: o gráfico de dispersão descreve como as variáveis variam em conjunto, não por que variam.
+Na Figura \ref{fig:desc-fig-dispersao}, há uma associação positiva, aproximadamente linear e de intensidade moderada entre IMC e pressão arterial sistólica. A quantificação dessa associação (coeficientes de correlação de Pearson e de Spearman) e sua modelagem (regressão linear) são temas do capítulo \emph{Relações entre variáveis}. Lembre-se também de que associação não implica causalidade: o gráfico de dispersão descreve como as variáveis variam em conjunto, não por que variam.
 
 Quando há muitos pontos sobrepostos, use transparência (como nos exemplos acima, com \texttt{adjustcolor()}), pequenos deslocamentos aleatórios (\emph{jitter}) para variáveis discretas, ou gráficos de densidade bidimensional. Para incluir uma terceira variável categórica, varie o símbolo ou a cor dos pontos, sempre com legenda.
 
@@ -3117,7 +3117,7 @@ segue uma \textbf{distribuição qui-quadrado com \(k\) graus de liberdade}, \(\
 \caption{Densidades da distribuição qui-quadrado com 1, 3, 5 e 10 graus de liberdade.}\label{fig:inf-quiquadrado}
 \end{figure}
 
-A distribuição qui-quadrado aparece em dois contextos neste livro. O primeiro é a inferência sobre variâncias: se os dados são normais, \((n-1)s^2/\sigma^2 \sim \chi^2_{n-1}\). O segundo, mais frequente na pesquisa em saúde, é o \textbf{teste qui-quadrado de Pearson} para tabelas de contingência, apresentado na seção de testes paramétricos. A distribuição \(F\), usada na análise de variância, é construída a partir da razão de duas qui-quadrado e é apresentada no capítulo \emph{Análise de dados}.
+A distribuição qui-quadrado aparece em dois contextos neste livro. O primeiro é a inferência sobre variâncias: se os dados são normais, \((n-1)s^2/\sigma^2 \sim \chi^2_{n-1}\). O segundo, mais frequente na pesquisa em saúde, é o \textbf{teste qui-quadrado de Pearson} para tabelas de contingência, apresentado na seção de testes paramétricos. A distribuição \(F\), usada na análise de variância, é construída a partir da razão de duas qui-quadrado e é apresentada no capítulo \emph{Relações entre variáveis}.
 
 \section{Estimação e intervalos de confiança}\label{estimauxe7uxe3o-e-intervalos-de-confianuxe7a}
 
@@ -3382,7 +3382,7 @@ Por essas razões, a recomendação atual é relatar sempre a \textbf{estimativa
 
 \subsection{Testes paramétricos}\label{testes-paramuxe9tricos}
 
-Testes \textbf{paramétricos} supõem que os dados (ou as estatísticas calculadas a partir deles) seguem uma distribuição de forma conhecida, caracterizada por parâmetros, como a normal. Apresentamos a seguir os testes mais usados para comparar médias e proporções. A comparação de três ou mais médias (análise de variância) e a análise da associação entre variáveis quantitativas (correlação e regressão) são tratadas no capítulo \emph{Análise de dados}.
+Testes \textbf{paramétricos} supõem que os dados (ou as estatísticas calculadas a partir deles) seguem uma distribuição de forma conhecida, caracterizada por parâmetros, como a normal. Apresentamos a seguir os testes mais usados para comparar médias e proporções. A comparação de três ou mais médias (análise de variância) e a análise da associação entre variáveis quantitativas (correlação e regressão) são tratadas no capítulo \emph{Relações entre variáveis}.
 
 \subsubsection{Teste t para uma amostra e para amostras pareadas}\label{teste-t-para-uma-amostra-e-para-amostras-pareadas}
 
@@ -3686,7 +3686,7 @@ O valor \emph{p} exato é de 0,039, consistente com o do teste t pareado.
 
 \subsubsection{Outros testes e um guia de escolha}\label{outros-testes-e-um-guia-de-escolha}
 
-Para três ou mais grupos independentes, a alternativa à análise de variância é o \textbf{teste de Kruskal--Wallis} (\texttt{kruskal.test()}); para três ou mais medidas repetidas, o \textbf{teste de Friedman} (\texttt{friedman.test()}). A correlação de postos de Spearman é apresentada no capítulo \emph{Análise de dados}. A Tabela \ref{tab:inf-guia} resume a correspondência entre os testes mais usados.
+Para três ou mais grupos independentes, a alternativa à análise de variância é o \textbf{teste de Kruskal--Wallis} (\texttt{kruskal.test()}); para três ou mais medidas repetidas, o \textbf{teste de Friedman} (\texttt{friedman.test()}). A correlação de postos de Spearman é apresentada no capítulo \emph{Relações entre variáveis}. A Tabela \ref{tab:inf-guia} resume a correspondência entre os testes mais usados.
 
 \begin{table}
 
@@ -3805,7 +3805,7 @@ A escolha do teste deve ser guiada pela pergunta de pesquisa, pelo tipo de vari�
   Com \(n = 10\), a distribuição é discreta e muito assimétrica (há grande chance de observar zero eventos). Com \(n = 50\), ainda há assimetria visível. Com \(n = 500\), a distribuição é aproximadamente normal. Uma regra prática é exigir \(n\pi \ge 10\) e \(n(1-\pi) \ge 10\), o que aqui corresponde a \(n \ge 100\). O exercício mostra que, para proporções pequenas, o ``tamanho grande'' exigido pelo TCL pode ser bem maior que 30.
 \end{enumerate}
 
-\chapter{Análise de dados}\label{anuxe1lise-de-dados}
+\chapter{Relações entre variáveis}\label{anuxe1lise-de-dados}
 
 Hércules Rezende Freitas, Ph.D.\(^1\)
 
@@ -6209,7 +6209,7 @@ A modelagem estatística é o processo de desenvolver um modelo matemático que 
 ## F-statistic:   175 on 1 and 5 DF,  p-value: 4.409e-05
 \end{verbatim}
 
-Dados de estatura e massa corporal de sete pessoas foram armazenados em vetores. O gráfico mostra a relação entre as duas variáveis, e a função \texttt{abline()}, aplicada ao modelo ajustado por \texttt{lm()}, desenha a reta de mínimos quadrados. Segundo o modelo, cada centímetro a mais de estatura está associado a 1,93 kg a mais de massa corporal, e o \(R^2\) (\texttt{Multiple\ R-squared}) indica que 97\% da variação na massa corporal desta amostra é explicada pela relação linear com a estatura. A interpretação completa dessa saída está no capítulo \emph{Análise de dados}.
+Dados de estatura e massa corporal de sete pessoas foram armazenados em vetores. O gráfico mostra a relação entre as duas variáveis, e a função \texttt{abline()}, aplicada ao modelo ajustado por \texttt{lm()}, desenha a reta de mínimos quadrados. Segundo o modelo, cada centímetro a mais de estatura está associado a 1,93 kg a mais de massa corporal, e o \(R^2\) (\texttt{Multiple\ R-squared}) indica que 97\% da variação na massa corporal desta amostra é explicada pela relação linear com a estatura. A interpretação completa dessa saída está no capítulo \emph{Relações entre variáveis}.
 
 \subsection{Usando R para estatísticas descritivas}\label{usando-r-para-estatuxedsticas-descritivas}
 
@@ -6357,7 +6357,7 @@ Antes de realizar a inferência estatística, é preciso conhecer alguns conceit
 
 Um dos pilares da inferência estatística é o teste de hipóteses. O objetivo é testar uma afirmação (hipótese) sobre um parâmetro populacional. No R, funções como \texttt{t.test()}, \texttt{chisq.test()} e \texttt{aov()} são usadas para realizar diferentes tipos de testes de hipóteses.
 
-Por exemplo, o \texttt{t.test()} é usado para comparar as médias de duas amostras. O teste do qui-quadrado (\texttt{chisq.test()}) é frequentemente usado para testar a independência entre duas variáveis categóricas. A análise de variância (ANOVA), realizada com a função \texttt{aov()} (ou com \texttt{anova()} aplicada a um modelo ajustado com \texttt{lm()}), é usada para comparar as médias de três ou mais grupos. Os capítulos \emph{Bioestatística inferencial} e \emph{Análise de dados} apresentam esses testes com exemplos resolvidos.
+Por exemplo, o \texttt{t.test()} é usado para comparar as médias de duas amostras. O teste do qui-quadrado (\texttt{chisq.test()}) é frequentemente usado para testar a independência entre duas variáveis categóricas. A análise de variância (ANOVA), realizada com a função \texttt{aov()} (ou com \texttt{anova()} aplicada a um modelo ajustado com \texttt{lm()}), é usada para comparar as médias de três ou mais grupos. Os capítulos \emph{Bioestatística inferencial} e \emph{Relações entre variáveis} apresentam esses testes com exemplos resolvidos.
 
 \subsubsection{Intervalos de confiança}\label{intervalos-de-confianuxe7a}
 
@@ -7386,7 +7386,7 @@ Os graus de liberdade não inteiros indicam a aproximação de Welch.
 
 \subsubsection{Análise de variância e comparações múltiplas}\label{anuxe1lise-de-variuxe2ncia-e-comparauxe7uxf5es-muxfaltiplas}
 
-O exemplo da ANOVA de uma via do capítulo \emph{Análise de dados} (redução da dor em três esquemas de analgesia) fica assim:
+O exemplo da ANOVA de uma via do capítulo \emph{Relações entre variáveis} (redução da dor em três esquemas de analgesia) fica assim:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -7489,7 +7489,7 @@ imc         0.643269    2.156731
 R2 = 0.868
 \end{verbatim}
 
-Os resultados coincidem com os do capítulo \emph{Análise de dados}: \(r = 0{,}932\) (IC 95\% de 0,49 a 0,99, pela transformação \(z\) de Fisher), \(r_s = 0{,}886\), \(\hat{y} = 91{,}0 + 1{,}4x\), IC da inclinação de 0,64 a 2,16 e \(R^2 = 0{,}868\).
+Os resultados coincidem com os do capítulo \emph{Relações entre variáveis}: \(r = 0{,}932\) (IC 95\% de 0,49 a 0,99, pela transformação \(z\) de Fisher), \(r_s = 0{,}886\), \(\hat{y} = 91{,}0 + 1{,}4x\), IC da inclinação de 0,64 a 2,16 e \(R^2 = 0{,}868\).
 
 Na regressão múltipla, variáveis categóricas são indicadas com \texttt{C()}, e a categoria de referência pode ser escolhida com \texttt{Treatment(reference=...)}. O método \texttt{summary()} produz um relatório completo, semelhante ao do R; abaixo, usamos \texttt{summary2()} para extrair apenas a tabela de coeficientes:
 
@@ -9312,7 +9312,7 @@ Os capítulos anteriores apresentaram os métodos que respondem à maior parte d
 
 \subsection{Por que generalizar o modelo linear}\label{por-que-generalizar-o-modelo-linear}
 
-A regressão linear do capítulo \emph{Análise de dados} supõe que o desfecho tenha distribuição normal com variância constante, e que sua média seja uma função linear das variáveis explicativas. Para um desfecho binário, essas suposições falham: a média é uma probabilidade, limitada entre 0 e 1, e uma reta pode prever valores fora desse intervalo; a variância depende da média (\(\pi(1 - \pi)\)). Para contagens, a média deve ser positiva e a variância tende a crescer com a média.
+A regressão linear do capítulo \emph{Relações entre variáveis} supõe que o desfecho tenha distribuição normal com variância constante, e que sua média seja uma função linear das variáveis explicativas. Para um desfecho binário, essas suposições falham: a média é uma probabilidade, limitada entre 0 e 1, e uma reta pode prever valores fora desse intervalo; a variância depende da média (\(\pi(1 - \pi)\)). Para contagens, a média deve ser positiva e a variância tende a crescer com a média.
 
 Os \textbf{modelos lineares generalizados} (MLG, ou GLM) (\citeproc{ref-nelder1972}{Nelder and Wedderburn 1972}) resolvem esses problemas com três componentes:
 

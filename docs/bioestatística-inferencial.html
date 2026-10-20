@@ -357,7 +357,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.7" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.7</b> Exercícios</a></li>
 <li class="chapter" data-level="6.8" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#respostas-dos-exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.8</b> Respostas dos exercícios</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Análise de dados</a>
+<li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Relações entre variáveis</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-e-regress%C3%A3o"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
 <ul>
@@ -878,7 +878,7 @@ Q = Z_1^2 + Z_2^2 + \cdots + Z_k^2,
 Figura 6.4: Densidades da distribuição qui-quadrado com 1, 3, 5 e 10 graus de liberdade.
 </p>
 </div>
-<p>A distribuição qui-quadrado aparece em dois contextos neste livro. O primeiro é a inferência sobre variâncias: se os dados são normais, <span class="math inline">\((n-1)s^2/\sigma^2 \sim \chi^2_{n-1}\)</span>. O segundo, mais frequente na pesquisa em saúde, é o <strong>teste qui-quadrado de Pearson</strong> para tabelas de contingência, apresentado na seção de testes paramétricos. A distribuição <span class="math inline">\(F\)</span>, usada na análise de variância, é construída a partir da razão de duas qui-quadrado e é apresentada no capítulo <em>Análise de dados</em>.</p>
+<p>A distribuição qui-quadrado aparece em dois contextos neste livro. O primeiro é a inferência sobre variâncias: se os dados são normais, <span class="math inline">\((n-1)s^2/\sigma^2 \sim \chi^2_{n-1}\)</span>. O segundo, mais frequente na pesquisa em saúde, é o <strong>teste qui-quadrado de Pearson</strong> para tabelas de contingência, apresentado na seção de testes paramétricos. A distribuição <span class="math inline">\(F\)</span>, usada na análise de variância, é construída a partir da razão de duas qui-quadrado e é apresentada no capítulo <em>Relações entre variáveis</em>.</p>
 </div>
 </div>
 <div id="estimação-e-intervalos-de-confiança" class="section level2 hasAnchor" number="6.4">
@@ -1048,7 +1048,7 @@ Figura 6.5: Intervalos de confiança de 95% calculados em 100 amostras simuladas
 </div>
 <div id="testes-paramétricos" class="section level3 hasAnchor" number="6.5.4">
 <h3><span class="header-section-number">6.5.4</span> Testes paramétricos<a href="bioestatística-inferencial.html#testes-param%C3%A9tricos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Testes <strong>paramétricos</strong> supõem que os dados (ou as estatísticas calculadas a partir deles) seguem uma distribuição de forma conhecida, caracterizada por parâmetros, como a normal. Apresentamos a seguir os testes mais usados para comparar médias e proporções. A comparação de três ou mais médias (análise de variância) e a análise da associação entre variáveis quantitativas (correlação e regressão) são tratadas no capítulo <em>Análise de dados</em>.</p>
+<p>Testes <strong>paramétricos</strong> supõem que os dados (ou as estatísticas calculadas a partir deles) seguem uma distribuição de forma conhecida, caracterizada por parâmetros, como a normal. Apresentamos a seguir os testes mais usados para comparar médias e proporções. A comparação de três ou mais médias (análise de variância) e a análise da associação entre variáveis quantitativas (correlação e regressão) são tratadas no capítulo <em>Relações entre variáveis</em>.</p>
 <div id="teste-t-para-uma-amostra-e-para-amostras-pareadas" class="section level4 hasAnchor" number="6.5.4.1">
 <h4><span class="header-section-number">6.5.4.1</span> Teste t para uma amostra e para amostras pareadas<a href="bioestatística-inferencial.html#teste-t-para-uma-amostra-e-para-amostras-pareadas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>O <strong>teste t para uma amostra</strong> compara a média de uma população com um valor de referência <span class="math inline">\(\mu_0\)</span>. A estatística é</p>
@@ -1291,7 +1291,7 @@ X^2 &amp;= \frac{(12 - 8)^2}{8} + \frac{(28 - 32)^2}{32} + \frac{(8 - 12)^2}{12}
 </div>
 <div id="outros-testes-e-um-guia-de-escolha" class="section level4 hasAnchor" number="6.5.5.3">
 <h4><span class="header-section-number">6.5.5.3</span> Outros testes e um guia de escolha<a href="bioestatística-inferencial.html#outros-testes-e-um-guia-de-escolha" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Para três ou mais grupos independentes, a alternativa à análise de variância é o <strong>teste de Kruskal–Wallis</strong> (<code>kruskal.test()</code>); para três ou mais medidas repetidas, o <strong>teste de Friedman</strong> (<code>friedman.test()</code>). A correlação de postos de Spearman é apresentada no capítulo <em>Análise de dados</em>. A Tabela <a href="bioestatística-inferencial.html#tab:inf-guia">6.5</a> resume a correspondência entre os testes mais usados.</p>
+<p>Para três ou mais grupos independentes, a alternativa à análise de variância é o <strong>teste de Kruskal–Wallis</strong> (<code>kruskal.test()</code>); para três ou mais medidas repetidas, o <strong>teste de Friedman</strong> (<code>friedman.test()</code>). A correlação de postos de Spearman é apresentada no capítulo <em>Relações entre variáveis</em>. A Tabela <a href="bioestatística-inferencial.html#tab:inf-guia">6.5</a> resume a correspondência entre os testes mais usados.</p>
 <table>
 <caption><span id="tab:inf-guia">Tabela 6.5: </span>Guia de escolha de testes para situações comuns.</caption>
 <colgroup>

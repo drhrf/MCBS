@@ -617,7 +617,7 @@ abline(modelo_massa, lty = 2)
 summary(modelo_massa)
 ```
 
-Dados de estatura e massa corporal de sete pessoas foram armazenados em vetores. O gráfico mostra a relação entre as duas variáveis, e a função `abline()`, aplicada ao modelo ajustado por `lm()`, desenha a reta de mínimos quadrados. Segundo o modelo, cada centímetro a mais de estatura está associado a `r num(coef(modelo_massa)[2], 2)` kg a mais de massa corporal, e o $R^2$ (`Multiple R-squared`) indica que `r num(100 * summary(modelo_massa)$r.squared, 0)`% da variação na massa corporal desta amostra é explicada pela relação linear com a estatura. A interpretação completa dessa saída está no capítulo *Análise de dados*.
+Dados de estatura e massa corporal de sete pessoas foram armazenados em vetores. O gráfico mostra a relação entre as duas variáveis, e a função `abline()`, aplicada ao modelo ajustado por `lm()`, desenha a reta de mínimos quadrados. Segundo o modelo, cada centímetro a mais de estatura está associado a `r num(coef(modelo_massa)[2], 2)` kg a mais de massa corporal, e o $R^2$ (`Multiple R-squared`) indica que `r num(100 * summary(modelo_massa)$r.squared, 0)`% da variação na massa corporal desta amostra é explicada pela relação linear com a estatura. A interpretação completa dessa saída está no capítulo *Relações entre variáveis*.
 
 ### Usando R para estatísticas descritivas
 
@@ -678,7 +678,7 @@ Antes de realizar a inferência estatística, é preciso conhecer alguns conceit
 
 Um dos pilares da inferência estatística é o teste de hipóteses. O objetivo é testar uma afirmação (hipótese) sobre um parâmetro populacional. No R, funções como `t.test()`, `chisq.test()` e `aov()` são usadas para realizar diferentes tipos de testes de hipóteses.
 
-Por exemplo, o `t.test()` é usado para comparar as médias de duas amostras. O teste do qui-quadrado (`chisq.test()`) é frequentemente usado para testar a independência entre duas variáveis categóricas. A análise de variância (ANOVA), realizada com a função `aov()` (ou com `anova()` aplicada a um modelo ajustado com `lm()`), é usada para comparar as médias de três ou mais grupos. Os capítulos *Bioestatística inferencial* e *Análise de dados* apresentam esses testes com exemplos resolvidos.
+Por exemplo, o `t.test()` é usado para comparar as médias de duas amostras. O teste do qui-quadrado (`chisq.test()`) é frequentemente usado para testar a independência entre duas variáveis categóricas. A análise de variância (ANOVA), realizada com a função `aov()` (ou com `anova()` aplicada a um modelo ajustado com `lm()`), é usada para comparar as médias de três ou mais grupos. Os capítulos *Bioestatística inferencial* e *Relações entre variáveis* apresentam esses testes com exemplos resolvidos.
 
 #### Intervalos de confiança
 
@@ -1454,7 +1454,7 @@ Os graus de liberdade não inteiros indicam a aproximação de Welch.
 
 #### Análise de variância e comparações múltiplas
 
-O exemplo da ANOVA de uma via do capítulo *Análise de dados* (redução da dor em três esquemas de analgesia) fica assim:
+O exemplo da ANOVA de uma via do capítulo *Relações entre variáveis* (redução da dor em três esquemas de analgesia) fica assim:
 
 ```python
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
@@ -1551,7 +1551,7 @@ imc         0.643269    2.156731
 R2 = 0.868
 ```
 
-Os resultados coincidem com os do capítulo *Análise de dados*: $r = 0{,}932$ (IC 95% de 0,49 a 0,99, pela transformação $z$ de Fisher), $r_s = 0{,}886$, $\hat{y} = 91{,}0 + 1{,}4x$, IC da inclinação de 0,64 a 2,16 e $R^2 = 0{,}868$.
+Os resultados coincidem com os do capítulo *Relações entre variáveis*: $r = 0{,}932$ (IC 95% de 0,49 a 0,99, pela transformação $z$ de Fisher), $r_s = 0{,}886$, $\hat{y} = 91{,}0 + 1{,}4x$, IC da inclinação de 0,64 a 2,16 e $R^2 = 0{,}868$.
 
 Na regressão múltipla, variáveis categóricas são indicadas com `C()`, e a categoria de referência pode ser escolhida com `Treatment(reference=...)`. O método `summary()` produz um relatório completo, semelhante ao do R; abaixo, usamos `summary2()` para extrair apenas a tabela de coeficientes:
 

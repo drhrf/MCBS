@@ -18,7 +18,7 @@ Os capítulos anteriores apresentaram os métodos que respondem à maior parte d
 
 ### Por que generalizar o modelo linear
 
-A regressão linear do capítulo *Análise de dados* supõe que o desfecho tenha distribuição normal com variância constante, e que sua média seja uma função linear das variáveis explicativas. Para um desfecho binário, essas suposições falham: a média é uma probabilidade, limitada entre 0 e 1, e uma reta pode prever valores fora desse intervalo; a variância depende da média ($\pi(1 - \pi)$). Para contagens, a média deve ser positiva e a variância tende a crescer com a média.
+A regressão linear do capítulo *Relações entre variáveis* supõe que o desfecho tenha distribuição normal com variância constante, e que sua média seja uma função linear das variáveis explicativas. Para um desfecho binário, essas suposições falham: a média é uma probabilidade, limitada entre 0 e 1, e uma reta pode prever valores fora desse intervalo; a variância depende da média ($\pi(1 - \pi)$). Para contagens, a média deve ser positiva e a variância tende a crescer com a média.
 
 Os **modelos lineares generalizados** (MLG, ou GLM) [@nelder1972] resolvem esses problemas com três componentes:
 

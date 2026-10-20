@@ -23,7 +23,7 @@ Livro de acesso aberto sobre metodologia científica e bioestatística aplicadas
 3. Desenhos de pesquisa
 4. Bioestatística descritiva
 5. Bioestatística inferencial
-6. Análise de dados
+6. Relações entre variáveis
 7. Uso de *softwares* estatísticos
 8. Comunicação científica
 9. Ética e boas práticas em pesquisa

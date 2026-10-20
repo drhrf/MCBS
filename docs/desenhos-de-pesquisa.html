@@ -357,7 +357,7 @@ div.csl-indent {
 <li class="chapter" data-level="6.7" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.7</b> Exercícios</a></li>
 <li class="chapter" data-level="6.8" data-path="bioestatística-inferencial.html"><a href="bioestatística-inferencial.html#respostas-dos-exerc%C3%ADcios-4"><i class="fa fa-check"></i><b>6.8</b> Respostas dos exercícios</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Análise de dados</a>
+<li class="chapter" data-level="7" data-path="análise-de-dados.html"><a href="análise-de-dados.html"><i class="fa fa-check"></i><b>7</b> Relações entre variáveis</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="análise-de-dados.html"><a href="análise-de-dados.html#correla%C3%A7%C3%A3o-e-regress%C3%A3o"><i class="fa fa-check"></i><b>7.1</b> Correlação e regressão</a>
 <ul>
@@ -815,7 +815,7 @@ Figura 4.2: Três papéis de uma terceira variável Z na relação entre exposi�
 </p>
 </div>
 <p>Os diagramas tornam explícitas três lições. Primeira: a confusão é um conceito <strong>causal</strong>, não estatístico; nenhum teste nos dados decide se uma variável é um confundidor, e a decisão depende do conhecimento sobre o problema. Segunda: ajustar para todas as variáveis disponíveis não é uma estratégia segura, porque ajustar para um mediador remove parte do efeito de interesse e ajustar para um colisor cria associações espúrias. Terceira: só se pode ajustar para o que foi medido; a <strong>confusão residual</strong> por fatores não medidos é a principal limitação dos estudos observacionais.</p>
-<p>A confusão pode ser controlada no <strong>desenho</strong> (restrição, pareamento, randomização) ou na <strong>análise</strong> (estratificação, regressão múltipla, como no capítulo <em>Análise de dados</em>, escores de propensão). Apenas a randomização controla também os confundidores não medidos.</p>
+<p>A confusão pode ser controlada no <strong>desenho</strong> (restrição, pareamento, randomização) ou na <strong>análise</strong> (estratificação, regressão múltipla, como no capítulo <em>Relações entre variáveis</em>, escores de propensão). Apenas a randomização controla também os confundidores não medidos.</p>
 </div>
 <div id="da-associação-à-causalidade" class="section level3 hasAnchor" number="4.3.4">
 <h3><span class="header-section-number">4.3.4</span> Da associação à causalidade<a href="desenhos-de-pesquisa.html#da-associa%C3%A7%C3%A3o-%C3%A0-causalidade" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -883,7 +883,7 @@ Figura 4.3: Direção da investigação nos três desenhos observacionais. No tr
 <h3><span class="header-section-number">4.4.4</span> Outros desenhos observacionais<a href="desenhos-de-pesquisa.html#outros-desenhos-observacionais" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><strong>Relatos e séries de casos</strong> descrevem um ou mais pacientes com uma condição. Não têm grupo de comparação e, portanto, não permitem avaliar associações, mas são fundamentais para identificar doenças novas e efeitos adversos inesperados (a epidemia de aids e a embriopatia da talidomida foram reconhecidas por séries de casos).</li>
-<li><strong>Estudos ecológicos</strong> usam grupos (municípios, países, períodos), e não indivíduos, como unidade de análise. São úteis para avaliar efeitos de políticas e exposições de nível populacional, mas a associação observada entre grupos não pode ser transferida para indivíduos (a <strong>falácia ecológica</strong>, discutida no capítulo <em>Análise de dados</em>).</li>
+<li><strong>Estudos ecológicos</strong> usam grupos (municípios, países, períodos), e não indivíduos, como unidade de análise. São úteis para avaliar efeitos de políticas e exposições de nível populacional, mas a associação observada entre grupos não pode ser transferida para indivíduos (a <strong>falácia ecológica</strong>, discutida no capítulo <em>Relações entre variáveis</em>).</li>
 </ul>
 <p>Para o relato de estudos observacionais, a diretriz <strong>STROBE</strong> <span class="citation">(<a href="#ref-vonelm2007"><span class="nocase">von Elm et al.</span> 2007</a>)</span> especifica os itens que um artigo deve conter.</p>
 </div>
@@ -953,7 +953,7 @@ Figura 4.3: Direção da investigação nos três desenhos observacionais. No tr
 <h4><span class="header-section-number">4.5.1.5</span> Outros desenhos de ensaio<a href="desenhos-de-pesquisa.html#outros-desenhos-de-ensaio" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li><strong>Ensaio cruzado</strong> (<em>crossover</em>): cada participante recebe os dois tratamentos, em ordem sorteada, separados por um período de eliminação (<em>washout</em>). Cada um é seu próprio controle, o que reduz o tamanho amostral necessário. Só é adequado para condições crônicas e estáveis e tratamentos de efeito reversível.</li>
-<li><strong>Ensaio fatorial</strong>: avalia duas intervenções ao mesmo tempo, alocando os participantes a nenhuma, uma, outra ou ambas (veja a ANOVA fatorial no capítulo <em>Análise de dados</em>).</li>
+<li><strong>Ensaio fatorial</strong>: avalia duas intervenções ao mesmo tempo, alocando os participantes a nenhuma, uma, outra ou ambas (veja a ANOVA fatorial no capítulo <em>Relações entre variáveis</em>).</li>
 <li><strong>Ensaio por conglomerados</strong> (<em>cluster</em>): randomizam-se grupos (escolas, unidades de saúde, comunidades), e não indivíduos. Necessário quando a intervenção é aplicada no nível do grupo ou quando há risco de contaminação entre participantes. Como os indivíduos de um mesmo conglomerado são correlacionados, o tamanho amostral e a análise precisam levar em conta essa correlação.</li>
 <li><strong>Ensaios de não inferioridade</strong>: buscam mostrar que um novo tratamento (mais barato, mais seguro, mais cômodo) não é pior que o padrão por mais do que uma margem predefinida. Exigem cuidados específicos de desenho e análise.</li>
 </ul>
@@ -992,7 +992,7 @@ Figura 4.3: Direção da investigação nos três desenhos observacionais. No tr
 <ul>
 <li><strong>Inteiramente casualizado</strong>: as unidades experimentais são distribuídas aleatoriamente entre os tratamentos, sem restrições. É o mais simples e adequado quando as unidades são homogêneas.</li>
 <li><strong>Em blocos casualizados</strong>: as unidades são primeiro agrupadas em <strong>blocos</strong> de unidades semelhantes (animais da mesma ninhada, amostras processadas no mesmo dia, placas do mesmo lote) e, dentro de cada bloco, os tratamentos são sorteados. A variação entre blocos é removida da comparação entre tratamentos, aumentando a precisão. O bloco deve ser incluído na análise (por exemplo, como fator em uma ANOVA).</li>
-<li><strong>Fatorial</strong>: dois ou mais fatores são estudados simultaneamente em todas as combinações, o que permite avaliar interações com eficiência (capítulo <em>Análise de dados</em>).</li>
+<li><strong>Fatorial</strong>: dois ou mais fatores são estudados simultaneamente em todas as combinações, o que permite avaliar interações com eficiência (capítulo <em>Relações entre variáveis</em>).</li>
 <li><strong>Medidas repetidas</strong>: a mesma unidade é medida várias vezes ao longo do tempo ou sob várias condições, o que exige análises que considerem a correlação entre medidas.</li>
 </ul>
 </div>

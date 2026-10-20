@@ -292,7 +292,7 @@ legend("topright", bty = "n", lwd = 2, lty = c(1, 2, 3, 1), col = c(rep("black",
        legend = paste(c(1, 3, 5, 10), "gl"))
 ```
 
-A distribuição qui-quadrado aparece em dois contextos neste livro. O primeiro é a inferência sobre variâncias: se os dados são normais, $(n-1)s^2/\sigma^2 \sim \chi^2_{n-1}$. O segundo, mais frequente na pesquisa em saúde, é o **teste qui-quadrado de Pearson** para tabelas de contingência, apresentado na seção de testes paramétricos. A distribuição $F$, usada na análise de variância, é construída a partir da razão de duas qui-quadrado e é apresentada no capítulo *Análise de dados*.
+A distribuição qui-quadrado aparece em dois contextos neste livro. O primeiro é a inferência sobre variâncias: se os dados são normais, $(n-1)s^2/\sigma^2 \sim \chi^2_{n-1}$. O segundo, mais frequente na pesquisa em saúde, é o **teste qui-quadrado de Pearson** para tabelas de contingência, apresentado na seção de testes paramétricos. A distribuição $F$, usada na análise de variância, é construída a partir da razão de duas qui-quadrado e é apresentada no capítulo *Relações entre variáveis*.
 
 ## Estimação e intervalos de confiança
 
@@ -454,7 +454,7 @@ Por essas razões, a recomendação atual é relatar sempre a **estimativa do ef
 
 ### Testes paramétricos
 
-Testes **paramétricos** supõem que os dados (ou as estatísticas calculadas a partir deles) seguem uma distribuição de forma conhecida, caracterizada por parâmetros, como a normal. Apresentamos a seguir os testes mais usados para comparar médias e proporções. A comparação de três ou mais médias (análise de variância) e a análise da associação entre variáveis quantitativas (correlação e regressão) são tratadas no capítulo *Análise de dados*.
+Testes **paramétricos** supõem que os dados (ou as estatísticas calculadas a partir deles) seguem uma distribuição de forma conhecida, caracterizada por parâmetros, como a normal. Apresentamos a seguir os testes mais usados para comparar médias e proporções. A comparação de três ou mais médias (análise de variância) e a análise da associação entre variáveis quantitativas (correlação e regressão) são tratadas no capítulo *Relações entre variáveis*.
 
 #### Teste t para uma amostra e para amostras pareadas
 
@@ -625,7 +625,7 @@ O valor *p* exato é de 0,039, consistente com o do teste t pareado.
 
 #### Outros testes e um guia de escolha
 
-Para três ou mais grupos independentes, a alternativa à análise de variância é o **teste de Kruskal–Wallis** (`kruskal.test()`); para três ou mais medidas repetidas, o **teste de Friedman** (`friedman.test()`). A correlação de postos de Spearman é apresentada no capítulo *Análise de dados*. A Tabela \@ref(tab:inf-guia) resume a correspondência entre os testes mais usados.
+Para três ou mais grupos independentes, a alternativa à análise de variância é o **teste de Kruskal–Wallis** (`kruskal.test()`); para três ou mais medidas repetidas, o **teste de Friedman** (`friedman.test()`). A correlação de postos de Spearman é apresentada no capítulo *Relações entre variáveis*. A Tabela \@ref(tab:inf-guia) resume a correspondência entre os testes mais usados.
 
 ```{r inf-guia, echo=FALSE}
 guia <- data.frame(
